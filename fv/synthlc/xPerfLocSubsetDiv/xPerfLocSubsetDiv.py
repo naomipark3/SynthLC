@@ -198,15 +198,7 @@ def pp():
 
 def plset_cnt_iso():
     ######### isomorphic ###
-    isomorphic_sets = [
-    set(["lsq_enq_0_s1", "lsq_enq_1_s1"]), 
-    set(["scb_0_s12", "scb_1_s12", "scb_2_s12", "scb_3_s12"]), 
-    set(["scb_0_s13", "scb_1_s13", "scb_2_s13", "scb_3_s13"]),
-    set(["scb_0_s14", "scb_1_s14", "scb_2_s14", "scb_3_s14"]), 
-    set(["scb_0_s8", "scb_1_s8", "scb_2_s8", "scb_3_s8"]),
-    set(["stb_com_0_s1", "stb_com_1_s1"]),
-    set(["stb_spec_0_s1", "stb_spec_1_s1"]),
-    ]
+    isomorphic_sets = []
     #super_isomorphic_sets = [
     #set(["scb_0_s12", "scb_1_s12", "scb_2_s12", "scb_3_s12",
     #"scb_0_s13", "scb_1_s13", "scb_2_s13", "scb_3_s13",

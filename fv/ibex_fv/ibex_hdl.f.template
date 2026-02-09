@@ -1,0 +1,31 @@
++define+FVT
++incdir+IBEXDIR/rtl
++incdir+IBEXDIR/vendor/lowrisc_ip/ip/prim/rtl
++incdir+IBEXDIR/vendor/lowrisc_ip/dv/sv/dv_utils
+// Package first
+IBEXDIR/rtl/ibex_pkg.sv
+IBEXDIR/rtl/ibex_tracer_pkg.sv
+// Core RTL files
+IBEXDIR/rtl/ibex_alu.sv
+IBEXDIR/rtl/ibex_compressed_decoder.sv
+IBEXDIR/rtl/ibex_controller.sv
+IBEXDIR/rtl/ibex_counter.sv
+IBEXDIR/rtl/ibex_cs_registers.sv
+IBEXDIR/rtl/ibex_csr.sv
+IBEXDIR/rtl/ibex_decoder.sv
+IBEXDIR/rtl/ibex_ex_block.sv
+IBEXDIR/rtl/ibex_id_stage.sv
+IBEXDIR/rtl/ibex_if_stage.sv
+IBEXDIR/rtl/ibex_load_store_unit.sv
+IBEXDIR/rtl/ibex_multdiv_fast.sv
+IBEXDIR/rtl/ibex_multdiv_slow.sv
+IBEXDIR/rtl/ibex_prefetch_buffer.sv
+IBEXDIR/rtl/ibex_fetch_fifo.sv
+IBEXDIR/rtl/ibex_register_file_ff.sv
+IBEXDIR/rtl/ibex_pmp.sv
+IBEXDIR/rtl/ibex_wb_stage.sv
+IBEXDIR/rtl/ibex_dummy_instr.sv
+IBEXDIR/rtl/ibex_branch_predict.sv
+IBEXDIR/rtl/ibex_core.sv
+// Prim dependencies (assertions, mubi)
+IBEXDIR/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv
