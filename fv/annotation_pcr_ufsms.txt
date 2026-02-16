@@ -14,3 +14,26 @@ id_fsm
 core_i.if_stage_i.pc_id_o
 core_i.instr_valid_id
 core_i.id_stage_i.id_fsm_q
+
+# uFSM2 - Multiplier FSM (RV32MFast, multi-cycle)
+# mult_state_q tracks fast multiplier progress
+mult_fsm
+core_i.if_stage_i.pc_id_o
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_hold || core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_internal ,core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_hold,core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_internal
+
+# uFSM3 - Divider FSM
+# md_state_q: MD_IDLE, MD_ABS_A, MD_ABS_B, MD_COMP, MD_LAST, MD_CHANGE_SIGN, MD_FINISH
+div_sm
+core_i.if_stage_i.pc_id_o
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i
+(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q != 0) || core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_internal || core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_hold ,core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q,core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_internal,core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_hold
+
+# uFSM4 - LSU
+# ls_fsm_cs: IDLE, WAIT_GNT_MIS, WAIT_RVALID_MIS, WAIT_GNT, WAIT_RVALID
+lsu_fsm
+core_i.if_stage_i.pc_id_o
+core_i.load_store_unit_i.ls_fsm_cs
+(core_i.load_store_unit_i.ls_fsm_cs != 0) || (core_i.load_store_unit_i.lsu_req_i) ,core_i.load_store_unit_i.ls_fsm_cs,core_i.load_store_unit_i.lsu_req_i

@@ -235,6 +235,8 @@ module ibex_fv import ibex_pkg::*; (
     // Double fault
     .double_fault_seen_o(double_fault_seen_o),
 
+    
+
 `ifdef RVFI
     .rvfi_valid                  (),
     .rvfi_order                  (),
@@ -287,5 +289,41 @@ module ibex_fv import ibex_pkg::*; (
     // Core busy
     .core_busy_o        (core_busy_o)
   );
+
+  // =========================================================================
+  // Formal-only: latch PC for mult/div uFSM (MuPATH identity)
+  // =========================================================================
+  logic [31:0] multdiv_pc_q;
+  logic        multdiv_active_q;
+
+  // PC identity source (ID-stage PC is usually stable for the instruction being decoded/executed)
+  wire [31:0] pc_id = core_i.if_stage_i.pc_id_o;
+
+  // Tap internal "fires" (these already exist in ibex_multdiv_fast)
+  wire mult_fire = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_internal;
+  wire div_fire  = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_internal;
+
+  // Result handshake: valid_o held until multdiv_ready_id_i
+  wire md_done = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.valid_o &&
+                 core_i.ex_block_i.gen_multdiv_fast.multdiv_i.multdiv_ready_id_i;
+
+  // Start condition: first cycle we enter mult/div while not already active
+  wire md_start = (mult_fire || div_fire) && !multdiv_active_q;
+
+  always_ff @(posedge clk_i or negedge rst_ni) begin
+    if (!rst_ni) begin
+      multdiv_active_q <= 1'b0;
+      multdiv_pc_q     <= 32'h0;
+    end else begin
+      if (md_start) begin
+        multdiv_active_q <= 1'b1;
+        multdiv_pc_q     <= pc_id;  // latch the PC once for this multi-cycle op
+      end
+      if (md_done) begin
+        multdiv_active_q <= 1'b0;
+      end
+    end
+  end
+
 
 endmodule
