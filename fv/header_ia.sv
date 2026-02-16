@@ -89,3 +89,146 @@ ISSUE_ONCE: assume property (@(posedge clk_i)
 // ============================================================================= 
 
 
+wire id_ctrl_s1 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.id_stage_i.controller_i.ctrl_fsm_cs == 4'd1) && 
+	 1'b1; 
+wire id_ctrl_s2 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.id_stage_i.controller_i.ctrl_fsm_cs == 4'd2) && 
+	 1'b1; 
+wire id_ctrl_s3 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.id_stage_i.controller_i.ctrl_fsm_cs == 4'd3) && 
+	 1'b1; 
+wire id_ctrl_s4 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.id_stage_i.controller_i.ctrl_fsm_cs == 4'd4) && 
+	 1'b1; 
+wire id_ctrl_s5 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.id_stage_i.controller_i.ctrl_fsm_cs == 4'd5) && 
+	 1'b1; 
+wire id_ctrl_s6 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.id_stage_i.controller_i.ctrl_fsm_cs == 4'd6) && 
+	 1'b1; 
+wire id_fsm_s1 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.instr_valid_id == 1'd0) && 
+	(core_i.id_stage_i.id_fsm_q == 1'd1) && 
+	 1'b1; 
+wire id_fsm_s2 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.instr_valid_id == 1'd1) && 
+	(core_i.id_stage_i.id_fsm_q == 1'd0) && 
+	 1'b1; 
+wire id_fsm_s3 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.instr_valid_id == 1'd1) && 
+	(core_i.id_stage_i.id_fsm_q == 1'd1) && 
+	 1'b1; 
+wire mult_fsm_s1 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q == 2'd0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i == 1'd1) && 
+	 1'b1; 
+wire mult_fsm_s2 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q == 2'd1) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i == 1'd0) && 
+	 1'b1; 
+wire mult_fsm_s3 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q == 2'd1) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i == 1'd1) && 
+	 1'b1; 
+wire mult_fsm_s4 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q == 2'd2) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i == 1'd0) && 
+	 1'b1; 
+wire mult_fsm_s5 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q == 2'd2) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i == 1'd1) && 
+	 1'b1; 
+wire mult_fsm_s6 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q == 2'd3) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i == 1'd0) && 
+	 1'b1; 
+wire mult_fsm_s7 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q == 2'd3) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i == 1'd1) && 
+	 1'b1; 
+wire div_sm_s1 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd1) && 
+	 1'b1; 
+wire div_sm_s10 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd5) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd0) && 
+	 1'b1; 
+wire div_sm_s11 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd5) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd1) && 
+	 1'b1; 
+wire div_sm_s12 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd6) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd0) && 
+	 1'b1; 
+wire div_sm_s13 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd6) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd1) && 
+	 1'b1; 
+wire div_sm_s2 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd1) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd0) && 
+	 1'b1; 
+wire div_sm_s3 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd1) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd1) && 
+	 1'b1; 
+wire div_sm_s4 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd2) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd0) && 
+	 1'b1; 
+wire div_sm_s5 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd2) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd1) && 
+	 1'b1; 
+wire div_sm_s6 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd3) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd0) && 
+	 1'b1; 
+wire div_sm_s7 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd3) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd1) && 
+	 1'b1; 
+wire div_sm_s8 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd4) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd0) && 
+	 1'b1; 
+wire div_sm_s9 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd4) && 
+	(core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'd1) && 
+	 1'b1; 
+wire lsu_fsm_s2 = 
+	(core_i.if_stage_i.pc_id_o == pc0) && 
+	(core_i.load_store_unit_i.ls_fsm_cs == 3'd2) && 
+	 1'b1; 
