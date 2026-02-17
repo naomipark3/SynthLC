@@ -5,3 +5,5 @@ i_DIV_3: assume property (i0[6:0] == 7'b0110011);
 assume property (@(posedge clk_i) core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i == 1'b0);
 assume property (@(posedge clk_i) core_i.load_store_unit_i.ls_fsm_cs == 3'd0);
 assume property (@(posedge clk_i) core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q == 2'd0);
+assume property (@(posedge clk_i) core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i == 1'b0);
+assume property (@(posedge clk_i) core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd0);
