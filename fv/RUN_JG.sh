@@ -1,7 +1,7 @@
 #!/bin/bash
 # file path being either absolute path or relative path from this directory
-TOPFILE=./src/topsim.sv
-FVMACRO=./src/macro.sv
+TOPFILE=./ibex_fv/ibex_topsim.sv
+FVMACRO=./ibex_fv/ibex_header_fv.sv
 
 HDLDIR=$(realpath ../core)
 #HDLDIR=/home/yaohsiao/rtl2uspecV2/cva6_rtl2uspec/core

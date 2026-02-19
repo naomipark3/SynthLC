@@ -15,17 +15,24 @@ core_i.id_stage_i.id_fsm_q
 
 # uFSM2 - Multiplier FSM
 mult_fsm
-core_i.if_stage_i.pc_id_o
-core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q
+md_owner_pc
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_state_q
 core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i
+md_owner_v,1
 
 # uFSM3 - Divider FSM
 div_sm
-core_i.if_stage_i.pc_id_o
+md_owner_pc
 core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q
 core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i
+md_owner_v,1
 
 # uFSM4 - LSU
 lsu_fsm
-core_i.if_stage_i.pc_id_o
+lsu_owner_pc
 core_i.load_store_unit_i.ls_fsm_cs
+core_i.load_store_unit_i.handle_misaligned_q
+core_i.load_store_unit_i.pmp_err_q
+core_i.load_store_unit_i.lsu_err_q
+lsu_owner_v,1
+
