@@ -1,7 +1,7 @@
 # Run JG with a TCl file: jg jg_test.tcl
 set assert_report_incompletes 1
-set RTL_DIR /home/users/cheriek/Documents/Formal_Method/final_project/ibex
-set SRCDIR /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl
+set RTL_DIR /home/users/ngpark/ibex
+set SRCDIR /home/users/ngpark/ibex/rtl
 
 ############
 set FPV 1
@@ -21,10 +21,10 @@ if {$REACH == 1} {
 if {$FPV == 1} {
     puts "fpv" 
     # Elaborates
-    #elaborate -bbox_m {wt_cache_subsystem} -bbox_m {ibex_if_stage} -bbox_m {prim_lfsr}
+    #elaborate -bbox_m {wt_cache_subsystem} -bbox_m {ibex_if_stage}
     #puts "multiplier no-bbox"
     elaborate -top ibex_fv -bbox_m {ibex_if_stage} -bbox_m {prim_lfsr}
-    #elaborate -bbox_m {ibex_if_stage} -bbox_m {prim_lfsr}
+    #elaborate -bbox_m {ibex_if_stage}
     #stopat -env {issue_stage_i.i_scoreboard.mem_n[0].sbe.is_compressed}  
     #elaborate
 

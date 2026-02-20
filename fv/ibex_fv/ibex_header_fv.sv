@@ -73,7 +73,7 @@ end
 // After we've seen IUV once, we require it not to re-appear in ID again.
 // This is a light constraint compared to banning all fetches.
 ISSUE_ONCE: assume property (@(posedge clk_i)
-  instn_begin |-> !iuv_in_id
+  instn_begun |-> !iuv_in_id
 );
 
 // =============================================================================

@@ -16,15 +16,13 @@ core_i.id_stage_i.id_fsm_q
 # uFSM2 - Multiplier FSM
 mult_fsm
 md_owner_pc
-core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_state_q
-core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q
 md_owner_v,1
 
 # uFSM3 - Divider FSM
 div_sm
 md_owner_pc
 core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q
-core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i
 md_owner_v,1
 
 # uFSM4 - LSU
