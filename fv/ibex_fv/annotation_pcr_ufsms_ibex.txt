@@ -1,36 +1,28 @@
-# Ibex PCR/uFSM annotation for RTL2MuPATH
-# Format: (name, iir, tracking_logic_sig1, tracking_logic_sig2, ...)
-# Paths are relative to TOPMOD (ibex_fv), through core_i instance
+# uFSM0 — ID + ALU stage
+id_stage
+core_i.id_stage_i.pc_id_i
+core_i.id_stage_i.instr_executing
 
-# uFSM0 — Pipeline controller FSM
-id_ctrl
-core_i.if_stage_i.pc_id_o
-core_i.id_stage_i.controller_i.ctrl_fsm_cs
-
-# uFSM1 — ID stage sub-FSM
-id_fsm
-core_i.if_stage_i.pc_id_o
-core_i.instr_valid_id
-core_i.id_stage_i.id_fsm_q
-
-# uFSM2 - Multiplier FSM
+# uFSM1 — Multiplier (RV32MFast, multi-cycle)
 mult_fsm
-md_owner_pc
-core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q
-md_owner_v,1
+mul_owner_pc
+mul_owner_v
+mult_state
 
-# uFSM3 - Divider FSM
-div_sm
-md_owner_pc
-core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q
-md_owner_v,1
+# uFSM2 — Divider
+div_fsm
+div_owner_pc
+div_owner_v
+div_state
 
-# uFSM4 - LSU
+# uFSM3 — LSU
 lsu_fsm
 lsu_owner_pc
-core_i.load_store_unit_i.ls_fsm_cs
-core_i.load_store_unit_i.handle_misaligned_q
-core_i.load_store_unit_i.pmp_err_q
-core_i.load_store_unit_i.lsu_err_q
-lsu_owner_v,1
+lsu_owner_v
+ls_fsm
+
+# uFSM4 — Writeback
+wb_stage
+core_i.cs_registers_i.pc_wb_i
+core_i.wb_stage_i.g_writeback_stage.wb_valid_q
 

@@ -1,4 +1,3 @@
-
 // =============================================================================
 // Formal environment for Ibex RISC-V core (SynthLC / RTL2MuPATH harness)
 //
@@ -73,15 +72,8 @@ end
 // After we've seen IUV once, we require it not to re-appear in ID again.
 // This is a light constraint compared to banning all fetches.
 ISSUE_ONCE: assume property (@(posedge clk_i)
-  instn_begun |-> !iuv_in_id
+  instn_begin |-> !iuv_in_id
 );
-
-// =============================================================================
-// Ibex stage PCs
-// =============================================================================
-wire [31:0] pc_if = core_i.pc_if;   // IF stage fetch PC
-wire [31:0] pc_id = core_i.pc_id;   // ID stage decode PC
-wire [31:0] pc_wb = core_i.pc_wb;   // WB stage PC (if present)
 
 
 // =============================================================================
@@ -95,121 +87,25 @@ EVENTUAL_ISSUE: assume property (@(posedge clk_i)
   first |-> s_eventually(instn_begin)
 );
 
-// =============================================================================
-// Optional: IF/ID "hold contract" (ONLY if you have an explicit stall/ready)
-// =============================================================================
-//
-// If your bbox IF->ID interface can stall, and you have a "ready/accept" signal,
-// you can constrain stability when valid && !ready.
-// Otherwise, leave this OFF to avoid wrong assumptions.
-//
-// Example (YOU MUST fix signal names):
-//
-// wire id_accept = core_i.id_accept_i; // e.g., "id_ready" / "if_id_ready" / etc.
-// IF_ID_HOLD: assume property (@(posedge clk_i)
-//   (core_i.instr_valid_id && !id_accept) |=>
-//     ($past(core_i.instr_valid_id) == core_i.instr_valid_id) &&
-//     ($past(core_i.pc_id)          == core_i.pc_id)          &&
-//     ($past(core_i.instr_rdata_id) == core_i.instr_rdata_id)
-// );
+wire [31:0] pc_id = core_i.if_stage_i.pc_id_o; wire id_valid = core_i.id_stage_i.instr_executing; wire id_fsm = core_i.id_stage_i.id_fsm_q; // 0 = FIRST_CYCLE, 1 = MULTI_CYCLE
 
-// =============================================================================
-// Optional: Retirement / completion (multi-cycle safe versions)
-// =============================================================================
+wire [31:0] wb_pc    = core_i.wb_stage_i.g_writeback_stage.wb_pc_q; // If JG complains about the generate block path, fall back to the output port for PC
+wire        wb_valid = core_i.wb_stage_i.g_writeback_stage.wb_valid_q;
 
-// With WritebackStage=0, retirement happens effectively at ID/EX boundary,
-// and pc_id should correspond to the retiring instruction (IF/ID is stalled until done).
-wire instn_retire = core_i.wb_stage_i.perf_instr_ret_wb_o && (core_i.pc_id == pc0);
-
-// EVENTUAL_RETIRE: assume property (@(posedge clk_i)
-//  instn_begun |-> s_eventually(instn_retire)
-//);
-
-//
-// =========================================================================
-// Owner latch
-// =========================================================================
-logic [31:0] md_owner_pc;
-logic        md_owner_v;
 logic [31:0] lsu_owner_pc;
 logic        lsu_owner_v;
+wire [2:0]   ls_fsm = core_i.load_store_unit_i.ls_fsm_cs;
 
-// =============================================================================
-// MULDIV owner-PC latch (multi-cycle safe, verification-only)
-// =============================================================================
+wire lsu_start = core_i.load_store_unit_i.lsu_req_i && 
+                 (ls_fsm == 3'd0) && !lsu_owner_v;  // IDLE == 0
+wire lsu_end   = lsu_owner_v && core_i.lsu_resp_valid;
 
-// ---- MULDIV signals (hierarchical paths; adjust if your instance names differ)
-wire md_ready = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.multdiv_ready_id_i;
-wire md_valid = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.valid_o;
-
-// Divider state (MD_IDLE is 3'd0)
-wire [2:0] div_state =
-  core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q;
-
-// Fast multiplier FSM state (ALBL is 2'd0) — this exists under gen_mult_fast
-wire [1:0] mult_state =
-  core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q;
-
-// Enables (ports, stable)
-wire mult_en = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i;
-wire div_en  = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i;
-
-// “Start/accept” events: enable asserted, ID is ready to progress, and FSM at start state
-wire mult_start = mult_en && md_ready && (mult_state == 2'd0); // ALBL
-wire div_start  = div_en  && md_ready && (div_state  == 3'd0); // MD_IDLE
-
-
-
-always_ff @(posedge clk_i or negedge rst_ni) begin
-  if (!rst_ni) begin
-    md_owner_pc <= '0;
-    md_owner_v  <= 1'b0;
-  end else begin
-    // Capture owner PC when an operation is accepted
-    if (mult_start || div_start) begin
-      md_owner_pc <= pc_id;
-      md_owner_v  <= 1'b1;
-    end
-
-    // Clear owner when result handshakes back (valid held until ready)
-    if (md_owner_v && md_valid && md_ready) begin
-      md_owner_v <= 1'b0;
-    end
-  end
-end
-
-// Convenience predicate: "MULDIV activity belongs to the IUV at pc0"
-wire md_is_owner_pc0 = md_owner_v && (md_owner_pc == pc0);
-
-// =============================================================================
-// LSU owner-PC latch (precise, derived from ibex_load_store_unit semantics)
-// =============================================================================
-
-
-// LSU FSM state and request from ID/EX into LSU
-wire [2:0] lsu_state = core_i.load_store_unit_i.ls_fsm_cs;
-wire       lsu_req   = core_i.load_store_unit_i.lsu_req_i;
-
-// LSU response-valid (exact transaction completion point)
-wire       lsu_resp_valid = core_i.load_store_unit_i.lsu_resp_valid_o;
-
-// Start: first cycle a request is presented while LSU is idle.
-// (Matches design intent: IDLE + lsu_req_i kicks off request.)
-wire lsu_start = lsu_req && (lsu_state == 3'd0) && !lsu_owner_v;
-
-// Done: LSU reports response valid (covers normal rvalid and PMP error path).
-wire lsu_done  = lsu_owner_v && lsu_resp_valid;
-
-// Latch owner PC
 always_ff @(posedge clk_i or negedge rst_ni) begin
   if (!rst_ni) begin
     lsu_owner_pc <= '0;
     lsu_owner_v  <= 1'b0;
   end else begin
-    // If a transaction completes and a new one starts same cycle, we want to capture the new one.
-    if (lsu_done) begin
-      lsu_owner_v <= 1'b0;
-    end
+    if (lsu_end) lsu_owner_v <= 1'b0;
     if (lsu_start) begin
       lsu_owner_pc <= pc_id;
       lsu_owner_v  <= 1'b1;
@@ -217,4 +113,57 @@ always_ff @(posedge clk_i or negedge rst_ni) begin
   end
 end
 
-wire lsu_is_owner_pc0 = lsu_owner_v && (lsu_owner_pc == pc0);
+logic [31:0] mul_owner_pc;
+logic        mul_owner_v;
+
+logic [31:0] div_owner_pc;
+logic        div_owner_v;
+
+// shared signals
+wire valid = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.valid_o;
+
+wire [2:0] div_state =
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q;
+
+wire [1:0] mult_state =
+core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q;
+
+wire mult_en = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i;
+wire div_en = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i;
+
+// start events (your current definition)
+// wire mult_start = mult_en && (mult_state == 2'd0); // ALBL
+wire mult_start = mult_en && (mult_state == 2'd0) && !mul_owner_v;
+//wire div_start = div_en && (div_state == 3'd0); // MD_IDLE
+wire div_start = div_en && (div_state == 3'd0) && !div_owner_v;
+
+// done events (recommended: gate done by which op is "owned")
+wire mul_done = mul_owner_v && valid;
+wire div_done = div_owner_v && valid;
+
+always_ff @(posedge clk_i or negedge rst_ni) begin
+  if (!rst_ni) begin
+    mul_owner_pc <= '0;
+    mul_owner_v  <= 1'b0;
+    div_owner_pc <= '0;
+    div_owner_v  <= 1'b0;
+  end else begin
+
+    // clear first (finish)
+    if (mul_done) mul_owner_v <= 1'b0;
+    if (div_done) div_owner_v <= 1'b0;
+
+    // capture new owner
+    if (mult_start && !div_start) begin
+      mul_owner_pc <= pc_id;
+      mul_owner_v  <= 1'b1;
+    end
+
+    if (div_start && !mult_start) begin
+      div_owner_pc <= pc_id;
+      div_owner_v  <= 1'b1;
+    end
+
+  end
+end 
+

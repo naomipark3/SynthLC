@@ -164,7 +164,7 @@ module ibex_fv import ibex_pkg::*; (
     .RV32M             (RV32MFast),
     .RV32B             (RV32BNone),
     .BranchTargetALU   (1'b0),
-    .WritebackStage    (1'b0),
+    .WritebackStage    (1'b1),
     .ICache            (1'b0),
     .ICacheECC         (1'b0),
     .DbgTriggerEn      (1'b0),
