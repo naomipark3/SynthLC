@@ -19,23 +19,7 @@ h_ = ""
 with open(HEADERFILE, "r") as f:
     for line in f:
         h_ += line
-isomorphic_sets = [
-set(["lsq_enq_0_s1", "lsq_enq_1_s1"]), 
-set(["scb_0_s12", "scb_1_s12", "scb_2_s12", "scb_3_s12"]), 
-set(["scb_0_s13", "scb_1_s13", "scb_2_s13", "scb_3_s13"]),
-set(["scb_0_s14", "scb_1_s14", "scb_2_s14", "scb_3_s14"]), 
-set(["scb_0_s8", "scb_1_s8", "scb_2_s8", "scb_3_s8"]),
-set(["stb_com_0_s1", "stb_com_1_s1"]),
-set(["stb_spec_0_s1", "stb_spec_1_s1"]),
-########## finals ######
-set(["lsq_enq_0_s1___final", "lsq_enq_1_s1___final"]), 
-set(["scb_0_s12___final", "scb_1_s12___final", "scb_2_s12___final", "scb_3_s12___final"]), 
-set(["scb_0_s13___final", "scb_1_s13___final", "scb_2_s13___final", "scb_3_s13___final"]),
-set(["scb_0_s14___final", "scb_1_s14___final", "scb_2_s14___final", "scb_3_s14___final"]), 
-set(["scb_0_s8___final", "scb_1_s8___final", "scb_2_s8___final", "scb_3_s8___final"]),
-set(["stb_com_0_s1___final", "stb_com_1_s1___final"]),
-set(["stb_spec_0_s1___final", "stb_spec_1_s1___final"]),
-]
+isomorphic_sets = []
 pl_to_iso_set = {}
 # check if one is in cv_perflocs then every other should be
 #iterables = []
@@ -128,17 +112,7 @@ for k, v in pl_signals.items():
 #its possible to have two happen concurrently if not we should see if per PL set \
 #is always one way or the other")
 
-list_rows = [
-    "id_ctrl_s1",
-    "id_ctrl_s2",
-    "id_ctrl_s3",
-    "id_ctrl_s4",
-    "id_ctrl_s5",
-    "id_ctrl_s6",
-    "id_fsm_s1",
-    "id_fsm_s2",
-    "id_fsm_s3",
-]
+list_rows = cv_perflocs
 
 enter_concurrent_pairs = get_array("../xHBPerfG_dfg_v3_div/aws_concurrent.txt", exit_on_fail=False)
 # print(type(enter_concurrent_pairs[0]))

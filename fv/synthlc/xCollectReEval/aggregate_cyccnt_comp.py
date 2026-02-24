@@ -52,17 +52,7 @@ for k, v in pl_signals.items():
 #its possible to have two happen concurrently if not we should see if per PL set \
 #is always one way or the other")
 
-list_rows = [
-    "id_ctrl_s1",
-    "id_ctrl_s2",
-    "id_ctrl_s3",
-    "id_ctrl_s4",
-    "id_ctrl_s5",
-    "id_ctrl_s6",
-    "id_fsm_s1",
-    "id_fsm_s2",
-    "id_fsm_s3",
-]
+list_rows = cv_perflocs
 
 enter_concurrent_pairs = get_array("../xHBPerfG_dfg_v3_div/aws_concurrent.txt", exit_on_fail=False)
 whb_edge = get_array("../xHBPerfG_dfg_v3_div/whb_proven.txt", exit_on_fail=False)

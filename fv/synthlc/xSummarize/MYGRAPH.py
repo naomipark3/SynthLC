@@ -14,17 +14,8 @@ from HB_template import *
 from DOT_template import *
 from solver import *
 
-list_rows = [
-    "id_ctrl_s1",
-    "id_ctrl_s2",
-    "id_ctrl_s3",
-    "id_ctrl_s4",
-    "id_ctrl_s5",
-    "id_ctrl_s6",
-    "id_fsm_s1",
-    "id_fsm_s2",
-    "id_fsm_s3",
-]
+cv_perflocs = get_array("../xCoverAPerflocDiv/cover_individual.txt")
+list_rows = cv_perflocs
 def MYGRAPHING(
     dotfilenm,
     hb_edge, 
