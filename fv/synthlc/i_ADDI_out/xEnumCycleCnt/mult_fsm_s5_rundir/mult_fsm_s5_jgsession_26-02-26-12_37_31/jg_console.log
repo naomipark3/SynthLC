@@ -1,0 +1,269 @@
+2026-02-26 12:37:31.266275 (4106329) main____ INFO    ----------------------------------------
+2026-02-26 12:37:31.266382 (4106329) main____ INFO    Jasper version info
+2026-02-26 12:37:31.266399 (4106329) main____ INFO      tool      : Jasper 2023.12
+2026-02-26 12:37:31.266414 (4106329) main____ INFO      version   : 2023.12p001 64 bits
+2026-02-26 12:37:31.266426 (4106329) main____ INFO      build date: 2024.01.23 16:09:24 UTC
+2026-02-26 12:37:31.266436 (4106329) main____ INFO    ----------------------------------------
+2026-02-26 12:37:31.266445 (4106329) main____ INFO    Runtime info:
+2026-02-26 12:37:31.266455 (4106329) main____ INFO      platform  : Linux 4.18.0-553.89.1.el8_10.x86_64 x86_64
+2026-02-26 12:37:31.266474 (4106329) main____ INFO      hostname  : caddy15.stanford.edu
+2026-02-26 12:37:31.266490 (4106329) main____ INFO      pid       : 4106329
+2026-02-26 12:37:31.266502 (4106329) main____ INFO      arguments : '-style' 'windows' '-allow_unsupported_OS' '-no_gui' '-fpv' './synthlc/i_ADDI_out/xEnumCycleCnt/mult_fsm_s5_.tcl' '-proj' './synthlc/i_ADDI_out/xEnumCycleCnt/mult_fsm_s5_jgsession_26-02-26-12_37_31'
+2026-02-26 12:37:31.266518 (4106329) main____ INFO      locale    : UTF-8
+2026-02-26 12:37:31.266528 (4106329) main____ INFO    ----------------------------------------
+2026-02-26 12:37:31.266537 (4106329) main____ INFO    System resource limits info:
+2026-02-26 12:37:31.266550 (4106329) main____ INFO      virtual memory: unlimited
+2026-02-26 12:37:31.266561 (4106329) main____ INFO      cpu time      : unlimited
+2026-02-26 12:37:31.266580 (4106329) main____ INFO      processes     : 4096
+2026-02-26 12:37:31.266604 (4106329) main____ INFO      stack size    : 8388608 B
+2026-02-26 12:37:31.266618 (4106329) main____ INFO      core file size: 0 B
+2026-02-26 12:37:31.266631 (4106329) main____ INFO      open files    : 4096
+2026-02-26 12:37:31.266643 (4106329) main____ INFO      file size     : unlimited
+2026-02-26 12:37:31.266652 (4106329) main____ INFO    ----------------------------------------
+2026-02-26 12:37:31.266661 (4106329) main____ INFO    Memory statistics:
+2026-02-26 12:37:31.266673 (4106329) main____ INFO      total physical memory  : 98449092 kB
+2026-02-26 12:37:31.266684 (4106329) main____ INFO      free physical memory   : 73164564 kB
+2026-02-26 12:37:31.266695 (4106329) main____ INFO      committed address space: 9178024 kB
+2026-02-26 12:37:31.266704 (4106329) main____ INFO    ----------------------------------------
+2026-02-26 12:37:31.267876 (4106329) main____ INFO    Important environment variables:
+2026-02-26 12:37:31.267903 (4106329) main____ INFO      CDS_LIC_FILE       : '5280@cadlic0'
+2026-02-26 12:37:31.267915 (4106329) main____ INFO      JASPER_INSTALL_DIR : '/cad/cadence/jasper_2023.12p001'
+2026-02-26 12:37:31.267927 (4106329) main____ INFO      JASPER_KERNEL_CHECK: '1'
+2026-02-26 12:37:31.267939 (4106329) main____ INFO      JASPER_OS_CHECK    : '0'
+2026-02-26 12:37:31.267951 (4106329) main____ INFO      LANG               : 'en_US.UTF-8'
+2026-02-26 12:37:31.267960 (4106329) main____ INFO    ----------------------------------------
+2026-02-26 12:37:31.269069 (4106329) lic_core INFO    Initializing license system ...
+2026-02-26 12:37:31.272289 (4106329) lic_core INFO    ... license system initialized.
+2026-02-26 12:37:31.285817 (4106329) lic__man INFO    Claim 'main' for <ui>.
+2026-02-26 12:37:31.285903 (4106329) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2026-02-26 12:37:31.301251 (4106329) lic_core INFO    ... (1) checkout succeeded
+2026-02-26 12:37:31.301373 (4106329) lic__man INFO    Claim 'fpv' for <ui>.
+2026-02-26 12:37:31.301402 (4106329) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2026-02-26 12:37:31.305702 (4106329) lic_core INFO    ... (2) checkout failed (error: -5) ("FLEXnet ERROR(-5, 0, 0): No such feature exists.")
+2026-02-26 12:37:31.305748 (4106329) lic_core INFO    (3) checking out 'jasper_fao' ...
+2026-02-26 12:37:31.316643 (4106329) lic_core INFO    ... (3) checkout succeeded
+2026-02-26 12:37:31.321786 (4106340) stdio___ INFO    Starting STDIN reader (tty: yes, tty name: '/dev/pts/0')
+2026-02-26 12:37:31.321956 (4106329) main____ INFO    Tool inactivity delay is 480000 ms.
+2026-02-26 12:37:31.364906 (4106329) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2026-02-26 12:37:31.367086 (4106329) session_ INFO    Analysis session with session id 'session_0' started (pid: 4106341)
+2026-02-26 12:37:32.626934 (4106329) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:45208)
+2026-02-26 12:37:36.032127 (4106329) lic__man INFO    Unclaim everything for 'session_0'.
+2026-02-26 12:37:36.286125 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:36.286170 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-0'.
+2026-02-26 12:37:37.258878 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2026-02-26 12:37:37.259462 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:37.259492 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-1'.
+2026-02-26 12:37:38.199723 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-1'.
+2026-02-26 12:37:38.205138 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:38.205170 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-2'.
+2026-02-26 12:37:39.213866 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-2'.
+2026-02-26 12:37:39.222743 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:39.222779 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-3'.
+2026-02-26 12:37:40.205623 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-3'.
+2026-02-26 12:37:40.206087 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:40.206111 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-4'.
+2026-02-26 12:37:41.422579 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-4'.
+2026-02-26 12:37:41.433667 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:41.433708 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-5'.
+2026-02-26 12:37:42.988562 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-5'.
+2026-02-26 12:37:42.997481 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:42.997526 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-6'.
+2026-02-26 12:37:45.266254 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-6'.
+2026-02-26 12:37:45.277094 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:45.277129 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-7'.
+2026-02-26 12:37:47.052504 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-7'.
+2026-02-26 12:37:47.064433 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:47.064477 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-8'.
+2026-02-26 12:37:49.385352 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-8'.
+2026-02-26 12:37:49.396371 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:49.396407 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-9'.
+2026-02-26 12:37:51.578658 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-9'.
+2026-02-26 12:37:51.588090 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:51.588133 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-10'.
+2026-02-26 12:37:54.421143 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-10'.
+2026-02-26 12:37:54.427538 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:54.427582 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-11'.
+2026-02-26 12:37:57.285232 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-11'.
+2026-02-26 12:37:57.295706 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:37:57.295758 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-12'.
+2026-02-26 12:38:00.108351 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-12'.
+2026-02-26 12:38:00.120055 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:00.120095 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-13'.
+2026-02-26 12:38:04.191470 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-13'.
+2026-02-26 12:38:04.205535 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:04.205572 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-14'.
+2026-02-26 12:38:08.183773 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-14'.
+2026-02-26 12:38:08.197126 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:08.197163 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-15'.
+2026-02-26 12:38:11.550671 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-15'.
+2026-02-26 12:38:11.561546 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:11.561589 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-16'.
+2026-02-26 12:38:15.070560 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-16'.
+2026-02-26 12:38:15.085173 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:15.085209 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-17'.
+2026-02-26 12:38:20.249293 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-17'.
+2026-02-26 12:38:20.264922 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:20.264970 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-18'.
+2026-02-26 12:38:25.091681 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-18'.
+2026-02-26 12:38:25.103560 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:25.103615 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-19'.
+2026-02-26 12:38:30.358159 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-19'.
+2026-02-26 12:38:30.374097 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:30.374130 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-20'.
+2026-02-26 12:38:36.105742 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-20'.
+2026-02-26 12:38:36.122796 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:36.122839 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-21'.
+2026-02-26 12:38:42.132619 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-21'.
+2026-02-26 12:38:42.133163 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:42.133187 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-22'.
+2026-02-26 12:38:48.138316 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-22'.
+2026-02-26 12:38:48.154268 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:48.154322 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-23'.
+2026-02-26 12:38:53.085568 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-23'.
+2026-02-26 12:38:53.103399 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:53.103451 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-24'.
+2026-02-26 12:38:59.745916 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-24'.
+2026-02-26 12:38:59.760299 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:38:59.760358 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-25'.
+2026-02-26 12:39:05.931716 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-25'.
+2026-02-26 12:39:05.946872 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:39:05.946919 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-26'.
+2026-02-26 12:39:14.665722 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-26'.
+2026-02-26 12:39:14.693321 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:39:14.693365 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-27'.
+2026-02-26 12:39:21.140514 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-27'.
+2026-02-26 12:39:21.154710 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:39:21.154754 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-28'.
+2026-02-26 12:39:27.997403 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-28'.
+2026-02-26 12:39:28.013265 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:39:28.013320 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-29'.
+2026-02-26 12:39:33.810027 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-29'.
+2026-02-26 12:39:33.829246 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:39:33.829285 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-30'.
+2026-02-26 12:39:41.102091 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-30'.
+2026-02-26 12:39:41.118512 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:39:41.118551 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-31'.
+2026-02-26 12:39:49.874871 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-31'.
+2026-02-26 12:39:49.895250 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:39:49.895293 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-32'.
+2026-02-26 12:39:56.559629 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-32'.
+2026-02-26 12:39:56.579730 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:39:56.579771 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-33'.
+2026-02-26 12:40:03.543186 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-33'.
+2026-02-26 12:40:03.562894 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:40:03.562928 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-34'.
+2026-02-26 12:40:11.733041 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-34'.
+2026-02-26 12:40:11.750729 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:40:11.750763 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-35'.
+2026-02-26 12:40:19.899560 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-35'.
+2026-02-26 12:40:19.977764 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:40:19.977799 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-36'.
+2026-02-26 12:40:30.525940 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-36'.
+2026-02-26 12:40:30.546636 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:40:30.546676 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-37'.
+2026-02-26 12:40:41.706631 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-37'.
+2026-02-26 12:40:41.730832 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:40:41.730880 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-38'.
+2026-02-26 12:40:50.772569 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-38'.
+2026-02-26 12:40:50.792263 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:40:50.792319 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-39'.
+2026-02-26 12:41:00.560213 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-39'.
+2026-02-26 12:41:00.582694 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:41:00.582737 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-40'.
+2026-02-26 12:41:07.210756 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-40'.
+2026-02-26 12:41:07.230190 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:41:07.230233 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-41'.
+2026-02-26 12:41:20.445043 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-41'.
+2026-02-26 12:41:20.468936 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:41:20.468984 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-42'.
+2026-02-26 12:41:37.330626 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-42'.
+2026-02-26 12:41:37.343510 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:41:37.343553 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-43'.
+2026-02-26 12:41:44.126555 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-43'.
+2026-02-26 12:41:44.131973 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:41:44.132012 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-44'.
+2026-02-26 12:41:58.293777 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-44'.
+2026-02-26 12:41:58.331760 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:41:58.331793 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-45'.
+2026-02-26 12:42:08.853149 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-45'.
+2026-02-26 12:42:08.876792 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:42:08.876832 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-46'.
+2026-02-26 12:42:26.173410 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-46'.
+2026-02-26 12:42:26.187437 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:42:26.187486 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-47'.
+2026-02-26 12:42:35.148643 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-47'.
+2026-02-26 12:42:35.173474 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:42:35.173515 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-48'.
+2026-02-26 12:42:51.866770 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-48'.
+2026-02-26 12:42:51.887993 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:42:51.888029 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-49'.
+2026-02-26 12:43:02.120600 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-49'.
+2026-02-26 12:43:02.121119 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:43:02.121143 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-50'.
+2026-02-26 12:43:21.286501 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-50'.
+2026-02-26 12:43:21.308810 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:43:21.308850 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-51'.
+2026-02-26 12:43:29.135629 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-51'.
+2026-02-26 12:43:29.136136 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:43:29.136159 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-52'.
+2026-02-26 12:43:49.714200 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-52'.
+2026-02-26 12:43:49.738168 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:43:49.738214 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-53'.
+2026-02-26 12:44:06.574662 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-53'.
+2026-02-26 12:44:06.600668 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:44:06.600709 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-54'.
+2026-02-26 12:44:23.462112 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-54'.
+2026-02-26 12:44:23.488768 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:44:23.488807 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-55'.
+2026-02-26 12:44:32.612563 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-55'.
+2026-02-26 12:44:32.640102 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:44:32.640144 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-56'.
+2026-02-26 12:44:49.658984 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-56'.
+2026-02-26 12:44:49.686557 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:44:49.686599 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-57'.
+2026-02-26 12:45:12.877960 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-57'.
+2026-02-26 12:45:12.904220 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:45:12.904260 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-58'.
+2026-02-26 12:45:22.251229 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-58'.
+2026-02-26 12:45:22.278612 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:45:22.278653 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-59'.
+2026-02-26 12:45:31.349559 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-59'.
+2026-02-26 12:45:31.350054 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:45:31.350078 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-60'.
+2026-02-26 12:45:53.210529 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-60'.
+2026-02-26 12:45:53.234142 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:45:53.234189 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-61'.
+2026-02-26 12:46:19.256055 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-61'.
+2026-02-26 12:46:19.284698 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:46:19.284737 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-62'.
+2026-02-26 12:47:05.211599 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-62'.
+2026-02-26 12:47:05.242190 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:47:05.242231 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-63'.
+2026-02-26 12:47:34.315132 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-63'.
+2026-02-26 12:47:34.344421 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:47:34.344460 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-64'.
+2026-02-26 12:48:03.235231 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-64'.
+2026-02-26 12:48:03.264547 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:48:03.264590 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-65'.
+2026-02-26 12:48:31.151170 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-65'.
+2026-02-26 12:48:31.207745 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:48:31.207796 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-66'.
+2026-02-26 12:48:59.590434 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-66'.
+2026-02-26 12:48:59.620000 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:48:59.620047 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-67'.
+2026-02-26 12:49:34.246108 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-67'.
+2026-02-26 12:49:34.276824 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:49:34.276871 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-68'.
+2026-02-26 12:50:09.231528 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-68'.
+2026-02-26 12:50:09.263226 (4106329) lic__man INFO    Claim 'fpv' for 'session_0'.
+2026-02-26 12:50:09.263265 (4106329) lic__man INFO    Claim 'fpv' for 'session_0/prove-69'.
+2026-02-26 12:50:19.670997 (4106329) lic__man INFO    Unclaim everything for 'session_0/prove-69'.
+2026-02-26 12:50:19.722489 (4106329) main____ INFO    About to exit: request to exit with status 0 received from analysis session 'session_0'
+2026-02-26 12:50:19.873567 (4106329) session_ INFO    Analysis session 'session_0' disconnected.
+2026-02-26 12:50:19.873736 (4106329) lic__man INFO    Unclaim everything for 'session_0'.
+2026-02-26 12:50:19.874839 (4106329) session_ INFO    Process for analysis session 'session_0' has exited with exit status '0'.
+2026-02-26 12:50:21.834479 (4106340) stdio___ INFO    STDIN reader requested to stop.
+2026-02-26 12:50:21.834532 (4106340) stdio___ INFO    STDIN reader stopped.
+2026-02-26 12:50:21.834858 (4106329) lic_core INFO    (1) checkin jasper_interactive
+2026-02-26 12:50:21.836463 (4106329) lic_core INFO    (3) checkin jasper_fao
+2026-02-26 12:50:21.843207 (4106329) main____ INFO    Exiting with status 0.
