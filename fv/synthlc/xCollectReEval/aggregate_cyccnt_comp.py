@@ -245,6 +245,12 @@ def gen():
                 assert(e_prime[0] == e[1])
                 DG.add_edge(e[0], e_prime[1])
 
+        if not nx.is_directed_acyclic_graph(DG):
+            print("set idx %d: cycle detected, skipping" % set_idx)
+            with open("%d_edge_todo_per_set.txt" % set_idx, "w") as f:
+                pass
+            continue
+
         TR = nx.transitive_reduction(DG) #, reflexive=False)
         TC = nx.transitive_closure(DG, reflexive=False)
         reduce_e = list(TR.edges)
