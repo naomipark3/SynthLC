@@ -53,15 +53,11 @@ for k, v in pl_signals.items():
 #is always one way or the other")
 
 list_rows = [
-    "id_ctrl_s1",
-    "id_ctrl_s2",
-    "id_ctrl_s3",
-    "id_ctrl_s4",
-    "id_ctrl_s5",
-    "id_ctrl_s6",
-    "id_fsm_s1",
-    "id_fsm_s2",
-    "id_fsm_s3",
+    "id_stage_s1",
+    "mult_fsm_s1", "mult_fsm_s2","mult_fsm_s3","mult_fsm_s4","mult_fsm_s5","mult_fsm_s6","mult_fsm_s7",
+    "div_sm_s1","div_sm_s2","div_sm_s3","div_sm_s4","div_sm_s5","div_sm_s6","div_sm_s7","div_sm_s8","div_sm_s9","div_sm_s10","div_sm_s11","div_sm_s12","div_sm_s13","div_sm_s14",
+    "lsu_fsm_s1","lsu_fsm_s2","lsu_fsm_s3","lsu_fsm_s4","lsu_fsm_s5","lsu_fsm_s6","lsu_fsm_s7","lsu_fsm_s8","lsu_fsm_s9","lsu_fsm_s10",
+    "wb_stage_s1",
 ]
 
 enter_concurrent_pairs = get_array("../xHBPerfG_dfg_v3_div/aws_concurrent.txt", exit_on_fail=False)

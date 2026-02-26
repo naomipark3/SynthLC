@@ -122,15 +122,6 @@ lsu_owner_v,div_state
 ls_fsm,div_owner_pc
 ls_fsm,div_owner_v
 ls_fsm,div_state
-lsu_owner_pc,lsu_owner_pc
-lsu_owner_pc,lsu_owner_v
-lsu_owner_pc,ls_fsm
-lsu_owner_v,lsu_owner_pc
-lsu_owner_v,lsu_owner_v
-lsu_owner_v,ls_fsm
-ls_fsm,lsu_owner_pc
-ls_fsm,lsu_owner_v
-ls_fsm,ls_fsm
 lsu_owner_pc,core_i.cs_registers_i.pc_wb_i
 lsu_owner_pc,core_i.wb_stage_i.g_writeback_stage.wb_valid_q
 lsu_owner_v,core_i.cs_registers_i.pc_wb_i

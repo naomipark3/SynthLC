@@ -20,6 +20,7 @@ else
     fnm="$1"
 fi
 
+
 # This folder name
 SYNTHLCFOLD=$(basename $(pwd))
 
@@ -29,6 +30,8 @@ fileprefix="${filename%.*}"
 
 INAME="i_${fileprefix}_out" 
 echo "${fnm}"
+
+# cd "$INAME"
 
 if [ -d "$INAME" ]; then 
     echo "Directory exists $INAME. Remove [y/n]"
