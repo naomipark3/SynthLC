@@ -2,7 +2,7 @@
 # Setup script for Ibex formal verification
 # Run from: ~/SynthLC/fv
 
-IBEXDIR=$(realpath ~/ibex)
+IBEXDIR=$(realpath /home/users/cheriek/Documents/Formal_Method/final_project/ibex)
 echo "====================== [SETUP_FILES - IBEX]  ========================="
 echo "IBEXDIR: $IBEXDIR"
 
