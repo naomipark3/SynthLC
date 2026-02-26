@@ -1,0 +1,32 @@
++define+FVT
++incdir+/home/users/ngpark/ibex/rtl
++incdir+/home/users/ngpark/ibex/vendor/lowrisc_ip/ip/prim/rtl
++incdir+/home/users/ngpark/ibex/vendor/lowrisc_ip/dv/sv/dv_utils
+// Package first
+/home/users/ngpark/ibex/rtl/ibex_pkg.sv
+/home/users/ngpark/ibex/rtl/ibex_tracer_pkg.sv
+// Core RTL files
+/home/users/ngpark/ibex/rtl/ibex_alu.sv
+/home/users/ngpark/ibex/rtl/ibex_compressed_decoder.sv
+/home/users/ngpark/ibex/rtl/ibex_controller.sv
+/home/users/ngpark/ibex/rtl/ibex_counter.sv
+/home/users/ngpark/ibex/rtl/ibex_cs_registers.sv
+/home/users/ngpark/ibex/rtl/ibex_csr.sv
+/home/users/ngpark/ibex/rtl/ibex_decoder.sv
+/home/users/ngpark/ibex/rtl/ibex_ex_block.sv
+/home/users/ngpark/ibex/rtl/ibex_id_stage.sv
+/home/users/ngpark/ibex/rtl/ibex_if_stage.sv
+/home/users/ngpark/ibex/rtl/ibex_load_store_unit.sv
+/home/users/ngpark/ibex/rtl/ibex_multdiv_fast.sv
+/home/users/ngpark/ibex/rtl/ibex_multdiv_slow.sv
+./synthlc/i_DIV_out/xPerfLocCycleCount/over1cyc_14_div_fsm_s6_top.sv
+/home/users/ngpark/ibex/rtl/ibex_prefetch_buffer.sv
+/home/users/ngpark/ibex/rtl/ibex_fetch_fifo.sv
+/home/users/ngpark/ibex/rtl/ibex_register_file_ff.sv
+/home/users/ngpark/ibex/rtl/ibex_pmp.sv
+/home/users/ngpark/ibex/rtl/ibex_wb_stage.sv
+/home/users/ngpark/ibex/rtl/ibex_dummy_instr.sv
+/home/users/ngpark/ibex/rtl/ibex_branch_predict.sv
+/home/users/ngpark/ibex/rtl/ibex_core.sv
+// Prim dependencies (assertions, mubi)
+/home/users/ngpark/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv
