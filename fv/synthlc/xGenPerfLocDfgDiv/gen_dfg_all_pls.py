@@ -60,6 +60,7 @@ def pp():
         for line in f:
             tokens = line[:-1].split(" ")
             u, v = tokens[1], tokens[2]
+            print("checking edge:", [u, v])
             assert([u, v] in df_edges_candidates)
             edges_exists.append((u, v))
             

@@ -198,6 +198,18 @@ ISSUE_ONCE: assume property (@(posedge clk_i)
 );
 
 // =============================================================================
+// [8b] Mult/div FSMs idle before IUV issue
+//
+// Prevents pre-existing mult/div activity from being attributed to the IUV.
+// Only active before instn_begun; once IUV is issued, FSMs are unconstrained.
+// =============================================================================
+IDLE_MULTDIV_PRE_IUV: assume property (@(posedge clk_i)
+  !instn_begun |->
+    (core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd0) &&
+    (mult_state == 2'd0)
+);
+
+// =============================================================================
 // [9] Liveness: IUV is eventually issued
 // =============================================================================
 reg first;
