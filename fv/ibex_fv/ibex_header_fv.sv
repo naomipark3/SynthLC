@@ -198,18 +198,6 @@ ISSUE_ONCE: assume property (@(posedge clk_i)
 );
 
 // =============================================================================
-// [8b] Mult/div FSMs idle before IUV issue
-//
-// Prevents pre-existing mult/div activity from being attributed to the IUV.
-// Only active before instn_begun; once IUV is issued, FSMs are unconstrained.
-// =============================================================================
-IDLE_MULTDIV_PRE_IUV: assume property (@(posedge clk_i)
-  !instn_begun |->
-    (core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd0) &&
-    (mult_state == 2'd0)
-);
-
-// =============================================================================
 // [9] Liveness: IUV is eventually issued
 // =============================================================================
 reg first;
@@ -246,6 +234,24 @@ wire        id_fsm   = core_i.id_stage_i.id_fsm_q; // 0=FIRST_CYCLE 1=MULTI_CYCL
 
 wire [31:0] wb_pc    = core_i.wb_stage_i.g_writeback_stage.wb_pc_q;
 wire        wb_valid = core_i.wb_stage_i.g_writeback_stage.wb_valid_q;
+
+
+// [11B] track when the IUV reaches WB with instn_retired signal and add additional
+// constraint to prevent mult/div from starting at all while the IUV is in-flight
+// for ADDI, BEQ, and LW
+logic instn_retired;
+wire  instn_retire = instn_begun && wb_valid && (wb_pc == pc0);
+
+always_ff @(posedge clk_i or negedge rst_ni) begin
+  if (!rst_ni)          instn_retired <= 1'b0;
+  else if (instn_retire) instn_retired <= 1'b1;
+end
+
+NOMULTDIV_DURING_IUV: assume property (@(posedge clk_i)
+  (instn_begun && !instn_retired) |->
+    (core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd0) &&
+    (mult_state == 2'd0)
+);
 
 // =============================================================================
 // [12] µFSM owner tracking: LSU
