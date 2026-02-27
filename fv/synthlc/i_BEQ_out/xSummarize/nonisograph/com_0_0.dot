@@ -1,0 +1,21 @@
+
+digraph G {
+    edge [penwidth=2];
+    node [ shape=box, fontsize=20, penwidth=2, fontname="roboto"];
+    esep=0.5;
+    layout=neato;
+    overlap=scale;
+    splines=true;
+
+l_id_stage_s1 [label="id_stage_s1"; pos="0,-0!"; shape=none];
+
+l_wb_stage_s1 [label="wb_stage_s1"; pos="0,-1!"; shape=none];
+
+n_id_stage_s1 [label=""; pos="2,-0!"; shape=circle ]; 
+
+
+n_wb_stage_s1 [label=""; pos="2,-1!"; shape=circle ]; 
+
+
+n_id_stage_s1 -> n_wb_stage_s1 [color="black"];
+}
