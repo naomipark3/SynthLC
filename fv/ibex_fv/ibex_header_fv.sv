@@ -317,3 +317,31 @@ always_ff @(posedge clk_i or negedge rst_ni) begin
     end
   end
 end
+
+// =============================================================================
+// [14] Cycle count tightening: ensure FSMs advance when active
+//
+// Without these, JasperGold can construct traces where div_en_i / mult_en_i
+// drop low while the FSM is mid-operation, causing the FSM to freeze
+// indefinitely in any state. These constraints model the real ID stage
+// behavior: once a mult/div operation starts, the enable stays asserted
+// until completion.
+// =============================================================================
+
+// Divider: when FSM is not idle, div_en_i must stay high
+DIV_EN_ACTIVE: assume property (@(posedge clk_i)
+  (core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q != 3'd0)
+  |-> core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i
+);
+
+// Multiplier: when FSM is not idle (ALBL), mult_en_i must stay high
+MULT_EN_ACTIVE: assume property (@(posedge clk_i)
+  (mult_state != 2'd0)
+  |-> core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i
+);
+
+// ID stage accepts mult/div result when valid
+MULTDIV_READY: assume property (@(posedge clk_i)
+  core_i.ex_block_i.gen_multdiv_fast.multdiv_i.valid_o
+  |-> core_i.ex_block_i.gen_multdiv_fast.multdiv_i.multdiv_ready_id_i
+);
