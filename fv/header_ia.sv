@@ -170,13 +170,8 @@ i0_const:   assume property (@(posedge clk_i) $stable(i0));
 // with core_i.pc_id if that resolves to a different path.
 // =============================================================================
 wire iuv_in_id = (core_i.instr_valid_id &&
-                  (core_i.if_stage_i.pc_id_o == pc0));
-
-pc0_i0_assoc: assume property (@(posedge clk_i)
-  iuv_in_id |->
-  (core_i.instr_rdata_id == i0 &&
-   core_i.instr_fetch_err == 1'b0)
-);
+                  (core_i.if_stage_i.pc_id_o == pc0) &&
+                  (core_i.id_stage_i.id_fsm_q == 1'b0));  // FIRST_CYCLE only
 
 // =============================================================================
 // [8] Issue-once bookkeeping
@@ -195,6 +190,22 @@ end
 
 ISSUE_ONCE: assume property (@(posedge clk_i)
   instn_begun |-> !iuv_in_id
+);
+
+// =============================================================================
+// [8b] Functional units idle before IUV issue
+//
+// Prevents pre-existing activity from being attributed to the IUV.
+// Only active before instn_begun; once IUV is issued, FSMs are unconstrained.
+// =============================================================================
+IDLE_MULTDIV_PRE_IUV: assume property (@(posedge clk_i)
+  !instn_begun |->
+    (core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd0) &&
+    (mult_state == 2'd0)
+);
+
+IDLE_LSU_PRE_IUV: assume property (@(posedge clk_i)
+  !instn_begun |-> (ls_fsm == 3'd0)
 );
 
 // =============================================================================
