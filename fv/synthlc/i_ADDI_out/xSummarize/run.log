@@ -1,0 +1,57 @@
+HB edge: [['id_stage_s1', 'mult_fsm_s5'], ['id_stage_s1', 'mult_fsm_s6'], ['id_stage_s1', 'div_fsm_s10'], ['id_stage_s1', 'div_fsm_s11'], ['id_stage_s1', 'div_fsm_s12'], ['id_stage_s1', 'div_fsm_s13'], ['id_stage_s1', 'div_fsm_s14'], ['id_stage_s1', 'div_fsm_s9'], ['id_stage_s1', 'lsu_fsm_s8'], ['id_stage_s1', 'wb_stage_s1'], ['mult_fsm_s5', 'mult_fsm_s6'], ['div_fsm_s10', 'div_fsm_s11'], ['div_fsm_s10', 'div_fsm_s12'], ['div_fsm_s10', 'div_fsm_s13'], ['div_fsm_s10', 'div_fsm_s14'], ['div_fsm_s11', 'div_fsm_s12'], ['div_fsm_s11', 'div_fsm_s13'], ['div_fsm_s11', 'div_fsm_s14'], ['div_fsm_s12', 'div_fsm_s13'], ['div_fsm_s12', 'div_fsm_s14'], ['div_fsm_s13', 'div_fsm_s14'], ['div_fsm_s9', 'div_fsm_s10'], ['div_fsm_s9', 'div_fsm_s11'], ['div_fsm_s9', 'div_fsm_s12'], ['div_fsm_s9', 'div_fsm_s13'], ['div_fsm_s9', 'div_fsm_s14'], ['lsu_fsm_s8', 'mult_fsm_s6'], ['lsu_fsm_s8', 'div_fsm_s10'], ['lsu_fsm_s8', 'div_fsm_s11'], ['lsu_fsm_s8', 'div_fsm_s12'], ['lsu_fsm_s8', 'div_fsm_s13'], ['wb_stage_s1', 'mult_fsm_s6'], ['wb_stage_s1', 'div_fsm_s10'], ['wb_stage_s1', 'div_fsm_s11'], ['wb_stage_s1', 'div_fsm_s12'], ['wb_stage_s1', 'div_fsm_s13']]
+leaving_hb_proven_res_pairs: []
+JJ
+===== SET idx: 0 ====
+!! setidx 0 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'wb_stage_s1')]
+===== SET idx: 1 ====
+!! setidx 1 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'wb_stage_s1'), ('id_stage_s1', 'lsu_fsm_s8')]
+===== SET idx: 2 ====
+!! setidx 2 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'div_fsm_s14'), ('id_stage_s1', 'wb_stage_s1')]
+===== SET idx: 3 ====
+!! setidx 3 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'div_fsm_s14'), ('id_stage_s1', 'lsu_fsm_s8'), ('id_stage_s1', 'wb_stage_s1')]
+===== SET idx: 4 ====
+!! setidx 4 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'wb_stage_s1'), ('id_stage_s1', 'div_fsm_s9'), ('div_fsm_s10', 'div_fsm_s11'), ('div_fsm_s11', 'div_fsm_s12'), ('div_fsm_s12', 'div_fsm_s13'), ('div_fsm_s13', 'div_fsm_s14'), ('div_fsm_s9', 'div_fsm_s10'), ('wb_stage_s1', 'div_fsm_s10'), ('div_fsm_s11___final', 'div_fsm_s12')]
+ADD EDGE TEST1 div_fsm_s11 div_fsm_s11___final
+ADD EDGE TEST1 wb_stage_s1 div_fsm_s14
+===== SET idx: 5 ====
+!! setidx 5 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'wb_stage_s1'), ('id_stage_s1', 'lsu_fsm_s8'), ('id_stage_s1', 'div_fsm_s9'), ('div_fsm_s10', 'div_fsm_s11'), ('div_fsm_s11', 'div_fsm_s12'), ('div_fsm_s12', 'div_fsm_s13'), ('div_fsm_s13', 'div_fsm_s14'), ('div_fsm_s9', 'div_fsm_s10'), ('lsu_fsm_s8', 'div_fsm_s10'), ('wb_stage_s1', 'div_fsm_s10'), ('div_fsm_s11___final', 'div_fsm_s12')]
+ADD EDGE TEST1 div_fsm_s11 div_fsm_s11___final
+ADD EDGE TEST1 lsu_fsm_s8 div_fsm_s14
+ADD EDGE TEST1 wb_stage_s1 div_fsm_s14
+===== SET idx: 6 ====
+!! setidx 6 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'wb_stage_s1'), ('id_stage_s1', 'mult_fsm_s5'), ('mult_fsm_s5', 'mult_fsm_s6'), ('wb_stage_s1', 'mult_fsm_s6')]
+===== SET idx: 7 ====
+!! setidx 7 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'wb_stage_s1'), ('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'lsu_fsm_s8'), ('mult_fsm_s5', 'mult_fsm_s6'), ('lsu_fsm_s8', 'mult_fsm_s6'), ('wb_stage_s1', 'mult_fsm_s6')]
+EXECNT 8
+[([('id_stage_s1', 'wb_stage_s1')], [])]
+[([('id_stage_s1', 'lsu_fsm_s8'), ('id_stage_s1', 'wb_stage_s1')], [('lsu_fsm_s8', 'wb_stage_s1')])]
+[([('id_stage_s1', 'div_fsm_s14'), ('id_stage_s1', 'wb_stage_s1')], [('div_fsm_s14', 'wb_stage_s1')])]
+[([('id_stage_s1', 'div_fsm_s14'), ('id_stage_s1', 'lsu_fsm_s8'), ('id_stage_s1', 'wb_stage_s1')], [('div_fsm_s14', 'lsu_fsm_s8'), ('div_fsm_s14', 'wb_stage_s1'), ('lsu_fsm_s8', 'wb_stage_s1')])]
+[([('div_fsm_s10', 'div_fsm_s11'), ('div_fsm_s11', 'div_fsm_s12'), ('div_fsm_s11___final', 'div_fsm_s12'), ('div_fsm_s12', 'div_fsm_s13'), ('div_fsm_s13', 'div_fsm_s14'), ('div_fsm_s9', 'div_fsm_s10'), ('id_stage_s1', 'div_fsm_s9'), ('id_stage_s1', 'wb_stage_s1'), ('wb_stage_s1', 'div_fsm_s10')], [('div_fsm_s9', 'wb_stage_s1')])]
+[([('div_fsm_s10', 'div_fsm_s11'), ('div_fsm_s11', 'div_fsm_s12'), ('div_fsm_s11___final', 'div_fsm_s12'), ('div_fsm_s12', 'div_fsm_s13'), ('div_fsm_s13', 'div_fsm_s14'), ('div_fsm_s9', 'div_fsm_s10'), ('id_stage_s1', 'div_fsm_s9'), ('id_stage_s1', 'lsu_fsm_s8'), ('id_stage_s1', 'wb_stage_s1'), ('lsu_fsm_s8', 'div_fsm_s10'), ('wb_stage_s1', 'div_fsm_s10')], [('div_fsm_s9', 'lsu_fsm_s8'), ('div_fsm_s9', 'wb_stage_s1'), ('lsu_fsm_s8', 'wb_stage_s1')])]
+[([('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s5', 'mult_fsm_s6'), ('wb_stage_s1', 'mult_fsm_s6')], [('mult_fsm_s5', 'wb_stage_s1')])]
+[([('id_stage_s1', 'lsu_fsm_s8'), ('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('lsu_fsm_s8', 'mult_fsm_s6'), ('mult_fsm_s5', 'mult_fsm_s6'), ('wb_stage_s1', 'mult_fsm_s6')], [('lsu_fsm_s8', 'mult_fsm_s5'), ('lsu_fsm_s8', 'wb_stage_s1'), ('mult_fsm_s5', 'wb_stage_s1')])]
+TOTAL CNT COVERED 8
+TOTAL CNT COVERED SQUASH 8
+==================== successor ==========
+id_stage_s1 : ( 8 ) [{'wb_stage_s1'}, {'wb_stage_s1', 'lsu_fsm_s8'}, {'div_fsm_s14', 'wb_stage_s1'}, {'div_fsm_s14', 'lsu_fsm_s8', 'wb_stage_s1'}, {'wb_stage_s1', 'div_fsm_s9'}, {'wb_stage_s1', 'lsu_fsm_s8', 'div_fsm_s9'}, {'wb_stage_s1', 'mult_fsm_s5'}, {'wb_stage_s1', 'lsu_fsm_s8', 'mult_fsm_s5'}]
+mult_fsm_s5 : ( 1 ) [{'mult_fsm_s6'}]
+mult_fsm_s6 : ( 1 ) [set()]
+div_fsm_s10 : ( 1 ) [{'div_fsm_s11'}]
+div_fsm_s11 : ( 1 ) [{'div_fsm_s11___final'}]
+div_fsm_s12 : ( 1 ) [{'div_fsm_s13'}]
+div_fsm_s13 : ( 1 ) [{'div_fsm_s14'}]
+div_fsm_s14 : ( 1 ) [set()]
+div_fsm_s9 : ( 1 ) [{'div_fsm_s10'}]
+lsu_fsm_s8 : ( 3 ) [set(), {'div_fsm_s10'}, {'mult_fsm_s6'}]
+wb_stage_s1 : ( 3 ) [set(), {'div_fsm_s10'}, {'mult_fsm_s6'}]
+div_fsm_s11___final : ( 1 ) [{'div_fsm_s12'}]
+=========================================
