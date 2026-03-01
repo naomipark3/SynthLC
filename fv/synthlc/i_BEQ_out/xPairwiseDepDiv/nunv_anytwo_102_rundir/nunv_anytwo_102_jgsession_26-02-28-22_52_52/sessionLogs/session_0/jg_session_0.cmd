@@ -1,0 +1,108 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2023.12
+# platform  : Linux 4.18.0-553.89.1.el8_10.x86_64
+# version   : 2023.12p001 64 bits
+# build date: 2024.01.23 16:09:24 UTC
+# ----------------------------------------
+# started   : 2026-02-28 22:52:55 PST
+# hostname  : caddy15.stanford.edu.(none)
+# pid       : 1047216
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:40079' '-nowindow' '-style' 'windows' '-data' 'AAACDHicvZHNSsNAFIW/KIq4EJc+g9AfAxUXXYjoTtEquC2l/k0pSbCxsW70SXw23yR+k1KhL+AMc+7MmXPuvZkkQP+zrmuasfkh7HPJFbdciNfcG+GAHikndDllzIgHpgR33aUv+VlG+gnrI5431pnB11qErZV5Jdl2HdKyztSZUzHkjYyZWDhzXil5tIuhHd6p3lOdyQ95VhNkdmSe1M7dF7Tp6F6oKXkx59hzUH3m1w2Mua5S7p0bqwbzV+LMGueuQgxm6uiPfcx1jIwLPVVT9ciXSI1tmbH5Ydf6hXlyJp6+/62DiS8QXTNn8CaTSzm2m3jfav5ixKjt/WEcv905TUs=' '-proj' '/home/users/ngpark/SynthLC/fv/synthlc/i_BEQ_out/xPairwiseDepDiv/nunv_anytwo_102_jgsession_26-02-28-22_52_52/sessionLogs/session_0' '-init' '-hidden' '/home/users/ngpark/SynthLC/fv/synthlc/i_BEQ_out/xPairwiseDepDiv/nunv_anytwo_102_jgsession_26-02-28-22_52_52/.tmp/.initCmds.tcl' './synthlc/i_BEQ_out/xPairwiseDepDiv/nunv_anytwo_102_.tcl'
+# Run JG with a TCl file: jg jg_test.tcl
+set assert_report_incompletes 1
+set RTL_DIR /home/users/cheriek/Documents/Formal_Method/final_project/ibex
+set SRCDIR /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl
+
+############
+set FPV 1
+set REACH 0
+set CUSTOMTCL 0
+############
+exec ./synthlc/i_BEQ_out/xPairwiseDepDiv/nunv_anytwo_102_update_file_.sh
+# Analyze RTL files
+analyze -sv09 -f ./synthlc/i_BEQ_out/xPairwiseDepDiv/nunv_anytwo_102_hdls.f -y $SRCDIR +incdir+$SRCDIR
+
+if {$REACH == 1} {
+    puts "test bboxing mfpt" 
+    #elaborate -bbox_m  {miss_prediction_fix_table} -bbox_m {reorderbuf}
+    #elaborate
+    source reach_collect.tcl
+}
+if {$FPV == 1} {
+    puts "fpv" 
+    # Elaborates
+    #elaborate -bbox_m {wt_cache_subsystem} -bbox_m {ibex_if_stage}
+    #puts "multiplier no-bbox"
+    elaborate -top ibex_fv -bbox_m {ibex_if_stage} -bbox_m {prim_lfsr}
+    #elaborate -bbox_m {ibex_if_stage}
+    #stopat -env {issue_stage_i.i_scoreboard.mem_n[0].sbe.is_compressed}  
+    #elaborate
+
+
+    # Initialization
+    # Clock specification
+    clock clk_i
+    # -both_edges: ridecore 
+    reset !rst_ni
+    set_proofgrid_per_engine_max_jobs 10
+    set_proofgrid_max_jobs 30
+
+
+    #SOURCE_TCL
+    # assume -enable {.*ASSUME_W_R} -regexp
+    # assume -disable {.*ASSUME_R_W} -regexp
+
+    task -create mytask -copy_assumes  -copy {.*DEP_102_b.*}  -regexp
+    task -set mytask
+
+    if { $CUSTOMTCL == 1 } {
+        puts "=========CUSTOMTCL========="
+
+        #CUSTOMTCL
+        
+        puts "=========EXIT CUSTOMTCL========="
+        exit
+        
+    } 
+    
+    puts "=============================================================="
+    puts "CHECK ASSUMPTION...."
+    puts "=============================================================="
+    set CA 0
+    #ASSUMPTION
+    #
+    set_prove_time_limit 15m
+    #SETPROVETIME
+    set_prove_per_property_time_limit 5m 
+
+    set ls [get_property_list -task mytask -include {type {assert cover} }]
+    if { [llength $ls] > 10 } { 
+        set_prove_time_limit 25m 
+        puts "PROVEN TIME 25min" }  
+
+    if { $CA == 1 } { 
+        #set_prove_time_limit 10m
+        set CONFLICT [check_assumptions -task mytask -conflict]
+        puts "=============================================================="
+        puts "CHECK ASSUMPTION CONFLICT result? $CONFLICT"
+        puts "=============================================================="
+    }  else {
+        puts "AUTOPROVE:" 
+        #set_prove_time_limit 1h
+        #set_prove_per_property_time_limit 1h
+        puts "=================================================="
+        puts " PROVE TIME LIMIT"
+        puts [get_prove_time_limit]     
+        #puts [get_prove_per_property_time_limit]
+        puts "=================================================="
+        set_engine_mode {K C Tri I N AD AM Hp B}
+
+        prove -task mytask
+        #prove -all
+    }
+    
+    puts "END"
+    report -task mytask -csv -results -file "./synthlc/i_BEQ_out/xPairwiseDepDiv/nunv_anytwo_102.csv" -force
+    exit
+}

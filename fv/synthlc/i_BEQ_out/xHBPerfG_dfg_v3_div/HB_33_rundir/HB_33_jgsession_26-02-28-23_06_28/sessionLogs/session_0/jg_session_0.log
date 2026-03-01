@@ -1,0 +1,925 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2023.12
+# platform  : Linux 4.18.0-553.89.1.el8_10.x86_64
+# version   : 2023.12p001 64 bits
+# build date: 2024.01.23 16:09:24 UTC
+# ----------------------------------------
+# started   : 2026-02-28 23:06:30 PST
+# hostname  : caddy15.stanford.edu.(none)
+# pid       : 1090680
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:35187' '-nowindow' '-style' 'windows' '-data' 'AAAB9HictZHNSsNQEIW/KIp0IS59BqFtqCguuhBBdKFoFdyGkmhNKUlpYv3Z6DP4hL5J+iWlizyAd8icO+eeM3PDDYDhd1VVNGv7y3TADbc8cGm+40mEQ04YcEbIOTFjEmak7sK1L/hbI8OA9qrrrTYz+mkh7GzMG8mu3xFd58yMnHci3sgozHMjZ0HJs7eIvOGj6n3VmXzERE0qsyfzonbpPqFHX/enmpJXe8bWqeoL/24k5rpKuQ+u5e7tvdB95UkiTsQlx02Vuus3qkim5no6Y3tCx5lznTlTq99/nTr1vNBRGKmdMrkBp94gFLvNa9W51obyUcPUawUtE0aQ' '-proj' '/home/users/ngpark/SynthLC/fv/synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_jgsession_26-02-28-23_06_28/sessionLogs/session_0' '-init' '-hidden' '/home/users/ngpark/SynthLC/fv/synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_jgsession_26-02-28-23_06_28/.tmp/.initCmds.tcl' './synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2023 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /home/users/ngpark/SynthLC/fv/synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_jgsession_26-02-28-23_06_28/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fao".
+INFO: reading configuration file "/home/users/ngpark/.config/cadence/jasper.conf".
+% # Run JG with a TCl file: jg jg_test.tcl
+% set assert_report_incompletes 1
+1
+% set RTL_DIR /home/users/cheriek/Documents/Formal_Method/final_project/ibex
+/home/users/cheriek/Documents/Formal_Method/final_project/ibex
+% set SRCDIR /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl
+/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl
+% 
+% ############
+% set FPV 1
+1
+% set REACH 0
+0
+% set CUSTOMTCL 0
+0
+% ############
+% exec ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_update_file_.sh
+% # Analyze RTL files
+% analyze -sv09 -f ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_hdls.f -y $SRCDIR +incdir+$SRCDIR
+INFO (INL011): Processing "-f" file "/home/users/ngpark/SynthLC/fv/synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_hdls.f".
+[-- (VERI-1482)] Analyzing Verilog file '/cad/cadence/jasper_2023.12p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv'
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(381): parameter 'ADDR_W' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(382): parameter 'BUS_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(383): parameter 'BUS_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(384): parameter 'BUS_W' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(385): parameter 'IC_SIZE_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(386): parameter 'IC_NUM_WAYS' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(387): parameter 'IC_LINE_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(388): parameter 'IC_LINE_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(389): parameter 'IC_LINE_W' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(390): parameter 'IC_NUM_LINES' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(391): parameter 'IC_LINE_BEATS' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(392): parameter 'IC_LINE_BEATS_W' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(393): parameter 'IC_INDEX_W' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(394): parameter 'IC_INDEX_HI' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(395): parameter 'IC_TAG_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(396): parameter 'IC_OUTPUT_BEATS' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(398): parameter 'SCRAMBLE_KEY_W' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(399): parameter 'SCRAMBLE_NONCE_W' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(402): parameter 'PMP_MAX_REGIONS' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(403): parameter 'PMP_CFG_W' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(406): parameter 'PMP_ADDR_MSB' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(409): parameter 'PMP_ADDR_LSB' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(412): parameter 'PMP_I' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(413): parameter 'PMP_I2' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(414): parameter 'PMP_D' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(614): parameter 'CSR_OFF_PMP_CFG' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(615): parameter 'CSR_OFF_PMP_ADDR' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(618): parameter 'CSR_MSTATUS_MIE_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(619): parameter 'CSR_MSTATUS_MPIE_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(620): parameter 'CSR_MSTATUS_MPP_BIT_LOW' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(621): parameter 'CSR_MSTATUS_MPP_BIT_HIGH' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(622): parameter 'CSR_MSTATUS_MPRV_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(623): parameter 'CSR_MSTATUS_TW_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(626): parameter 'CSR_MISA_MXL' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(629): parameter 'CSR_MSIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(630): parameter 'CSR_MTIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(631): parameter 'CSR_MEIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(632): parameter 'CSR_MFIX_BIT_LOW' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(633): parameter 'CSR_MFIX_BIT_HIGH' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(636): parameter 'CSR_MSECCFG_MML_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(637): parameter 'CSR_MSECCFG_MMWP_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(638): parameter 'CSR_MSECCFG_RLB_BIT' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(653): parameter 'LfsrWidth' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(656): parameter 'RndCnstLfsrSeedDefault' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(657): parameter 'RndCnstLfsrPermDefault' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(660): parameter 'RndCnstIbexKeyDefault' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(662): parameter 'RndCnstIbexNonceDefault' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(667): parameter 'IbexMuBiWidth' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(674): parameter 'IbexMuBiOn' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(675): parameter 'IbexMuBiOff' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(684): parameter 'PmpCfgRst' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(706): parameter 'PmpAddrRst' declared inside package 'ibex_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pkg.sv(725): parameter 'PmpMseccfgRst' declared inside package 'ibex_pkg' shall be treated as localparam
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv'
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(9): parameter 'OPCODE_C0' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(10): parameter 'OPCODE_C1' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(11): parameter 'OPCODE_C2' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(14): parameter 'INSN_LUI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(15): parameter 'INSN_AUIPC' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(16): parameter 'INSN_JAL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(17): parameter 'INSN_JALR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(20): parameter 'INSN_BEQ' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(21): parameter 'INSN_BNE' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(22): parameter 'INSN_BLT' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(23): parameter 'INSN_BGE' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(24): parameter 'INSN_BLTU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(25): parameter 'INSN_BGEU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(28): parameter 'INSN_ADDI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(29): parameter 'INSN_SLTI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(30): parameter 'INSN_SLTIU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(31): parameter 'INSN_XORI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(32): parameter 'INSN_ORI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(33): parameter 'INSN_ANDI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(34): parameter 'INSN_SLLI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(35): parameter 'INSN_SRLI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(36): parameter 'INSN_SRAI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(39): parameter 'INSN_ADD' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(40): parameter 'INSN_SUB' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(41): parameter 'INSN_SLL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(42): parameter 'INSN_SLT' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(43): parameter 'INSN_SLTU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(44): parameter 'INSN_XOR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(45): parameter 'INSN_SRL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(46): parameter 'INSN_SRA' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(47): parameter 'INSN_OR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(48): parameter 'INSN_AND' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(51): parameter 'INSN_CSRRW' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(52): parameter 'INSN_CSRRS' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(53): parameter 'INSN_CSRRC' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(54): parameter 'INSN_CSRRWI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(55): parameter 'INSN_CSRRSI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(56): parameter 'INSN_CSRRCI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(57): parameter 'INSN_ECALL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(58): parameter 'INSN_EBREAK' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(59): parameter 'INSN_MRET' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(60): parameter 'INSN_DRET' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(61): parameter 'INSN_WFI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(64): parameter 'INSN_DIV' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(65): parameter 'INSN_DIVU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(66): parameter 'INSN_REM' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(67): parameter 'INSN_REMU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(68): parameter 'INSN_PMUL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(69): parameter 'INSN_PMUH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(70): parameter 'INSN_PMULHSU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(71): parameter 'INSN_PMULHU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(75): parameter 'INSN_SH1ADD' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(76): parameter 'INSN_SH2ADD' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(77): parameter 'INSN_SH3ADD' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(83): parameter 'INSN_RORI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(84): parameter 'INSN_CLZ' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(85): parameter 'INSN_CTZ' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(86): parameter 'INSN_CPOP' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(87): parameter 'INSN_SEXTB' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(88): parameter 'INSN_SEXTH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(100): parameter 'INSN_ROL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(101): parameter 'INSN_ROR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(102): parameter 'INSN_MIN' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(103): parameter 'INSN_MAX' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(104): parameter 'INSN_MINU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(105): parameter 'INSN_MAXU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(106): parameter 'INSN_XNOR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(107): parameter 'INSN_ORN' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(108): parameter 'INSN_ANDN' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(109): parameter 'INSN_PACK' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(110): parameter 'INSN_PACKU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(111): parameter 'INSN_PACKH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(114): parameter 'INSN_BCLRI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(115): parameter 'INSN_BSETI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(116): parameter 'INSN_BINVI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(119): parameter 'INSN_BEXTI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(121): parameter 'INSN_BCLR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(122): parameter 'INSN_BSET' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(123): parameter 'INSN_BINV' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(124): parameter 'INSN_BEXT' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(130): parameter 'INSN_GREVI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(132): parameter 'INSN_REV_P' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(134): parameter 'INSN_REV2_N' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(136): parameter 'INSN_REV_N' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(138): parameter 'INSN_REV4_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(140): parameter 'INSN_REV2_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(142): parameter 'INSN_REV_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(144): parameter 'INSN_REV8_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(146): parameter 'INSN_REV4_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(148): parameter 'INSN_REV2_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(150): parameter 'INSN_REV_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(152): parameter 'INSN_REV16' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(154): parameter 'INSN_REV8' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(156): parameter 'INSN_REV4' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(158): parameter 'INSN_REV2' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(160): parameter 'INSN_REV' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(165): parameter 'INSN_GORCI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(167): parameter 'INSN_ORC_P' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(169): parameter 'INSN_ORC2_N' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(171): parameter 'INSN_ORC_N' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(173): parameter 'INSN_ORC4_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(175): parameter 'INSN_ORC2_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(177): parameter 'INSN_ORC_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(179): parameter 'INSN_ORC8_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(181): parameter 'INSN_ORC4_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(183): parameter 'INSN_ORC2_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(185): parameter 'INSN_ORC_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(187): parameter 'INSN_ORC16' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(189): parameter 'INSN_ORC8' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(191): parameter 'INSN_ORC4' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(193): parameter 'INSN_ORC2' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(195): parameter 'INSN_ORC' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(198): parameter 'INSN_SHFLI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(200): parameter 'INSN_ZIP_N' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(202): parameter 'INSN_ZIP2_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(204): parameter 'INSN_ZIP_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(206): parameter 'INSN_ZIP4_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(208): parameter 'INSN_ZIP2_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(210): parameter 'INSN_ZIP_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(212): parameter 'INSN_ZIP8' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(214): parameter 'INSN_ZIP4' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(216): parameter 'INSN_ZIP2' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(218): parameter 'INSN_ZIP' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(221): parameter 'INSN_UNSHFLI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(223): parameter 'INSN_UNZIP_N' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(225): parameter 'INSN_UNZIP2_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(227): parameter 'INSN_UNZIP_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(229): parameter 'INSN_UNZIP4_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(231): parameter 'INSN_UNZIP2_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(233): parameter 'INSN_UNZIP_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(235): parameter 'INSN_UNZIP8' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(237): parameter 'INSN_UNZIP4' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(239): parameter 'INSN_UNZIP2' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(241): parameter 'INSN_UNZIP' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(244): parameter 'INSN_GREV' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(245): parameter 'INSN_GORC' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(246): parameter 'INSN_SHFL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(247): parameter 'INSN_UNSHFL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(249): parameter 'INSN_XPERM_N' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(250): parameter 'INSN_XPERM_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(251): parameter 'INSN_XPERM_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(253): parameter 'INSN_SLO' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(254): parameter 'INSN_SRO' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(255): parameter 'INSN_SLOI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(259): parameter 'INSN_SROI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(262): parameter 'INSN_BDECOMPRESS' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(263): parameter 'INSN_BCOMPRESS' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(266): parameter 'INSN_FSRI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(268): parameter 'INSN_CMIX' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(269): parameter 'INSN_CMOV' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(270): parameter 'INSN_FSL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(271): parameter 'INSN_FSR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(274): parameter 'INSN_BFP' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(277): parameter 'INSN_CLMUL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(278): parameter 'INSN_CLMULR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(279): parameter 'INSN_CLMULH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(282): parameter 'INSN_CRC32_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(284): parameter 'INSN_CRC32_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(286): parameter 'INSN_CRC32_W' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(288): parameter 'INSN_CRC32C_B' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(290): parameter 'INSN_CRC32C_H' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(292): parameter 'INSN_CRC32C_W' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(296): parameter 'INSN_LOAD' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(297): parameter 'INSN_STORE' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(300): parameter 'INSN_FENCE' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(301): parameter 'INSN_FENCEI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(305): parameter 'INSN_CADDI4SPN' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(306): parameter 'INSN_CLW' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(307): parameter 'INSN_CSW' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(309): parameter 'INSN_CLBU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(310): parameter 'INSN_CLHU' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(311): parameter 'INSN_CLH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(312): parameter 'INSN_CSB' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(313): parameter 'INSN_CSH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(316): parameter 'INSN_CADDI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(317): parameter 'INSN_CJAL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(318): parameter 'INSN_CJ' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(319): parameter 'INSN_CLI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(320): parameter 'INSN_CLUI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(321): parameter 'INSN_CBEQZ' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(322): parameter 'INSN_CBNEZ' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(323): parameter 'INSN_CSRLI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(324): parameter 'INSN_CSRAI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(325): parameter 'INSN_CANDI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(326): parameter 'INSN_CSUB' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(327): parameter 'INSN_CXOR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(328): parameter 'INSN_COR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(329): parameter 'INSN_CAND' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(331): parameter 'INSN_CZEXTB' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(332): parameter 'INSN_CSEXTB' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(333): parameter 'INSN_CZEXTH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(334): parameter 'INSN_CSEXTH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(335): parameter 'INSN_CNOT' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(336): parameter 'INSN_CMUL' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(339): parameter 'INSN_CSLLI' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(340): parameter 'INSN_CLWSP' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(341): parameter 'INSN_SWSP' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(342): parameter 'INSN_CMV' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(343): parameter 'INSN_CADD' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(344): parameter 'INSN_CEBREAK' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(345): parameter 'INSN_CJR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(346): parameter 'INSN_CJALR' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(348): parameter 'INSN_CMPUSH' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(349): parameter 'INSN_CMPOP' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(350): parameter 'INSN_CMPOPRETZ' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(351): parameter 'INSN_CMPOPRET' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(352): parameter 'INSN_CMMVSA01' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[WARN (VERI-2418)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_tracer_pkg.sv(353): parameter 'INSN_CMMVA01S' declared inside package 'ibex_tracer_pkg' shall be treated as localparam
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_alu.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_compressed_decoder.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_compressed_decoder.sv(14): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv(110): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert_standard_macros.svh'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv(187): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert_sec_cm.svh'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv(188): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_flop_macros.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_controller.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_controller.sv(10): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_controller.sv(11): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/dv/sv/dv_utils/dv_fcov_macros.svh'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_counter.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_cs_registers.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_cs_registers.sv(10): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(9): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_decoder.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_decoder.sv(14): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_ex_block.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(17): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(18): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/dv/sv/dv_utils/dv_fcov_macros.svh'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_if_stage.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_if_stage.sv(13): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_if_stage.sv(14): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/dv/sv/dv_utils/dv_fcov_macros.svh'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv(14): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv(15): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/dv/sv/dv_utils/dv_fcov_macros.svh'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_fast.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_fast.sv(15): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_slow.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_slow.sv(12): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[-- (VERI-1482)] Analyzing Verilog file './synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv'
+[INFO (VERI-1328)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(10): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[WARN (VERI-1875)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(499): identifier 'mult_state' is used before its declaration
+[WARN (VERI-1875)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(503): identifier 'ls_fsm' is used before its declaration
+[WARN (VERI-1763)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(714): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(715): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_prefetch_buffer.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv(13): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_register_file_ff.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pmp.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_pmp.sv(5): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/dv/sv/dv_utils/dv_fcov_macros.svh'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_wb_stage.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_wb_stage.sv(14): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_wb_stage.sv(15): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/dv/sv/dv_utils/dv_fcov_macros.svh'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_dummy_instr.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_branch_predict.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_branch_predict.sv(18): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(10): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+[INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(11): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/dv/sv/dv_utils/dv_fcov_macros.svh'
+[-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
+% 
+% if {$REACH == 1} {
+    puts "test bboxing mfpt" 
+    #elaborate -bbox_m  {miss_prediction_fix_table} -bbox_m {reorderbuf}
+    #elaborate
+    source reach_collect.tcl
+}
+% if {$FPV == 1} {
+    puts "fpv" 
+    # Elaborates
+    #elaborate -bbox_m {wt_cache_subsystem} -bbox_m {ibex_if_stage}
+    #puts "multiplier no-bbox"
+    elaborate -top ibex_fv -bbox_m {ibex_if_stage} -bbox_m {prim_lfsr}
+    #elaborate -bbox_m {ibex_if_stage}
+    #stopat -env {issue_stage_i.i_scoreboard.mem_n[0].sbe.is_compressed}  
+    #elaborate
+
+
+    # Initialization
+    # Clock specification
+    clock clk_i
+    # -both_edges: ridecore 
+    reset !rst_ni
+    set_proofgrid_per_engine_max_jobs 10
+    set_proofgrid_max_jobs 30
+
+
+    #SOURCE_TCL
+    # assume -enable {.*ASSUME_W_R} -regexp
+    # assume -disable {.*ASSUME_R_W} -regexp
+
+    task -create mytask -copy_assumes -copy {.*HB_33.*} -copy {.*WHB_33.*} -copy {.*WHB_CONCUR_33.*}   -regexp
+    task -set mytask
+
+    if { $CUSTOMTCL == 1 } {
+        puts "=========CUSTOMTCL========="
+
+        #CUSTOMTCL
+        
+        puts "=========EXIT CUSTOMTCL========="
+        exit
+        
+    } 
+    
+    puts "=============================================================="
+    puts "CHECK ASSUMPTION...."
+    puts "=============================================================="
+    set CA 0
+    #ASSUMPTION
+    #
+    set_prove_time_limit 15m
+    #SETPROVETIME
+    set_prove_per_property_time_limit 5m 
+
+    set ls [get_property_list -task mytask -include {type {assert cover} }]
+    if { [llength $ls] > 10 } { 
+        set_prove_time_limit 25m 
+        puts "PROVEN TIME 25min" }  
+
+    if { $CA == 1 } { 
+        #set_prove_time_limit 10m
+        set CONFLICT [check_assumptions -task mytask -conflict]
+        puts "=============================================================="
+        puts "CHECK ASSUMPTION CONFLICT result? $CONFLICT"
+        puts "=============================================================="
+    }  else {
+        puts "AUTOPROVE:" 
+        #set_prove_time_limit 1h
+        #set_prove_per_property_time_limit 1h
+        puts "=================================================="
+        puts " PROVE TIME LIMIT"
+        puts [get_prove_time_limit]     
+        #puts [get_prove_per_property_time_limit]
+        puts "=================================================="
+        set_engine_mode {K C Tri I N AD AM Hp B}
+
+        prove -task mytask
+        #prove -all
+    }
+    
+    puts "END"
+    report -task mytask -csv -results -file "./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33.csv" -force
+    exit
+}
+fpv
+INFO (ISW003): Top module name is "ibex_fv".
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_register_file_ff.sv(13): compiling module 'ibex_register_file_ff:(DataWidth=32'b0100000,WordZeroVal=32'b0)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_if_stage.sv(16): compiling module 'ibex_if_stage:(RV32ZC=RV32ZcaZcbZcmp,BusSizeECC=32'b0100000,TagSizeECC=32'b010110,LineSizeECC=32'b01000000,RndCnstLfsrSeed=32'b10101100010100110011101111110100,RndCnstLfsrPerm=160'b01111000110101111011001011101001000110011111111101000110110001001011101001010110000001010100101100000001001111101001000011100001111000101010001101101011101101,MemDataWidth=32'b0100000)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_decoder.sv(16): compiling module 'ibex_decoder:(RV32E=1'b0,RV32M=RV32MFast,RV32B=RV32BNone,BranchTargetALU=1'b0)'
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_decoder.sv(1211): system function call isunknown with non-constant argument is not supported for synthesis
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_controller.sv(13): compiling module 'ibex_controller:(WritebackStage=1'b1)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(20): compiling module 'ibex_id_stage:(RV32E=1'b0,RV32M=RV32MFast,RV32B=RV32BNone,BranchTargetALU=1'b0,WritebackStage=1'b1,BranchPredictor=1'b0)'
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(1106): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(1112): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(1116): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(1125): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(1128): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(1132): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_id_stage.sv(1136): system function call isunknown with non-constant argument is not supported for synthesis
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_alu.sv(9): compiling module 'ibex_alu:(RV32B=RV32BNone)'
+[WARN (VERI-1209)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_alu.sv(280): expression size 32 truncated to fit in target size 6
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_fast.sv(17): compiling module 'ibex_multdiv_fast:(RV32M=RV32MFast)'
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_fast.sv(117): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_fast.sv(118): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_fast.sv(119): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_fast.sv(378): system function call isunknown with non-constant argument is not supported for synthesis
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_ex_block.sv(11): compiling module 'ibex_ex_block:(RV32M=RV32MFast,RV32B=RV32BNone,BranchTargetALU=1'b0)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv(17): compiling module 'ibex_load_store_unit:(MemDataWidth=32'b0100000)'
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv(610): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv(611): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv(612): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv(613): system function call isunknown with non-constant argument is not supported for synthesis
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_load_store_unit.sv(619): system function call isunknown with non-constant argument is not supported for synthesis
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_wb_stage.sv(17): compiling module 'ibex_wb_stage:(WritebackStage=1'b1)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(11): compiling module 'ibex_csr:(Width=32'b0110,ResetValue=6'b010000)'
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(55): system function call isunknown with non-constant argument is not supported for synthesis
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(11): compiling module 'ibex_csr:(ResetValue=32'b0)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(11): compiling module 'ibex_csr:(Width=32'b010010,ResetValue=18'b0)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(11): compiling module 'ibex_csr:(Width=32'b0111,ResetValue=7'b0)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(11): compiling module 'ibex_csr:(ResetValue=32'b01)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(11): compiling module 'ibex_csr:(Width=32'b0100000,ResetValue=32'b01000000000000000000000000000011)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(11): compiling module 'ibex_csr:(Width=32'b011,ResetValue=3'b100)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_counter.sv(5): compiling module 'ibex_counter:(CounterWidth=64)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_counter.sv(5): compiling module 'ibex_counter:(CounterWidth=64,ProvideValUpd=1'b1)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_csr.sv(11): compiling module 'ibex_csr:(Width=32'b01000,ResetValue=8'b0)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_cs_registers.sv(12): compiling module 'ibex_cs_registers:(DbgTriggerEn=1'b0,DbgHwBreakNum=32'b01,MHPMCounterNum=32'b0,MHPMCounterWidth=32'b0101000,PMPEnable=1'b0,PMPGranularity=32'b0,PMPNumRegions=32'b0100,PMPRstCfg='{'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0},'{1'b0,PMP_MODE_OFF,1'b0,1'b0,1'b0}},PMPRstAddr='{34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0,34'b0},PMPRstMsecCfg='{1'b0,1'b0,1'b0},RV32E=1'b0,RV32M=RV32MFast,RV32B=RV32BNone)'
+[INFO (VERI-1018)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(16): compiling module 'ibex_core:(RV32M=RV32MFast,RV32B=RV32BNone,WritebackStage=1'b1)'
+[WARN (VERI-1060)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(531): 'initial' construct is ignored
+[WARN (VERI-1060)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(532): 'initial' construct is ignored
+[WARN (VERI-1060)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(1945): 'initial' construct is ignored
+[WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(1172): system function call isunknown with non-constant argument is not supported for synthesis
+[INFO (VERI-1018)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(12): compiling module 'ibex_fv'
+[WARN (VERI-1060)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(510): 'initial' construct is ignored
+[WARN (VDB-1002)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(81): net 'data_rdata_i[31]' does not have a driver
+[WARN (VDB-1002)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(444): net 'pc0[31]' does not have a driver
+[WARN (VDB-1002)] ./synthlc/i_BEQ_out/xHBPerfG_dfg_v3_div/HB_33_top.sv(448): net 'i0[31]' does not have a driver
+WARNING (WNL008): Module "ibex_if_stage" is blackboxed due to analyze/elaborate bbox_m or compilation configuration. All instances will be blackboxed.
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          24 (1 packages)
+  Single run mode                         On
+  Pipeline                                On (22 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      24 (16 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+WARNING (VDB-1002): /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_if_stage.sv(87): net 'pc_id_o' does not have a driver
+WARNING (WNL018): /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_fast.sv(278): multiplication operator mult_17s_17s (size 34) automatically black boxed.
+    Use the "elaborate -bbox_mul" command to prevent automatic black-boxing.
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst_ni".
+WARNING (WPM021): No properties matched the specified regular expression(s) ".*WHB_33.*".
+WARNING (WPM021): No properties matched the specified regular expression(s) ".*WHB_CONCUR_33.*".
+WARNING (WPM025): Property "ibex_fv.DIV_EN_ACTIVE:precondition1", a related cover of "ibex_fv.DIV_EN_ACTIVE", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.EVENTUAL_ISSUE:precondition1", a related cover of "ibex_fv.EVENTUAL_ISSUE", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.EXE_IUV:precondition1", a related cover of "ibex_fv.EXE_IUV", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.IDLE_LSU_PRE_IUV:precondition1", a related cover of "ibex_fv.IDLE_LSU_PRE_IUV", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.IDLE_MULTDIV_PRE_IUV:precondition1", a related cover of "ibex_fv.IDLE_MULTDIV_PRE_IUV", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.IF_ID_CONTRACT:precondition1", a related cover of "ibex_fv.IF_ID_CONTRACT", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.ISSUE_ONCE:precondition1", a related cover of "ibex_fv.ISSUE_ONCE", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.MULTDIV_READY:precondition1", a related cover of "ibex_fv.MULTDIV_READY", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.MULT_EN_ACTIVE:precondition1", a related cover of "ibex_fv.MULT_EN_ACTIVE", was not copied to the new task.
+WARNING (WPM025): Property "ibex_fv.VALID_INSTN:precondition1", a related cover of "ibex_fv.VALID_INSTN", was not copied to the new task.
+==============================================================
+CHECK ASSUMPTION....
+==============================================================
+AUTOPROVE:
+==================================================
+ PROVE TIME LIMIT
+900s
+==================================================
+INFO (IPF036): Starting proof on task: "mytask", 2 properties to prove with 0 already proven/unreachable
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1834 of 1908 design flops, 0 of 0 design latches, 174 of 305 internal elements.
+INFO (IRS039): Reset analysis complete.
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = off (auto)
+    time_limit                    = 900s
+    per_property_time_limit       = 300s * 10 ^ scan
+    engine_mode                   = K C Tri I N AD AM Hp B 
+    proofgrid_per_engine_max_jobs = 1
+    max engine jobs               = K C Tri I N AD AM Hp B, total 9
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+0: Using multistage preprocessing
+0: Starting reduce
+0: Finished reduce in 0.044s
+0.0.PRE: Performing Proof Simplification...
+0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: Proof Simplification Iteration 1	[0.00 s]
+0.0.K: Proof Simplification Iteration 2	[0.04 s]
+0.0.K: Proof Simplification Iteration 3	[0.06 s]
+0.0.K: Proof Simplification Iteration 4	[0.08 s]
+0.0.K: Proof Simplification Iteration 5	[0.09 s]
+0.0.K: Proof Simplification Iteration 6	[0.11 s]
+0.0.K: Proof Simplification Iteration 7	[0.13 s]
+0.0.K: Proof Simplification Iteration 8	[0.15 s]
+0.0.K: Proof Simplification Iteration 9	[0.17 s]
+0.0.K: Proof Simplification Iteration 10	[0.19 s]
+0.0.PRE: Proof Simplification completed in 0.23 s
+0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 2
+0: Initial ProofGrid level: 1
+0: ProofGrid is starting event handling
+0.0.AD: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.B: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.K: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.Hp: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.Tri: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.I: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.AM: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.C: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.N: caddy15.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.AD: Proofgrid shell started at 1091007@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.AD: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Hp: Proofgrid shell started at 1091009@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.B: Proofgrid shell started at 1091010@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.K: Proofgrid shell started at 1091002@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.I: Proofgrid shell started at 1091005@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.N: Proofgrid shell started at 1091006@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.AM: Proofgrid shell started at 1091008@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.AD: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.AD: Starting proof for property "ibex_fv.HB_33"	[0.00 s].
+0.0.C: Proofgrid shell started at 1091003@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.Tri: Proofgrid shell started at 1091004@caddy15.stanford.edu(local) jg_1090680_caddy15.stanford.edu_1
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Tri: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.C: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AD: Trace Attempt  1	[0.02 s]
+0.0.B: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.B: Starting proof for property "ibex_fv.HB_33"	[0.00 s].
+0.0.K: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.K: Starting proof for property "ibex_fv.HB_33"	[0.00 s].
+0.0.N: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.N: Starting proof for property "ibex_fv.HB_33"	[0.00 s].
+0.0.C: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.C: Starting proof for property "ibex_fv.HB_33"	[0.00 s].
+0.0.I: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.I: Starting proof for property "ibex_fv.HB_33"	[0.00 s].
+0.0.AM: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.AM: Starting proof for property "ibex_fv.HB_33"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.K: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.C: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.AD: Trace Attempt  2	[0.03 s]
+0.0.K: Trace Attempt  1	[0.02 s]
+0.0.C: Trace Attempt  2	[0.02 s]
+0.0.I: Trace Attempt  2	[0.02 s]
+0.0.N: Trace Attempt  2	[0.02 s]
+0.0.AM: Trace Attempt  1	[0.01 s]
+0.0.K: Trace Attempt  2	[0.02 s]
+0.0.C: Trace Attempt  3	[0.02 s]
+0.0.I: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt  3	[0.02 s]
+0.0.C: Trace Attempt  4	[0.02 s]
+0.0.I: Trace Attempt  4	[0.02 s]
+0.0.N: Trace Attempt  4	[0.02 s]
+0.0.K: Trace Attempt  3	[0.02 s]
+0.0.B: Trace Attempt  3	[0.02 s]
+0.0.AM: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  4	[0.03 s]
+0.0.AD: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  2	[0.04 s]
+0.0.I: Trace Attempt  3	[0.05 s]
+0.0.AM: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  4	[0.05 s]
+0.0.Tri: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.Tri: Starting proof for property "ibex_fv.HB_33"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.C: Trace Attempt  4	[0.06 s]
+0.0.N: Trace Attempt  4	[0.07 s]
+0.0.AD: Trace Attempt  4	[0.08 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.K: Trace Attempt  4	[0.07 s]
+0.0.AD: Trace Attempt  5	[0.10 s]
+0.0.I: Trace Attempt  3	[0.08 s]
+0.0.AM: Trace Attempt  4	[0.08 s]
+0.0.Tri:    0.01" ---- Launching main thread ----
+0.0.C: Trace Attempt  5	[0.09 s]
+0.0.N: Trace Attempt  5	[0.09 s]
+0.0.K: Trace Attempt  1	[0.09 s]
+0.0.AM: Trace Attempt  5	[0.10 s]
+0.0.I: Trace Attempt  4	[0.10 s]
+0.0.Tri:    0.04" ---- Launching abstraction thread ----
+0.0.Tri:    0.05" ---- Launching multi-phase simplification thread ----
+0.0.K: Trace Attempt  5	[0.15 s]
+0.0.C: Trace Attempt  5	[0.14 s]
+0.0.N: Trace Attempt  5	[0.15 s]
+0.0.I: Trace Attempt  5	[0.16 s]
+0.0.K: Trace Attempt  1	[0.18 s]
+0.0.K: Trace Attempt  2	[0.18 s]
+0.0.K: Trace Attempt  3	[0.18 s]
+0.0.K: Trace Attempt  4	[0.18 s]
+0.0.K: Trace Attempt  5	[0.18 s]
+0.0.Hp: Trace Attempt  1	[0.23 s]
+0.0.Hp: Trace Attempt  2	[0.23 s]
+0.0.Tri: Trace Attempt  2	[0.18 s]
+0.0.Tri: Trace Attempt  3	[0.20 s]
+0.0.AD: Trace Attempt  1	[0.34 s]
+0.0.AD: Trace Attempt  2	[0.36 s]
+0.0.K: Trace Attempt  1	[0.36 s]
+0.0.K: Trace Attempt  2	[0.36 s]
+0.0.Tri: Trace Attempt  4	[0.31 s]
+0.0.AM: Trace Attempt  1	[0.36 s]
+0.0.Tri: Trace Attempt  5	[0.33 s]
+0.0.AM: Trace Attempt  2	[0.41 s]
+0.0.AD: Trace Attempt  4	[0.44 s]
+0.0.AM: Trace Attempt  3	[0.42 s]
+0.0.AM: Trace Attempt  5	[0.45 s]
+0.0.Hp: Trace Attempt  3	[0.49 s]
+0.0.Hp: Trace Attempt  4	[0.82 s]
+0.0.K: Trace Attempt  1	[0.86 s]
+0.0.K: Trace Attempt  2	[0.87 s]
+0.0.K: Trace Attempt  3	[0.87 s]
+0.0.K: Trace Attempt  4	[0.87 s]
+0.0.K: Trace Attempt  5	[0.87 s]
+0.0.Hp: Trace Attempt  5	[1.27 s]
+0.0.AM: Trace Attempt  1	[1.30 s]
+0.0.AM: Trace Attempt  2	[1.35 s]
+0.0.AM: Trace Attempt  3	[1.36 s]
+0.0.K: Trace Attempt  1	[1.39 s]
+0.0.K: Trace Attempt  2	[1.39 s]
+0.0.K: Trace Attempt  3	[1.39 s]
+0.0.AM: Trace Attempt  5	[1.39 s]
+0.0.K: Trace Attempt  4	[1.39 s]
+0.0.K: Trace Attempt  5	[1.40 s]
+0.0.N: Trace Attempt  1	[1.43 s]
+0.0.N: Trace Attempt  2	[1.44 s]
+0.0.N: Trace Attempt  3	[1.44 s]
+0.0.N: Trace Attempt  5	[1.45 s]
+0.0.Tri: Trace Attempt 32	[1.68 s]
+0.0.Tri: A proof was found: No trace exists. [1.68 s]
+INFO (IPF057): 0.0.Tri: The property "ibex_fv.HB_33" was proven in 1.68 s.
+0.0.AM: Trace Attempt 10	[1.52 s]
+0.0.AM: Stopped processing property "ibex_fv.HB_33"	[1.76 s].
+0.0.AM: Last scan. Per property time limit: 0s
+0.0.AM: Starting proof for property "ibex_fv.HB_33:precondition1"	[0.00 s].
+0.0.AM: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  7	[1.45 s]
+0.0.N: Stopped processing property "ibex_fv.HB_33"	[1.78 s].
+0.0.N: Last scan. Per property time limit: 0s
+0.0.N: Starting proof for property "ibex_fv.HB_33:precondition1"	[0.00 s].
+0.0.AM: Trace Attempt  2	[0.03 s]
+0.0.C: Trace Attempt 24	[1.43 s]
+0.0.C: Stopped processing property "ibex_fv.HB_33"	[1.79 s].
+0.0.C: Last scan. Per property time limit: 0s
+0.0.C: Starting proof for property "ibex_fv.HB_33:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt 15	[1.67 s]
+0.0.I: Stopped processing property "ibex_fv.HB_33"	[1.79 s].
+0.0.I: Last scan. Per property time limit: 0s
+0.0.I: Starting proof for property "ibex_fv.HB_33:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.C: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.K: Trace Attempt 27	[1.45 s]
+0.0.K: Stopped processing property "ibex_fv.HB_33"	[1.79 s].
+0.0.K: Last scan. Per property time limit: 0s
+0.0.K: Starting proof for property "ibex_fv.HB_33:precondition1"	[0.00 s].
+0.0.N: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  1	[0.01 s]
+0.0.C: Trace Attempt  2	[0.01 s]
+0.0.AM: Trace Attempt  3	[0.04 s]
+0.0.I: Trace Attempt  2	[0.01 s]
+0.0.I: Trace Attempt  2	[0.03 s]
+0.0.AM: Trace Attempt  4	[0.07 s]
+0.0.I: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt 27	[1.70 s]
+0.0.B: Stopped processing property "ibex_fv.HB_33"	[1.83 s].
+0.0.B: Last scan. Per property time limit: 0s
+0.0.B: Starting proof for property "ibex_fv.HB_33:precondition1"	[0.00 s].
+0.0.I: Trace Attempt  4	[0.04 s]
+0.0.AM: Trace Attempt  5	[0.08 s]
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.K: Trace Attempt  4	[0.04 s]
+0.0.N: Trace Attempt  4	[0.06 s]
+0.0.C: Trace Attempt  4	[0.06 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.02 s]
+0.0.K: Trace Attempt  1	[0.06 s]
+0.0.AD: Trace Attempt 13	[1.62 s]
+0.0.AD: Stopped processing property "ibex_fv.HB_33"	[1.88 s].
+0.0.AD: Last scan. Per property time limit: 0s
+0.0.AD: Starting proof for property "ibex_fv.HB_33:precondition1"	[0.00 s].
+0.0.K: Trace Attempt  2	[0.06 s]
+0.0.K: Trace Attempt  3	[0.07 s]
+0.0.N: Trace Attempt  5	[0.08 s]
+0.0.B: Trace Attempt  4	[0.03 s]
+0.0.K: Trace Attempt  4	[0.07 s]
+0.0.C: Trace Attempt  5	[0.08 s]
+0.0.K: Trace Attempt  5	[0.07 s]
+0.0.I: Trace Attempt  3	[0.08 s]
+0.0.AD: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt  4	[0.09 s]
+0.0.AD: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  5	[0.06 s]
+0.0.AD: Trace Attempt  3	[0.04 s]
+0: ProofGrid usable level: 1
+0.0.N: Trace Attempt  5	[0.14 s]
+0.0.C: Trace Attempt  5	[0.14 s]
+0.0.K: Trace Attempt  5	[0.13 s]
+0.0.AD: Trace Attempt  4	[0.07 s]
+0.0.I: Trace Attempt  5	[0.15 s]
+0.0.Tri: Stopped processing property "ibex_fv.HB_33"	[1.88 s].
+0.0.Tri: Last scan. Per property time limit: 0s
+0.0.Tri: Starting proof for property "ibex_fv.HB_33:precondition1"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.AD: Trace Attempt  5	[0.08 s]
+0.0.K: Trace Attempt  1	[0.15 s]
+0.0.K: Trace Attempt  2	[0.15 s]
+0.0.K: Trace Attempt  3	[0.15 s]
+0.0.Tri:    1.87" ---- Launching main thread ----
+0.0.K: Trace Attempt  4	[0.15 s]
+0.0.K: Trace Attempt  5	[0.15 s]
+0.0.Tri:    1.91" ---- Launching abstraction thread ----
+0.0.Tri:    1.91" ---- Launching multi-phase simplification thread ----
+0.0.K: Requesting engine job to stop
+0.0.C: Requesting engine job to stop
+0.0.Tri: Requesting engine job to stop
+0.0.I: Requesting engine job to stop
+0.0.N: Requesting engine job to stop
+0.0.AD: Requesting engine job to stop
+0.0.AM: Requesting engine job to stop
+0.0.B: Requesting engine job to stop
+0.0.Hp: Requesting engine job to terminate
+INFO (IPF144): 0: Initiating shutdown of proof [2.12 s]
+0.0.B: Trace Attempt  7	[0.18 s]
+0.0.B: A trace with 7 cycles was found. [0.24 s]
+INFO (IPF047): 0.0.B: The cover property "ibex_fv.HB_33:precondition1" was covered in 7 cycles in 0.31 s.
+0.0.K: Trace Attempt  6	[0.23 s]
+0.0.K: Stopped processing property "ibex_fv.HB_33:precondition1"	[0.35 s].
+0.0.I: Trace Attempt  6	[0.26 s]
+0.0.I: Stopped processing property "ibex_fv.HB_33:precondition1"	[0.36 s].
+0.0.I: All properties determined. [0.31 s]
+0.0.N: Trace Attempt  6	[0.25 s]
+0.0.N: Stopped processing property "ibex_fv.HB_33:precondition1"	[0.37 s].
+0.0.N: All properties determined. [0.32 s]
+0.0.B: Stopped processing property "ibex_fv.HB_33:precondition1"	[0.31 s].
+0.0.B: All properties determined. [0.26 s]
+0.0.Tri: Trace Attempt  2	[0.17 s]
+0.0.B: Exited with Success (@ 2.14 s)
+0: ProofGrid usable level: 0
+0.0.N: Exited with Success (@ 2.15 s)
+0.0.K: All properties determined. [0.31 s]
+0.0.C: Trace Attempt  6	[0.25 s]
+0.0.C: Stopped processing property "ibex_fv.HB_33:precondition1"	[0.36 s].
+0.0.Tri: Stopped processing property "ibex_fv.HB_33:precondition1"	[0.21 s].
+0.0.I: Exited with Success (@ 2.15 s)
+0.0.K: Exited with Success (@ 2.15 s)
+0.0.C: All properties determined. [0.33 s]
+0.0.AD: Trace Attempt  6	[0.11 s]
+0.0.AD: Stopped processing property "ibex_fv.HB_33:precondition1"	[0.29 s].
+0.0.Tri: All properties determined. [0.18 s]
+0.0.AM: Trace Attempt  6	[0.11 s]
+0.0.AM: Stopped processing property "ibex_fv.HB_33:precondition1"	[0.39 s].
+0.0.AD: All properties determined. [0.26 s]
+0.0.AM: All properties determined. [0.36 s]
+0.0.Tri: Exited with Success (@ 2.16 s)
+0.0.C: Exited with Success (@ 2.16 s)
+0.0.Hp: Interrupted (multi)
+0.0.Hp: Trace Attempt  6	[1.85 s]
+0.0.Hp: All properties determined. [2.24 s]
+0.0.AD: Exited with Success (@ 2.27 s)
+0.0.AM: Exited with Success (@ 2.27 s)
+0.0.Hp: Exited with Success (@ 2.35 s)
+0: --------------------------------------------------------------
+ProofGrid Summary (utilization 95.98 %)
+--------------------------------------------------------------
+     engines started                               :     9
+     engine jobs started                           :     9
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+      K        0.11        2.09        0.00       95.05 %
+      C        0.09        2.09        0.00       95.92 %
+    Tri        0.09        2.09        0.00       95.92 %
+      I        0.09        2.09        0.00       95.97 %
+      N        0.09        2.09        0.00       95.98 %
+     AD        0.07        2.11        0.00       96.87 %
+     AM        0.09        2.09        0.00       96.01 %
+     Hp        0.09        2.09        0.00       96.03 %
+      B        0.09        2.09        0.00       96.04 %
+    all        0.09        2.10        0.00       95.98 %
+
+    Total time in state (seconds)
+    -----------------------------------------
+            Pending     Running        Dead  
+    -----------------------------------------
+               0.79       18.87        0.00
+
+    Data read    : 54.26 kiB
+    Data written : 10.89 kiB
+
+0: All pending notifications were processed.
+INFO (IPF059): 0: Completed proof on task: "mytask"
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 2
+                 assertions                   : 1
+                  - proven                    : 1 (100%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 1
+                  - unreachable               : 0 (0%)
+                  - bounded_unreachable (user): 0 (0%)
+                  - covered                   : 1 (100%)
+                  - ar_covered                : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+END
+INFO (IPL005): Received request to exit from the console.
+INFO (IPL014): Waiting for the Tcl-thread to exit.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.
+INFO (IPL018): The peak resident set memory use for this session was 0.424 GB.
+INFO (IPL015): The Tcl-thread exited with status 0.
+INFO (IPL016): Exiting the analysis session with status 0.
