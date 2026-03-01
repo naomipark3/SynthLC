@@ -1,4 +1,4 @@
-HB edge: [['id_stage_s1', 'mult_fsm_s1'], ['id_stage_s1', 'mult_fsm_s2'], ['id_stage_s1', 'mult_fsm_s3'], ['id_stage_s1', 'mult_fsm_s5'], ['id_stage_s1', 'div_fsm_s1'], ['id_stage_s1', 'div_fsm_s14'], ['id_stage_s1', 'div_fsm_s2'], ['id_stage_s1', 'div_fsm_s3'], ['id_stage_s1', 'div_fsm_s4'], ['id_stage_s1', 'div_fsm_s5'], ['id_stage_s1', 'div_fsm_s6'], ['id_stage_s1', 'div_fsm_s9'], ['id_stage_s1', 'wb_stage_s1'], ['mult_fsm_s1', 'mult_fsm_s2'], ['mult_fsm_s1', 'mult_fsm_s3'], ['mult_fsm_s2', 'mult_fsm_s3'], ['mult_fsm_s5', 'mult_fsm_s1'], ['mult_fsm_s5', 'mult_fsm_s2'], ['mult_fsm_s5', 'mult_fsm_s3'], ['div_fsm_s1', 'div_fsm_s2'], ['div_fsm_s1', 'div_fsm_s3'], ['div_fsm_s1', 'div_fsm_s4'], ['div_fsm_s1', 'div_fsm_s5'], ['div_fsm_s1', 'div_fsm_s6'], ['div_fsm_s14', 'div_fsm_s6'], ['div_fsm_s2', 'div_fsm_s3'], ['div_fsm_s2', 'div_fsm_s4'], ['div_fsm_s2', 'div_fsm_s5'], ['div_fsm_s2', 'div_fsm_s6'], ['div_fsm_s3', 'div_fsm_s4'], ['div_fsm_s3', 'div_fsm_s5'], ['div_fsm_s3', 'div_fsm_s6'], ['div_fsm_s9', 'div_fsm_s1'], ['div_fsm_s9', 'div_fsm_s2'], ['div_fsm_s9', 'div_fsm_s3'], ['div_fsm_s9', 'div_fsm_s4'], ['div_fsm_s9', 'div_fsm_s5'], ['div_fsm_s9', 'div_fsm_s6'], ['wb_stage_s1', 'mult_fsm_s1'], ['wb_stage_s1', 'mult_fsm_s2'], ['wb_stage_s1', 'mult_fsm_s3'], ['wb_stage_s1', 'div_fsm_s1'], ['wb_stage_s1', 'div_fsm_s2'], ['wb_stage_s1', 'div_fsm_s3'], ['wb_stage_s1', 'div_fsm_s4'], ['wb_stage_s1', 'div_fsm_s5'], ['wb_stage_s1', 'div_fsm_s6']]
+HB edge: [['id_stage_s1', 'div_fsm_s1'], ['id_stage_s1', 'div_fsm_s14'], ['id_stage_s1', 'div_fsm_s2'], ['id_stage_s1', 'div_fsm_s3'], ['id_stage_s1', 'div_fsm_s4'], ['id_stage_s1', 'div_fsm_s5'], ['id_stage_s1', 'div_fsm_s6'], ['id_stage_s1', 'div_fsm_s9'], ['id_stage_s1', 'wb_stage_s1'], ['div_fsm_s14', 'div_fsm_s1'], ['div_fsm_s14', 'div_fsm_s3'], ['div_fsm_s14', 'div_fsm_s4'], ['div_fsm_s14', 'div_fsm_s5'], ['div_fsm_s14', 'div_fsm_s6'], ['div_fsm_s2', 'div_fsm_s3'], ['div_fsm_s2', 'div_fsm_s4'], ['div_fsm_s2', 'div_fsm_s5'], ['div_fsm_s3', 'div_fsm_s4'], ['div_fsm_s3', 'div_fsm_s5'], ['div_fsm_s4', 'div_fsm_s5'], ['div_fsm_s9', 'div_fsm_s2'], ['div_fsm_s9', 'div_fsm_s3'], ['div_fsm_s9', 'div_fsm_s4'], ['div_fsm_s9', 'div_fsm_s5'], ['div_fsm_s9', 'div_fsm_s6'], ['wb_stage_s1', 'div_fsm_s1'], ['wb_stage_s1', 'div_fsm_s2'], ['wb_stage_s1', 'div_fsm_s3'], ['wb_stage_s1', 'div_fsm_s4'], ['wb_stage_s1', 'div_fsm_s5'], ['wb_stage_s1', 'div_fsm_s6']]
 leaving_hb_proven_res_pairs: []
 JJ
 ===== SET idx: 0 ====
@@ -6,7 +6,7 @@ JJ
 followerset gen [('id_stage_s1', 'wb_stage_s1')]
 ===== SET idx: 1 ====
 !! setidx 1 0 has fix set of order on final nodes
-followerset gen [('id_stage_s1', 'div_fsm_s9'), ('id_stage_s1', 'wb_stage_s1'), ('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s5'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s3', 'div_fsm_s6'), ('div_fsm_s9', 'div_fsm_s2'), ('wb_stage_s1', 'div_fsm_s2'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3___final', 'div_fsm_s5'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s3___final', 'div_fsm_s6')]
+followerset gen [('id_stage_s1', 'wb_stage_s1'), ('id_stage_s1', 'div_fsm_s9'), ('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s4', 'div_fsm_s5'), ('div_fsm_s9', 'div_fsm_s2'), ('div_fsm_s9', 'div_fsm_s6'), ('wb_stage_s1', 'div_fsm_s2'), ('wb_stage_s1', 'div_fsm_s6'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s4___final', 'div_fsm_s5')]
 ADD EDGE TEST1 div_fsm_s2 div_fsm_s2___final
 ADD EDGE TEST1 div_fsm_s3 div_fsm_s3___final
 ADD EDGE TEST1 div_fsm_s4 div_fsm_s4___final
@@ -21,7 +21,7 @@ followerset gen [('id_stage_s1', 'div_fsm_s14'), ('id_stage_s1', 'wb_stage_s1'),
 ADD EDGE TEST1 div_fsm_s6 div_fsm_s6___final
 ===== SET idx: 4 ====
 !! setidx 4 0 has fix set of order on final nodes
-followerset gen [('id_stage_s1', 'div_fsm_s9'), ('id_stage_s1', 'wb_stage_s1'), ('div_fsm_s1', 'div_fsm_s2'), ('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s5'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s3', 'div_fsm_s6'), ('div_fsm_s9', 'div_fsm_s1'), ('wb_stage_s1', 'div_fsm_s1'), ('div_fsm_s1___final', 'div_fsm_s2'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3___final', 'div_fsm_s5'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s3___final', 'div_fsm_s6')]
+followerset gen [('id_stage_s1', 'wb_stage_s1'), ('id_stage_s1', 'div_fsm_s9'), ('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s4', 'div_fsm_s5'), ('div_fsm_s9', 'div_fsm_s2'), ('div_fsm_s9', 'div_fsm_s6'), ('div_fsm_s9', 'div_fsm_s1'), ('wb_stage_s1', 'div_fsm_s2'), ('wb_stage_s1', 'div_fsm_s6'), ('wb_stage_s1', 'div_fsm_s1'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s4___final', 'div_fsm_s5')]
 ADD EDGE TEST1 div_fsm_s1 div_fsm_s1___final
 ADD EDGE TEST1 div_fsm_s2 div_fsm_s2___final
 ADD EDGE TEST1 div_fsm_s3 div_fsm_s3___final
@@ -30,58 +30,38 @@ ADD EDGE TEST1 div_fsm_s5 div_fsm_s5___final
 ADD EDGE TEST1 div_fsm_s6 div_fsm_s6___final
 ===== SET idx: 5 ====
 !! setidx 5 0 has fix set of order on final nodes
-followerset gen [('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s5', 'mult_fsm_s2'), ('wb_stage_s1', 'mult_fsm_s2')]
-ADD EDGE TEST1 mult_fsm_s2 mult_fsm_s2___final
-===== SET idx: 6 ====
-!! setidx 6 0 has fix set of order on final nodes
-followerset gen [('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s2', 'mult_fsm_s3'), ('mult_fsm_s5', 'mult_fsm_s2'), ('wb_stage_s1', 'mult_fsm_s2'), ('mult_fsm_s2___final', 'mult_fsm_s3')]
-ADD EDGE TEST1 mult_fsm_s2 mult_fsm_s2___final
-ADD EDGE TEST1 mult_fsm_s3 mult_fsm_s3___final
-===== SET idx: 7 ====
-!! setidx 7 0 has fix set of order on final nodes
-followerset gen [('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s1', 'mult_fsm_s2'), ('mult_fsm_s5', 'mult_fsm_s1'), ('wb_stage_s1', 'mult_fsm_s1'), ('mult_fsm_s1___final', 'mult_fsm_s2')]
-ADD EDGE TEST1 mult_fsm_s1 mult_fsm_s1___final
-ADD EDGE TEST1 mult_fsm_s2 mult_fsm_s2___final
-===== SET idx: 8 ====
-!! setidx 8 0 has fix set of order on final nodes
-followerset gen [('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s1', 'mult_fsm_s2'), ('mult_fsm_s2', 'mult_fsm_s3'), ('mult_fsm_s5', 'mult_fsm_s1'), ('wb_stage_s1', 'mult_fsm_s1'), ('mult_fsm_s1___final', 'mult_fsm_s2'), ('mult_fsm_s2___final', 'mult_fsm_s3')]
-ADD EDGE TEST1 mult_fsm_s1 mult_fsm_s1___final
-ADD EDGE TEST1 mult_fsm_s2 mult_fsm_s2___final
-ADD EDGE TEST1 mult_fsm_s3 mult_fsm_s3___final
-EXECNT 9
+followerset gen [('id_stage_s1', 'wb_stage_s1'), ('id_stage_s1', 'div_fsm_s14'), ('div_fsm_s14', 'div_fsm_s3'), ('div_fsm_s14', 'div_fsm_s6'), ('div_fsm_s14', 'div_fsm_s1'), ('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s4', 'div_fsm_s5'), ('wb_stage_s1', 'div_fsm_s2'), ('wb_stage_s1', 'div_fsm_s6'), ('wb_stage_s1', 'div_fsm_s1'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s4___final', 'div_fsm_s5')]
+ADD EDGE TEST1 div_fsm_s1 div_fsm_s1___final
+ADD EDGE TEST1 div_fsm_s2 div_fsm_s2___final
+ADD EDGE TEST1 div_fsm_s3 div_fsm_s3___final
+ADD EDGE TEST1 div_fsm_s4 div_fsm_s4___final
+ADD EDGE TEST1 div_fsm_s5 div_fsm_s5___final
+ADD EDGE TEST1 div_fsm_s6 div_fsm_s6___final
+ADD EDGE TEST1 wb_stage_s1 div_fsm_s14
+EXECNT 6
 [([('id_stage_s1', 'wb_stage_s1')], [])]
-[([('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s3', 'div_fsm_s5'), ('div_fsm_s3', 'div_fsm_s6'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s3___final', 'div_fsm_s5'), ('div_fsm_s3___final', 'div_fsm_s6'), ('div_fsm_s9', 'div_fsm_s2'), ('id_stage_s1', 'div_fsm_s9'), ('id_stage_s1', 'wb_stage_s1'), ('wb_stage_s1', 'div_fsm_s2')], [('div_fsm_s9', 'wb_stage_s1')])]
+[([('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s4', 'div_fsm_s5'), ('div_fsm_s4___final', 'div_fsm_s5'), ('div_fsm_s9', 'div_fsm_s2'), ('div_fsm_s9', 'div_fsm_s6'), ('id_stage_s1', 'div_fsm_s9'), ('id_stage_s1', 'wb_stage_s1'), ('wb_stage_s1', 'div_fsm_s2'), ('wb_stage_s1', 'div_fsm_s6')], [('div_fsm_s9', 'wb_stage_s1')])]
 [([('id_stage_s1', 'div_fsm_s14'), ('id_stage_s1', 'wb_stage_s1')], [('div_fsm_s14', 'wb_stage_s1')])]
 [([('div_fsm_s14', 'div_fsm_s6'), ('id_stage_s1', 'div_fsm_s14'), ('id_stage_s1', 'wb_stage_s1'), ('wb_stage_s1', 'div_fsm_s6')], [('div_fsm_s14', 'wb_stage_s1')])]
-[([('div_fsm_s1', 'div_fsm_s2'), ('div_fsm_s1___final', 'div_fsm_s2'), ('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s3', 'div_fsm_s5'), ('div_fsm_s3', 'div_fsm_s6'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s3___final', 'div_fsm_s5'), ('div_fsm_s3___final', 'div_fsm_s6'), ('div_fsm_s9', 'div_fsm_s1'), ('id_stage_s1', 'div_fsm_s9'), ('id_stage_s1', 'wb_stage_s1'), ('wb_stage_s1', 'div_fsm_s1')], [('div_fsm_s9', 'wb_stage_s1')])]
-[([('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s5', 'mult_fsm_s2'), ('wb_stage_s1', 'mult_fsm_s2')], [('mult_fsm_s5', 'wb_stage_s1')])]
-[([('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s2', 'mult_fsm_s3'), ('mult_fsm_s2___final', 'mult_fsm_s3'), ('mult_fsm_s5', 'mult_fsm_s2'), ('wb_stage_s1', 'mult_fsm_s2')], [('mult_fsm_s5', 'wb_stage_s1')])]
-[([('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s1', 'mult_fsm_s2'), ('mult_fsm_s1___final', 'mult_fsm_s2'), ('mult_fsm_s5', 'mult_fsm_s1'), ('wb_stage_s1', 'mult_fsm_s1')], [('mult_fsm_s5', 'wb_stage_s1')])]
-[([('id_stage_s1', 'mult_fsm_s5'), ('id_stage_s1', 'wb_stage_s1'), ('mult_fsm_s1', 'mult_fsm_s2'), ('mult_fsm_s1___final', 'mult_fsm_s2'), ('mult_fsm_s2', 'mult_fsm_s3'), ('mult_fsm_s2___final', 'mult_fsm_s3'), ('mult_fsm_s5', 'mult_fsm_s1'), ('wb_stage_s1', 'mult_fsm_s1')], [('mult_fsm_s5', 'wb_stage_s1')])]
-TOTAL CNT COVERED 9
-TOTAL CNT COVERED SQUASH 9
+[([('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s4', 'div_fsm_s5'), ('div_fsm_s4___final', 'div_fsm_s5'), ('div_fsm_s9', 'div_fsm_s1'), ('div_fsm_s9', 'div_fsm_s2'), ('div_fsm_s9', 'div_fsm_s6'), ('id_stage_s1', 'div_fsm_s9'), ('id_stage_s1', 'wb_stage_s1'), ('wb_stage_s1', 'div_fsm_s1'), ('wb_stage_s1', 'div_fsm_s2'), ('wb_stage_s1', 'div_fsm_s6')], [('div_fsm_s9', 'wb_stage_s1')])]
+[([('div_fsm_s14', 'div_fsm_s1'), ('div_fsm_s14', 'div_fsm_s3'), ('div_fsm_s14', 'div_fsm_s6'), ('div_fsm_s2', 'div_fsm_s3'), ('div_fsm_s2___final', 'div_fsm_s3'), ('div_fsm_s3', 'div_fsm_s4'), ('div_fsm_s3___final', 'div_fsm_s4'), ('div_fsm_s4', 'div_fsm_s5'), ('div_fsm_s4___final', 'div_fsm_s5'), ('id_stage_s1', 'div_fsm_s14'), ('id_stage_s1', 'wb_stage_s1'), ('wb_stage_s1', 'div_fsm_s1'), ('wb_stage_s1', 'div_fsm_s2'), ('wb_stage_s1', 'div_fsm_s6')], [])]
+TOTAL CNT COVERED 6
+TOTAL CNT COVERED SQUASH 6
 ==================== successor ==========
-id_stage_s1 : ( 4 ) [{'wb_stage_s1'}, {'div_fsm_s9', 'wb_stage_s1'}, {'div_fsm_s14', 'wb_stage_s1'}, {'mult_fsm_s5', 'wb_stage_s1'}]
-mult_fsm_s1 : ( 1 ) [{'mult_fsm_s1___final'}]
-mult_fsm_s2 : ( 1 ) [{'mult_fsm_s2___final'}]
-mult_fsm_s3 : ( 1 ) [{'mult_fsm_s3___final'}]
-mult_fsm_s5 : ( 2 ) [{'mult_fsm_s2'}, {'mult_fsm_s1'}]
+id_stage_s1 : ( 3 ) [{'wb_stage_s1'}, {'wb_stage_s1', 'div_fsm_s9'}, {'div_fsm_s14', 'wb_stage_s1'}]
 div_fsm_s1 : ( 1 ) [{'div_fsm_s1___final'}]
-div_fsm_s14 : ( 2 ) [set(), {'div_fsm_s6'}]
+div_fsm_s14 : ( 3 ) [set(), {'div_fsm_s6'}, {'div_fsm_s6', 'div_fsm_s1', 'div_fsm_s3'}]
 div_fsm_s2 : ( 1 ) [{'div_fsm_s2___final'}]
 div_fsm_s3 : ( 1 ) [{'div_fsm_s3___final'}]
 div_fsm_s4 : ( 1 ) [{'div_fsm_s4___final'}]
 div_fsm_s5 : ( 1 ) [{'div_fsm_s5___final'}]
 div_fsm_s6 : ( 1 ) [{'div_fsm_s6___final'}]
-div_fsm_s9 : ( 2 ) [{'div_fsm_s2'}, {'div_fsm_s1'}]
-wb_stage_s1 : ( 6 ) [set(), {'div_fsm_s2'}, {'div_fsm_s6'}, {'div_fsm_s1'}, {'mult_fsm_s2'}, {'mult_fsm_s1'}]
+div_fsm_s9 : ( 2 ) [{'div_fsm_s6', 'div_fsm_s2'}, {'div_fsm_s6', 'div_fsm_s1', 'div_fsm_s2'}]
+wb_stage_s1 : ( 4 ) [set(), {'div_fsm_s6', 'div_fsm_s2'}, {'div_fsm_s6'}, {'div_fsm_s6', 'div_fsm_s1', 'div_fsm_s2'}]
 div_fsm_s2___final : ( 1 ) [{'div_fsm_s3'}]
-div_fsm_s3___final : ( 1 ) [{'div_fsm_s5', 'div_fsm_s4', 'div_fsm_s6'}]
-div_fsm_s4___final : ( 1 ) [set()]
+div_fsm_s3___final : ( 1 ) [{'div_fsm_s4'}]
+div_fsm_s4___final : ( 1 ) [{'div_fsm_s5'}]
 div_fsm_s5___final : ( 1 ) [set()]
 div_fsm_s6___final : ( 1 ) [set()]
-div_fsm_s1___final : ( 1 ) [{'div_fsm_s2'}]
-mult_fsm_s2___final : ( 2 ) [set(), {'mult_fsm_s3'}]
-mult_fsm_s3___final : ( 1 ) [set()]
-mult_fsm_s1___final : ( 1 ) [{'mult_fsm_s2'}]
+div_fsm_s1___final : ( 1 ) [set()]
 =========================================

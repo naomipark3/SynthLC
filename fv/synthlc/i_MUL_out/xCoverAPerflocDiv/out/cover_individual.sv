@@ -35,40 +35,10 @@ wire mult_fsm_s5 =
 	(mult_state == 2'd1) && 
 	 1'b1; 
 
-wire mult_fsm_s6 = 
-	(mul_owner_pc == pc0) && 
-	(mul_owner_v == 1'd1) && 
-	(mult_state == 2'd2) && 
-	 1'b1; 
-
 wire div_fsm_s1 = 
 	(div_owner_pc == pc0) && 
 	(div_owner_v == 1'd0) && 
 	(div_state == 3'd1) && 
-	 1'b1; 
-
-wire div_fsm_s10 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd2) && 
-	 1'b1; 
-
-wire div_fsm_s11 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd3) && 
-	 1'b1; 
-
-wire div_fsm_s12 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd4) && 
-	 1'b1; 
-
-wire div_fsm_s13 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd5) && 
 	 1'b1; 
 
 wire div_fsm_s14 = 
@@ -132,18 +102,13 @@ C_1: cover property (@(posedge clk_i) mult_fsm_s1);
 C_2: cover property (@(posedge clk_i) mult_fsm_s2);
 C_3: cover property (@(posedge clk_i) mult_fsm_s3);
 C_4: cover property (@(posedge clk_i) mult_fsm_s5);
-C_5: cover property (@(posedge clk_i) mult_fsm_s6);
-C_6: cover property (@(posedge clk_i) div_fsm_s1);
-C_7: cover property (@(posedge clk_i) div_fsm_s10);
-C_8: cover property (@(posedge clk_i) div_fsm_s11);
-C_9: cover property (@(posedge clk_i) div_fsm_s12);
-C_10: cover property (@(posedge clk_i) div_fsm_s13);
-C_11: cover property (@(posedge clk_i) div_fsm_s14);
-C_12: cover property (@(posedge clk_i) div_fsm_s2);
-C_13: cover property (@(posedge clk_i) div_fsm_s3);
-C_14: cover property (@(posedge clk_i) div_fsm_s4);
-C_15: cover property (@(posedge clk_i) div_fsm_s5);
-C_16: cover property (@(posedge clk_i) div_fsm_s6);
-C_17: cover property (@(posedge clk_i) div_fsm_s9);
-C_18: cover property (@(posedge clk_i) lsu_fsm_s8);
-C_19: cover property (@(posedge clk_i) wb_stage_s1);
+C_5: cover property (@(posedge clk_i) div_fsm_s1);
+C_6: cover property (@(posedge clk_i) div_fsm_s14);
+C_7: cover property (@(posedge clk_i) div_fsm_s2);
+C_8: cover property (@(posedge clk_i) div_fsm_s3);
+C_9: cover property (@(posedge clk_i) div_fsm_s4);
+C_10: cover property (@(posedge clk_i) div_fsm_s5);
+C_11: cover property (@(posedge clk_i) div_fsm_s6);
+C_12: cover property (@(posedge clk_i) div_fsm_s9);
+C_13: cover property (@(posedge clk_i) lsu_fsm_s8);
+C_14: cover property (@(posedge clk_i) wb_stage_s1);

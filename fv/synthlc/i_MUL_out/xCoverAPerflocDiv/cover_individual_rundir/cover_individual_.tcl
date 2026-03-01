@@ -42,7 +42,7 @@ if {$FPV == 1} {
     # assume -enable {.*ASSUME_W_R} -regexp
     # assume -disable {.*ASSUME_R_W} -regexp
 
-    task -create mytask -copy_assumes  -copy {.*C_0.*} -copy {.*C_1.*} -copy {.*C_2.*} -copy {.*C_3.*} -copy {.*C_4.*} -copy {.*C_5.*} -copy {.*C_6.*} -copy {.*C_7.*} -copy {.*C_8.*} -copy {.*C_9.*} -copy {.*C_10.*} -copy {.*C_11.*} -copy {.*C_12.*} -copy {.*C_13.*} -copy {.*C_14.*} -copy {.*C_15.*} -copy {.*C_16.*} -copy {.*C_17.*} -copy {.*C_18.*} -copy {.*C_19.*}  -regexp
+    task -create mytask -copy_assumes  -copy {.*C_0.*} -copy {.*C_1.*} -copy {.*C_2.*} -copy {.*C_3.*} -copy {.*C_4.*} -copy {.*C_5.*} -copy {.*C_6.*} -copy {.*C_7.*} -copy {.*C_8.*} -copy {.*C_9.*} -copy {.*C_10.*} -copy {.*C_11.*} -copy {.*C_12.*} -copy {.*C_13.*} -copy {.*C_14.*}  -regexp
     task -set mytask
 
     if { $CUSTOMTCL == 1 } {

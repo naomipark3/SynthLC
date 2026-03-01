@@ -35,40 +35,10 @@ wire mult_fsm_s5 =
 	(mult_state == 2'd1) && 
 	 1'b1; 
 
-wire mult_fsm_s6 = 
-	(mul_owner_pc == pc0) && 
-	(mul_owner_v == 1'd1) && 
-	(mult_state == 2'd2) && 
-	 1'b1; 
-
 wire div_fsm_s1 = 
 	(div_owner_pc == pc0) && 
 	(div_owner_v == 1'd0) && 
 	(div_state == 3'd1) && 
-	 1'b1; 
-
-wire div_fsm_s10 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd2) && 
-	 1'b1; 
-
-wire div_fsm_s11 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd3) && 
-	 1'b1; 
-
-wire div_fsm_s12 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd4) && 
-	 1'b1; 
-
-wire div_fsm_s13 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd5) && 
 	 1'b1; 
 
 wire div_fsm_s14 = 
@@ -128,25 +98,25 @@ i_DIV_1: assume property (i0[14:12] == 3'b100);
 i_DIV_2: assume property (i0[11:7] != 5'd0);
 i_DIV_3: assume property (i0[6:0] == 7'b0110011);
 
-reg mult_fsm_s5_hpn;
+reg div_fsm_s14_hpn;
 always @(posedge clk_i) begin
     if (!rst_ni) 
-        mult_fsm_s5_hpn <= 1'b0;
-    else if (mult_fsm_s5)
-        mult_fsm_s5_hpn <= 1'b1;
+        div_fsm_s14_hpn <= 1'b0;
+    else if (div_fsm_s14)
+        div_fsm_s14_hpn <= 1'b1;
 end
-reg wb_stage_s1_hpn;
+reg div_fsm_s6_hpn;
 always @(posedge clk_i) begin
     if (!rst_ni) 
-        wb_stage_s1_hpn <= 1'b0;
-    else if (wb_stage_s1)
-        wb_stage_s1_hpn <= 1'b1;
+        div_fsm_s6_hpn <= 1'b0;
+    else if (div_fsm_s6)
+        div_fsm_s6_hpn <= 1'b1;
 end
 
 `ifndef WHB
-HB_94: assert property (@(posedge clk_i) (mult_fsm_s5 && !mult_fsm_s5_hpn) |-> !(wb_stage_s1_hpn || wb_stage_s1));
+HB_94: assert property (@(posedge clk_i) (div_fsm_s14 && !div_fsm_s14_hpn) |-> !(div_fsm_s6_hpn || div_fsm_s6));
 `else 
-//C_94: cover property (@(posedge clk_i) (mult_fsm_s5 && !mult_fsm_s5_hpn) && (wb_stage_s1 && !wb_stage_s1_hpn));
-WHB_94: assert property (@(posedge clk_i) (mult_fsm_s5 && !mult_fsm_s5_hpn) |-> !wb_stage_s1_hpn);
-WHB_CONCUR_94: assert property (@(posedge clk_i) (mult_fsm_s5 && !mult_fsm_s5_hpn) |-> (wb_stage_s1 && !wb_stage_s1_hpn));
+//C_94: cover property (@(posedge clk_i) (div_fsm_s14 && !div_fsm_s14_hpn) && (div_fsm_s6 && !div_fsm_s6_hpn));
+WHB_94: assert property (@(posedge clk_i) (div_fsm_s14 && !div_fsm_s14_hpn) |-> !div_fsm_s6_hpn);
+WHB_CONCUR_94: assert property (@(posedge clk_i) (div_fsm_s14 && !div_fsm_s14_hpn) |-> (div_fsm_s6 && !div_fsm_s6_hpn));
 `endif 

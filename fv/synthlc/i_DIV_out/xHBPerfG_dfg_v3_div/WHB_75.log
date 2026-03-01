@@ -10,7 +10,7 @@ SYMBOLIC? 0
 
 [RUN_JG] CMDTASK: task -create mytask -copy_assumes -copy {.*HB_75.*} -copy {.*WHB_75.*} -copy {.*WHB_CONCUR_75.*}   -regexp
 [RUN_JG] no gui
-[RUN_JG] jg -no_gui -fpv ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_.tcl -proj ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_jgsession_26-02-26-13_14_36
+[RUN_JG] jg -no_gui -fpv ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_.tcl -proj ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_jgsession_26-02-27-16_48_21
 Jasper Apps 2023.12p001 64 bits 2024.01.23 16:09:24 UTC
 
 Any disclosure about the Cadence Design Systems software or its use
@@ -46,7 +46,7 @@ Rights at 48 CFR 52.227-19, as applicable.
 
 For technical assistance visit http://support.cadence.com.
 
-Jasper Apps Analysis Session - /home/users/cheriek/Documents/Formal_Method/final_project/SynthLC/fv/synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_jgsession_26-02-26-13_14_36/sessionLogs/session_0
+Jasper Apps Analysis Session - /home/users/cheriek/Documents/Formal_Method/final_project/SynthLC/fv/synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_jgsession_26-02-27-16_48_21/sessionLogs/session_0
 
 INFO: successfully checked out licenses "jasper_interactive" and "jasper_fao".
 INFO: reading configuration file "/home/users/cheriek/.config/cadence/jasper.conf".
@@ -366,11 +366,11 @@ INFO (INL011): Processing "-f" file "/home/users/cheriek/Documents/Formal_Method
 [INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_slow.sv(12): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
 [-- (VERI-1482)] Analyzing Verilog file './synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv'
 [INFO (VERI-1328)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(10): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
-[WARN (VERI-9001)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(615): redefinition of command line macro WHB here ignored
-[WARN (VERI-1763)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(740): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(741): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(742): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(743): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-9001)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(633): redefinition of command line macro WHB here ignored
+[WARN (VERI-1763)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(728): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(729): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(730): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/WHB_75_top.sv(731): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
 [-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_prefetch_buffer.sv'
 [-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv'
 [INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv(13): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
@@ -571,20 +571,20 @@ INFO (IPF031): Settings used for proof thread 0:
     proofgrid_restarts            = 10
 0: Using multistage preprocessing
 0: Starting reduce
-0: Finished reduce in 0.047s
+0: Finished reduce in 0.068s
 0.0.PRE: Performing Proof Simplification...
 0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.K: Proof Simplification Iteration 1	[0.00 s]
-0.0.K: Proof Simplification Iteration 2	[0.04 s]
-0.0.K: Proof Simplification Iteration 3	[0.06 s]
-0.0.K: Proof Simplification Iteration 4	[0.08 s]
-0.0.K: Proof Simplification Iteration 5	[0.10 s]
-0.0.K: Proof Simplification Iteration 6	[0.12 s]
-0.0.K: Proof Simplification Iteration 7	[0.14 s]
-0.0.K: Proof Simplification Iteration 8	[0.16 s]
-0.0.K: Proof Simplification Iteration 9	[0.18 s]
-0.0.K: Proof Simplification Iteration 10	[0.20 s]
-0.0.PRE: Proof Simplification completed in 0.25 s
+0.0.K: Proof Simplification Iteration 1	[0.01 s]
+0.0.K: Proof Simplification Iteration 2	[0.07 s]
+0.0.K: Proof Simplification Iteration 3	[0.09 s]
+0.0.K: Proof Simplification Iteration 4	[0.11 s]
+0.0.K: Proof Simplification Iteration 5	[0.13 s]
+0.0.K: Proof Simplification Iteration 6	[0.16 s]
+0.0.K: Proof Simplification Iteration 7	[0.18 s]
+0.0.K: Proof Simplification Iteration 8	[0.20 s]
+0.0.K: Proof Simplification Iteration 9	[0.22 s]
+0.0.K: Proof Simplification Iteration 10	[0.24 s]
+0.0.PRE: Proof Simplification completed in 0.29 s
 0.0.K: Identified and disabled 1 duplicated target.
 0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
 0: =============================== ProofGrid start ===============================
@@ -592,77 +592,94 @@ INFO (IPF031): Settings used for proof thread 0:
 0: Initial ProofGrid level: 1
 0: ProofGrid is starting event handling
 0.0.C: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.N: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.I: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.K: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.AM: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.Tri: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.AD: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.B: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.C: Proofgrid shell started at 2210156@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
-0.0.C: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.I: Proofgrid shell started at 2210161@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
+0.0.I: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.Hp: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.K: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.C: Proofgrid shell started at 3236201@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
+0.0.N: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.C: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.C: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
 0.0.C: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
-0.0.Tri: Proofgrid shell started at 2210158@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
-0.0.I: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.AD: Proofgrid shell started at 2210171@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
-0.0.AM: Proofgrid shell started at 2210181@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
-0.0.C: Trace Attempt  1	[0.02 s]
-0.0.C: Trace Attempt  2	[0.03 s]
-0.0.C: Trace Attempt  3	[0.03 s]
+0.0.Hp: Proofgrid shell started at 3236221@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
+0.0.C: Trace Attempt  1	[0.01 s]
+0.0.AD: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.AM: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.B: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.C: Trace Attempt  2	[0.02 s]
+0.0.C: Trace Attempt  3	[0.02 s]
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Proofgrid shell started at 3236212@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
+0.0.C: Trace Attempt  3	[0.07 s]
+0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.N: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
+0.0.C: Trace Attempt  4	[0.09 s]
+0.0.C: Trace Attempt  5	[0.09 s]
+0.0.K: Proofgrid shell started at 3236200@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
+0.0.Tri: Proofgrid shell started at 3236207@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
+0.0.I: Proofgrid shell started at 3236210@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
+0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.K: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
 0.0.Tri: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.C: Trace Attempt  5	[0.18 s]
+0.0.I: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AM: Proofgrid shell started at 3236218@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
 0.0.I: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
 0.0.I: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
 0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.AD: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.AM: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
 0.0.AM: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
-0.0.C: Trace Attempt  3	[0.07 s]
-0.0.I: Trace Attempt  2	[0.03 s]
-0.0.N: Proofgrid shell started at 2210167@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
-0.0.AD: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
-0.0.AD: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
-0.0.I: Trace Attempt  3	[0.04 s]
-0.0.I: Trace Attempt  4	[0.04 s]
-0.0.C: Trace Attempt  4	[0.09 s]
-0.0.C: Trace Attempt  5	[0.09 s]
-0.0.AD: Trace Attempt  1	[0.02 s]
-0.0.AM: Trace Attempt  1	[0.05 s]
-0.0.K: Proofgrid shell started at 2210155@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
-0.0.AD: Trace Attempt  2	[0.04 s]
-0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.AD: Trace Attempt  3	[0.06 s]
-0.0.N: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
-0.0.N: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
-0.0.AM: Trace Attempt  2	[0.09 s]
-0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.I: Trace Attempt  4	[0.12 s]
-0.0.AD: Trace Attempt  4	[0.08 s]
-0.0.K: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
-0.0.K: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
-0.0.C: Trace Attempt  5	[0.17 s]
-0.0.AD: Trace Attempt  5	[0.10 s]
+0.0.AM: Trace Attempt  1	[0.03 s]
+0.0.B: Proofgrid shell started at 3236228@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
+0.0.AD: Proofgrid shell started at 3236214@caddy12.stanford.edu(local) jg_3235895_caddy12.stanford.edu_1
 0.0.Tri: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
 0.0.Tri: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
 0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.I: Trace Attempt  5	[0.15 s]
-0.0.AM: Trace Attempt  3	[0.12 s]
-0.0.B: Proofgrid shell started at 2210199@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
-0.0.AM: Trace Attempt  4	[0.17 s]
+0.0.AM: Trace Attempt  2	[0.06 s]
 0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Trace Attempt  5	[0.20 s]
 0.0.B: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
 0.0.B: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
-0.0.AM: Trace Attempt  5	[0.19 s]
-0.0.Hp: Proofgrid shell started at 2210192@caddy12.stanford.edu(local) jg_2209806_caddy12.stanford.edu_1
 0.0.B: Trace Attempt  1	[0.01 s]
-0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.B: Trace Attempt  2	[0.04 s]
+0.0.K: Trace Attempt  5	[0.15 s]
+0.0.AD: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AM: Trace Attempt  3	[0.10 s]
+0.0.B: Trace Attempt  2	[0.02 s]
+0.0.AD: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.AD: Starting proof for property "ibex_fv.WHB_75"	[0.00 s].
+0.0.B: Trace Attempt  3	[0.05 s]
 0.0.Tri:    0.01" ---- Launching main thread ----
-0.0.B: Trace Attempt  3	[0.07 s]
-0.0.B: Trace Attempt  4	[0.10 s]
-0.0.N: Trace Attempt  7	[0.25 s]
+0.0.AD: Trace Attempt  1	[0.03 s]
+0.0.B: Trace Attempt  4	[0.06 s]
+0.0.AM: Trace Attempt  4	[0.14 s]
+0.0.AD: Trace Attempt  2	[0.06 s]
+0.0.AM: Trace Attempt  5	[0.17 s]
+0.0.Hp: Trace Attempt  1	[0.37 s]
+0.0.Hp: Trace Attempt  2	[0.37 s]
+0.0.B: Trace Attempt  5	[0.11 s]
+0.0.AD: Trace Attempt  3	[0.11 s]
+0.0.K: Trace Attempt  1	[0.30 s]
+0.0.I: Trace Attempt  6	[0.27 s]
+0.0.AD: Trace Attempt  4	[0.18 s]
+0.0.AD: Trace Attempt  5	[0.21 s]
+0.0.Tri:    0.25" ---- Launching abstraction thread ----
+0.0.Tri:    0.27" ---- Launching multi-phase simplification thread ----
+0.0.Hp: Trace Attempt  3	[0.75 s]
+0.0.Tri: Trace Attempt  2	[0.59 s]
+0.0.Tri: Trace Attempt  3	[0.65 s]
+0.0.Tri: Trace Attempt  4	[0.91 s]
+0.0.Tri: Trace Attempt  5	[0.91 s]
+0.0.Hp: Trace Attempt  4	[1.16 s]
+0.0.K: Trace Attempt  1	[1.14 s]
+0.0.K: Trace Attempt  2	[1.16 s]
+0.0.K: Trace Attempt  3	[1.16 s]
+0.0.K: Trace Attempt  4	[1.18 s]
+0.0.K: Trace Attempt  5	[1.20 s]
+0.0.AM: Trace Attempt  1	[1.16 s]
+0.0.AM: Trace Attempt  2	[1.22 s]
+0.0.AM: Trace Attempt  3	[1.23 s]
 0.0.K: Requesting engine job to stop
 0.0.C: Requesting engine job to stop
 0.0.Tri: Requesting engine job to stop
@@ -672,49 +689,49 @@ INFO (IPF031): Settings used for proof thread 0:
 0.0.AM: Requesting engine job to stop
 0.0.B: Requesting engine job to stop
 0.0.Hp: Requesting engine job to terminate
-INFO (IPF144): 0: Initiating shutdown of proof [0.46 s]
-0.0.AD: Trace Attempt  8	[0.17 s]
-0.0.AD: A trace with 8 cycles was found. [0.34 s]
-INFO (IPF055): 0.0.AD: A counterexample (cex) with 8 cycles was found for the property "ibex_fv.WHB_75" in 0.49 s.
-INFO (IPF047): 0.0.AD: The cover property "ibex_fv.WHB_75:precondition1" was covered in 8 cycles in 0.49 s by the incidental trace "ibex_fv.WHB_75".
-INFO (IPF055): 0.0.AD: A counterexample (cex) with 8 cycles was found for the property "ibex_fv.WHB_CONCUR_75" in 0.49 s by the incidental trace "ibex_fv.WHB_75".
-INFO (IPF047): 0.0.AD: The cover property "ibex_fv.WHB_CONCUR_75:precondition1" was covered in 8 cycles in 0.49 s by the incidental trace "ibex_fv.WHB_75".
-0.0.AD: Stopped processing property "ibex_fv.WHB_75"	[0.51 s].
-0.0.AD: Interrupted. [0.37 s]
-0.0.B: Trace Attempt  5	[0.21 s]
-0.0.I: Trace Attempt  7	[0.38 s]
-0.0.I: Stopped processing property "ibex_fv.WHB_75"	[0.56 s].
-0.0.I: Interrupted. [0.42 s]
-0.0.I: Exited with Success (@ 0.49 s)
+INFO (IPF144): 0: Initiating shutdown of proof [1.49 s]
+0.0.B: Trace Attempt 12	[0.73 s]
+0.0.B: A trace with 12 cycles was found. [1.17 s]
+INFO (IPF055): 0.0.B: A counterexample (cex) with 12 cycles was found for the property "ibex_fv.WHB_75" in 3.57 s.
+INFO (IPF047): 0.0.B: The cover property "ibex_fv.WHB_75:precondition1" was covered in 12 cycles in 3.57 s by the incidental trace "ibex_fv.WHB_75".
+INFO (IPF055): 0.0.B: A counterexample (cex) with 12 cycles was found for the property "ibex_fv.WHB_CONCUR_75" in 3.57 s by the incidental trace "ibex_fv.WHB_75".
+INFO (IPF047): 0.0.B: The cover property "ibex_fv.WHB_CONCUR_75:precondition1" was covered in 12 cycles in 3.57 s by the incidental trace "ibex_fv.WHB_75".
+0.0.B: Stopped processing property "ibex_fv.WHB_75"	[3.61 s].
+0.0.AM: Stopped processing property "ibex_fv.WHB_75"	[3.67 s].
+0.0.B: Interrupted. [1.19 s]
+0.0.AM: Interrupted. [1.26 s]
+0.0.AM: Exited with Success (@ 1.50 s)
 0: ProofGrid usable level: 0
-0.0.AD: Exited with Success (@ 0.50 s)
+0.0.K: Trace Attempt  8	[1.30 s]
+0.0.K: Stopped processing property "ibex_fv.WHB_75"	[3.74 s].
+0.0.K: Interrupted. [1.34 s]
+0.0.B: Exited with Success (@ 1.52 s)
+0.0.K: Exited with Success (@ 1.52 s)
+0.0.I: Trace Attempt 10	[1.31 s]
+0.0.I: Stopped processing property "ibex_fv.WHB_75"	[3.70 s].
+0.0.N: Trace Attempt  9	[1.29 s]
+0.0.N: Stopped processing property "ibex_fv.WHB_75"	[3.81 s].
+0.0.N: Interrupted. [1.43 s]
+0.0.I: Interrupted. [1.32 s]
+0.0.I: Exited with Success (@ 1.54 s)
+0.0.N: Exited with Success (@ 1.54 s)
+0.0.Tri: Trace Attempt 12	[1.13 s]
+0.0.Tri: Stopped processing property "ibex_fv.WHB_75"	[3.62 s].
+0.0.C: Trace Attempt 10	[1.53 s]
+0.0.C: Stopped processing property "ibex_fv.WHB_75"	[3.89 s].
+0.0.C: Interrupted. [1.54 s]
 0.0.Hp: Interrupted (multi)
-0.0.Hp: Interrupted. [0.21 s]
-0.0.K: Trace Attempt  7	[0.30 s]
-0.0.Tri:    0.18" ---- Launching abstraction thread ----
-0.0.N: Stopped processing property "ibex_fv.WHB_75"	[0.45 s].
-0.0.N: Interrupted. [0.33 s]
-0.0.Hp: Exited with Success (@ 0.51 s)
-0.0.C: Trace Attempt  7	[0.31 s]
-0.0.C: Stopped processing property "ibex_fv.WHB_75"	[0.59 s].
-0.0.C: Interrupted. [0.48 s]
-0.0.Tri: Stopped processing property "ibex_fv.WHB_75"	[0.41 s].
-0.0.C: Exited with Success (@ 0.52 s)
-0.0.N: Exited with Success (@ 0.52 s)
-0.0.AM: Trace Attempt  8	[0.27 s]
-0.0.AM: Stopped processing property "ibex_fv.WHB_75"	[0.52 s].
-0.0.AM: Interrupted. [0.42 s]
-0.0.K: Stopped processing property "ibex_fv.WHB_75"	[0.43 s].
-0.0.K: Interrupted. [0.32 s]
-0.0.Tri: Interrupted. [0.31 s]
-0.0.AM: Exited with Success (@ 0.53 s)
-0.0.K: Exited with Success (@ 0.53 s)
-0.0.Tri: Exited with Success (@ 0.53 s)
-0.0.B: Stopped processing property "ibex_fv.WHB_75"	[0.34 s].
-0.0.B: Interrupted. [0.27 s]
-0.0.B: Exited with Success (@ 0.55 s)
+0.0.Hp: Interrupted. [1.51 s]
+0.0.C: Exited with Success (@ 1.56 s)
+0.0.Tri: Interrupted. [1.28 s]
+0.0.Tri: Exited with Success (@ 1.57 s)
+0.0.AD: Trace Attempt 10	[1.18 s]
+0.0.AD: Stopped processing property "ibex_fv.WHB_75"	[3.57 s].
+0.0.AD: Interrupted. [1.24 s]
+0.0.AD: Exited with Success (@ 1.58 s)
+0.0.Hp: Exited with Success (@ 1.65 s)
 0: --------------------------------------------------------------
-ProofGrid Summary (utilization 48.51 %)
+ProofGrid Summary (utilization 82.37 %)
 --------------------------------------------------------------
      engines started                               :     9
      engine jobs started                           :     9
@@ -724,25 +741,25 @@ ProofGrid Summary (utilization 48.51 %)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      K        0.57        0.27        0.00       32.56 %
-      C        0.32        0.45        0.00       58.41 %
-    Tri        0.34        0.41        0.00       54.05 %
-      I        0.30        0.41        0.00       57.20 %
-      N        0.35        0.31        0.00       47.28 %
-     AD        0.27        0.37        0.00       58.29 %
-     AM        0.24        0.39        0.00       62.37 %
-     Hp        0.42        0.16        0.00       27.88 %
-      B        0.35        0.20        0.00       36.25 %
-    all        0.35        0.33        0.00       48.51 %
+      K        0.31        1.34        0.00       81.29 %
+      C        0.16        1.48        0.00       90.35 %
+    Tri        0.29        1.32        0.00       82.03 %
+      I        0.31        1.29        0.00       80.74 %
+      N        0.20        1.40        0.00       87.34 %
+     AD        0.42        1.17        0.00       73.78 %
+     AM        0.34        1.27        0.00       78.84 %
+     Hp        0.15        1.44        0.00       90.76 %
+      B        0.38        1.19        0.00       75.95 %
+    all        0.28        1.32        0.00       82.37 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               3.16        2.97        0.00
+               2.55       11.92        0.00
 
-    Data read    : 37.00 kiB
-    Data written : 9.24 kiB
+    Data read    : 84.96 kiB
+    Data written : 9.55 kiB
 
 0: All pending notifications were processed.
 INFO (IPF059): 0: Completed proof on task: "mytask"
@@ -774,7 +791,7 @@ END
 INFO (IPL014): Waiting for the Tcl-thread to exit.
 INFO: Waiting for proof threads to stop...
 INFO: Proof threads stopped.
-INFO (IPL018): The peak resident set memory use for this session was 0.420 GB.
+INFO (IPL018): The peak resident set memory use for this session was 0.413 GB.
 INFO (IPL015): The Tcl-thread exited with status 0.
 INFO (IPL016): Exiting the analysis session with status 0.
 ./RUN_JG.sh -j ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div -s ./synthlc/i_DIV_out/xHBPerfG_dfg_v3_div/out/WHB_75.sv  -g 0

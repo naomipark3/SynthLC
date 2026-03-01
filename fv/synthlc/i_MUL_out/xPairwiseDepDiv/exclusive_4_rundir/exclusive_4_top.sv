@@ -530,6 +530,12 @@ wire        id_fsm   = core_i.id_stage_i.id_fsm_q; // 0=FIRST_CYCLE 1=MULTI_CYCL
 wire [31:0] wb_pc    = core_i.wb_stage_i.g_writeback_stage.wb_pc_q;
 wire        wb_valid = core_i.wb_stage_i.g_writeback_stage.wb_valid_q;
 
+
+// [11B] track when the IUV reaches WB with instn_retired signal and add additional
+// constraint to prevent mult/div from starting at all while the IUV is in-flight
+// for ADDI, BEQ, and LW
+
+
 // =============================================================================
 // [12] µFSM owner tracking: LSU
 //
@@ -576,6 +582,17 @@ logic        mul_owner_v;
 logic [31:0] div_owner_pc;
 logic        div_owner_v;
 
+// RV32M opcode: funct7 == 7'b0000001 indicates M-extension
+// MUL/MULH/MULHSU/MULHU: funct3 == 3'b000/001/010/011
+// DIV/DIVU/REM/REMU:     funct3 == 3'b100/101/110/111
+wire is_mul_instn = (core_i.instr_rdata_id[6:0]  == 7'b0110011) && // R-type
+                    (core_i.instr_rdata_id[31:25] == 7'b0000001) && // funct7 = M-ext
+                    (core_i.instr_rdata_id[14:12] inside {3'b000, 3'b001, 3'b010, 3'b011});
+
+wire is_div_instn = (core_i.instr_rdata_id[6:0]  == 7'b0110011) && // R-type
+                    (core_i.instr_rdata_id[31:25] == 7'b0000001) && // funct7 = M-ext
+                    (core_i.instr_rdata_id[14:12] inside {3'b100, 3'b101, 3'b110, 3'b111});
+
 wire valid      = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.valid_o;
 wire [2:0] div_state  =
   core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q;
@@ -584,8 +601,9 @@ wire [1:0] mult_state =
 wire mult_en    = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i;
 wire div_en     = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i;
 
-wire mult_start = mult_en && (mult_state == 2'd0) && !mul_owner_v; // ALBL
-wire div_start  = div_en  && (div_state  == 3'd0) && !div_owner_v; // MD_IDLE
+// Only capture mul_owner_pc when the instruction in ID is actually a MUL type
+wire mult_start = mult_en && (mult_state == 2'd0) && !mul_owner_v && is_mul_instn;
+wire div_start  = div_en  && (div_state  == 3'd0) && !div_owner_v && is_div_instn;
 
 wire mul_done   = mul_owner_v && valid;
 wire div_done   = div_owner_v && valid;
@@ -648,40 +666,10 @@ wire mult_fsm_s5 =
 	(mult_state == 2'd1) && 
 	 1'b1; 
 
-wire mult_fsm_s6 = 
-	(mul_owner_pc == pc0) && 
-	(mul_owner_v == 1'd1) && 
-	(mult_state == 2'd2) && 
-	 1'b1; 
-
 wire div_fsm_s1 = 
 	(div_owner_pc == pc0) && 
 	(div_owner_v == 1'd0) && 
 	(div_state == 3'd1) && 
-	 1'b1; 
-
-wire div_fsm_s10 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd2) && 
-	 1'b1; 
-
-wire div_fsm_s11 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd3) && 
-	 1'b1; 
-
-wire div_fsm_s12 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd4) && 
-	 1'b1; 
-
-wire div_fsm_s13 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd5) && 
 	 1'b1; 
 
 wire div_fsm_s14 = 
@@ -749,14 +737,14 @@ always @(posedge clk_i) begin
         id_stage_s1_hpn <= 1'b1;
 end
 
-reg div_fsm_s1_hpn;
+reg wb_stage_s1_hpn;
 always @(posedge clk_i) begin
     if (!rst_ni)
-        div_fsm_s1_hpn <= 1'b0;
-    else if (div_fsm_s1)
-        div_fsm_s1_hpn <= 1'b1;
+        wb_stage_s1_hpn <= 1'b0;
+    else if (wb_stage_s1)
+        wb_stage_s1_hpn <= 1'b1;
 end
 
-C_4: cover property (@(posedge clk_i) (id_stage_s1_hpn && div_fsm_s1_hpn));
+C_4: cover property (@(posedge clk_i) (id_stage_s1_hpn && wb_stage_s1_hpn));
 
 endmodule

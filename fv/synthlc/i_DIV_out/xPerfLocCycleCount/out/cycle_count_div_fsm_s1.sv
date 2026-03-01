@@ -35,40 +35,10 @@ wire mult_fsm_s5 =
 	(mult_state == 2'd1) && 
 	 1'b1; 
 
-wire mult_fsm_s6 = 
-	(mul_owner_pc == pc0) && 
-	(mul_owner_v == 1'd1) && 
-	(mult_state == 2'd2) && 
-	 1'b1; 
-
 wire div_fsm_s1 = 
 	(div_owner_pc == pc0) && 
 	(div_owner_v == 1'd0) && 
 	(div_state == 3'd1) && 
-	 1'b1; 
-
-wire div_fsm_s10 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd2) && 
-	 1'b1; 
-
-wire div_fsm_s11 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd3) && 
-	 1'b1; 
-
-wire div_fsm_s12 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd4) && 
-	 1'b1; 
-
-wire div_fsm_s13 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd5) && 
 	 1'b1; 
 
 wire div_fsm_s14 = 

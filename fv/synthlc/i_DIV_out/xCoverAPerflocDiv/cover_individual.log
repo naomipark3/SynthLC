@@ -7,9 +7,9 @@ SYMBOLIC? 0
 ====================
 [RUN_JG] TCLF is ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_.tcl
 
-[RUN_JG] CMDTASK: task -create mytask -copy_assumes  -copy {.*C_0.*} -copy {.*C_1.*} -copy {.*C_2.*} -copy {.*C_3.*} -copy {.*C_4.*} -copy {.*C_5.*} -copy {.*C_6.*} -copy {.*C_7.*} -copy {.*C_8.*} -copy {.*C_9.*} -copy {.*C_10.*} -copy {.*C_11.*} -copy {.*C_12.*} -copy {.*C_13.*} -copy {.*C_14.*} -copy {.*C_15.*} -copy {.*C_16.*} -copy {.*C_17.*} -copy {.*C_18.*} -copy {.*C_19.*}  -regexp
+[RUN_JG] CMDTASK: task -create mytask -copy_assumes  -copy {.*C_0.*} -copy {.*C_1.*} -copy {.*C_2.*} -copy {.*C_3.*} -copy {.*C_4.*} -copy {.*C_5.*} -copy {.*C_6.*} -copy {.*C_7.*} -copy {.*C_8.*} -copy {.*C_9.*} -copy {.*C_10.*} -copy {.*C_11.*} -copy {.*C_12.*} -copy {.*C_13.*} -copy {.*C_14.*}  -regexp
 [RUN_JG] no gui
-[RUN_JG] jg -no_gui -fpv ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_.tcl -proj ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_jgsession_26-02-26-08_57_55
+[RUN_JG] jg -no_gui -fpv ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_.tcl -proj ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_jgsession_26-02-27-14_40_15
 Jasper Apps 2023.12p001 64 bits 2024.01.23 16:09:24 UTC
 
 Any disclosure about the Cadence Design Systems software or its use
@@ -45,7 +45,7 @@ Rights at 48 CFR 52.227-19, as applicable.
 
 For technical assistance visit http://support.cadence.com.
 
-Jasper Apps Analysis Session - /home/users/cheriek/Documents/Formal_Method/final_project/SynthLC/fv/synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_jgsession_26-02-26-08_57_55/sessionLogs/session_0
+Jasper Apps Analysis Session - /home/users/cheriek/Documents/Formal_Method/final_project/SynthLC/fv/synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_jgsession_26-02-27-14_40_15/sessionLogs/session_0
 
 INFO: successfully checked out licenses "jasper_interactive" and "jasper_fao".
 INFO: reading configuration file "/home/users/cheriek/.config/cadence/jasper.conf".
@@ -365,10 +365,10 @@ INFO (INL011): Processing "-f" file "/home/users/cheriek/Documents/Formal_Method
 [INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_slow.sv(12): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
 [-- (VERI-1482)] Analyzing Verilog file './synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv'
 [INFO (VERI-1328)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(10): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
-[WARN (VERI-1763)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(739): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(740): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(741): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(742): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(727): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(728): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(729): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_DIV_out/xCoverAPerflocDiv/cover_individual_top.sv(730): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
 [-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_prefetch_buffer.sv'
 [-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv'
 [INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv(13): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
@@ -416,7 +416,7 @@ INFO (INL011): Processing "-f" file "/home/users/cheriek/Documents/Formal_Method
     # assume -enable {.*ASSUME_W_R} -regexp
     # assume -disable {.*ASSUME_R_W} -regexp
 
-    task -create mytask -copy_assumes  -copy {.*C_0.*} -copy {.*C_1.*} -copy {.*C_2.*} -copy {.*C_3.*} -copy {.*C_4.*} -copy {.*C_5.*} -copy {.*C_6.*} -copy {.*C_7.*} -copy {.*C_8.*} -copy {.*C_9.*} -copy {.*C_10.*} -copy {.*C_11.*} -copy {.*C_12.*} -copy {.*C_13.*} -copy {.*C_14.*} -copy {.*C_15.*} -copy {.*C_16.*} -copy {.*C_17.*} -copy {.*C_18.*} -copy {.*C_19.*}  -regexp
+    task -create mytask -copy_assumes  -copy {.*C_0.*} -copy {.*C_1.*} -copy {.*C_2.*} -copy {.*C_3.*} -copy {.*C_4.*} -copy {.*C_5.*} -copy {.*C_6.*} -copy {.*C_7.*} -copy {.*C_8.*} -copy {.*C_9.*} -copy {.*C_10.*} -copy {.*C_11.*} -copy {.*C_12.*} -copy {.*C_13.*} -copy {.*C_14.*}  -regexp
     task -set mytask
 
     if { $CUSTOMTCL == 1 } {
@@ -540,11 +540,6 @@ WARNING (WPM021): No properties matched the specified regular expression(s) ".*C
 WARNING (WPM021): No properties matched the specified regular expression(s) ".*C_12.*".
 WARNING (WPM021): No properties matched the specified regular expression(s) ".*C_13.*".
 WARNING (WPM021): No properties matched the specified regular expression(s) ".*C_14.*".
-WARNING (WPM021): No properties matched the specified regular expression(s) ".*C_15.*".
-WARNING (WPM021): No properties matched the specified regular expression(s) ".*C_16.*".
-WARNING (WPM021): No properties matched the specified regular expression(s) ".*C_17.*".
-WARNING (WPM021): No properties matched the specified regular expression(s) ".*C_18.*".
-WARNING (WPM021): No properties matched the specified regular expression(s) ".*C_19.*".
 WARNING (WPM025): Property "ibex_fv.EVENTUAL_ISSUE:precondition1", a related cover of "ibex_fv.EVENTUAL_ISSUE", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.EXE_IUV:precondition1", a related cover of "ibex_fv.EXE_IUV", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.IF_ID_CONTRACT:precondition1", a related cover of "ibex_fv.IF_ID_CONTRACT", was not copied to the new task.
@@ -560,13 +555,13 @@ AUTOPROVE:
  PROVE TIME LIMIT
 1500s
 ==================================================
-INFO (IPF036): Starting proof on task: "mytask", 20 properties to prove with 0 already proven/unreachable
+INFO (IPF036): Starting proof on task: "mytask", 15 properties to prove with 0 already proven/unreachable
 INFO (IRS029): Starting reset analysis: phase 1 of 4.
 INFO (IRS030): Running reset analysis: phase 2 of 4.
 INFO (IRS031): Running reset analysis: phase 3 of 4.
 INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
 INFO (IRS024): Reset iterations 0 to 4 analyzed.
-INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1832 of 1906 design flops, 0 of 0 design latches, 184 of 315 internal elements.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1832 of 1906 design flops, 0 of 0 design latches, 179 of 310 internal elements.
 INFO (IRS039): Reset analysis complete.
 INFO (IPF031): Settings used for proof thread 0:
     orchestration                 = off (auto)
@@ -595,1421 +590,714 @@ INFO (IPF031): Settings used for proof thread 0:
 0.0.PRE: Proof Simplification completed in 0.24 s
 0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
 0: =============================== ProofGrid start ===============================
-0: ProofGrid usable level: 20
+0: ProofGrid usable level: 15
 0: Initial ProofGrid level: 1
 0: ProofGrid is starting event handling
-0.0.N: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.B: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.C: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.K: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.N: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.Tri: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.I: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.B: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.AD: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.AM: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.C: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.I: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.Hp: caddy12.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.I: Proofgrid shell started at 2048439@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.AD: Proofgrid shell started at 2048441@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.I: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.AD: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.AM: Proofgrid shell started at 2048442@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.Hp: Proofgrid shell started at 2048443@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.K: Proofgrid shell started at 2048436@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.C: Proofgrid shell started at 2048437@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.N: Proofgrid shell started at 2048440@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.B: Proofgrid shell started at 2048444@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.Tri: Proofgrid shell started at 2048438@caddy12.stanford.edu(local) jg_2048372_caddy12.stanford.edu_1
-0.0.I: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
-0.0.I: Starting proof for property "ibex_fv.C_0"	[0.00 s].
-0.0.AD: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
-0.0.AD: Starting proof for property "ibex_fv.C_0"	[0.00 s].
+0.0.N: Proofgrid shell started at 3123198@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
 0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.C: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.Tri: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: Proofgrid shell started at 3123197@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
+0.0.K: Proofgrid shell started at 3123194@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
+0.0.C: Proofgrid shell started at 3123195@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
+0.0.Tri: Proofgrid shell started at 3123196@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
+0.0.B: Proofgrid shell started at 3123202@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
+0.0.AD: Proofgrid shell started at 3123199@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
+0.0.AM: Proofgrid shell started at 3123200@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
+0.0.Hp: Proofgrid shell started at 3123201@caddy12.stanford.edu(local) jg_3123114_caddy12.stanford.edu_1
 0.0.N: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
 0.0.N: Starting proof for property "ibex_fv.C_0"	[0.00 s].
-0.0.AM: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
-0.0.AM: Starting proof for property "ibex_fv.C_0"	[0.00 s].
+0.0.I: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.C: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Tri: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AD: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.I: Starting proof for property "ibex_fv.C_0"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.01 s]
 0.0.C: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
 0.0.C: Starting proof for property "ibex_fv.C_0"	[0.00 s].
-0.0.B: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
-0.0.B: Starting proof for property "ibex_fv.C_0"	[0.00 s].
 0.0.K: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
 0.0.K: Starting proof for property "ibex_fv.C_0"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.B: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.B: Starting proof for property "ibex_fv.C_0"	[0.00 s].
+0.0.AD: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.AD: Starting proof for property "ibex_fv.C_0"	[0.00 s].
+0.0.AM: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
+0.0.AM: Starting proof for property "ibex_fv.C_0"	[0.00 s].
 0.0.I: Trace Attempt  1	[0.01 s]
-0.0.AD: Trace Attempt  1	[0.02 s]
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.I: Trace Attempt  2	[0.02 s]
-0.0.I: Trace Attempt  3	[0.02 s]
-0.0.N: Trace Attempt  1	[0.01 s]
 0.0.C: Trace Attempt  1	[0.01 s]
 0.0.K: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.C: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt  2	[0.02 s]
+0.0.C: Trace Attempt  2	[0.02 s]
 0.0.K: Trace Attempt  1	[0.01 s]
+0.0.AD: Trace Attempt  1	[0.01 s]
+0.0.AM: Trace Attempt  1	[0.01 s]
 0.0.B: Trace Attempt  2	[0.02 s]
 0.0.B: Trace Attempt  3	[0.02 s]
-0.0.AD: Trace Attempt  2	[0.03 s]
 0.0.I: Trace Attempt  2	[0.04 s]
+0.0.AD: Trace Attempt  2	[0.03 s]
+0.0.N: Trace Attempt  3	[0.05 s]
 0.0.AM: Trace Attempt  2	[0.03 s]
 0.0.B: Trace Attempt  4	[0.03 s]
 0.0.I: Trace Attempt  3	[0.05 s]
 0.0.I: Trace Attempt  4	[0.05 s]
-0.0.AD: Trace Attempt  3	[0.05 s]
 0.0.K: Trace Attempt  3	[0.05 s]
-0.0.N: Trace Attempt  3	[0.05 s]
 0.0.C: Trace Attempt  3	[0.05 s]
+0.0.N: Trace Attempt  4	[0.06 s]
+0.0.AD: Trace Attempt  3	[0.05 s]
 0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.AD: Trace Attempt  4	[0.06 s]
-0.0.B: A trace with 4 cycles was found. [0.05 s]
-INFO (IPF047): 0.0.B: The cover property "ibex_fv.C_0" was covered in 4 cycles in 0.10 s.
-0.0.B: Stopped processing property "ibex_fv.C_0"	[0.11 s].
 0.0.Tri: Next scan (0) will use per property time limit: 300s * 10 ^ 0 = 300s
-0.0.Tri: Starting proof for property "ibex_fv.C_1"	[0.00 s].
+0.0.Tri: Starting proof for property "ibex_fv.C_0"	[0.00 s].
 0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.B: A trace with 4 cycles was found. [0.05 s]
+INFO (IPF047): 0.0.B: The cover property "ibex_fv.C_0" was covered in 4 cycles in 0.28 s.
+0.0.B: Stopped processing property "ibex_fv.C_0"	[0.32 s].
 0.0.B: Starting proof for property "ibex_fv.C_1"	[0.00 s].
-0.0.AM: Trace Attempt  4	[0.06 s]
-0.0.I: Stopped processing property "ibex_fv.C_0"	[0.12 s].
+0.0.N: Stopped processing property "ibex_fv.C_0"	[0.34 s].
+0.0.N: Starting proof for property "ibex_fv.C_1"	[0.00 s].
+0.0.I: Stopped processing property "ibex_fv.C_0"	[0.32 s].
 0.0.I: Starting proof for property "ibex_fv.C_1"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.01 s]
+0.0.AD: Trace Attempt  4	[0.06 s]
+0.0.AM: Trace Attempt  4	[0.06 s]
 0.0.K: Trace Attempt  1	[0.07 s]
-0.0.K: Stopped processing property "ibex_fv.C_0"	[0.11 s].
+0.0.K: Stopped processing property "ibex_fv.C_0"	[0.32 s].
 0.0.K: Starting proof for property "ibex_fv.C_1"	[0.00 s].
 0.0.C: Trace Attempt  4	[0.07 s]
-0.0.C: Stopped processing property "ibex_fv.C_0"	[0.11 s].
+0.0.C: Stopped processing property "ibex_fv.C_0"	[0.32 s].
 0.0.C: Starting proof for property "ibex_fv.C_1"	[0.00 s].
-0.0.N: Trace Attempt  4	[0.07 s]
-0.0.N: Stopped processing property "ibex_fv.C_0"	[0.11 s].
-0.0.N: Starting proof for property "ibex_fv.C_1"	[0.00 s].
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.I: Trace Attempt  1	[0.01 s]
-0.0.AD: Stopped processing property "ibex_fv.C_0"	[0.12 s].
-0.0.AD: Starting proof for property "ibex_fv.C_1"	[0.00 s].
-0.0.AM: Stopped processing property "ibex_fv.C_0"	[0.11 s].
-0.0.AM: Starting proof for property "ibex_fv.C_1"	[0.00 s].
-0.0.I: Trace Attempt  2	[0.01 s]
-0.0.I: Trace Attempt  3	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  2	[0.01 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.I: Trace Attempt  2	[0.03 s]
-0.0.AM: Trace Attempt  2	[0.02 s]
-0.0.AD: Trace Attempt  2	[0.02 s]
-0.0.Tri:    0.01" ---- Launching main thread ----
-0.0.I: Trace Attempt  3	[0.04 s]
-0.0.I: Trace Attempt  4	[0.05 s]
-0.0.AM: Trace Attempt  3	[0.04 s]
-0.0.AD: Trace Attempt  3	[0.04 s]
-0.0.C: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt  3	[0.05 s]
-0.0.N: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt  5	[0.07 s]
-0.0.K: Trace Attempt  1	[0.07 s]
-0.0.AM: Trace Attempt  4	[0.06 s]
-0.0.K: Trace Attempt  2	[0.07 s]
-0.0.K: Trace Attempt  3	[0.07 s]
-0.0.K: Trace Attempt  4	[0.07 s]
-0.0.AD: Trace Attempt  4	[0.06 s]
-0.0.C: Trace Attempt  4	[0.07 s]
-0.0.K: Trace Attempt  5	[0.07 s]
-0.0.C: Trace Attempt  5	[0.07 s]
-0.0.N: Trace Attempt  4	[0.07 s]
-0.0.Tri:    0.04" ---- Launching abstraction thread ----
-0.0.I: Trace Attempt  3	[0.08 s]
-0.0.Tri:    0.05" ---- Launching multi-phase simplification thread ----
-0.0.AM: Trace Attempt  5	[0.07 s]
-0.0.AD: Trace Attempt  5	[0.07 s]
-0.0.I: Trace Attempt  4	[0.10 s]
-0.0.K: Trace Attempt  5	[0.14 s]
-0.0.C: Trace Attempt  5	[0.14 s]
-0.0.N: Trace Attempt  5	[0.14 s]
-0.0.I: Trace Attempt  4	[0.15 s]
-0.0.K: Trace Attempt  1	[0.17 s]
-0.0.K: Trace Attempt  2	[0.17 s]
-0.0.K: Trace Attempt  3	[0.18 s]
-0.0.Tri: Trace Attempt  2	[0.18 s]
-0.0.I: Trace Attempt  5	[0.18 s]
-0.0.Tri: Trace Attempt  3	[0.26 s]
-0.0.B: Trace Attempt  7	[0.20 s]
-0.0.B: A trace with 7 cycles was found. [0.26 s]
-INFO (IPF047): 0.0.B: The cover property "ibex_fv.C_1" was covered in 7 cycles in 0.23 s.
-INFO (IPF047): 0.0.B: The cover property "ibex_fv.C_19" was covered in 6 cycles in 0.23 s by the incidental trace "ibex_fv.C_1".
-INFO (IPF047): 0.0.B: The cover property "ibex_fv.C_4" was covered in 6 cycles in 0.23 s by the incidental trace "ibex_fv.C_1".
-0.0.B: Stopped processing property "ibex_fv.C_1"	[0.23 s].
-0.0.Tri: Trace Attempt  4	[0.27 s]
-0.0.B: Starting proof for property "ibex_fv.C_10"	[0.00 s].
-0.0.Tri: Stopped processing property "ibex_fv.C_1"	[0.23 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_10"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
 0.0.B: Trace Attempt  1	[0.01 s]
-0.0.Tri:    0.24" ---- Launching main thread ----
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.AM: Trace Attempt  7	[0.13 s]
-0.0.AM: Stopped processing property "ibex_fv.C_1"	[0.24 s].
-0.0.AM: Starting proof for property "ibex_fv.C_10"	[0.00 s].
-0.0.AD: Trace Attempt  7	[0.13 s]
-0.0.AD: Stopped processing property "ibex_fv.C_1"	[0.24 s].
-0.0.AD: Starting proof for property "ibex_fv.C_10"	[0.00 s].
-0.0.K: Trace Attempt  6	[0.27 s]
-0.0.K: Stopped processing property "ibex_fv.C_1"	[0.24 s].
-0.0.K: Starting proof for property "ibex_fv.C_10"	[0.00 s].
-0.0.C: Trace Attempt  6	[0.27 s]
-0.0.C: Stopped processing property "ibex_fv.C_1"	[0.24 s].
-0.0.C: Starting proof for property "ibex_fv.C_10"	[0.00 s].
-0.0.N: Trace Attempt  6	[0.27 s]
-0.0.N: Stopped processing property "ibex_fv.C_1"	[0.24 s].
-0.0.N: Starting proof for property "ibex_fv.C_10"	[0.00 s].
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.I: Trace Attempt  6	[0.28 s]
-0.0.I: Stopped processing property "ibex_fv.C_1"	[0.25 s].
-0.0.I: Starting proof for property "ibex_fv.C_10"	[0.00 s].
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  1	[0.01 s]
 0.0.N: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  2	[0.01 s]
-0.0.C: Trace Attempt  2	[0.01 s]
 0.0.I: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  3	[0.01 s]
-0.0.K: Trace Attempt  3	[0.01 s]
 0.0.N: Trace Attempt  2	[0.01 s]
 0.0.N: Trace Attempt  3	[0.01 s]
+0.0.K: Trace Attempt  1	[0.01 s]
+0.0.AD: Stopped processing property "ibex_fv.C_0"	[0.32 s].
+0.0.AD: Starting proof for property "ibex_fv.C_1"	[0.00 s].
 0.0.I: Trace Attempt  2	[0.01 s]
-0.0.Tri:    0.28" ---- Launching abstraction thread ----
+0.0.AM: Stopped processing property "ibex_fv.C_0"	[0.32 s].
+0.0.AM: Starting proof for property "ibex_fv.C_1"	[0.00 s].
+0.0.C: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.02 s]
+0.0.K: Trace Attempt  1	[0.01 s]
+0.0.C: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.03 s]
+0.0.AD: Trace Attempt  1	[0.01 s]
+0.0.AM: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt  2	[0.04 s]
+0.0.AD: Trace Attempt  2	[0.02 s]
+0.0.B: Trace Attempt  4	[0.04 s]
 0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.Tri:    0.29" ---- Launching multi-phase simplification thread ----
-0.0.B: Trace Attempt  5	[0.06 s]
-0.0.I: Trace Attempt  2	[0.03 s]
-0.0.N: Trace Attempt  3	[0.04 s]
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
+0.0.Tri:    0.01" ---- Launching main thread ----
+0.0.Tri: Stopped processing property "ibex_fv.C_0"	[0.27 s].
+0.0.Tri: Starting proof for property "ibex_fv.C_1"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  4	[0.05 s]
 0.0.K: Trace Attempt  3	[0.05 s]
+0.0.AD: Trace Attempt  3	[0.04 s]
+0.0.AM: Trace Attempt  3	[0.04 s]
 0.0.C: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  3	[0.04 s]
-0.0.I: Trace Attempt  4	[0.04 s]
+0.0.N: Trace Attempt  4	[0.07 s]
+0.0.N: Trace Attempt  5	[0.07 s]
+0.0.K: Trace Attempt  1	[0.07 s]
+0.0.AD: Trace Attempt  4	[0.06 s]
+0.0.AM: Trace Attempt  4	[0.06 s]
+0.0.C: Trace Attempt  4	[0.07 s]
+0.0.B: Trace Attempt  5	[0.08 s]
+0.0.Tri:    0.05" ---- Launching abstraction thread ----
+0.0.I: Trace Attempt  3	[0.09 s]
+0.0.AD: Trace Attempt  5	[0.07 s]
+0.0.Tri:    0.05" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  5	[0.07 s]
+0.0.I: Trace Attempt  4	[0.10 s]
+0.0.Tri:    0.07" ---- Launching main thread ----
+0.0.N: Trace Attempt  5	[0.14 s]
+0.0.Tri:    0.11" ---- Launching abstraction thread ----
+0.0.K: Trace Attempt  5	[0.14 s]
+0.0.Tri:    0.12" ---- Launching multi-phase simplification thread ----
+0.0.C: Trace Attempt  5	[0.15 s]
+0.0.I: Trace Attempt  4	[0.16 s]
+0.0.K: Trace Attempt  1	[0.18 s]
+0.0.K: Trace Attempt  2	[0.18 s]
+0.0.K: Trace Attempt  3	[0.19 s]
+0.0.I: Trace Attempt  5	[0.19 s]
+0.0.K: Trace Attempt  4	[0.19 s]
+0.0.K: Trace Attempt  5	[0.20 s]
+0.0.N: Trace Attempt  1	[0.22 s]
+0.0.N: Trace Attempt  2	[0.23 s]
+0.0.N: Trace Attempt  3	[0.23 s]
+0.0.N: Trace Attempt  5	[0.23 s]
+0.0.Tri: Trace Attempt  2	[0.21 s]
+0.0.I: Trace Attempt  5	[0.27 s]
+0.0.Tri: Trace Attempt  3	[0.24 s]
+0.0.Tri: Trace Attempt  4	[0.24 s]
+0.0.AD: Trace Attempt  1	[0.28 s]
+0.0.AM: Trace Attempt  1	[0.29 s]
+0.0.AD: Trace Attempt  2	[0.29 s]
+0.0.Tri: Trace Attempt  5	[0.27 s]
+0.0.I: Trace Attempt  1	[0.35 s]
+0.0.I: Trace Attempt  2	[0.35 s]
+0.0.AM: Trace Attempt  2	[0.34 s]
+0.0.I: Trace Attempt  3	[0.36 s]
+0.0.AD: Trace Attempt  3	[0.34 s]
+0.0.AM: Trace Attempt  3	[0.35 s]
+0.0.I: Trace Attempt  5	[0.38 s]
+0.0.AM: Trace Attempt  5	[0.39 s]
+0.0.AD: Trace Attempt  5	[0.45 s]
+0.0.I: A proof was found: No trace exists. [0.54 s]
+INFO (IPF051): 0.0.I: The cover property "ibex_fv.C_1" was proven unreachable in 0.28 s.
+0.0.I: Stopped processing property "ibex_fv.C_1"	[0.28 s].
+0.0.N: Trace Attempt  6	[0.31 s]
+0.0.N: Stopped processing property "ibex_fv.C_1"	[0.30 s].
+0.0.N: Starting proof for property "ibex_fv.C_10"	[0.00 s].
+0.0.I: Starting proof for property "ibex_fv.C_10"	[0.00 s].
+0.0.AD: Stopped processing property "ibex_fv.C_1"	[0.30 s].
+0.0.AD: Starting proof for property "ibex_fv.C_10"	[0.00 s].
+0.0.AM: Stopped processing property "ibex_fv.C_1"	[0.30 s].
+0.0.AM: Starting proof for property "ibex_fv.C_10"	[0.00 s].
+0.0.K: Trace Attempt 39	[0.53 s]
+0.0.K: Stopped processing property "ibex_fv.C_1"	[0.30 s].
+0.0.K: Starting proof for property "ibex_fv.C_10"	[0.00 s].
+0.0.I: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.AM: Trace Attempt  1	[0.01 s]
+0.0.K: Trace Attempt  1	[0.01 s]
+0.0.K: Trace Attempt  1	[0.01 s]
+0.0.C: Trace Attempt 15	[0.25 s]
+0.0.C: Stopped processing property "ibex_fv.C_1"	[0.31 s].
+0.0.C: Starting proof for property "ibex_fv.C_10"	[0.00 s].
+0.0.Tri: Trace Attempt 10	[0.52 s]
+0.0.Tri: Stopped processing property "ibex_fv.C_1"	[0.31 s].
+0.0.Tri: Starting proof for property "ibex_fv.C_10"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.I: Trace Attempt  2	[0.01 s]
+0.0.AD: Trace Attempt  1	[0.01 s]
+0.0.AM: Trace Attempt  2	[0.03 s]
+0.0.I: Trace Attempt  2	[0.04 s]
+0.0.Tri:    0.55" ---- Launching main thread ----
+0.0.AD: Trace Attempt  2	[0.03 s]
+0.0.N: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  4	[0.05 s]
+0.0.K: Trace Attempt  3	[0.05 s]
+0.0.AM: Trace Attempt  3	[0.05 s]
+0.0.B: Trace Attempt 11	[0.52 s]
+0.0.B: Stopped processing property "ibex_fv.C_1"	[0.34 s].
+0.0.C: Trace Attempt  3	[0.03 s]
+0.0.B: Starting proof for property "ibex_fv.C_10"	[0.00 s].
+0.0.N: Trace Attempt  4	[0.07 s]
+0.0.AD: Trace Attempt  3	[0.05 s]
+0.0.N: Trace Attempt  5	[0.07 s]
+0.0.B: Trace Attempt  1	[0.01 s]
 0.0.K: Trace Attempt  1	[0.06 s]
-0.0.K: Trace Attempt  2	[0.06 s]
-0.0.C: Trace Attempt  4	[0.06 s]
-0.0.N: Trace Attempt  4	[0.06 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.Tri:    0.58" ---- Launching abstraction thread ----
+0.0.C: Trace Attempt  4	[0.05 s]
+0.0.B: Trace Attempt  3	[0.02 s]
+0.0.AM: Trace Attempt  4	[0.08 s]
+0.0.Tri:    0.59" ---- Launching multi-phase simplification thread ----
 0.0.AD: Trace Attempt  4	[0.07 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.K: Trace Attempt  3	[0.06 s]
-0.0.K: Trace Attempt  4	[0.07 s]
-0.0.K: Trace Attempt  5	[0.07 s]
-0.0.C: Trace Attempt  5	[0.06 s]
-0.0.N: Trace Attempt  5	[0.06 s]
-0.0.AD: Trace Attempt  5	[0.08 s]
+0.0.B: Trace Attempt  4	[0.03 s]
 0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.I: Trace Attempt  3	[0.07 s]
-0.0.I: Trace Attempt  4	[0.09 s]
+0.0.AD: Trace Attempt  5	[0.08 s]
+0.0.I: Trace Attempt  4	[0.11 s]
+0.0.B: Trace Attempt  5	[0.06 s]
+0.0.N: Trace Attempt  5	[0.13 s]
 0.0.K: Trace Attempt  5	[0.12 s]
-0.0.C: Trace Attempt  5	[0.12 s]
-0.0.Tri: Trace Attempt  2	[0.14 s]
-0.0.N: Trace Attempt  5	[0.12 s]
-0.0.I: Trace Attempt  4	[0.14 s]
+0.0.C: Trace Attempt  5	[0.11 s]
+0.0.I: Trace Attempt  5	[0.14 s]
 0.0.K: Trace Attempt  1	[0.15 s]
 0.0.K: Trace Attempt  2	[0.15 s]
 0.0.K: Trace Attempt  3	[0.15 s]
-0.0.K: Trace Attempt  4	[0.16 s]
+0.0.K: Trace Attempt  4	[0.15 s]
 0.0.K: Trace Attempt  5	[0.16 s]
-0.0.I: Trace Attempt  5	[0.16 s]
-0.0.Tri: Trace Attempt  3	[0.21 s]
-0.0.Tri: Trace Attempt  4	[0.22 s]
+0.0.Tri: Trace Attempt  2	[0.16 s]
+0.0.Tri: Trace Attempt  3	[0.19 s]
+0.0.Tri: Trace Attempt  4	[0.24 s]
 0.0.Tri: Trace Attempt  5	[0.27 s]
-0.0.K: Trace Attempt  1	[0.46 s]
-0.0.K: Trace Attempt  2	[0.47 s]
-0.0.K: Trace Attempt  3	[0.48 s]
-0.0.AM: Trace Attempt  1	[0.49 s]
-0.0.K: Trace Attempt  4	[0.49 s]
-0.0.K: Trace Attempt  5	[0.50 s]
-0.0.AD: Trace Attempt  1	[0.51 s]
-0.0.AD: Trace Attempt  2	[0.52 s]
-0: ProofGrid usable level: 16
-0.0.AM: Trace Attempt  2	[0.55 s]
-0.0.AM: Trace Attempt  3	[0.56 s]
-0.0.AD: Trace Attempt  3	[0.57 s]
-0.0.AD: Trace Attempt  5	[0.68 s]
-0.0.K: Trace Attempt  1	[0.86 s]
-0.0.K: Trace Attempt  2	[0.87 s]
-0.0.K: Trace Attempt  3	[0.88 s]
-0.0.K: Trace Attempt  4	[0.89 s]
-0.0.K: Trace Attempt  5	[0.90 s]
-0.0.K: Trace Attempt  1	[1.39 s]
-0.0.K: Trace Attempt  2	[1.40 s]
-0.0.K: Trace Attempt  3	[1.41 s]
-0.0.K: Trace Attempt  4	[1.42 s]
-0.0.K: Trace Attempt  5	[1.43 s]
-0.0.I: Trace Attempt  1	[1.50 s]
-0.0.I: Trace Attempt  2	[1.51 s]
-0.0.I: Trace Attempt  3	[1.57 s]
-0.0.N: Trace Attempt  1	[1.61 s]
-0.0.N: Trace Attempt  2	[1.67 s]
-0.0.Hp: Trace Attempt  1	[2.04 s]
-0.0.N: Trace Attempt  3	[1.68 s]
-0.0.Hp: Trace Attempt  2	[2.04 s]
-0.0.Tri:    2.32" Simplification phase 1 complete
-0.0.I: Trace Attempt  1	[3.77 s]
-0.0.I: Trace Attempt  2	[3.78 s]
-0.0.I: Trace Attempt  3	[3.83 s]
-0.0.B: Trace Attempt 42	[4.13 s]
-0.0.Tri:    4.63" Simplification phase 2 complete
-0.0.Tri: Trace Attempt 43	[4.40 s]
-0.0.Hp: Trace Attempt  3	[5.40 s]
-0.0.AM: Trace Attempt 29	[8.33 s]
-0.0.Tri: Trace Attempt 52	[8.81 s]
-0.0.B: Trace Attempt 44	[9.03 s]
-0.0.C: Trace Attempt 41	[9.62 s]
-0.0.I: Trace Attempt 29	[9.88 s]
-0.0.Hp: A proof was found: No trace exists. [10.34 s]
-INFO (IPF051): 0.0.Hp: The cover property "ibex_fv.C_18" was proven unreachable in 10.34 s.
-0.0.Hp: Trace Attempt  4	[10.36 s]
-0.0.K: Trace Attempt  1	[10.52 s]
-0.0.N: Trace Attempt 41	[10.52 s]
-0.0.K: Trace Attempt  2	[10.53 s]
-0.0.K: Trace Attempt  3	[10.54 s]
-0.0.K: Trace Attempt  4	[10.55 s]
-0.0.K: Trace Attempt  5	[10.57 s]
-0.0.AD: Trace Attempt 33	[10.65 s]
-0: ProofGrid usable level: 15
-0.0.Tri:   12.07" Simplification phase 3 complete
-  12.07" ---- Completed simplification thread ----
-  12.07" ---- Restarting main thread on simplified netlist ----
-0.0.Tri:   12.12" ---- Restarting abstraction thread on simplified netlist ----
-0.0.Tri:   13.02" [42:reparam] Unhandled package: <pkg Reparam:28278>
-0.0.B: Trace Attempt 46	[13.03 s]
-0.0.N: Trace Attempt  1	[13.97 s]
-0.0.N: Trace Attempt  2	[14.04 s]
-0.0.N: Trace Attempt  3	[14.05 s]
-0.0.N: Trace Attempt  5	[14.10 s]
-0.0.AM: Trace Attempt 40	[14.28 s]
-0.0.K: Trace Attempt 55	[14.66 s]
-0.0.Hp: Trace Attempt  5	[15.90 s]
-0.0.AM: Trace Attempt  1	[16.37 s]
-0.0.AM: Trace Attempt  2	[16.43 s]
-0.0.AM: Trace Attempt  3	[16.44 s]
-0.0.AM: Trace Attempt  5	[16.49 s]
-0.0.B: Trace Attempt 51	[17.38 s]
-0.0.Tri: Trace Attempt 58	[17.50 s]
-0.0.K: Trace Attempt 76	[18.73 s]
-0.0.AD: Trace Attempt 39	[19.69 s]
-0.0.Tri: Trace Attempt 69	[21.63 s]
-0.0.B: Trace Attempt 53	[22.57 s]
-0.0.K: Trace Attempt 105	[22.77 s]
-0.0.I: Trace Attempt 39	[23.71 s]
-0.0.Hp: Trace Attempt  6	[25.02 s]
-0.0.Tri: Trace Attempt 78	[25.63 s]
-0.0.K: Trace Attempt 125	[27.00 s]
-0.0.AD: Trace Attempt 29	[27.67 s]
-0.0.I: Trace Attempt 40	[27.96 s]
-0.0.Tri: Trace Attempt 85	[30.00 s]
-0.0.B: Trace Attempt 62	[30.01 s]
-0.0.I: Trace Attempt  1	[30.85 s]
-0.0.I: Trace Attempt  2	[30.86 s]
-0.0.I: Trace Attempt  3	[30.92 s]
-0.0.I: Trace Attempt  5	[31.05 s]
-0.0.K: Trace Attempt 145	[31.16 s]
-0.0.AM: Trace Attempt 37	[33.13 s]
-0.0.AD: Trace Attempt 40	[33.72 s]
-0.0.Tri: Trace Attempt 95	[34.21 s]
-0.0.B: Trace Attempt 63	[34.46 s]
-0.0.K: Trace Attempt 168	[35.26 s]
-0.0.AD: Trace Attempt  1	[35.89 s]
-0.0.AD: Trace Attempt  2	[35.91 s]
-0.0.AD: Trace Attempt  3	[35.97 s]
-0.0.Hp: Trace Attempt  7	[37.70 s]
-0.0.Hp: A trace with 7 cycles was found. [37.89 s]
-INFO (IPF047): 0.0.Hp: The cover property "ibex_fv.C_2" was covered in 7 cycles in 37.90 s.
-0: ProofGrid usable level: 14
-0.0.Tri: Trace Attempt 105	[38.34 s]
-0.0.B: Trace Attempt 73	[38.84 s]
-0.0.K: Trace Attempt 182	[39.38 s]
-0.0.AM: Trace Attempt 38	[40.34 s]
-0.0.AD: Trace Attempt 28	[42.36 s]
-0.0.Tri: Trace Attempt 113	[42.57 s]
-0.0.K: Trace Attempt 193	[43.46 s]
-0.0.Tri: Trace Attempt 123	[47.84 s]
-0.0.K: Trace Attempt 206	[47.91 s]
-0.0.I: Trace Attempt 38	[48.68 s]
-0.0.K: Trace Attempt 230	[51.98 s]
-0.0.Tri: Trace Attempt 132	[52.21 s]
-0.0.AD: Trace Attempt 39	[55.66 s]
-0.0.K: Trace Attempt 245	[56.17 s]
-0.0.I: Trace Attempt 40	[56.24 s]
-0.0.Tri: Trace Attempt 141	[56.61 s]
-0.0.Tri: Trace Attempt 147	[57.44 s]
-0.0.Tri: A proof was found: No trace exists. [57.51 s]
-INFO (IPF051): 0.0.Tri: The cover property "ibex_fv.C_10" was proven unreachable in 57.50 s.
 0: ProofGrid usable level: 13
-0.0.I: Stopped processing property "ibex_fv.C_10"	[57.53 s].
-0.0.I: Starting proof for property "ibex_fv.C_11"	[0.00 s].
-0.0.I: Trace Attempt  1	[0.01 s]
-0.0.I: Trace Attempt  2	[0.02 s]
-0.0.I: Trace Attempt  3	[0.02 s]
-0.0.AM: Trace Attempt 39	[43.64 s]
-0.0.AM: Stopped processing property "ibex_fv.C_10"	[57.56 s].
-0.0.AM: Starting proof for property "ibex_fv.C_11"	[0.00 s].
-0.0.C: Trace Attempt 42	[12.34 s]
-0.0.C: Stopped processing property "ibex_fv.C_10"	[57.57 s].
-0.0.C: Starting proof for property "ibex_fv.C_11"	[0.00 s].
-0.0.I: Trace Attempt  2	[0.04 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt 39	[17.34 s]
-0.0.N: Stopped processing property "ibex_fv.C_10"	[57.57 s].
-0.0.N: Starting proof for property "ibex_fv.C_11"	[0.00 s].
-0.0.I: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  4	[0.05 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.C: Trace Attempt  3	[0.03 s]
-0.0.N: Trace Attempt  3	[0.03 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  3	[0.08 s]
-0.0.C: Trace Attempt  4	[0.05 s]
-0.0.C: Trace Attempt  5	[0.05 s]
-0.0.N: Trace Attempt  4	[0.05 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.I: Trace Attempt  4	[0.10 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.AD: Stopped processing property "ibex_fv.C_10"	[57.65 s].
+0.0.K: Trace Attempt  1	[0.44 s]
+0.0.K: Trace Attempt  2	[0.45 s]
+0.0.K: Trace Attempt  3	[0.46 s]
+0.0.K: Trace Attempt  4	[0.47 s]
+0.0.K: Trace Attempt  5	[0.47 s]
+0.0.AD: Trace Attempt  1	[0.49 s]
+0.0.AM: Trace Attempt  1	[0.50 s]
+0.0.AD: Trace Attempt  2	[0.50 s]
+0.0.AM: Trace Attempt  2	[0.55 s]
+0.0.AD: Trace Attempt  3	[0.55 s]
+0.0.AM: Trace Attempt  3	[0.57 s]
+0.0.AD: Trace Attempt  5	[0.66 s]
+0.0.Hp: Trace Attempt  1	[1.59 s]
+0.0.Hp: Trace Attempt  2	[1.59 s]
+0.0.I: Trace Attempt  1	[1.03 s]
+0.0.I: Trace Attempt  2	[1.04 s]
+0.0.I: Trace Attempt  3	[1.09 s]
+0.0.K: Trace Attempt  1	[1.13 s]
+0.0.K: Trace Attempt  2	[1.14 s]
+0.0.K: Trace Attempt  3	[1.15 s]
+0.0.K: Trace Attempt  4	[1.16 s]
+0.0.K: Trace Attempt  5	[1.17 s]
+0.0.I: Trace Attempt  5	[1.21 s]
+0.0.N: Trace Attempt  1	[1.64 s]
+0.0.N: Trace Attempt  2	[1.70 s]
+0.0.N: Trace Attempt  3	[1.71 s]
+0.0.Tri:    2.68" Simplification phase 1 complete
+0.0.AD: Trace Attempt  1	[3.29 s]
+0.0.AD: Trace Attempt  2	[3.31 s]
+0.0.Tri: Trace Attempt 68	[3.30 s]
+0.0.Tri: A trace with 68 cycles was found. [3.30 s]
+INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_10" was covered in 68 cycles in 3.38 s.
+INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_12" was covered in 28 cycles in 3.38 s by the incidental trace "ibex_fv.C_10".
+INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_14" was covered in 28 cycles in 3.38 s by the incidental trace "ibex_fv.C_10".
+INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_5" was covered in 29 cycles in 3.38 s by the incidental trace "ibex_fv.C_10".
+INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_7" was covered in 34 cycles in 3.38 s by the incidental trace "ibex_fv.C_10".
+INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_8" was covered in 36 cycles in 3.38 s by the incidental trace "ibex_fv.C_10".
+INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_9" was covered in 67 cycles in 3.38 s by the incidental trace "ibex_fv.C_10".
+0.0.AD: Trace Attempt  3	[3.36 s]
+0.0.AD: Stopped processing property "ibex_fv.C_10"	[3.41 s].
 0.0.AD: Starting proof for property "ibex_fv.C_11"	[0.00 s].
 0.0.AD: Trace Attempt  1	[0.01 s]
 0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.I: Trace Attempt  4	[0.14 s]
-0.0.N: Trace Attempt  5	[0.11 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_10"	[57.70 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_11"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.I: Trace Attempt 17	[3.26 s]
+0.0.I: Stopped processing property "ibex_fv.C_10"	[3.41 s].
+0.0.I: Starting proof for property "ibex_fv.C_11"	[0.00 s].
+0.0.I: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt  2	[0.01 s]
+0.0.I: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt 18	[2.88 s]
+0.0.N: Stopped processing property "ibex_fv.C_10"	[3.42 s].
+0.0.N: Starting proof for property "ibex_fv.C_11"	[0.00 s].
+0.0.K: Trace Attempt 41	[2.37 s]
+0.0.K: Stopped processing property "ibex_fv.C_10"	[3.42 s].
+0.0.K: Starting proof for property "ibex_fv.C_11"	[0.00 s].
+0.0.C: Trace Attempt 26	[1.61 s]
+0.0.C: Stopped processing property "ibex_fv.C_10"	[3.41 s].
+0.0.C: Starting proof for property "ibex_fv.C_11"	[0.00 s].
 0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.C: Trace Attempt  5	[0.13 s]
-0.0.Tri:   57.96" ---- Launching main thread ----
-0.0.I: Trace Attempt  5	[0.16 s]
+0.0.I: Trace Attempt  2	[0.04 s]
 0.0.AD: Trace Attempt  4	[0.07 s]
+0.0.I: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  4	[0.05 s]
+0.0.N: Trace Attempt  3	[0.03 s]
+0.0.K: Trace Attempt  3	[0.03 s]
 0.0.AD: Trace Attempt  5	[0.08 s]
-0.0.Tri:   58.00" ---- Launching abstraction thread ----
-0.0.Tri:   58.00" ---- Launching multi-phase simplification thread ----
-0.0.I: Trace Attempt  5	[0.25 s]
-0.0.B: Trace Attempt 80	[41.74 s]
-0.0.B: Stopped processing property "ibex_fv.C_10"	[57.84 s].
+0.0.C: Trace Attempt  3	[0.03 s]
+0.0.B: Trace Attempt 35	[3.16 s]
+0.0.B: Stopped processing property "ibex_fv.C_10"	[3.44 s].
 0.0.B: Starting proof for property "ibex_fv.C_11"	[0.00 s].
+0.0.Hp: Trace Attempt  3	[4.10 s]
+0.0.N: Trace Attempt  4	[0.05 s]
+0.0.K: Trace Attempt  1	[0.05 s]
+0.0.N: Trace Attempt  5	[0.05 s]
+0.0.K: Trace Attempt  2	[0.05 s]
 0.0.B: Trace Attempt  1	[0.01 s]
+0.0.K: Trace Attempt  3	[0.05 s]
+0.0.C: Trace Attempt  4	[0.05 s]
 0.0.B: Trace Attempt  2	[0.01 s]
-0.0.Tri: Trace Attempt  2	[0.16 s]
 0.0.B: Trace Attempt  3	[0.02 s]
 0.0.B: Trace Attempt  4	[0.03 s]
-0.0.Tri: Trace Attempt  3	[0.18 s]
-0.0.B: Trace Attempt  5	[0.07 s]
-0.0.K: Trace Attempt 247	[57.27 s]
-0.0.K: Stopped processing property "ibex_fv.C_10"	[57.94 s].
-0.0.K: Starting proof for property "ibex_fv.C_11"	[0.00 s].
-0.0.Tri: Trace Attempt  4	[0.25 s]
-0.0.Tri: Trace Attempt  5	[0.28 s]
-0.0.K: Trace Attempt  6	[0.09 s]
-0.0.AM: Trace Attempt  1	[0.62 s]
-0.0.K: Trace Attempt  1	[0.27 s]
-0.0.AM: Trace Attempt  2	[0.67 s]
-0.0.AM: Trace Attempt  3	[0.68 s]
-0.0.AM: Trace Attempt  5	[0.72 s]
-0.0.AD: Trace Attempt  1	[0.64 s]
-0.0.AD: Trace Attempt  2	[0.66 s]
-0.0.Tri: Trace Attempt 10	[0.52 s]
-0.0.Tri: A trace with 10 cycles was found. [0.60 s]
-INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_11" was covered in 10 cycles in 0.62 s.
-0.0.AM: Stopped processing property "ibex_fv.C_11"	[0.76 s].
-0.0.AM: Starting proof for property "ibex_fv.C_12"	[0.00 s].
-0.0.AD: Stopped processing property "ibex_fv.C_11"	[0.68 s].
-0.0.AD: Starting proof for property "ibex_fv.C_12"	[0.00 s].
-0.0.K: Trace Attempt  7	[0.38 s]
-0.0.K: Stopped processing property "ibex_fv.C_11"	[0.39 s].
-0.0.K: Starting proof for property "ibex_fv.C_12"	[0.00 s].
+0.0.I: Trace Attempt  4	[0.12 s]
+0.0.B: Trace Attempt  5	[0.06 s]
+0.0.I: Trace Attempt  5	[0.14 s]
+0.0.N: Trace Attempt  5	[0.12 s]
+0.0.K: Trace Attempt  5	[0.12 s]
+0.0.C: Trace Attempt  5	[0.12 s]
+0.0.Tri: Stopped processing property "ibex_fv.C_10"	[3.54 s].
+0.0.Tri: Starting proof for property "ibex_fv.C_11"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.Tri:    4.08" ---- Launching main thread ----
+0.0.AM: Trace Attempt 19	[3.52 s]
+0.0.AM: Stopped processing property "ibex_fv.C_10"	[3.58 s].
+0.0.AM: Starting proof for property "ibex_fv.C_11"	[0.00 s].
+0.0.K: Trace Attempt  1	[0.15 s]
+0.0.K: Trace Attempt  2	[0.15 s]
 0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  7	[0.74 s]
-0.0.C: Stopped processing property "ibex_fv.C_11"	[0.76 s].
-0.0.C: Starting proof for property "ibex_fv.C_12"	[0.00 s].
-0.0.I: Trace Attempt  7	[0.78 s]
-0.0.I: Stopped processing property "ibex_fv.C_11"	[0.79 s].
-0.0.I: Starting proof for property "ibex_fv.C_12"	[0.00 s].
+0.0.AM: Trace Attempt  2	[0.03 s]
+0.0.Tri:    4.12" ---- Launching abstraction thread ----
+0.0.Tri:    4.13" ---- Launching multi-phase simplification thread ----
+0.0.AM: Trace Attempt  3	[0.05 s]
+0.0.AM: Trace Attempt  4	[0.07 s]
+0.0.AM: Trace Attempt  5	[0.08 s]
+0.0.Tri: Trace Attempt  2	[0.17 s]
+0.0.AD: Trace Attempt  1	[0.35 s]
+0.0.AD: Trace Attempt  2	[0.36 s]
+0.0.Tri: Trace Attempt  3	[0.20 s]
+0.0.K: Trace Attempt  1	[0.35 s]
+0.0.K: Trace Attempt  2	[0.36 s]
+0.0.AD: Trace Attempt  3	[0.41 s]
+0.0.K: Trace Attempt  3	[0.37 s]
+0.0.Tri: Trace Attempt  4	[0.24 s]
+0.0.K: Trace Attempt  4	[0.38 s]
+0.0.K: Trace Attempt  5	[0.39 s]
+0.0.Tri: Trace Attempt  5	[0.27 s]
+0.0.AD: Trace Attempt  5	[0.52 s]
+0.0.AM: Trace Attempt  1	[0.34 s]
+0.0.AM: Trace Attempt  2	[0.39 s]
+0.0.AM: Trace Attempt  3	[0.40 s]
+0.0.AM: Trace Attempt  5	[0.43 s]
+0.0.K: Trace Attempt  1	[0.61 s]
+0.0.B: Trace Attempt 11	[0.50 s]
+0.0.B: A trace with 11 cycles was found. [0.61 s]
+INFO (IPF047): 0.0.B: The cover property "ibex_fv.C_11" was covered in 11 cycles in 0.62 s.
+INFO (IPF047): 0.0.B: The cover property "ibex_fv.C_14" was covered in 10 cycles in 0.62 s by the incidental trace "ibex_fv.C_11".
+INFO (IPF047): 0.0.B: The cover property "ibex_fv.C_6" was covered in 10 cycles in 0.62 s by the incidental trace "ibex_fv.C_11".
+0.0.B: Stopped processing property "ibex_fv.C_11"	[0.65 s].
+0.0.AD: Trace Attempt  6	[0.63 s]
+0.0.AD: Stopped processing property "ibex_fv.C_11"	[0.73 s].
+0.0.AD: Starting proof for property "ibex_fv.C_13"	[0.00 s].
+0.0.B: Starting proof for property "ibex_fv.C_13"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.K: Stopped processing property "ibex_fv.C_11"	[0.71 s].
+0.0.K: Starting proof for property "ibex_fv.C_13"	[0.00 s].
+0.0.C: Trace Attempt  8	[0.61 s]
+0.0.C: Stopped processing property "ibex_fv.C_11"	[0.71 s].
+0.0.C: Starting proof for property "ibex_fv.C_13"	[0.00 s].
+0.0.I: Trace Attempt  8	[0.63 s]
+0.0.I: Stopped processing property "ibex_fv.C_11"	[0.73 s].
+0.0.I: Starting proof for property "ibex_fv.C_13"	[0.00 s].
+0.0.N: Trace Attempt  8	[0.60 s]
+0.0.N: Stopped processing property "ibex_fv.C_11"	[0.72 s].
+0.0.N: Starting proof for property "ibex_fv.C_13"	[0.00 s].
 0.0.AD: Trace Attempt  1	[0.01 s]
+0.0.AM: Stopped processing property "ibex_fv.C_11"	[0.56 s].
+0.0.AM: Starting proof for property "ibex_fv.C_13"	[0.00 s].
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.K: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt  2	[0.02 s]
+0.0.I: Trace Attempt  3	[0.02 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.AD: Trace Attempt  2	[0.03 s]
+0.0.AM: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  4	[0.03 s]
+0.0.K: Trace Attempt  1	[0.01 s]
+0.0.K: Trace Attempt  2	[0.01 s]
+0.0.K: Trace Attempt  3	[0.01 s]
+0.0.C: Trace Attempt  1	[0.01 s]
+0.0.C: Trace Attempt  2	[0.01 s]
+0.0.C: Trace Attempt  3	[0.02 s]
+0.0.AM: Trace Attempt  2	[0.03 s]
+0.0.AD: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.K: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  2	[0.04 s]
+0.0.N: Trace Attempt  3	[0.05 s]
+0.0.AM: Trace Attempt  3	[0.05 s]
+0.0.C: Trace Attempt  3	[0.06 s]
+0.0.I: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  4	[0.05 s]
+0.0.N: Trace Attempt  4	[0.07 s]
+0.0.N: Trace Attempt  5	[0.07 s]
+0.0.AD: Trace Attempt  4	[0.07 s]
+0.0.K: Trace Attempt  1	[0.07 s]
+0.0.C: Trace Attempt  4	[0.07 s]
+0.0.AD: Trace Attempt  5	[0.08 s]
+0.0.AM: Trace Attempt  4	[0.07 s]
+0.0.AM: Trace Attempt  5	[0.09 s]
+0.0.Tri: Trace Attempt 11	[0.50 s]
+0.0.Tri: Stopped processing property "ibex_fv.C_11"	[0.65 s].
+0.0.Tri: Starting proof for property "ibex_fv.C_13"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.Tri:    4.73" ---- Launching main thread ----
+0.0.I: Trace Attempt  4	[0.13 s]
+0.0.N: Trace Attempt  5	[0.14 s]
+0.0.K: Trace Attempt  5	[0.14 s]
+0.0.Tri:    4.77" ---- Launching abstraction thread ----
+0.0.C: Trace Attempt  5	[0.14 s]
+0.0.I: Trace Attempt  5	[0.14 s]
+0.0.Tri:    4.78" ---- Launching multi-phase simplification thread ----
+0.0.AD: Trace Attempt  1	[0.20 s]
+0.0.AD: Trace Attempt  2	[0.21 s]
+0.0.AM: Trace Attempt  1	[0.20 s]
+0: ProofGrid usable level: 4
+0.0.I: Trace Attempt  5	[0.22 s]
+0.0.AM: Trace Attempt  2	[0.25 s]
+0.0.Tri: Trace Attempt  2	[0.16 s]
+0.0.AM: Trace Attempt  3	[0.26 s]
+0.0.AD: A proof was found: No trace exists. [0.28 s]
+INFO (IPF051): 0.0.AD: The cover property "ibex_fv.C_13" was proven unreachable in 0.23 s.
+0.0.AD: Stopped processing property "ibex_fv.C_13"	[0.23 s].
+0.0.AD: Starting proof for property "ibex_fv.C_2"	[0.00 s].
+0.0.AM: Stopped processing property "ibex_fv.C_13"	[0.24 s].
+0.0.AM: Starting proof for property "ibex_fv.C_2"	[0.00 s].
+0.0.Tri: Trace Attempt  3	[0.17 s]
+0.0.Tri: Stopped processing property "ibex_fv.C_13"	[0.18 s].
+0.0.Tri: Starting proof for property "ibex_fv.C_2"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.I: Stopped processing property "ibex_fv.C_13"	[0.25 s].
+0.0.I: Starting proof for property "ibex_fv.C_2"	[0.00 s].
+0.0.AD: Trace Attempt  1	[0.01 s]
+0.0.K: Stopped processing property "ibex_fv.C_13"	[0.25 s].
+0.0.K: Starting proof for property "ibex_fv.C_2"	[0.00 s].
+0.0.C: Stopped processing property "ibex_fv.C_13"	[0.25 s].
+0.0.C: Starting proof for property "ibex_fv.C_2"	[0.00 s].
+0.0.N: Stopped processing property "ibex_fv.C_13"	[0.25 s].
+0.0.N: Starting proof for property "ibex_fv.C_2"	[0.00 s].
+0.0.AM: Trace Attempt  1	[0.01 s]
+0.0.Tri:    4.91" ---- Launching main thread ----
 0.0.K: Trace Attempt  1	[0.01 s]
 0.0.I: Trace Attempt  1	[0.01 s]
 0.0.C: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  1	[0.01 s]
 0.0.K: Trace Attempt  1	[0.01 s]
 0.0.K: Trace Attempt  2	[0.01 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.K: Trace Attempt  3	[0.01 s]
 0.0.I: Trace Attempt  2	[0.01 s]
 0.0.I: Trace Attempt  3	[0.01 s]
-0.0.C: Trace Attempt  2	[0.02 s]
+0.0.K: Trace Attempt  3	[0.01 s]
 0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.N: Trace Attempt  7	[0.73 s]
-0.0.N: Stopped processing property "ibex_fv.C_11"	[0.78 s].
-0.0.N: Starting proof for property "ibex_fv.C_12"	[0.00 s].
-0.0.I: Trace Attempt  2	[0.03 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt 10	[0.48 s]
-0.0.B: Stopped processing property "ibex_fv.C_11"	[0.54 s].
-0.0.B: Starting proof for property "ibex_fv.C_12"	[0.00 s].
-0.0.AD: Trace Attempt  3	[0.05 s]
+0.0.C: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.AM: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  8	[0.26 s]
+0.0.B: Stopped processing property "ibex_fv.C_13"	[0.28 s].
+0.0.B: Starting proof for property "ibex_fv.C_2"	[0.00 s].
 0.0.B: Trace Attempt  1	[0.01 s]
+0.0.AD: Trace Attempt  3	[0.04 s]
+0.0.I: Trace Attempt  2	[0.04 s]
+0.0.AM: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.Tri:    4.95" ---- Launching abstraction thread ----
+0.0.B: Trace Attempt  3	[0.02 s]
 0.0.I: Trace Attempt  3	[0.04 s]
 0.0.I: Trace Attempt  4	[0.04 s]
+0.0.Tri:    4.96" ---- Launching multi-phase simplification thread ----
+0.0.K: Trace Attempt  3	[0.05 s]
+0.0.AD: Trace Attempt  4	[0.06 s]
 0.0.C: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.N: Trace Attempt  3	[0.03 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.C: Trace Attempt  4	[0.06 s]
-0.0.AD: Trace Attempt  4	[0.07 s]
-0.0.K: Trace Attempt  1	[0.07 s]
-0.0.C: Trace Attempt  5	[0.06 s]
-0.0.K: Trace Attempt  2	[0.07 s]
-0.0.K: Trace Attempt  3	[0.07 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
+0.0.N: Trace Attempt  3	[0.05 s]
+0.0.AM: Trace Attempt  4	[0.06 s]
 0.0.B: Trace Attempt  4	[0.03 s]
-0.0.AD: Trace Attempt  5	[0.08 s]
-0.0.N: Trace Attempt  4	[0.04 s]
-0.0.B: Trace Attempt  5	[0.06 s]
-0.0.I: Trace Attempt  4	[0.11 s]
-0.0.K: Trace Attempt  5	[0.12 s]
-0.0.C: Trace Attempt  5	[0.13 s]
-0.0.N: Trace Attempt  5	[0.10 s]
-0.0.I: Trace Attempt  5	[0.14 s]
-0.0.K: Trace Attempt  1	[0.14 s]
-0.0.K: Trace Attempt  2	[0.14 s]
-0.0.K: Trace Attempt  3	[0.14 s]
-0.0.K: Trace Attempt  4	[0.15 s]
-0.0.K: Trace Attempt  5	[0.15 s]
-0: ProofGrid usable level: 12
-0.0.Tri: Stopped processing property "ibex_fv.C_11"	[0.81 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_12"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.Tri:   58.77" ---- Launching main thread ----
-0.0.Tri:   58.81" ---- Launching abstraction thread ----
-0.0.Tri:   58.81" ---- Launching multi-phase simplification thread ----
-0.0.K: Trace Attempt  1	[0.33 s]
-0.0.K: Trace Attempt  2	[0.33 s]
-0.0.K: Trace Attempt  3	[0.34 s]
-0.0.Tri: Trace Attempt  2	[0.17 s]
-0.0.K: Trace Attempt  4	[0.35 s]
-0.0.K: Trace Attempt  5	[0.36 s]
-0.0.AM: Trace Attempt  1	[0.38 s]
-0.0.Tri: Trace Attempt  3	[0.20 s]
-0.0.AD: Trace Attempt  1	[0.39 s]
-0.0.AD: Trace Attempt  2	[0.41 s]
-0.0.Tri: Trace Attempt  4	[0.24 s]
-0.0.AM: Trace Attempt  2	[0.43 s]
-0.0.AM: Trace Attempt  3	[0.44 s]
-0.0.Hp: Trace Attempt  8	[59.15 s]
-0.0.Tri: Trace Attempt  5	[0.28 s]
-0.0.AD: Trace Attempt  3	[0.46 s]
-0.0.AM: Trace Attempt  5	[0.48 s]
-0.0.AD: Trace Attempt  5	[0.57 s]
-0.0.K: Trace Attempt  1	[0.68 s]
-0.0.K: Trace Attempt  2	[0.69 s]
-0.0.K: Trace Attempt  3	[0.70 s]
-0.0.K: Trace Attempt  4	[0.71 s]
-0.0.K: Trace Attempt  5	[0.72 s]
-0.0.Tri: Trace Attempt 11	[0.54 s]
-0.0.Tri: A trace with 11 cycles was found. [0.68 s]
-INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_12" was covered in 11 cycles in 0.70 s.
-INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_17" was covered in 10 cycles in 0.70 s by the incidental trace "ibex_fv.C_12".
-0.0.AD: Trace Attempt  6	[0.69 s]
-0.0.AD: Stopped processing property "ibex_fv.C_12"	[0.89 s].
-0.0.AD: Starting proof for property "ibex_fv.C_13"	[0.00 s].
-0.0.AM: Trace Attempt  7	[0.64 s]
-0.0.AM: Stopped processing property "ibex_fv.C_12"	[0.89 s].
-0.0.AM: Starting proof for property "ibex_fv.C_13"	[0.00 s].
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  8	[0.88 s]
-0.0.K: Stopped processing property "ibex_fv.C_12"	[0.89 s].
-0.0.K: Starting proof for property "ibex_fv.C_13"	[0.00 s].
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.N: Trace Attempt  8	[0.81 s]
-0.0.N: Stopped processing property "ibex_fv.C_12"	[0.87 s].
-0.0.N: Starting proof for property "ibex_fv.C_13"	[0.00 s].
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt 11	[0.69 s]
-0.0.B: Stopped processing property "ibex_fv.C_12"	[0.86 s].
-0.0.B: Starting proof for property "ibex_fv.C_13"	[0.00 s].
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.Hp: A trace with 8 cycles was found. [59.59 s]
-INFO (IPF047): 0.0.Hp: The cover property "ibex_fv.C_3" was covered in 8 cycles in 59.60 s.
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  3	[0.01 s]
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.C: Trace Attempt  8	[0.85 s]
-0.0.C: Stopped processing property "ibex_fv.C_12"	[0.92 s].
-0.0.C: Starting proof for property "ibex_fv.C_13"	[0.00 s].
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.I: Trace Attempt  8	[0.86 s]
-0.0.I: Stopped processing property "ibex_fv.C_12"	[0.92 s].
-0.0.I: Starting proof for property "ibex_fv.C_13"	[0.00 s].
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.K: Trace Attempt  3	[0.05 s]
-0.0.AD: Trace Attempt  4	[0.07 s]
-0.0.N: Trace Attempt  3	[0.04 s]
-0.0.I: Trace Attempt  2	[0.02 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.C: Trace Attempt  3	[0.03 s]
-0.0.AD: Trace Attempt  5	[0.08 s]
+0.0.AD: Trace Attempt  5	[0.07 s]
+0.0.AM: Trace Attempt  5	[0.07 s]
 0.0.K: Trace Attempt  1	[0.06 s]
 0.0.K: Trace Attempt  2	[0.06 s]
-0.0.K: Trace Attempt  3	[0.06 s]
-0.0.I: Trace Attempt  3	[0.03 s]
-0.0.I: Trace Attempt  4	[0.03 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.K: Trace Attempt  4	[0.06 s]
+0.0.K: Trace Attempt  3	[0.07 s]
+0.0.K: Trace Attempt  4	[0.07 s]
 0.0.K: Trace Attempt  5	[0.07 s]
-0.0.N: Trace Attempt  4	[0.06 s]
-0.0.N: Trace Attempt  5	[0.06 s]
-0.0.C: Trace Attempt  4	[0.05 s]
-0.0.B: Trace Attempt  5	[0.07 s]
-0.0.I: Trace Attempt  4	[0.09 s]
-0.0.K: Trace Attempt  5	[0.12 s]
-0.0.N: Trace Attempt  5	[0.11 s]
-0.0.C: Trace Attempt  5	[0.11 s]
-0.0.I: Trace Attempt  5	[0.11 s]
-0.0.K: Trace Attempt  1	[0.14 s]
-0.0.K: Trace Attempt  2	[0.14 s]
-0.0.K: Trace Attempt  3	[0.15 s]
-0.0.K: Trace Attempt  4	[0.15 s]
-0.0.K: Trace Attempt  5	[0.15 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_12"	[0.89 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_13"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.Tri:   59.66" ---- Launching main thread ----
-0.0.Tri:   59.70" ---- Launching abstraction thread ----
-0.0.Tri:   59.71" ---- Launching multi-phase simplification thread ----
-0: ProofGrid usable level: 9
-0.0.Tri: Trace Attempt  2	[0.17 s]
-0.0.K: Trace Attempt  1	[0.36 s]
-0.0.K: Trace Attempt  2	[0.36 s]
-0.0.K: Trace Attempt  3	[0.37 s]
-0.0.Tri: Trace Attempt  3	[0.21 s]
-0.0.K: Trace Attempt  4	[0.38 s]
-0.0.K: Trace Attempt  5	[0.39 s]
-0.0.Tri: Trace Attempt  4	[0.25 s]
-0.0.Tri: Trace Attempt  5	[0.27 s]
-0.0.K: Trace Attempt  1	[0.70 s]
-0.0.K: Trace Attempt  2	[0.71 s]
-0.0.K: Trace Attempt  3	[0.72 s]
-0.0.K: Trace Attempt  4	[0.73 s]
-0.0.K: Trace Attempt  5	[0.74 s]
-0.0.Tri: Trace Attempt 12	[0.61 s]
-0.0.Tri: A trace with 12 cycles was found. [0.71 s]
-INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_13" was covered in 12 cycles in 0.73 s.
-0.0.AD: Trace Attempt 12	[0.42 s]
-0.0.AD: Stopped processing property "ibex_fv.C_13"	[0.94 s].
-0.0.AD: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.AM: Trace Attempt 12	[0.41 s]
-0.0.AM: Stopped processing property "ibex_fv.C_13"	[0.94 s].
-0.0.AM: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  9	[0.86 s]
-0.0.N: Stopped processing property "ibex_fv.C_13"	[0.94 s].
-0.0.N: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.B: Trace Attempt 12	[0.86 s]
-0.0.B: Stopped processing property "ibex_fv.C_13"	[0.94 s].
-0.0.B: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  9	[0.86 s]
-0.0.C: Stopped processing property "ibex_fv.C_13"	[0.93 s].
-0.0.C: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  9	[0.88 s]
-0.0.K: Stopped processing property "ibex_fv.C_13"	[0.96 s].
-0.0.K: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.I: Trace Attempt  9	[0.86 s]
-0.0.I: Stopped processing property "ibex_fv.C_13"	[0.93 s].
-0.0.I: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.C: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.I: Trace Attempt  2	[0.02 s]
-0.0.N: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  3	[0.03 s]
-0.0.I: Trace Attempt  4	[0.03 s]
-0.0.K: Trace Attempt  3	[0.04 s]
-0.0.C: Trace Attempt  3	[0.05 s]
-0.0.AD: Trace Attempt  4	[0.07 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.N: Trace Attempt  4	[0.06 s]
-0.0.N: Trace Attempt  5	[0.06 s]
-0.0.AD: Trace Attempt  5	[0.08 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.K: Trace Attempt  1	[0.06 s]
-0.0.B: Trace Attempt  5	[0.07 s]
 0.0.C: Trace Attempt  4	[0.06 s]
+0.0.C: Trace Attempt  5	[0.06 s]
+0.0.N: Trace Attempt  4	[0.07 s]
+0.0.N: Trace Attempt  5	[0.07 s]
+0.0.I: Trace Attempt  3	[0.08 s]
+0.0.B: Trace Attempt  5	[0.06 s]
 0.0.I: Trace Attempt  4	[0.10 s]
-0.0.N: Trace Attempt  5	[0.12 s]
-0.0.K: Trace Attempt  5	[0.11 s]
-0.0.C: Trace Attempt  5	[0.12 s]
-0.0.I: Trace Attempt  5	[0.12 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_13"	[0.92 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.K: Trace Attempt  1	[0.14 s]
-0.0.K: Trace Attempt  2	[0.14 s]
-0.0.K: Trace Attempt  3	[0.14 s]
-0.0.Tri:   60.58" ---- Launching main thread ----
-0.0.Tri:   60.62" ---- Launching abstraction thread ----
-0.0.Tri:   60.62" ---- Launching multi-phase simplification thread ----
-0.0.Tri: Trace Attempt  2	[0.15 s]
-0.0.Tri: Trace Attempt  3	[0.18 s]
-0: ProofGrid usable level: 8
+0.0.Tri: Trace Attempt  2	[0.14 s]
+0.0.C: Trace Attempt  5	[0.13 s]
+0.0.K: Trace Attempt  5	[0.14 s]
+0.0.N: Trace Attempt  5	[0.14 s]
+0.0.I: Trace Attempt  4	[0.15 s]
+0.0.K: Trace Attempt  1	[0.16 s]
+0.0.Tri: Trace Attempt  3	[0.17 s]
+0.0.I: Trace Attempt  5	[0.17 s]
+0.0.AM: Trace Attempt  1	[0.21 s]
+0.0.AD: Trace Attempt  1	[0.23 s]
+0.0.AD: Trace Attempt  2	[0.24 s]
+0.0.Tri: Trace Attempt  4	[0.24 s]
+0.0.AM: Trace Attempt  2	[0.26 s]
+0.0.AM: Trace Attempt  3	[0.27 s]
+0.0.Tri: Trace Attempt  5	[0.27 s]
+0.0.AD: Trace Attempt  3	[0.29 s]
+0.0.AM: Trace Attempt  5	[0.30 s]
 0.0.K: Trace Attempt  1	[0.33 s]
 0.0.K: Trace Attempt  2	[0.34 s]
 0.0.K: Trace Attempt  3	[0.35 s]
 0.0.K: Trace Attempt  4	[0.36 s]
 0.0.K: Trace Attempt  5	[0.37 s]
-0.0.Tri: Trace Attempt  4	[0.26 s]
-0.0.Tri: Trace Attempt  5	[0.30 s]
-0.0.AD: Trace Attempt  1	[0.50 s]
-0.0.AM: Trace Attempt  1	[0.51 s]
-0.0.AD: Trace Attempt  2	[0.52 s]
-0.0.AM: Trace Attempt  2	[0.56 s]
-0.0.AD: Trace Attempt  3	[0.57 s]
-0.0.AM: Trace Attempt  3	[0.58 s]
-0.0.AM: Trace Attempt  5	[0.61 s]
-0.0.AD: Trace Attempt  5	[0.68 s]
-0.0.K: Trace Attempt  1	[0.69 s]
-0.0.K: Trace Attempt  2	[0.70 s]
-0.0.K: Trace Attempt  3	[0.71 s]
-0.0.K: Trace Attempt  4	[0.72 s]
-0.0.K: Trace Attempt  5	[0.73 s]
-0.0.N: Trace Attempt  1	[0.83 s]
-0.0.N: Trace Attempt  2	[0.89 s]
-0.0.N: Trace Attempt  3	[0.90 s]
-0.0.N: Trace Attempt  5	[0.93 s]
-0.0.I: Trace Attempt  1	[1.12 s]
-0.0.I: Trace Attempt  2	[1.13 s]
-0.0.I: Trace Attempt  3	[1.19 s]
-0.0.I: Trace Attempt  5	[1.32 s]
-0.0.AM: Trace Attempt  1	[1.60 s]
-0.0.AM: Trace Attempt  2	[1.65 s]
-0.0.AM: Trace Attempt  3	[1.66 s]
-0.0.AM: Trace Attempt  5	[1.70 s]
-0.0.Tri:   62.63" Simplification phase 1 complete
-0.0.I: Trace Attempt  1	[2.40 s]
-0.0.I: Trace Attempt  2	[2.41 s]
-0.0.I: Trace Attempt  3	[2.47 s]
-0.0.AD: Trace Attempt  1	[2.62 s]
-0.0.I: Trace Attempt  5	[2.60 s]
-0.0.AD: Trace Attempt  2	[2.63 s]
-0.0.AD: Trace Attempt  3	[2.69 s]
-0.0.AD: Trace Attempt  5	[2.82 s]
-0.0.Tri:   64.75" Simplification phase 2 complete
-0.0.B: Trace Attempt 42	[4.97 s]
-0.0.Hp: Trace Attempt  9	[66.96 s]
-0.0.K: Trace Attempt  1	[6.94 s]
-0.0.K: Trace Attempt  2	[6.95 s]
-0.0.K: Trace Attempt  3	[6.96 s]
-0.0.K: Trace Attempt  4	[6.97 s]
-0.0.K: Trace Attempt  5	[6.99 s]
-0.0.C: Trace Attempt 40	[7.28 s]
-0.0.N: Trace Attempt 40	[7.96 s]
-0.0.Tri: Trace Attempt 44	[8.39 s]
-0.0.Tri: A trace with 44 cycles was found. [8.39 s]
-INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_14" was covered in 44 cycles in 8.44 s.
-0.0.AD: Trace Attempt 21	[5.22 s]
-0.0.AD: Stopped processing property "ibex_fv.C_14"	[8.60 s].
-0.0.AD: Starting proof for property "ibex_fv.C_15"	[0.00 s].
-0.0.C: Stopped processing property "ibex_fv.C_14"	[8.58 s].
-0.0.C: Starting proof for property "ibex_fv.C_15"	[0.00 s].
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  1	[0.01 s]
-0.0.N: Stopped processing property "ibex_fv.C_14"	[8.60 s].
-0.0.N: Starting proof for property "ibex_fv.C_15"	[0.00 s].
-0.0.C: Trace Attempt  2	[0.01 s]
-0.0.C: Trace Attempt  3	[0.01 s]
-0.0.AD: Trace Attempt  2	[0.03 s]
+0.0.AD: Trace Attempt  5	[0.40 s]
+0.0.N: Trace Attempt  1	[0.41 s]
+0.0.I: Trace Attempt  1	[0.43 s]
+0.0.N: Trace Attempt  2	[0.43 s]
+0.0.N: Trace Attempt  3	[0.43 s]
+0.0.I: Trace Attempt  2	[0.44 s]
+0.0.N: Trace Attempt  5	[0.44 s]
+0.0.Hp: Trace Attempt  4	[5.45 s]
+0.0.I: Trace Attempt  3	[0.46 s]
+0.0.I: Trace Attempt  5	[0.50 s]
+0.0.I: Trace Attempt  6	[0.53 s]
+0.0.I: A proof was found: No trace exists. [0.84 s]
+INFO (IPF051): 0.0.I: The cover property "ibex_fv.C_2" was proven unreachable in 0.84 s.
+0.0.I: Stopped processing property "ibex_fv.C_2"	[0.84 s].
+0.0.I: Starting proof for property "ibex_fv.C_3"	[0.00 s].
+0.0.N: Trace Attempt  7	[0.70 s]
+0.0.N: Stopped processing property "ibex_fv.C_2"	[0.88 s].
+0.0.N: Starting proof for property "ibex_fv.C_3"	[0.00 s].
+0.0.AD: Trace Attempt  6	[0.49 s]
+0.0.AD: Stopped processing property "ibex_fv.C_2"	[0.89 s].
+0.0.AD: Starting proof for property "ibex_fv.C_3"	[0.00 s].
+0.0.AM: Trace Attempt  6	[0.33 s]
+0.0.AM: Stopped processing property "ibex_fv.C_2"	[0.88 s].
+0.0.AM: Starting proof for property "ibex_fv.C_3"	[0.00 s].
 0.0.N: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.I: Trace Attempt 18	[4.53 s]
-0.0.I: Stopped processing property "ibex_fv.C_14"	[8.61 s].
-0.0.I: Starting proof for property "ibex_fv.C_15"	[0.00 s].
-0.0.K: Trace Attempt 40	[8.12 s]
-0.0.K: Stopped processing property "ibex_fv.C_14"	[8.62 s].
-0.0.K: Starting proof for property "ibex_fv.C_15"	[0.00 s].
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.C: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  2	[0.02 s]
-0.0.N: Trace Attempt  3	[0.05 s]
-0.0.C: Trace Attempt  4	[0.06 s]
-0.0.C: Trace Attempt  5	[0.06 s]
-0.0.AD: Trace Attempt  4	[0.07 s]
-0.0.I: Trace Attempt  3	[0.03 s]
-0.0.I: Trace Attempt  4	[0.03 s]
-0.0.N: Trace Attempt  4	[0.06 s]
-0.0.AD: Trace Attempt  5	[0.08 s]
-0.0.K: Trace Attempt  3	[0.04 s]
-0.0.K: Trace Attempt  1	[0.05 s]
-0.0.I: Trace Attempt  4	[0.07 s]
-0.0.C: Trace Attempt  5	[0.12 s]
-0.0.I: Trace Attempt  5	[0.09 s]
-0.0.N: Trace Attempt  5	[0.12 s]
-0.0.B: Stopped processing property "ibex_fv.C_14"	[8.72 s].
-0.0.B: Starting proof for property "ibex_fv.C_15"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  5	[0.11 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.AM: Trace Attempt 28	[3.93 s]
-0.0.AM: Stopped processing property "ibex_fv.C_14"	[8.76 s].
-0.0.AM: Starting proof for property "ibex_fv.C_15"	[0.00 s].
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  1	[0.13 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_14"	[8.62 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_15"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.Tri:   69.19" ---- Launching main thread ----
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.B: Trace Attempt  5	[0.06 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.Tri:   69.23" ---- Launching abstraction thread ----
-0.0.Tri:   69.24" ---- Launching multi-phase simplification thread ----
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.Tri: Trace Attempt  2	[0.18 s]
-0.0.Tri: Trace Attempt  3	[0.20 s]
-0.0.Tri: Trace Attempt  4	[0.23 s]
-0.0.K: Trace Attempt  1	[0.40 s]
-0.0.Tri: Trace Attempt  5	[0.26 s]
-0.0.K: Trace Attempt  2	[0.41 s]
-0.0.K: Trace Attempt  3	[0.42 s]
-0.0.K: Trace Attempt  4	[0.43 s]
-0.0.K: Trace Attempt  5	[0.44 s]
-0.0.AD: Trace Attempt  1	[0.66 s]
-0.0.AD: Trace Attempt  2	[0.67 s]
-0.0.AD: Trace Attempt  3	[0.73 s]
-0.0.AM: Trace Attempt  1	[0.66 s]
-0.0.AD: Trace Attempt  5	[0.85 s]
-0.0.I: Trace Attempt  1	[0.82 s]
-0.0.I: Trace Attempt  2	[0.82 s]
-0.0.AM: Trace Attempt  2	[0.71 s]
-0.0.K: Trace Attempt  1	[0.83 s]
-0.0.I: Trace Attempt  3	[0.83 s]
-0.0.K: Trace Attempt  2	[0.84 s]
-0.0.AM: Trace Attempt  3	[0.72 s]
-0.0.I: Trace Attempt  5	[0.85 s]
-0.0.K: Trace Attempt  3	[0.84 s]
-0: ProofGrid usable level: 7
-0.0.K: Trace Attempt  4	[0.85 s]
-0.0.K: Trace Attempt  5	[0.86 s]
-0.0.N: Trace Attempt  1	[1.02 s]
-0.0.N: Trace Attempt  2	[1.08 s]
-0.0.N: Trace Attempt  3	[1.09 s]
-0.0.Tri:   71.37" Simplification phase 1 complete
-0.0.I: Trace Attempt  1	[2.45 s]
-0.0.I: Trace Attempt  2	[2.46 s]
-0.0.I: Trace Attempt  3	[2.51 s]
-0.0.I: Trace Attempt  5	[2.64 s]
-0.0.Tri:   73.41" Simplification phase 2 complete
-0.0.AD: Trace Attempt 23	[5.25 s]
-0.0.Hp: Trace Attempt 10	[74.71 s]
-0.0.B: Trace Attempt 43	[5.95 s]
-0.0.AM: Trace Attempt 24	[6.90 s]
-0.0.I: Trace Attempt 24	[7.30 s]
-0.0.AM: Trace Attempt  1	[7.76 s]
-0.0.AM: Trace Attempt  2	[7.82 s]
-0.0.AM: Trace Attempt  3	[7.83 s]
-0.0.I: Trace Attempt  1	[8.54 s]
-0.0.I: Trace Attempt  2	[8.55 s]
-0.0.I: Trace Attempt  3	[8.61 s]
-0.0.I: Trace Attempt  5	[8.73 s]
-0.0.K: Trace Attempt  1	[10.71 s]
-0.0.K: Trace Attempt  2	[10.72 s]
-0.0.K: Trace Attempt  3	[10.73 s]
-0.0.C: Trace Attempt 41	[10.79 s]
-0.0.K: Trace Attempt  4	[10.74 s]
-0.0.K: Trace Attempt  5	[10.76 s]
-0.0.Tri:   80.18" Simplification phase 3 complete
-  80.18" ---- Completed simplification thread ----
-  80.18" ---- Restarting main thread on simplified netlist ----
-0.0.Tri:   80.22" ---- Restarting abstraction thread on simplified netlist ----
-0.0.N: Trace Attempt 41	[12.07 s]
-0.0.B: Trace Attempt 44	[12.27 s]
-0.0.AD: Trace Attempt 24	[13.38 s]
-0.0.N: Trace Attempt  1	[13.67 s]
-0.0.N: Trace Attempt  2	[13.73 s]
-0.0.N: Trace Attempt  3	[13.75 s]
-0.0.Tri: Trace Attempt 45	[14.01 s]
-0.0.AD: Trace Attempt  1	[14.19 s]
-0.0.AD: Trace Attempt  2	[14.21 s]
-0.0.Tri: A trace with 45 cycles was found. [14.01 s]
-INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_15" was covered in 45 cycles in 14.06 s.
-0.0.AD: Stopped processing property "ibex_fv.C_15"	[14.23 s].
-0.0.AD: Starting proof for property "ibex_fv.C_16"	[0.00 s].
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt 41	[11.98 s]
-0.0.K: Stopped processing property "ibex_fv.C_15"	[14.24 s].
-0.0.K: Starting proof for property "ibex_fv.C_16"	[0.00 s].
-0.0.I: Trace Attempt 24	[12.04 s]
-0.0.I: Stopped processing property "ibex_fv.C_15"	[14.25 s].
-0.0.I: Starting proof for property "ibex_fv.C_16"	[0.00 s].
-0.0.AD: Trace Attempt  4	[0.07 s]
-0.0.N: Stopped processing property "ibex_fv.C_15"	[14.28 s].
-0.0.N: Starting proof for property "ibex_fv.C_16"	[0.00 s].
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.C: Stopped processing property "ibex_fv.C_15"	[14.29 s].
-0.0.C: Starting proof for property "ibex_fv.C_16"	[0.00 s].
 0.0.I: Trace Attempt  1	[0.01 s]
-0.0.AD: Trace Attempt  5	[0.08 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.I: Trace Attempt  2	[0.01 s]
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.I: Trace Attempt  3	[0.01 s]
-0.0.K: Trace Attempt  2	[0.01 s]
-0.0.C: Trace Attempt  1	[0.01 s]
 0.0.N: Trace Attempt  2	[0.01 s]
-0.0.C: Trace Attempt  2	[0.01 s]
-0.0.I: Trace Attempt  2	[0.03 s]
-0.0.I: Trace Attempt  3	[0.04 s]
-0.0.I: Trace Attempt  4	[0.04 s]
-0.0.K: Trace Attempt  3	[0.05 s]
-0.0.N: Trace Attempt  3	[0.05 s]
-0.0.C: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt  1	[0.06 s]
-0.0.K: Trace Attempt  2	[0.06 s]
-0.0.K: Trace Attempt  3	[0.07 s]
-0.0.K: Trace Attempt  4	[0.07 s]
-0.0.K: Trace Attempt  5	[0.07 s]
-0.0.N: Trace Attempt  4	[0.06 s]
-0.0.N: Trace Attempt  5	[0.06 s]
-0.0.C: Trace Attempt  4	[0.06 s]
-0.0.I: Trace Attempt  3	[0.07 s]
-0.0.I: Trace Attempt  4	[0.09 s]
-0: ProofGrid usable level: 6
-0.0.Tri: Stopped processing property "ibex_fv.C_15"	[14.23 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_16"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.I: Trace Attempt  4	[0.13 s]
-0.0.Tri:   83.43" ---- Launching main thread ----
-0.0.K: Trace Attempt  5	[0.14 s]
-0.0.N: Trace Attempt  5	[0.14 s]
-0.0.I: Trace Attempt  5	[0.14 s]
-0.0.C: Trace Attempt  5	[0.14 s]
-0.0.K: Trace Attempt  1	[0.17 s]
-0.0.Tri:   83.47" ---- Launching abstraction thread ----
-0.0.K: Trace Attempt  2	[0.17 s]
-0.0.Tri:   83.47" ---- Launching multi-phase simplification thread ----
-0.0.K: Trace Attempt  3	[0.18 s]
-0.0.K: Trace Attempt  4	[0.18 s]
-0.0.K: Trace Attempt  5	[0.19 s]
-0.0.AM: Trace Attempt 27	[9.89 s]
-0.0.AM: Stopped processing property "ibex_fv.C_15"	[14.40 s].
-0.0.AM: Starting proof for property "ibex_fv.C_16"	[0.00 s].
-0.0.Tri: Trace Attempt  2	[0.14 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.Tri: Trace Attempt  3	[0.20 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.Tri: Trace Attempt  4	[0.25 s]
-0.0.K: Trace Attempt  1	[0.40 s]
-0.0.K: Trace Attempt  2	[0.41 s]
-0.0.Tri: Trace Attempt  5	[0.29 s]
-0.0.K: Trace Attempt  3	[0.42 s]
-0.0.AD: Trace Attempt  1	[0.50 s]
-0.0.AD: Trace Attempt  2	[0.51 s]
-0.0.AD: Trace Attempt  3	[0.56 s]
-0.0.AD: Trace Attempt  5	[0.68 s]
-0.0.K: Trace Attempt  1	[0.66 s]
-0.0.K: Trace Attempt  2	[0.66 s]
-0.0.AM: Trace Attempt  1	[0.49 s]
-0.0.Tri: Trace Attempt 11	[0.56 s]
-0.0.Tri: A trace with 11 cycles was found. [0.66 s]
-INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_16" was covered in 11 cycles in 0.68 s.
-0.0.AD: Trace Attempt  6	[0.79 s]
-0.0.AD: Stopped processing property "ibex_fv.C_16"	[0.86 s].
-0.0.AD: Starting proof for property "ibex_fv.C_5"	[0.00 s].
-0.0.AM: Trace Attempt  2	[0.54 s]
+0.0.N: Trace Attempt  3	[0.01 s]
 0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.AM: Stopped processing property "ibex_fv.C_16"	[0.54 s].
-0.0.AM: Starting proof for property "ibex_fv.C_5"	[0.00 s].
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.I: Trace Attempt  8	[0.77 s]
-0.0.I: Stopped processing property "ibex_fv.C_16"	[0.83 s].
-0.0.I: Starting proof for property "ibex_fv.C_5"	[0.00 s].
 0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.I: Trace Attempt  1	[0.01 s]
 0.0.I: Trace Attempt  2	[0.01 s]
 0.0.I: Trace Attempt  3	[0.01 s]
+0.0.K: Trace Attempt 34	[0.84 s]
+0.0.K: Stopped processing property "ibex_fv.C_2"	[0.89 s].
+0.0.K: Starting proof for property "ibex_fv.C_3"	[0.00 s].
+0.0.I: Trace Attempt  2	[0.04 s]
+0.0.AD: Trace Attempt  2	[0.03 s]
 0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.AD: Trace Attempt  3	[0.04 s]
-0.0.K: Trace Attempt  8	[0.78 s]
-0.0.K: Stopped processing property "ibex_fv.C_16"	[0.85 s].
-0.0.K: Starting proof for property "ibex_fv.C_5"	[0.00 s].
-0.0.N: Trace Attempt  8	[0.79 s]
-0.0.N: Stopped processing property "ibex_fv.C_16"	[0.85 s].
-0.0.N: Starting proof for property "ibex_fv.C_5"	[0.00 s].
-0.0.C: Trace Attempt  8	[0.79 s]
-0.0.C: Stopped processing property "ibex_fv.C_16"	[0.85 s].
-0.0.C: Starting proof for property "ibex_fv.C_5"	[0.00 s].
+0.0.AD: Trace Attempt  3	[0.05 s]
 0.0.AM: Trace Attempt  3	[0.04 s]
-0.0.AD: Trace Attempt  4	[0.06 s]
-0.0.I: Trace Attempt  2	[0.03 s]
-0.0.I: Trace Attempt  3	[0.04 s]
-0.0.I: Trace Attempt  4	[0.04 s]
+0.0.B: Trace Attempt 15	[0.75 s]
+0.0.B: Stopped processing property "ibex_fv.C_2"	[0.86 s].
+0.0.B: Starting proof for property "ibex_fv.C_3"	[0.00 s].
+0.0.I: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  4	[0.05 s]
+0.0.N: Trace Attempt  3	[0.05 s]
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.C: Trace Attempt 16	[0.38 s]
+0.0.C: Stopped processing property "ibex_fv.C_2"	[0.92 s].
+0.0.C: Starting proof for property "ibex_fv.C_3"	[0.00 s].
+0.0.B: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  4	[0.07 s]
+0.0.N: Trace Attempt  5	[0.07 s]
+0.0.AD: Trace Attempt  4	[0.07 s]
+0.0.AM: Trace Attempt  4	[0.06 s]
+0.0.B: Trace Attempt  3	[0.02 s]
 0.0.AD: Trace Attempt  5	[0.07 s]
-0.0.AM: Trace Attempt  4	[0.06 s]
-0.0.K: Trace Attempt  3	[0.04 s]
 0.0.AM: Trace Attempt  5	[0.07 s]
-0.0.N: Trace Attempt  3	[0.04 s]
-0.0.C: Trace Attempt  3	[0.04 s]
-0.0.K: Trace Attempt  1	[0.05 s]
-0.0.K: Trace Attempt  2	[0.05 s]
-0.0.K: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt  4	[0.05 s]
-0.0.K: Trace Attempt  5	[0.06 s]
-0.0.N: Trace Attempt  4	[0.05 s]
-0.0.I: Trace Attempt  3	[0.08 s]
-0.0.C: Trace Attempt  4	[0.05 s]
-0.0.I: Trace Attempt  4	[0.09 s]
-0.0.I: Trace Attempt  4	[0.14 s]
-0.0.K: Trace Attempt  5	[0.12 s]
-0.0.N: Trace Attempt  5	[0.12 s]
-0.0.I: Trace Attempt  5	[0.15 s]
-0.0.C: Trace Attempt  5	[0.12 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_16"	[0.87 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_5"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.K: Trace Attempt  1	[0.15 s]
-0.0.K: Trace Attempt  2	[0.15 s]
-0.0.K: Trace Attempt  3	[0.15 s]
-0.0.K: Trace Attempt  4	[0.15 s]
-0.0.K: Trace Attempt  5	[0.15 s]
-0.0.Tri:   84.30" ---- Launching main thread ----
-0.0.Tri:   84.34" ---- Launching abstraction thread ----
-0.0.Tri:   84.35" ---- Launching multi-phase simplification thread ----
-0: ProofGrid usable level: 5
-0.0.AD: Trace Attempt  1	[0.34 s]
-0.0.AM: Trace Attempt  1	[0.34 s]
-0.0.Tri: Trace Attempt  2	[0.16 s]
-0.0.AD: Trace Attempt  2	[0.36 s]
-0.0.Tri: Trace Attempt  3	[0.19 s]
-0.0.Tri: Trace Attempt  4	[0.22 s]
-0.0.AD: Trace Attempt  3	[0.41 s]
-0.0.AM: Trace Attempt  2	[0.39 s]
-0.0.AM: Trace Attempt  3	[0.40 s]
-0.0.Tri: Trace Attempt  5	[0.28 s]
-0.0.AM: Trace Attempt  5	[0.46 s]
-0.0.K: Trace Attempt  1	[0.46 s]
-0.0.K: Trace Attempt  2	[0.47 s]
-0.0.AD: A proof was found: No trace exists. [0.63 s]
-INFO (IPF051): 0.0.AD: The cover property "ibex_fv.C_5" was proven unreachable in 0.62 s.
-0.0.AD: Stopped processing property "ibex_fv.C_5"	[0.62 s].
-0.0.AM: Trace Attempt  6	[0.49 s]
-0.0.AM: Stopped processing property "ibex_fv.C_5"	[0.63 s].
-0.0.AM: Starting proof for property "ibex_fv.C_6"	[0.00 s].
-0.0.AD: Starting proof for property "ibex_fv.C_6"	[0.00 s].
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.Tri: Trace Attempt  9	[0.45 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_5"	[0.46 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_6"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.N: Trace Attempt  7	[0.58 s]
-0.0.N: Stopped processing property "ibex_fv.C_5"	[0.60 s].
-0.0.N: Starting proof for property "ibex_fv.C_6"	[0.00 s].
-0.0.Tri:   84.76" ---- Launching main thread ----
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.C: Trace Attempt  7	[0.59 s]
-0.0.C: Stopped processing property "ibex_fv.C_5"	[0.61 s].
-0.0.C: Starting proof for property "ibex_fv.C_6"	[0.00 s].
-0.0.I: Trace Attempt  7	[0.59 s]
-0.0.I: Stopped processing property "ibex_fv.C_5"	[0.65 s].
-0.0.I: Starting proof for property "ibex_fv.C_6"	[0.00 s].
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt  7	[0.57 s]
-0.0.K: Stopped processing property "ibex_fv.C_5"	[0.64 s].
-0.0.K: Starting proof for property "ibex_fv.C_6"	[0.00 s].
-0.0.AM: Trace Attempt  3	[0.04 s]
-0.0.I: Trace Attempt  2	[0.02 s]
-0.0.AD: Trace Attempt  4	[0.07 s]
-0.0.Tri:   84.80" ---- Launching abstraction thread ----
-0.0.AM: Trace Attempt  4	[0.06 s]
-0.0.N: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  3	[0.03 s]
-0.0.Tri:   84.81" ---- Launching multi-phase simplification thread ----
-0.0.I: Trace Attempt  4	[0.03 s]
-0.0.C: Trace Attempt  3	[0.03 s]
-0.0.AD: Trace Attempt  5	[0.08 s]
-0.0.AM: Trace Attempt  5	[0.07 s]
-0.0.K: Trace Attempt  3	[0.03 s]
-0.0.N: Trace Attempt  4	[0.06 s]
-0.0.N: Trace Attempt  5	[0.06 s]
-0.0.C: Trace Attempt  4	[0.05 s]
-0.0.K: Trace Attempt  1	[0.05 s]
-0.0.I: Trace Attempt  4	[0.09 s]
-0.0.N: Trace Attempt  5	[0.14 s]
-0.0.I: Trace Attempt  5	[0.11 s]
-0.0.C: Trace Attempt  5	[0.12 s]
-0.0.K: Trace Attempt  5	[0.12 s]
-0.0.Tri: Trace Attempt  2	[0.15 s]
-0.0.Tri: Trace Attempt  3	[0.20 s]
-0.0.I: Trace Attempt  5	[0.18 s]
-0.0.K: Trace Attempt  1	[0.17 s]
-0.0.K: Trace Attempt  2	[0.17 s]
-0.0.K: Trace Attempt  3	[0.18 s]
-0.0.B: Stopped processing property "ibex_fv.C_15"	[15.86 s].
-0.0.B: Starting proof for property "ibex_fv.C_6"	[0.00 s].
-0.0.Tri: Trace Attempt  4	[0.24 s]
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  3	[0.02 s]
 0.0.B: Trace Attempt  4	[0.03 s]
-0.0.B: Trace Attempt  5	[0.07 s]
-0.0.Tri: Trace Attempt  5	[0.32 s]
-0.0.AD: Trace Attempt  1	[0.43 s]
-0.0.K: Trace Attempt  1	[0.39 s]
-0.0.AD: Trace Attempt  2	[0.45 s]
-0.0.K: Trace Attempt  2	[0.40 s]
-0.0.K: Trace Attempt  3	[0.41 s]
-0.0.K: Trace Attempt  4	[0.42 s]
-0.0.AD: Trace Attempt  3	[0.50 s]
-0.0.AD: Trace Attempt  5	[0.62 s]
-0.0.Tri: Trace Attempt 11	[0.56 s]
-0.0.Tri: A trace with 11 cycles was found. [0.66 s]
-INFO (IPF047): 0.0.Tri: The cover property "ibex_fv.C_6" was covered in 11 cycles in 0.68 s.
-0: ProofGrid usable level: 3
-0.0.AD: Stopped processing property "ibex_fv.C_6"	[0.69 s].
-0.0.AD: Starting proof for property "ibex_fv.C_7"	[0.00 s].
-0.0.K: Trace Attempt  1	[0.66 s]
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  9	[0.35 s]
-0.0.B: Stopped processing property "ibex_fv.C_6"	[0.44 s].
-0.0.B: Starting proof for property "ibex_fv.C_7"	[0.00 s].
-0.0.K: Stopped processing property "ibex_fv.C_6"	[0.66 s].
-0.0.K: Starting proof for property "ibex_fv.C_7"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt 11	[0.42 s]
-0.0.AM: Stopped processing property "ibex_fv.C_6"	[0.71 s].
-0.0.AM: Starting proof for property "ibex_fv.C_7"	[0.00 s].
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.K: Trace Attempt  2	[0.01 s]
-0.0.K: Trace Attempt  3	[0.02 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.N: Trace Attempt  8	[0.71 s]
-0.0.N: Stopped processing property "ibex_fv.C_6"	[0.71 s].
-0.0.N: Starting proof for property "ibex_fv.C_7"	[0.00 s].
-0.0.I: Trace Attempt  8	[0.69 s]
-0.0.I: Stopped processing property "ibex_fv.C_6"	[0.70 s].
-0.0.I: Starting proof for property "ibex_fv.C_7"	[0.00 s].
-0.0.C: Trace Attempt  8	[0.70 s]
-0.0.C: Stopped processing property "ibex_fv.C_6"	[0.70 s].
-0.0.C: Starting proof for property "ibex_fv.C_7"	[0.00 s].
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.I: Trace Attempt  2	[0.02 s]
-0.0.K: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  3	[0.03 s]
-0.0.N: Trace Attempt  3	[0.03 s]
-0.0.I: Trace Attempt  4	[0.03 s]
-0.0.AD: Trace Attempt  4	[0.08 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt  1	[0.06 s]
-0.0.B: Trace Attempt  5	[0.06 s]
-0.0.K: Trace Attempt  2	[0.06 s]
-0.0.AD: Trace Attempt  5	[0.09 s]
-0.0.C: Trace Attempt  3	[0.03 s]
-0.0.K: Trace Attempt  3	[0.07 s]
-0.0.K: Trace Attempt  4	[0.07 s]
-0.0.K: Trace Attempt  5	[0.07 s]
-0.0.N: Trace Attempt  4	[0.05 s]
-0.0.N: Trace Attempt  5	[0.05 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.C: Trace Attempt  4	[0.05 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.I: Trace Attempt  4	[0.09 s]
-0.0.Hp: Trace Attempt 11	[85.67 s]
-0.0.K: Trace Attempt  5	[0.13 s]
-0.0.N: Trace Attempt  5	[0.11 s]
-0.0.I: Trace Attempt  5	[0.11 s]
-0.0.C: Trace Attempt  5	[0.11 s]
-0.0.K: Trace Attempt  1	[0.15 s]
-0.0.K: Trace Attempt  2	[0.15 s]
-0.0.K: Trace Attempt  3	[0.16 s]
-0.0.K: Trace Attempt  4	[0.16 s]
-0.0.K: Trace Attempt  5	[0.16 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_6"	[0.87 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_7"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.Tri:   85.63" ---- Launching main thread ----
-0.0.Tri:   85.66" ---- Launching abstraction thread ----
-0.0.Tri:   85.67" ---- Launching multi-phase simplification thread ----
-0.0.Tri: Trace Attempt  2	[0.13 s]
-0.0.AD: Trace Attempt  1	[0.36 s]
-0.0.K: Trace Attempt  1	[0.35 s]
-0.0.AD: Trace Attempt  2	[0.37 s]
-0.0.AM: Trace Attempt  1	[0.34 s]
-0.0.K: Trace Attempt  2	[0.36 s]
-0.0.K: Trace Attempt  3	[0.37 s]
-0.0.K: Trace Attempt  4	[0.38 s]
-0.0.AD: Trace Attempt  3	[0.43 s]
-0.0.AM: Trace Attempt  2	[0.40 s]
-0.0.Tri: Trace Attempt  3	[0.23 s]
-0.0.AM: Trace Attempt  3	[0.41 s]
-0.0.Tri: Trace Attempt  4	[0.25 s]
-0.0.Tri: Trace Attempt  5	[0.28 s]
-0.0.AM: Trace Attempt  5	[0.47 s]
-0.0.AD: A proof was found: No trace exists. [0.63 s]
-INFO (IPF051): 0.0.AD: The cover property "ibex_fv.C_7" was proven unreachable in 0.62 s.
-0.0.AD: Stopped processing property "ibex_fv.C_7"	[0.62 s].
-0.0.AD: Starting proof for property "ibex_fv.C_8"	[0.00 s].
-0.0.AM: Trace Attempt  6	[0.51 s]
-0.0.AM: Stopped processing property "ibex_fv.C_7"	[0.62 s].
-0.0.AM: Starting proof for property "ibex_fv.C_8"	[0.00 s].
-0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  7	[0.46 s]
-0.0.N: Stopped processing property "ibex_fv.C_7"	[0.62 s].
-0.0.N: Starting proof for property "ibex_fv.C_8"	[0.00 s].
-0.0.Tri: Trace Attempt  9	[0.46 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_7"	[0.46 s].
-0.0.Tri: Starting proof for property "ibex_fv.C_8"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.K: Trace Attempt  7	[0.48 s]
-0.0.K: Stopped processing property "ibex_fv.C_7"	[0.64 s].
-0.0.K: Starting proof for property "ibex_fv.C_8"	[0.00 s].
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.Tri:   86.09" ---- Launching main thread ----
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.C: Trace Attempt  7	[0.46 s]
-0.0.C: Stopped processing property "ibex_fv.C_7"	[0.62 s].
-0.0.C: Starting proof for property "ibex_fv.C_8"	[0.00 s].
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt 11	[0.58 s]
-0.0.B: Stopped processing property "ibex_fv.C_7"	[0.65 s].
-0.0.B: Starting proof for property "ibex_fv.C_8"	[0.00 s].
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.N: Trace Attempt  3	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.C: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  2	[0.01 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.I: Trace Attempt  8	[0.65 s]
-0.0.I: Stopped processing property "ibex_fv.C_7"	[0.65 s].
-0.0.I: Starting proof for property "ibex_fv.C_8"	[0.00 s].
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.Tri:   86.13" ---- Launching abstraction thread ----
-0.0.N: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt  3	[0.05 s]
-0.0.Tri:   86.13" ---- Launching multi-phase simplification thread ----
-0.0.C: Trace Attempt  3	[0.04 s]
-0.0.AD: Trace Attempt  4	[0.08 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.K: Trace Attempt  1	[0.06 s]
-0.0.K: Trace Attempt  2	[0.06 s]
-0.0.I: Trace Attempt  2	[0.02 s]
-0.0.N: Trace Attempt  4	[0.06 s]
-0.0.N: Trace Attempt  5	[0.06 s]
-0.0.K: Trace Attempt  3	[0.06 s]
-0.0.AD: Trace Attempt  5	[0.09 s]
-0.0.I: Trace Attempt  3	[0.03 s]
-0.0.C: Trace Attempt  4	[0.06 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.B: Trace Attempt  5	[0.06 s]
-0.0.I: Trace Attempt  4	[0.07 s]
-0.0.N: Trace Attempt  5	[0.12 s]
-0.0.K: Trace Attempt  5	[0.12 s]
-0.0.C: Trace Attempt  5	[0.12 s]
-0.0.Tri: Trace Attempt  2	[0.14 s]
-0.0.I: Trace Attempt  5	[0.09 s]
-0.0.K: Trace Attempt  1	[0.14 s]
-0.0.K: Trace Attempt  2	[0.15 s]
-0.0.K: Trace Attempt  3	[0.15 s]
-0.0.K: Trace Attempt  4	[0.15 s]
-0.0.K: Trace Attempt  5	[0.15 s]
-0.0.Tri: Trace Attempt  3	[0.20 s]
-0.0.Tri: Trace Attempt  4	[0.25 s]
-0.0.Tri: Trace Attempt  5	[0.30 s]
-0.0.AD: Trace Attempt  1	[0.35 s]
-0.0.AD: Trace Attempt  2	[0.36 s]
 0: ProofGrid usable level: 2
-0.0.K: Trace Attempt  1	[0.36 s]
-0.0.K: Trace Attempt  2	[0.37 s]
-0.0.K: Trace Attempt  3	[0.38 s]
-0.0.K: Trace Attempt  4	[0.39 s]
-0.0.K: Trace Attempt  5	[0.40 s]
-0.0.AD: A proof was found: No trace exists. [0.43 s]
-INFO (IPF051): 0.0.AD: The cover property "ibex_fv.C_8" was proven unreachable in 0.43 s.
-0.0.AD: Stopped processing property "ibex_fv.C_8"	[0.43 s].
-0.0.AD: Last scan. Per property time limit: 0s
-0.0.AD: Starting proof for property "ibex_fv.C_9"	[0.00 s].
-0.0.AM: Trace Attempt  1	[0.42 s]
-0.0.AM: Stopped processing property "ibex_fv.C_8"	[0.44 s].
-0.0.AM: Last scan. Per property time limit: 0s
-0.0.AM: Starting proof for property "ibex_fv.C_9"	[0.00 s].
-0.0.K: Stopped processing property "ibex_fv.C_8"	[0.42 s].
-0.0.K: Last scan. Per property time limit: 0s
-0.0.K: Starting proof for property "ibex_fv.C_9"	[0.00 s].
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  8	[0.39 s]
-0.0.C: Stopped processing property "ibex_fv.C_8"	[0.42 s].
-0.0.C: Last scan. Per property time limit: 0s
-0.0.C: Starting proof for property "ibex_fv.C_9"	[0.00 s].
-0.0.I: Trace Attempt  8	[0.35 s]
-0.0.I: Stopped processing property "ibex_fv.C_8"	[0.39 s].
+0.0.K: Trace Attempt  3	[0.04 s]
+0.0.I: Trace Attempt  3	[0.09 s]
+0.0.Tri: Trace Attempt 17	[0.94 s]
+0.0.Tri: Stopped processing property "ibex_fv.C_2"	[0.94 s].
+0.0.Tri: Starting proof for property "ibex_fv.C_3"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.K: Trace Attempt  1	[0.06 s]
+0.0.Tri:    5.85" ---- Launching main thread ----
+0.0.I: Trace Attempt  4	[0.10 s]
+0.0.C: Trace Attempt  4	[0.05 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.C: Trace Attempt  5	[0.07 s]
+0.0.Tri:    5.89" ---- Launching abstraction thread ----
+0.0.N: Trace Attempt  5	[0.14 s]
+0.0.Tri:    5.90" ---- Launching multi-phase simplification thread ----
+0.0.K: Trace Attempt  5	[0.13 s]
+0.0.K: Trace Attempt  1	[0.15 s]
+0.0.Tri: Trace Attempt  2	[0.15 s]
+0.0.Tri: Trace Attempt  3	[0.18 s]
+0.0.Tri: Trace Attempt  4	[0.18 s]
+0.0.Tri: Trace Attempt  5	[0.22 s]
+0.0.AM: Trace Attempt  1	[0.29 s]
+0.0.AD: Trace Attempt  1	[0.31 s]
+0.0.AD: Trace Attempt  2	[0.32 s]
+0.0.Hp: A proof was found: No trace exists. [6.20 s]
+INFO (IPF051): 0.0.Hp: The cover property "ibex_fv.C_3" was proven unreachable in 6.19 s.
+0.0.AM: Trace Attempt  2	[0.35 s]
+0.0.I: Trace Attempt  7	[0.34 s]
+0.0.I: Stopped processing property "ibex_fv.C_3"	[0.37 s].
 0.0.I: Last scan. Per property time limit: 0s
-0.0.I: Starting proof for property "ibex_fv.C_9"	[0.00 s].
+0.0.I: Starting proof for property "ibex_fv.C_4"	[0.00 s].
+0.0.AD: Stopped processing property "ibex_fv.C_3"	[0.34 s].
+0.0.AD: Last scan. Per property time limit: 0s
+0.0.AD: Starting proof for property "ibex_fv.C_4"	[0.00 s].
+0.0.AM: Stopped processing property "ibex_fv.C_3"	[0.34 s].
+0.0.AM: Last scan. Per property time limit: 0s
+0.0.AM: Starting proof for property "ibex_fv.C_4"	[0.00 s].
+0.0.Hp: Trace Attempt  5	[6.22 s]
+0.0.B: Trace Attempt  8	[0.25 s]
+0.0.B: Stopped processing property "ibex_fv.C_3"	[0.34 s].
+0.0.B: Last scan. Per property time limit: 0s
+0.0.B: Starting proof for property "ibex_fv.C_4"	[0.00 s].
+0.0.C: Trace Attempt  8	[0.32 s]
+0.0.C: Stopped processing property "ibex_fv.C_3"	[0.32 s].
+0.0.C: Last scan. Per property time limit: 0s
+0.0.C: Starting proof for property "ibex_fv.C_4"	[0.00 s].
 0.0.I: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  8	[0.39 s]
-0.0.N: Stopped processing property "ibex_fv.C_8"	[0.43 s].
+0.0.N: Trace Attempt  8	[0.36 s]
+0.0.N: Stopped processing property "ibex_fv.C_3"	[0.36 s].
 0.0.N: Last scan. Per property time limit: 0s
-0.0.N: Starting proof for property "ibex_fv.C_9"	[0.00 s].
+0.0.N: Starting proof for property "ibex_fv.C_4"	[0.00 s].
 0.0.AD: Trace Attempt  1	[0.01 s]
 0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  2	[0.01 s]
-0.0.C: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  2	[0.01 s]
+0.0.B: Trace Attempt  1	[0.01 s]
 0.0.I: Trace Attempt  2	[0.01 s]
 0.0.I: Trace Attempt  3	[0.01 s]
-0.0.K: Trace Attempt  3	[0.02 s]
-0.0.C: Trace Attempt  3	[0.01 s]
 0.0.N: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  9	[0.34 s]
-0.0.B: Stopped processing property "ibex_fv.C_8"	[0.43 s].
-0.0.B: Last scan. Per property time limit: 0s
-0.0.B: Starting proof for property "ibex_fv.C_9"	[0.00 s].
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.Tri: Trace Attempt  9	[0.45 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_8"	[0.45 s].
-0.0.Tri: Last scan. Per property time limit: 0s
-0.0.Tri: Starting proof for property "ibex_fv.C_9"	[0.00 s].
-0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.I: Trace Attempt  2	[0.03 s]
 0.0.B: Trace Attempt  2	[0.01 s]
-0.0.Tri:   86.54" ---- Launching main thread ----
+0.0.K: Trace Attempt  1	[0.34 s]
+0.0.K: Stopped processing property "ibex_fv.C_3"	[0.35 s].
+0.0.K: Last scan. Per property time limit: 0s
+0.0.K: Starting proof for property "ibex_fv.C_4"	[0.00 s].
+0.0.C: Trace Attempt  1	[0.01 s]
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.AM: Trace Attempt  2	[0.03 s]
+0.0.C: Trace Attempt  2	[0.01 s]
+0.0.AD: Trace Attempt  2	[0.03 s]
 0.0.B: Trace Attempt  3	[0.02 s]
-0.0.I: Trace Attempt  3	[0.04 s]
-0.0.I: Trace Attempt  4	[0.04 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.K: Trace Attempt  3	[0.05 s]
-0.0.C: Trace Attempt  3	[0.05 s]
-0.0.B: Trace Attempt  4	[0.03 s]
+0.0.I: Trace Attempt  2	[0.04 s]
 0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.N: Trace Attempt  3	[0.04 s]
+0.0.AM: Trace Attempt  3	[0.04 s]
+0.0.B: Trace Attempt  4	[0.03 s]
+0.0.I: Trace Attempt  3	[0.05 s]
+0.0.I: Trace Attempt  4	[0.05 s]
+0.0.N: Trace Attempt  3	[0.05 s]
+0.0.AM: Trace Attempt  4	[0.06 s]
+0.0.K: Trace Attempt  3	[0.04 s]
+0.0.C: Trace Attempt  3	[0.05 s]
+0.0.AD: Trace Attempt  4	[0.07 s]
+0.0.AM: Trace Attempt  5	[0.07 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.N: Trace Attempt  4	[0.07 s]
+0.0.N: Trace Attempt  5	[0.07 s]
+0.0.AD: Trace Attempt  5	[0.08 s]
 0.0.K: Trace Attempt  1	[0.06 s]
-0.0.K: Trace Attempt  2	[0.07 s]
-0.0.C: Trace Attempt  4	[0.06 s]
-0.0.K: Trace Attempt  3	[0.07 s]
-0.0.C: Trace Attempt  5	[0.07 s]
-0.0.K: Trace Attempt  4	[0.07 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.N: Trace Attempt  4	[0.06 s]
-0.0.I: Trace Attempt  3	[0.08 s]
-0.0.AD: Trace Attempt  4	[0.08 s]
-0.0.Tri:   86.58" ---- Launching abstraction thread ----
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.B: Trace Attempt  5	[0.06 s]
-0.0.AD: Trace Attempt  5	[0.09 s]
-0.0.Tri:   86.58" ---- Launching multi-phase simplification thread ----
-0.0.I: Trace Attempt  4	[0.09 s]
+0.0.C: Trace Attempt  4	[0.07 s]
+0.0.I: Trace Attempt  3	[0.09 s]
+0.0.I: Trace Attempt  4	[0.10 s]
+0.0.Tri: Trace Attempt  8	[0.39 s]
+0.0.Tri: Stopped processing property "ibex_fv.C_3"	[0.41 s].
+0.0.Tri: Last scan. Per property time limit: 0s
+0.0.Tri: Starting proof for property "ibex_fv.C_4"	[0.00 s].
+0.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.Tri:    6.26" ---- Launching main thread ----
+0.0.N: Trace Attempt  5	[0.14 s]
+0.0.C: Trace Attempt  5	[0.14 s]
 0.0.K: Trace Attempt  5	[0.13 s]
-0.0.C: Trace Attempt  5	[0.13 s]
-0.0.I: Trace Attempt  4	[0.13 s]
-0.0.N: Trace Attempt  5	[0.12 s]
-0.0.K: Trace Attempt  1	[0.15 s]
-0.0.I: Trace Attempt  5	[0.15 s]
-0.0.K: Trace Attempt  2	[0.15 s]
-0.0.K: Trace Attempt  3	[0.15 s]
-0.0.K: Trace Attempt  4	[0.16 s]
-0.0.K: Trace Attempt  5	[0.16 s]
-0.0.Tri: Trace Attempt  2	[0.15 s]
-0.0.Tri: Trace Attempt  3	[0.19 s]
-0.0.Tri: Trace Attempt  4	[0.24 s]
-0.0.Tri: Trace Attempt  5	[0.30 s]
-0.0.K: Trace Attempt  1	[0.35 s]
-0.0.K: Trace Attempt  2	[0.36 s]
-0.0.K: Trace Attempt  3	[0.37 s]
-0.0.K: Trace Attempt  4	[0.38 s]
-0.0.AM: Trace Attempt  1	[0.40 s]
-0.0.K: Trace Attempt  5	[0.39 s]
-0.0.AD: Trace Attempt  1	[0.43 s]
-0.0.AD: Trace Attempt  2	[0.45 s]
-0.0.AM: Trace Attempt  2	[0.45 s]
-0.0.AM: Trace Attempt  3	[0.46 s]
-0.0.AM: Trace Attempt  5	[0.49 s]
-0.0.AD: Trace Attempt  3	[0.50 s]
-0.0.AD: Trace Attempt  5	[0.62 s]
-0.0.K: Trace Attempt  1	[0.68 s]
-0.0.K: Trace Attempt  2	[0.69 s]
-0.0.K: Trace Attempt  3	[0.69 s]
-0.0.K: Trace Attempt  4	[0.70 s]
-0.0.K: Trace Attempt  5	[0.71 s]
-0.0.N: Trace Attempt  1	[0.82 s]
-0.0.N: Trace Attempt  2	[0.87 s]
-0.0.N: Trace Attempt  3	[0.88 s]
-0: ProofGrid usable level: 1
-0.0.N: Trace Attempt  5	[0.92 s]
-0.0.I: Trace Attempt  1	[1.75 s]
-0.0.I: Trace Attempt  2	[1.76 s]
-0.0.I: Trace Attempt  3	[1.82 s]
-0.0.Tri:   88.63" Simplification phase 1 complete
-0.0.AD: Trace Attempt  1	[2.57 s]
-0.0.AD: Trace Attempt  2	[2.59 s]
-0.0.AD: Trace Attempt  3	[2.65 s]
-0.0.K: Trace Attempt  1	[2.66 s]
-0.0.K: Trace Attempt  2	[2.67 s]
-0.0.K: Trace Attempt  3	[2.68 s]
-0.0.K: Trace Attempt  4	[2.69 s]
-0.0.K: Trace Attempt  5	[2.70 s]
-0.0.AD: Trace Attempt  5	[2.79 s]
+0.0.I: Trace Attempt  4	[0.16 s]
+0.0.AM: Trace Attempt  1	[0.18 s]
+0.0.K: Trace Attempt  1	[0.16 s]
+0.0.I: Trace Attempt  5	[0.18 s]
+0.0.Tri:    6.30" ---- Launching abstraction thread ----
+0.0.Tri:    6.31" ---- Launching multi-phase simplification thread ----
+0.0.AD: Trace Attempt  1	[0.19 s]
+0.0.AD: Trace Attempt  2	[0.21 s]
+0.0.AM: Trace Attempt  2	[0.23 s]
+0.0.AM: Trace Attempt  3	[0.24 s]
+0.0.AD: Trace Attempt  3	[0.26 s]
+0.0.AM: Trace Attempt  5	[0.27 s]
+0.0.Tri: Trace Attempt  2	[0.18 s]
+0.0.AD: Trace Attempt  5	[0.37 s]
+0.0.Tri: Trace Attempt  3	[0.25 s]
+0.0.Tri: Trace Attempt  4	[0.25 s]
+0.0.Tri: Trace Attempt  5	[0.31 s]
 0.0.K: Requesting engine job to stop
 0.0.C: Requesting engine job to stop
 0.0.Tri: Requesting engine job to stop
@@ -2019,45 +1307,45 @@ INFO (IPF051): 0.0.AD: The cover property "ibex_fv.C_8" was proven unreachable i
 0.0.AM: Requesting engine job to stop
 0.0.B: Requesting engine job to stop
 0.0.Hp: Requesting engine job to terminate
-INFO (IPF144): 0: Initiating shutdown of proof [89.45 s]
-0.0.Hp: A proof was found: No trace exists. [89.43 s]
-INFO (IPF051): 0.0.Hp: The cover property "ibex_fv.C_9" was proven unreachable in 89.42 s.
-0.0.Hp: All properties determined. [89.43 s]
-0.0.I: Trace Attempt  7	[2.02 s]
-0.0.I: Stopped processing property "ibex_fv.C_9"	[2.85 s].
-0.0.I: All properties determined. [2.85 s]
-0.0.K: Trace Attempt 11	[2.83 s]
-0.0.K: Stopped processing property "ibex_fv.C_9"	[2.85 s].
-0.0.Tri: Trace Attempt 41	[2.82 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_9"	[2.83 s].
-0.0.I: Exited with Success (@ 89.49 s)
+INFO (IPF144): 0: Initiating shutdown of proof [6.72 s]
+0.0.Tri: Trace Attempt  6	[0.33 s]
+0.0.Tri: A proof was found: No trace exists. [0.34 s]
+INFO (IPF051): 0.0.Tri: The cover property "ibex_fv.C_4" was proven unreachable in 0.34 s.
+0.0.AD: Stopped processing property "ibex_fv.C_4"	[0.46 s].
+0.0.Hp: Interrupted (multi)
+0.0.Hp: All properties determined. [6.70 s]
+0.0.I: Trace Attempt  8	[0.47 s]
+0.0.I: Stopped processing property "ibex_fv.C_4"	[0.47 s].
+0.0.AD: All properties determined. [0.48 s]
+0.0.I: All properties determined. [0.48 s]
+0.0.AM: Stopped processing property "ibex_fv.C_4"	[0.47 s].
+0.0.I: Exited with Success (@ 6.73 s)
 0: ProofGrid usable level: 0
-0.0.K: All properties determined. [2.86 s]
-0.0.AD: Stopped processing property "ibex_fv.C_9"	[2.86 s].
-0.0.Tri: All properties determined. [2.83 s]
-0.0.AD: All properties determined. [2.87 s]
-0.0.Tri: Exited with Success (@ 89.50 s)
-0.0.K: Exited with Success (@ 89.51 s)
-0.0.AD: Exited with Success (@ 89.51 s)
-0.0.C: Trace Attempt 24	[2.89 s]
-0.0.C: Stopped processing property "ibex_fv.C_9"	[2.89 s].
-0.0.C: All properties determined. [2.91 s]
-0.0.B: Trace Attempt 36	[2.73 s]
-0.0.B: Stopped processing property "ibex_fv.C_9"	[2.92 s].
-0.0.C: Exited with Success (@ 89.58 s)
-0.0.B: All properties determined. [2.93 s]
-0.0.AM: Trace Attempt 29	[2.67 s]
-0.0.AM: Stopped processing property "ibex_fv.C_9"	[2.96 s].
-0.0.B: Exited with Success (@ 89.59 s)
-0.0.AM: All properties determined. [2.97 s]
-0.0.N: Trace Attempt 24	[2.97 s]
-0.0.N: Stopped processing property "ibex_fv.C_9"	[2.98 s].
-0.0.AM: Exited with Success (@ 89.63 s)
-0.0.N: All properties determined. [2.99 s]
-0.0.N: Exited with Success (@ 89.83 s)
-0.0.Hp: Exited with Success (@ 89.83 s)
+0.0.AD: Exited with Success (@ 6.73 s)
+0.0.AM: All properties determined. [0.49 s]
+0.0.N: Trace Attempt  6	[0.26 s]
+0.0.N: Stopped processing property "ibex_fv.C_4"	[0.46 s].
+0.0.N: All properties determined. [0.49 s]
+0.0.AM: Exited with Success (@ 6.74 s)
+0.0.K: Trace Attempt  1	[0.47 s]
+0.0.K: Stopped processing property "ibex_fv.C_4"	[0.47 s].
+0.0.N: Exited with Success (@ 6.75 s)
+0.0.K: All properties determined. [0.48 s]
+0.0.C: Trace Attempt  7	[0.49 s]
+0.0.C: Stopped processing property "ibex_fv.C_4"	[0.48 s].
+0.0.C: All properties determined. [0.49 s]
+0.0.Hp: Exited with Success (@ 6.79 s)
+0.0.K: Exited with Success (@ 6.79 s)
+0.0.C: Exited with Success (@ 6.79 s)
+0.0.B: Trace Attempt 11	[0.48 s]
+0.0.B: Stopped processing property "ibex_fv.C_4"	[0.54 s].
+0.0.B: All properties determined. [0.56 s]
+0.0.Tri: Stopped processing property "ibex_fv.C_4"	[0.54 s].
+0.0.B: Exited with Success (@ 6.93 s)
+0.0.Tri: All properties determined. [0.55 s]
+0.0.Tri: Exited with Success (@ 6.93 s)
 0: --------------------------------------------------------------
-ProofGrid Summary (utilization 99.90 %)
+ProofGrid Summary (utilization 98.80 %)
 --------------------------------------------------------------
      engines started                               :     9
      engine jobs started                           :     9
@@ -2066,25 +1354,25 @@ ProofGrid Summary (utilization 99.90 %)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      K        0.11       89.43        0.00       99.87 %
-      C        0.09       89.43        0.00       99.90 %
-    Tri        0.09       89.43        0.00       99.90 %
-      I        0.08       89.45        0.00       99.91 %
-      N        0.09       89.44        0.00       99.90 %
-     AD        0.08       89.45        0.00       99.91 %
-     AM        0.09       89.43        0.00       99.90 %
-     Hp        0.09       89.43        0.00       99.90 %
-      B        0.09       89.43        0.00       99.90 %
-    all        0.09       89.44        0.00       99.90 %
+      K        0.10        6.70        0.00       98.47 %
+      C        0.08        6.70        0.00       98.84 %
+    Tri        0.08        6.70        0.00       98.84 %
+      I        0.08        6.70        0.00       98.87 %
+      N        0.06        6.71        0.00       99.04 %
+     AD        0.08        6.69        0.00       98.78 %
+     AM        0.08        6.69        0.00       98.78 %
+     Hp        0.08        6.69        0.00       98.78 %
+      B        0.08        6.69        0.00       98.80 %
+    all        0.08        6.70        0.00       98.80 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               0.82      804.94        0.00
+               0.73       60.29        0.00
 
-    Data read    : 754.21 kiB
-    Data written : 37.49 kiB
+    Data read    : 321.45 kiB
+    Data written : 20.11 kiB
 
 0: All pending notifications were processed.
 INFO (IPF059): 0: Completed proof on task: "mytask"
@@ -2092,7 +1380,7 @@ INFO (IPF059): 0: Completed proof on task: "mytask"
 ==============================================================
 SUMMARY
 ==============================================================
-           Properties Considered              : 20
+           Properties Considered              : 15
                  assertions                   : 0
                   - proven                    : 0
                   - bounded_proven (user)     : 0
@@ -2103,10 +1391,10 @@ SUMMARY
                   - undetermined              : 0
                   - unknown                   : 0
                   - error                     : 0
-                 covers                       : 20
-                  - unreachable               : 6 (30%)
+                 covers                       : 15
+                  - unreachable               : 5 (33.3333%)
                   - bounded_unreachable (user): 0 (0%)
-                  - covered                   : 14 (70%)
+                  - covered                   : 10 (66.6667%)
                   - ar_covered                : 0 (0%)
                   - undetermined              : 0 (0%)
                   - unknown                   : 0 (0%)
@@ -2116,7 +1404,7 @@ END
 INFO (IPL014): Waiting for the Tcl-thread to exit.
 INFO: Waiting for proof threads to stop...
 INFO: Proof threads stopped.
-INFO (IPL018): The peak resident set memory use for this session was 2.378 GB.
+INFO (IPL018): The peak resident set memory use for this session was 1.131 GB.
 INFO (IPL015): The Tcl-thread exited with status 0.
 INFO (IPL016): Exiting the analysis session with status 0.
 ./RUN_JG.sh -j ./synthlc/i_DIV_out/xCoverAPerflocDiv -s ./synthlc/i_DIV_out/xCoverAPerflocDiv/out/cover_individual.sv  -g 0

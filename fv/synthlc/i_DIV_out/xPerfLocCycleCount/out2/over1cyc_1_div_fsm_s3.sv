@@ -35,40 +35,10 @@ wire mult_fsm_s5 =
 	(mult_state == 2'd1) && 
 	 1'b1; 
 
-wire mult_fsm_s6 = 
-	(mul_owner_pc == pc0) && 
-	(mul_owner_v == 1'd1) && 
-	(mult_state == 2'd2) && 
-	 1'b1; 
-
 wire div_fsm_s1 = 
 	(div_owner_pc == pc0) && 
 	(div_owner_v == 1'd0) && 
 	(div_state == 3'd1) && 
-	 1'b1; 
-
-wire div_fsm_s10 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd2) && 
-	 1'b1; 
-
-wire div_fsm_s11 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd3) && 
-	 1'b1; 
-
-wire div_fsm_s12 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd4) && 
-	 1'b1; 
-
-wire div_fsm_s13 = 
-	(div_owner_pc == pc0) && 
-	(div_owner_v == 1'd1) && 
-	(div_state == 3'd5) && 
 	 1'b1; 
 
 wire div_fsm_s14 = 
@@ -135,14 +105,6 @@ always @(posedge clk_i) begin
     else if (id_stage_s1)
         id_stage_s1_hpn <= 1'b1;
 end
-
-N_mult_fsm_s1: assume property (@(posedge clk_i) !mult_fsm_s1);
-
-N_mult_fsm_s2: assume property (@(posedge clk_i) !mult_fsm_s2);
-
-N_mult_fsm_s3: assume property (@(posedge clk_i) !mult_fsm_s3);
-
-N_mult_fsm_s5: assume property (@(posedge clk_i) !mult_fsm_s5);
 
 N_div_fsm_s1: assume property (@(posedge clk_i) !div_fsm_s1);
 
