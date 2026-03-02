@@ -10,7 +10,7 @@ CHECK ASSUMPTION!
 
 [RUN_JG] CMDTASK: task -create mytask -copy_assumes   -regexp
 [RUN_JG] no gui
-[RUN_JG] jg -no_gui -fpv ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_.tcl -proj ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_jgsession_26-02-28-02_11_23
+[RUN_JG] jg -no_gui -fpv ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_.tcl -proj ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_jgsession_26-03-02-00_31_28
 Jasper Apps 2023.12p001 64 bits 2024.01.23 16:09:24 UTC
 
 Any disclosure about the Cadence Design Systems software or its use
@@ -46,7 +46,7 @@ Rights at 48 CFR 52.227-19, as applicable.
 
 For technical assistance visit http://support.cadence.com.
 
-Jasper Apps Analysis Session - /home/users/ngpark/SynthLC/fv/synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_jgsession_26-02-28-02_11_23/sessionLogs/session_0
+Jasper Apps Analysis Session - /home/users/ngpark/SynthLC/fv/synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_jgsession_26-03-02-00_31_28/sessionLogs/session_0
 
 INFO: successfully checked out licenses "jasper_interactive" and "jasper_fao".
 INFO: reading configuration file "/home/users/ngpark/.config/cadence/jasper.conf".
@@ -366,12 +366,10 @@ INFO (INL011): Processing "-f" file "/home/users/ngpark/SynthLC/fv/synthlc/i_MUL
 [INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_slow.sv(12): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
 [-- (VERI-1482)] Analyzing Verilog file './synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv'
 [INFO (VERI-1328)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(10): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
-[WARN (VERI-1875)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(499): identifier 'mult_state' is used before its declaration
-[WARN (VERI-1875)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(503): identifier 'ls_fsm' is used before its declaration
-[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(714): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(715): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(716): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(717): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(723): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(724): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(725): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(726): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
 [-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_prefetch_buffer.sv'
 [-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv'
 [INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv(13): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
@@ -520,7 +518,7 @@ INFO (ISW003): Top module name is "ibex_fv".
 [WARN (VERI-1060)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(1945): 'initial' construct is ignored
 [WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(1172): system function call isunknown with non-constant argument is not supported for synthesis
 [INFO (VERI-1018)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(12): compiling module 'ibex_fv'
-[WARN (VERI-1060)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(510): 'initial' construct is ignored
+[WARN (VERI-1060)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(494): 'initial' construct is ignored
 [WARN (VDB-1002)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(81): net 'data_rdata_i[31]' does not have a driver
 [WARN (VDB-1002)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(444): net 'pc0[31]' does not have a driver
 [WARN (VDB-1002)] ./synthlc/i_MUL_out/xPerfLocCycleCount/cycle_count_div_fsm_s12_top.sv(448): net 'i0[31]' does not have a driver
@@ -538,15 +536,10 @@ WARNING (WNL018): /home/users/cheriek/Documents/Formal_Method/final_project/ibex
 INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
 INFO (IPM031): Clearing proof results of all properties.
 INFO (IRS006): Current reset condition is "rst_ni".
-WARNING (WPM025): Property "ibex_fv.DIV_EN_ACTIVE:precondition1", a related cover of "ibex_fv.DIV_EN_ACTIVE", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.EVENTUAL_ISSUE:precondition1", a related cover of "ibex_fv.EVENTUAL_ISSUE", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.EXE_IUV:precondition1", a related cover of "ibex_fv.EXE_IUV", was not copied to the new task.
-WARNING (WPM025): Property "ibex_fv.IDLE_LSU_PRE_IUV:precondition1", a related cover of "ibex_fv.IDLE_LSU_PRE_IUV", was not copied to the new task.
-WARNING (WPM025): Property "ibex_fv.IDLE_MULTDIV_PRE_IUV:precondition1", a related cover of "ibex_fv.IDLE_MULTDIV_PRE_IUV", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.IF_ID_CONTRACT:precondition1", a related cover of "ibex_fv.IF_ID_CONTRACT", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.ISSUE_ONCE:precondition1", a related cover of "ibex_fv.ISSUE_ONCE", was not copied to the new task.
-WARNING (WPM025): Property "ibex_fv.MULTDIV_READY:precondition1", a related cover of "ibex_fv.MULTDIV_READY", was not copied to the new task.
-WARNING (WPM025): Property "ibex_fv.MULT_EN_ACTIVE:precondition1", a related cover of "ibex_fv.MULT_EN_ACTIVE", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.VALID_INSTN:precondition1", a related cover of "ibex_fv.VALID_INSTN", was not copied to the new task.
 =========CUSTOMTCL=========
 min 0 max 70 35
@@ -562,7 +555,7 @@ INFO (IRS030): Running reset analysis: phase 2 of 4.
 INFO (IRS031): Running reset analysis: phase 3 of 4.
 INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
 INFO (IRS024): Reset iterations 0 to 4 analyzed.
-INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1832 of 1906 design flops, 0 of 0 design latches, 208 of 339 internal elements.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1832 of 1906 design flops, 0 of 0 design latches, 198 of 329 internal elements.
 INFO (IRS039): Reset analysis complete.
 INFO (IPF031): Settings used for proof thread 0:
     orchestration                 = on (auto)
@@ -608,116 +601,150 @@ Tricustom14: Custom engine code is hT3Nu7hP3fiYQADBZnYcglNHp9bfd7EOeniIqP/ji8sGL
 0.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.Ht: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.N: Proofgrid shell started at 655383@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_1
-0.0.Hp: Proofgrid shell started at 655384@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_1
+0.0.Hp: Proofgrid shell started at 822588@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_1
+0.0.N: Proofgrid shell started at 822587@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_1
+0.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.N: Last scan. Per property time limit: 0s
 0.0.N: Starting proof for property "consec_div_fsm_s12_35"	[0.00 s].
-0.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.Ht: Proofgrid shell started at 822611@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_1
 0.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.Ht: Proofgrid shell started at 655407@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_1
-0.0.N: Trace Attempt  2	[0.02 s]
-0.0.N: Trace Attempt  3	[0.02 s]
-0.0.Mpcustom4: Proofgrid shell started at 655425@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_1
+0.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: Trace Attempt  1	[0.01 s]
+0.0.Mpcustom4: Proofgrid shell started at 822630@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_1
+0.0.N: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
 0.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.B: Proofgrid shell started at 655442@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_1
-0.0.N: Trace Attempt  3	[0.06 s]
-0.0.Ht: Trace Attempt  1	[0.04 s]
-0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.Oh: Proofgrid shell started at 655440@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_1
-0.0.Ht: Trace Attempt  2	[0.04 s]
-0.0.Mpcustom4: Trace Attempt  1	[0.04 s]
-0.0.AM: Proofgrid shell started at 655447@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_1
-0.0.Ht: Trace Attempt  3	[0.05 s]
-0.0.B: Last scan. Per property time limit: 0s
-0.0.B: Starting proof for property "consec_div_fsm_s12_35"	[0.00 s].
+0.0.Oh: Proofgrid shell started at 822644@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_1
 0.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.Ht: Trace Attempt  4	[0.06 s]
-0.0.B: Trace Attempt  1	[0.01 s]
+0.0.Ht: Trace Attempt  1	[0.04 s]
+0.0.Ht: Trace Attempt  2	[0.04 s]
+0.0.Ht: Trace Attempt  3	[0.05 s]
+0.0.Mpcustom4: Trace Attempt  1	[0.04 s]
+0.0.N: Trace Attempt  3	[0.06 s]
+0.0.Ht: Trace Attempt  4	[0.05 s]
+0.0.B: Proofgrid shell started at 822654@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_1
+0.0.AM: Proofgrid shell started at 822656@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_1
+0.0.Ht: Trace Attempt  5	[0.06 s]
+0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Mpcustom4: Trace Attempt  2	[0.06 s]
 0.0.N: Trace Attempt  4	[0.08 s]
 0.0.N: Trace Attempt  5	[0.08 s]
-0.0.Mpcustom4: Trace Attempt  2	[0.06 s]
-0.0.Ht: Trace Attempt  5	[0.06 s]
-0.0.B: Trace Attempt  2	[0.01 s]
+0.0.B: Last scan. Per property time limit: 0s
+0.0.B: Starting proof for property "consec_div_fsm_s12_35"	[0.00 s].
 0.0.AM: Last scan. Per property time limit: 0s
 0.0.AM: Starting proof for property "consec_div_fsm_s12_35"	[0.00 s].
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.B: Trace Attempt  4	[0.04 s]
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  2	[0.01 s]
 0.0.AM: Trace Attempt  1	[0.01 s]
+0.0.B: Trace Attempt  3	[0.02 s]
 0.0.AM: Trace Attempt  2	[0.03 s]
+0.0.B: Trace Attempt  4	[0.03 s]
 0.0.AM: Trace Attempt  3	[0.05 s]
+0.0.Oh: bwd trail(1): 1 0.104678s
+0.0.N: Trace Attempt  5	[0.15 s]
+0.0.B: Trace Attempt  5	[0.07 s]
+0.0.Oh: All properties either determined or skipped. [0.12 s]
+0.0.Oh: Exited with Success (@ 0.18 s)
+0.0.AM: Trace Attempt  4	[0.09 s]
+0.0.AM: Trace Attempt  5	[0.12 s]
+0.0.Mpcustom4: Trace Attempt  3	[0.79 s]
+0.0.Mpcustom4: Trace Attempt  3	[0.81 s]
+0.0.Mpcustom4: Trace Attempt  4	[0.85 s]
+0.0.Mpcustom4: Trace Attempt  5	[0.89 s]
+0.0.Mpcustom4: Trace Attempt  5	[0.95 s]
+0.0.Ht: Trace Attempt 53	[4.06 s]
+0.0.B: Trace Attempt 58	[4.12 s]
+0.0.N: Trace Attempt 29	[4.26 s]
+0.0.AM: Trace Attempt 47	[4.31 s]
+0.0.AM: Trace Attempt  1	[4.54 s]
+0.0.AM: Trace Attempt  2	[4.60 s]
+0.0.AM: Trace Attempt  3	[4.61 s]
+0.0.AM: Trace Attempt  5	[4.64 s]
+0.0.Mpcustom4: Trace Attempt 38	[5.30 s]
+0.0.N: Trace Attempt 40	[8.46 s]
+0.0.AM: Trace Attempt 57	[8.66 s]
+0.0.Mpcustom4: Trace Attempt 40	[9.47 s]
+0.0.AM: Trace Attempt  1	[10.73 s]
+0.0.AM: Trace Attempt  2	[10.86 s]
+0.0.AM: Trace Attempt  3	[10.89 s]
+0.0.AM: Trace Attempt  5	[10.97 s]
+0.0.N: Trace Attempt  1	[11.46 s]
+0.0.N: Trace Attempt  2	[11.52 s]
+0.0.N: Trace Attempt  3	[11.53 s]
+0.0.N: Trace Attempt  5	[11.55 s]
+0.0.Mpcustom4: Trace Attempt 48	[14.11 s]
+0.0.AM: Trace Attempt 60	[16.65 s]
+0.0.Mpcustom4: Trace Attempt 53	[19.43 s]
+0.0.N: Trace Attempt 72	[20.46 s]
 0.0.N: Requesting engine job to stop
 0.0.B: Requesting engine job to stop
 0.0.AM: Requesting engine job to stop
 0.0.Hp: Requesting engine job to terminate
 0.0.Ht: Requesting engine job to terminate
 0.0.Mpcustom4: Requesting engine job to terminate
-0.0.Oh: Requesting engine job to terminate
-INFO (IPF144): 0: Initiating shutdown of proof [0.16 s]
-0.0.Oh: A proof was found: No trace exists. [0.07 s]
-INFO (IPF051): 0.0.Oh: The cover property "consec_div_fsm_s12_35" was proven unreachable in 0.06 s.
-0.0.B: Trace Attempt  5	[0.07 s]
-0.0.Hp: Interrupted (multi)
-0.0.Hp: All properties determined. [0.15 s]
-0.0.Oh: bwd trail(1): 1 0.0648397s
-0.0.Oh: All properties determined. [0.08 s]
-0.0.Ht: Interrupted (multi)
-0.0.Ht: Trace Attempt 10	[0.11 s]
-0.0.Ht: All properties determined. [0.13 s]
-0.0.Oh: Exited with Success (@ 0.17 s)
+INFO (IPF144): 0: Initiating shutdown of proof [21.86 s]
+0.0.B: Trace Attempt 74	[6.01 s]
+0.0.B: A trace with 74 cycles was found. [21.74 s]
+INFO (IPF047): 0.0.B: The cover property "consec_div_fsm_s12_35" was covered in 74 cycles in 21.87 s.
 0: ProofGrid usable level: 0
-0.0.AM: Stopped processing property "consec_div_fsm_s12_35"	[0.06 s].
-0.0.Ht: Exited with Success (@ 0.17 s)
-0.0.AM: All properties determined. [0.07 s]
-0.0.AM: Exited with Success (@ 0.19 s)
-0.0.Hp: Exited with Success (@ 0.20 s)
-0.0.B: Stopped processing property "consec_div_fsm_s12_35"	[0.12 s].
-0.0.B: All properties determined. [0.12 s]
-0.0.B: Exited with Success (@ 0.22 s)
-0.0.N: Trace Attempt  7	[0.20 s]
-0.0.N: Stopped processing property "consec_div_fsm_s12_35"	[0.20 s].
-0.0.N: All properties determined. [0.21 s]
-0.0.N: Exited with Success (@ 0.36 s)
-0.0.Mpcustom4: All properties determined. [0.31 s]
-0.0.Mpcustom4: Exited with Success (@ 0.36 s)
+0.0.B: Stopped processing property "consec_div_fsm_s12_35"	[21.88 s].
+0.0.B: All properties determined. [21.76 s]
+0.0.N: Stopped processing property "consec_div_fsm_s12_35"	[21.96 s].
+0.0.B: Exited with Success (@ 21.96 s)
+0.0.N: All properties determined. [21.95 s]
+0.0.N: Exited with Success (@ 21.98 s)
+0.0.Mpcustom4: Trace Attempt 59	[21.54 s]
+0.0.Mpcustom4: All properties determined. [22.23 s]
+0.0.AM: Trace Attempt 62	[17.99 s]
+0.0.AM: Stopped processing property "consec_div_fsm_s12_35"	[22.16 s].
+0.0.AM: All properties determined. [22.16 s]
+0.0.AM: Exited with Success (@ 22.31 s)
+0.0.Mpcustom4: Exited with Success (@ 22.56 s)
+0.0.Hp: Interrupted (multi)
+0.0.Hp: All properties determined. [23.64 s]
+0.0.Hp: Sending SIGKILL
+0.0.Ht: Sending SIGKILL
+0.0.Ht: Trace Attempt 74	[7.71 s]
+0.0.Ht: Terminated by signal SIGKILL (@ 23.92 s)
+0.0.Hp: Terminated by signal SIGKILL (@ 23.92 s)
 0: --------------------------------------------------------------
-ProofGrid Summary (utilization 58.22 %)
+ProofGrid Summary (utilization 99.57 %)
 --------------------------------------------------------------
      engines started                               :     7
      engine jobs started                           :     7
+     jobs where 15 minute load exceeded core count :     7
 
     Average time in state (seconds)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      N        0.09        0.15        0.00       62.37 %
-     Hp        0.08        0.15        0.00       65.90 %
-     Ht        0.08        0.12        0.00       60.11 %
-    Mpcustom4        0.06        0.12        0.00       65.10 %
-     Oh        0.08        0.07        0.00       46.72 %
-      B        0.07        0.08        0.00       54.38 %
-     AM        0.08        0.07        0.00       44.78 %
-    all        0.08        0.11        0.00       58.22 %
+      N        0.11       21.85        0.00       99.51 %
+     Hp        0.09       21.85        0.00       99.61 %
+     Ht        0.08       21.83        0.00       99.64 %
+    Mpcustom4        0.07       21.83        0.00       99.70 %
+     Oh        0.06        0.12        0.00       66.85 %
+      B        0.08       21.77        0.00       99.62 %
+     AM        0.08       21.77        0.00       99.62 %
+    all        0.08       18.72        0.00       99.57 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               0.55        0.76        0.00
+               0.56      131.03        0.00
 
-    Data read    : 6.23 kiB
-    Data written : 7.00 kiB
+    Data read    : 209.20 kiB
+    Data written : 12.48 kiB
 
 0: All pending notifications were processed.
 INFO (IPF059): 0: Completed proof on task: "mytask"
-min 0 max 34 17
-cover -name consec_div_fsm_s12_17  {@(posedge clk_i) div_fsm_s12 [*17] ##1 !div_fsm_s12 }
-prove -property {consec_div_fsm_s12_17}
+min 36 max 70 53
+cover -name consec_div_fsm_s12_53  {@(posedge clk_i) div_fsm_s12 [*53] ##1 !div_fsm_s12 }
+prove -property {consec_div_fsm_s12_53}
 INFO (IPF036): Starting proof on task: "mytask", 1 properties to prove with 0 already proven/unreachable
 INFO (IPF031): Settings used for proof thread 1:
     orchestration                 = on (auto)
@@ -730,7 +757,7 @@ INFO (IPF031): Settings used for proof thread 1:
     proofgrid_restarts            = 10
 1: Using multistage preprocessing
 1: Starting reduce
-1: Finished reduce in 0.042s
+1: Finished reduce in 0.045s
 1.0.PRE: Performing Proof Simplification...
 1.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 1.0.N: Proof Simplification Iteration 1	[0.00 s]
@@ -749,121 +776,163 @@ INFO (IPF031): Settings used for proof thread 1:
 1: ProofGrid usable level: 1
 1: Initial ProofGrid level: 1
 1: ProofGrid is starting event handling
-1.0.N: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 1.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+1.0.N: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 1.0.Ht: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 1.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-1.0.N: Proofgrid shell started at 655504@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_2
-1.0.Hp: Proofgrid shell started at 655505@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_2
+1.0.N: Proofgrid shell started at 823354@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_2
+1.0.Hp: Proofgrid shell started at 823355@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_2
 1.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-1.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 1.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+1.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+1.0.Ht: Proofgrid shell started at 823378@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_2
 1.0.N: Last scan. Per property time limit: 0s
-1.0.N: Starting proof for property "consec_div_fsm_s12_17"	[0.00 s].
-1.0.Ht: Proofgrid shell started at 655527@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_2
+1.0.N: Starting proof for property "consec_div_fsm_s12_53"	[0.00 s].
 1.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-1.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 1.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-1.0.Mpcustom4: Proofgrid shell started at 655546@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_2
+1.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 1.0.N: Trace Attempt  1	[0.01 s]
+1.0.Mpcustom4: Proofgrid shell started at 823396@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_2
 1.0.N: Trace Attempt  2	[0.02 s]
 1.0.N: Trace Attempt  3	[0.02 s]
 1.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-1.0.Ht: Trace Attempt  1	[0.04 s]
-1.0.Oh: Proofgrid shell started at 655561@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_2
-1.0.Ht: Trace Attempt  2	[0.04 s]
-1.0.Ht: Trace Attempt  3	[0.05 s]
-1.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+1.0.Ht: Trace Attempt  1	[0.05 s]
+1.0.Ht: Trace Attempt  2	[0.05 s]
+1.0.Oh: Proofgrid shell started at 823411@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_2
+1.0.Ht: Trace Attempt  3	[0.06 s]
 1.0.Mpcustom4: Trace Attempt  1	[0.04 s]
-1.0.B: Proofgrid shell started at 655571@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_2
-1.0.N: Trace Attempt  3	[0.06 s]
-1.0.Ht: Trace Attempt  4	[0.05 s]
-1.0.AM: Proofgrid shell started at 655576@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_2
-1.0.Ht: Trace Attempt  5	[0.06 s]
+1.0.B: Proofgrid shell started at 823421@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_2
+1.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+1.0.N: Trace Attempt  3	[0.07 s]
+1.0.Ht: Trace Attempt  4	[0.07 s]
+1.0.AM: Proofgrid shell started at 823427@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_2
+1.0.Ht: Trace Attempt  5	[0.07 s]
+1.0.Mpcustom4: Trace Attempt  2	[0.05 s]
 1.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 1.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 1.0.B: Last scan. Per property time limit: 0s
-1.0.B: Starting proof for property "consec_div_fsm_s12_17"	[0.00 s].
-1.0.N: Trace Attempt  4	[0.08 s]
-1.0.Mpcustom4: Trace Attempt  2	[0.06 s]
-1.0.N: Trace Attempt  5	[0.08 s]
-1.0.AM: Last scan. Per property time limit: 0s
-1.0.AM: Starting proof for property "consec_div_fsm_s12_17"	[0.00 s].
+1.0.B: Starting proof for property "consec_div_fsm_s12_53"	[0.00 s].
+1.0.N: Trace Attempt  4	[0.09 s]
+1.0.N: Trace Attempt  5	[0.09 s]
 1.0.B: Trace Attempt  1	[0.01 s]
-1.0.B: Trace Attempt  2	[0.01 s]
+1.0.AM: Last scan. Per property time limit: 0s
+1.0.AM: Starting proof for property "consec_div_fsm_s12_53"	[0.00 s].
+1.0.B: Trace Attempt  2	[0.02 s]
 1.0.AM: Trace Attempt  1	[0.01 s]
-1.0.B: Trace Attempt  3	[0.02 s]
-1.0.B: Trace Attempt  4	[0.03 s]
+1.0.B: Trace Attempt  3	[0.03 s]
+1.0.B: Trace Attempt  4	[0.04 s]
 1.0.AM: Trace Attempt  2	[0.03 s]
 1.0.AM: Trace Attempt  3	[0.05 s]
+1.0.B: Trace Attempt  5	[0.08 s]
+1.0.N: Trace Attempt  5	[0.17 s]
+1.0.AM: Trace Attempt  4	[0.09 s]
+1.0.Oh: bwd trail(1): 1 0.120684s
+1.0.Oh: All properties either determined or skipped. [0.14 s]
+1.0.Oh: Exited with Success (@ 0.23 s)
+1.0.AM: Trace Attempt  5	[0.12 s]
+1.0.Mpcustom4: Trace Attempt  3	[0.74 s]
+1.0.Mpcustom4: Trace Attempt  3	[0.76 s]
+1.0.Mpcustom4: Trace Attempt  4	[0.79 s]
+1.0.Mpcustom4: Trace Attempt  5	[0.83 s]
+1.0.Mpcustom4: Trace Attempt  5	[0.89 s]
+1.0.N: Trace Attempt 27	[4.19 s]
+1.0.B: Trace Attempt 53	[4.16 s]
+1.0.AM: Trace Attempt 48	[4.56 s]
+1.0.Mpcustom4: Trace Attempt 38	[5.18 s]
+1.0.Ht: Trace Attempt 63	[5.34 s]
+1.0.B: Trace Attempt 90	[8.16 s]
+1.0.N: Trace Attempt 38	[8.39 s]
+1.0.AM: Trace Attempt  1	[8.51 s]
+1.0.AM: Trace Attempt  2	[8.56 s]
+1.0.AM: Trace Attempt  3	[8.57 s]
+1.0.AM: Trace Attempt  5	[8.60 s]
+1.0.Mpcustom4: Trace Attempt 52	[9.81 s]
+1.0.N: Trace Attempt 44	[12.61 s]
+1.0.AM: Trace Attempt 67	[13.70 s]
+1.0.Ht: Trace Attempt 83	[14.26 s]
+1.0.Mpcustom4: Trace Attempt 61	[14.86 s]
+1.0.AM: Trace Attempt  1	[17.09 s]
+1.0.AM: Trace Attempt  2	[17.14 s]
+1.0.AM: Trace Attempt  3	[17.16 s]
+1.0.AM: Trace Attempt  5	[17.18 s]
+1.0.N: Trace Attempt 51	[18.17 s]
+1.0.Mpcustom4: Trace Attempt 67	[19.81 s]
+1.0.AM: Trace Attempt 78	[21.73 s]
+1.0.N: Trace Attempt 57	[23.46 s]
+1.0.Mpcustom4: Trace Attempt 72	[24.97 s]
+1.0.N: Trace Attempt 60	[27.89 s]
+1.0.Mpcustom4: Trace Attempt 81	[30.00 s]
+1.0.N: Trace Attempt  1	[30.42 s]
+1.0.N: Trace Attempt  2	[30.48 s]
+1.0.N: Trace Attempt  3	[30.49 s]
+1.0.N: Trace Attempt  5	[30.52 s]
 1.0.N: Requesting engine job to stop
 1.0.B: Requesting engine job to stop
 1.0.AM: Requesting engine job to stop
 1.0.Hp: Requesting engine job to terminate
 1.0.Ht: Requesting engine job to terminate
 1.0.Mpcustom4: Requesting engine job to terminate
-1.0.Oh: Requesting engine job to terminate
-INFO (IPF144): 1: Initiating shutdown of proof [0.16 s]
-1.0.Oh: A proof was found: No trace exists. [0.09 s]
-INFO (IPF051): 1.0.Oh: The cover property "consec_div_fsm_s12_17" was proven unreachable in 0.08 s.
-1.0.Oh: bwd trail(1): 1 0.0813401s
-1.0.B: Trace Attempt  5	[0.07 s]
-1.0.Oh: All properties determined. [0.10 s]
-1.0.AM: Trace Attempt  4	[0.07 s]
-1.0.Oh: Exited with Success (@ 0.17 s)
+INFO (IPF144): 1: Initiating shutdown of proof [32.28 s]
+1.0.B: Trace Attempt 92	[8.39 s]
+1.0.B: A trace with 92 cycles was found. [32.12 s]
+INFO (IPF047): 1.0.B: The cover property "consec_div_fsm_s12_53" was covered in 92 cycles in 32.36 s.
+1.0.B: Stopped processing property "consec_div_fsm_s12_53"	[32.41 s].
+1.0.B: All properties determined. [32.19 s]
+1.0.B: Exited with Success (@ 32.31 s)
 1: ProofGrid usable level: 0
+1.0.N: Trace Attempt  7	[30.54 s]
+1.0.N: Stopped processing property "consec_div_fsm_s12_53"	[32.49 s].
+1.0.N: All properties determined. [32.32 s]
+1.0.N: Exited with Success (@ 32.35 s)
+1.0.AM: Trace Attempt 80	[24.00 s]
+1.0.AM: Stopped processing property "consec_div_fsm_s12_53"	[32.86 s].
+1.0.AM: All properties determined. [32.86 s]
+1.0.AM: Exited with Success (@ 33.01 s)
+1.0.Mpcustom4: Trace Attempt 83	[30.08 s]
+1.0.Mpcustom4: All properties determined. [32.99 s]
+1.0.Hp: Interrupted (multi)
+1.0.Hp: All properties determined. [33.28 s]
+1.0.Mpcustom4: Exited with Success (@ 33.29 s)
+1.0.Hp: Exited with Success (@ 33.74 s)
+1.0.Ht: Sending SIGKILL
 1.0.Ht: Interrupted (multi)
-1.0.Ht: Trace Attempt 13	[0.14 s]
-1.0.Ht: All properties determined. [0.15 s]
-1.0.N: Trace Attempt  6	[0.08 s]
-1.0.N: Stopped processing property "consec_div_fsm_s12_17"	[0.16 s].
-1.0.Ht: Exited with Success (@ 0.18 s)
-1.0.N: All properties determined. [0.16 s]
-1.0.N: Exited with Success (@ 0.18 s)
-1.0.Hp: All properties determined. [0.18 s]
-1.0.AM: Trace Attempt  5	[0.08 s]
-1.0.AM: Stopped processing property "consec_div_fsm_s12_17"	[0.10 s].
-1.0.AM: All properties determined. [0.10 s]
-1.0.AM: Exited with Success (@ 0.21 s)
-1.0.Hp: Exited with Success (@ 0.21 s)
-1.0.B: Stopped processing property "consec_div_fsm_s12_17"	[0.12 s].
-1.0.B: All properties determined. [0.12 s]
-1.0.B: Exited with Success (@ 0.36 s)
-1.0.Mpcustom4: All properties determined. [0.32 s]
-1.0.Mpcustom4: Exited with Success (@ 0.37 s)
+1.0.Ht: Trace Attempt 92	[14.75 s]
+1.0.Ht: All properties determined. [34.44 s]
+1.0.Ht: Terminated by signal SIGKILL (@ 34.50 s)
 1: --------------------------------------------------------------
-ProofGrid Summary (utilization 59.46 %)
+ProofGrid Summary (utilization 99.69 %)
 --------------------------------------------------------------
      engines started                               :     7
      engine jobs started                           :     7
+     jobs where 15 minute load exceeded core count :     7
 
     Average time in state (seconds)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      N        0.09        0.16        0.00       62.94 %
-     Hp        0.08        0.16        0.00       66.68 %
-     Ht        0.08        0.14        0.00       63.79 %
-    Mpcustom4        0.07        0.12        0.00       63.92 %
-     Oh        0.08        0.09        0.00       52.88 %
-      B        0.08        0.08        0.00       49.75 %
-     AM        0.08        0.07        0.00       48.45 %
-    all        0.08        0.12        0.00       59.46 %
+      N        0.10       32.28        0.00       99.68 %
+     Hp        0.08       32.27        0.00       99.75 %
+     Ht        0.08       32.26        0.00       99.77 %
+    Mpcustom4        0.08       32.24        0.00       99.76 %
+     Oh        0.09        0.14        0.00       60.31 %
+      B        0.08       32.20        0.00       99.74 %
+     AM        0.09       32.18        0.00       99.71 %
+    all        0.09       27.65        0.00       99.69 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               0.56        0.82        0.00
+               0.61      193.57        0.00
 
-    Data read    : 6.26 kiB
-    Data written : 7.17 kiB
+    Data read    : 262.91 kiB
+    Data written : 10.63 kiB
 
 1: All pending notifications were processed.
 INFO (IPF059): 1: Completed proof on task: "mytask"
-min 0 max 16 8
-cover -name consec_div_fsm_s12_8  {@(posedge clk_i) div_fsm_s12 [*8] ##1 !div_fsm_s12 }
-prove -property {consec_div_fsm_s12_8}
+min 54 max 70 62
+cover -name consec_div_fsm_s12_62  {@(posedge clk_i) div_fsm_s12 [*62] ##1 !div_fsm_s12 }
+prove -property {consec_div_fsm_s12_62}
 INFO (IPF036): Starting proof on task: "mytask", 1 properties to prove with 0 already proven/unreachable
 INFO (IPF031): Settings used for proof thread 2:
     orchestration                 = on (auto)
@@ -876,7 +945,7 @@ INFO (IPF031): Settings used for proof thread 2:
     proofgrid_restarts            = 10
 2: Using multistage preprocessing
 2: Starting reduce
-2: Finished reduce in 0.043s
+2: Finished reduce in 0.044s
 2.0.PRE: Performing Proof Simplification...
 2.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 2.0.N: Proof Simplification Iteration 1	[0.00 s]
@@ -886,9 +955,9 @@ INFO (IPF031): Settings used for proof thread 2:
 2.0.N: Proof Simplification Iteration 5	[0.10 s]
 2.0.N: Proof Simplification Iteration 6	[0.12 s]
 2.0.N: Proof Simplification Iteration 7	[0.14 s]
-2.0.N: Proof Simplification Iteration 8	[0.16 s]
+2.0.N: Proof Simplification Iteration 8	[0.15 s]
 2.0.N: Proof Simplification Iteration 9	[0.17 s]
-2.0.N: Proof Simplification Iteration 10	[0.20 s]
+2.0.N: Proof Simplification Iteration 10	[0.19 s]
 2.0.PRE: Proof Simplification completed in 0.24 s
 2: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
 2: =============================== ProofGrid start ===============================
@@ -897,99 +966,170 @@ INFO (IPF031): Settings used for proof thread 2:
 2: ProofGrid is starting event handling
 2.0.N: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 2.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-2.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 2.0.Ht: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-2.0.Hp: Proofgrid shell started at 655725@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_3
-2.0.N: Proofgrid shell started at 655724@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_3
+2.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+2.0.Hp: Proofgrid shell started at 824372@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_3
+2.0.N: Proofgrid shell started at 824371@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_3
 2.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+2.0.Ht: Proofgrid shell started at 824394@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_3
 2.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-2.0.Mpcustom4: Proofgrid shell started at 655751@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_3
 2.0.N: Last scan. Per property time limit: 0s
-2.0.N: Starting proof for property "consec_div_fsm_s12_8"	[0.00 s].
+2.0.N: Starting proof for property "consec_div_fsm_s12_62"	[0.00 s].
 2.0.N: Trace Attempt  1	[0.01 s]
-2.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-2.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+2.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 2.0.N: Trace Attempt  2	[0.02 s]
 2.0.N: Trace Attempt  3	[0.02 s]
+2.0.Mpcustom4: Proofgrid shell started at 824413@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_3
+2.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+2.0.Ht: Trace Attempt  1	[0.04 s]
+2.0.Ht: Trace Attempt  2	[0.04 s]
+2.0.Ht: Trace Attempt  3	[0.05 s]
+2.0.N: Trace Attempt  3	[0.07 s]
+2.0.Ht: Trace Attempt  4	[0.06 s]
+2.0.Ht: Trace Attempt  5	[0.07 s]
 2.0.Mpcustom4: Trace Attempt  1	[0.04 s]
-2.0.Oh: Proofgrid shell started at 655774@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_3
-2.0.N: Trace Attempt  3	[0.06 s]
 2.0.Mpcustom4: Trace Attempt  2	[0.06 s]
-2.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-2.0.N: Trace Attempt  4	[0.08 s]
-2.0.N: Trace Attempt  5	[0.08 s]
+2.0.N: Trace Attempt  4	[0.09 s]
+2.0.N: Trace Attempt  5	[0.09 s]
+2.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 2.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-2.0.N: Requesting engine job to stop
-2.0.Hp: Requesting engine job to terminate
-2.0.Mpcustom4: Requesting engine job to terminate
-2.0.Oh: Requesting engine job to terminate
-INFO (IPF144): 2: Initiating shutdown of proof [0.17 s]
-2.0.Oh: A proof was found: No trace exists. [0.07 s]
-INFO (IPF051): 2.0.Oh: The cover property "consec_div_fsm_s12_8" was proven unreachable in 0.06 s.
-2.0.Oh: bwd trail(1): 1 0.0641479s
-2.0.Oh: All properties determined. [0.08 s]
-2.0.Oh: Exited with Success (@ 0.18 s)
-2: ProofGrid usable level: 0
-2.0.Ht: Proofgrid shell started at 655747@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_3
-2.0.Ht: Requesting engine job to terminate
+2.0.N: Trace Attempt  5	[0.17 s]
 2.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-2.0.Ht: Preventing job from starting because proof is shutting down.
+2.0.Oh: Proofgrid shell started at 824428@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_3
+2.0.B: Proofgrid shell started at 824432@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_3
+2.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+2.0.AM: Proofgrid shell started at 824435@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_3
+2.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+2.0.B: Last scan. Per property time limit: 0s
+2.0.B: Starting proof for property "consec_div_fsm_s12_62"	[0.00 s].
+2.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+2.0.B: Trace Attempt  1	[0.02 s]
+2.0.AM: Last scan. Per property time limit: 0s
+2.0.AM: Starting proof for property "consec_div_fsm_s12_62"	[0.00 s].
+2.0.B: Trace Attempt  2	[0.03 s]
+2.0.AM: Trace Attempt  1	[0.03 s]
+2.0.B: Trace Attempt  3	[0.05 s]
+2.0.B: Trace Attempt  4	[0.08 s]
+2.0.AM: Trace Attempt  2	[0.07 s]
+2.0.AM: Trace Attempt  3	[0.11 s]
+2.0.B: Trace Attempt  5	[0.16 s]
+2.0.AM: Trace Attempt  4	[0.17 s]
+2.0.Oh: bwd trail(1): 1 0.124721s
+2.0.Oh: All properties either determined or skipped. [0.28 s]
+2.0.AM: Trace Attempt  5	[0.20 s]
+2.0.Oh: Exited with Success (@ 0.78 s)
+2.0.Oh: Completed, Restart ignored.
+2.0.Mpcustom4: Trace Attempt  3	[1.29 s]
+2.0.Mpcustom4: Trace Attempt  3	[1.34 s]
+2.0.Mpcustom4: Trace Attempt  4	[1.38 s]
+2.0.Mpcustom4: Trace Attempt  5	[1.43 s]
+2.0.Mpcustom4: Trace Attempt  5	[1.50 s]
+2.0.N: Trace Attempt 27	[4.28 s]
+2.0.Ht: Trace Attempt 72	[4.60 s]
+2.0.B: Trace Attempt 49	[4.29 s]
+2.0.AM: Trace Attempt 46	[4.30 s]
+2.0.Mpcustom4: Trace Attempt 34	[5.78 s]
+2.0.Ht: Trace Attempt 84	[8.72 s]
+2.0.B: Trace Attempt 77	[8.35 s]
+2.0.N: Trace Attempt 39	[8.93 s]
+2.0.AM: Trace Attempt 64	[8.45 s]
+2.0.Mpcustom4: Trace Attempt 45	[9.95 s]
+2.0.AM: Trace Attempt  1	[11.87 s]
+2.0.AM: Trace Attempt  2	[11.93 s]
+2.0.AM: Trace Attempt  3	[11.94 s]
+2.0.AM: Trace Attempt  5	[11.97 s]
+2.0.N: Trace Attempt 48	[12.99 s]
+2.0.Mpcustom4: Trace Attempt 57	[14.33 s]
+2.0.N: Trace Attempt 55	[17.12 s]
+2.0.AM: Trace Attempt 76	[18.73 s]
+2.0.Mpcustom4: Trace Attempt 66	[19.75 s]
+2.0.N: Trace Attempt 61	[21.13 s]
+2.0.Mpcustom4: Trace Attempt 71	[23.82 s]
+2.0.N: Trace Attempt 67	[26.24 s]
+2.0.Mpcustom4: Trace Attempt 76	[28.61 s]
+2.0.N: Trace Attempt 71	[30.79 s]
+2.0.Mpcustom4: Trace Attempt 78	[33.22 s]
+2.0.N: Trace Attempt  1	[33.38 s]
+2.0.N: Trace Attempt  2	[33.44 s]
+2.0.N: Trace Attempt  3	[33.45 s]
+2.0.N: Trace Attempt  5	[33.48 s]
+2.0.Mpcustom4: Trace Attempt 86	[38.92 s]
+2.0.AM: Trace Attempt  1	[40.78 s]
+2.0.AM: Trace Attempt  2	[40.84 s]
+2.0.AM: Trace Attempt  3	[40.85 s]
+2.0.AM: Trace Attempt  5	[40.89 s]
+2.0.Mpcustom4: Trace Attempt 91	[45.93 s]
+2.0.Ht: Trace Attempt 91	[47.64 s]
+2.0.AM: Trace Attempt 87	[48.01 s]
+2.0.Mpcustom4: Trace Attempt 92	[52.67 s]
+2.0.N: Trace Attempt 100	[55.91 s]
+2.0.Mpcustom4: Trace Attempt 95	[59.93 s]
+2.0.AM: Trace Attempt 89	[62.27 s]
+2.0.N: Requesting engine job to stop
+2.0.B: Requesting engine job to stop
+2.0.AM: Requesting engine job to stop
+2.0.Hp: Requesting engine job to terminate
 2.0.Ht: Requesting engine job to terminate
-2.0.Ht: Interrupted. [0.00 s]
-2.0.Ht: Exited with Success (@ 0.20 s)
-2.0.Hp: All properties determined. [0.19 s]
-2.0.Hp: Exited with Success (@ 0.24 s)
-2.0.N: Trace Attempt  7	[0.21 s]
-2.0.N: Stopped processing property "consec_div_fsm_s12_8"	[0.21 s].
-2.0.N: All properties determined. [0.21 s]
-2.0.B: Proofgrid shell started at 655784@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_3
-2.0.B: Requesting engine job to terminate
-2.0.N: Exited with Success (@ 0.25 s)
-2.0.B: Preventing job from starting because proof is shutting down.
-2.0.B: Requesting engine job to terminate
-2.0.B: Interrupted. [0.00 s]
-2.0.AM: Proofgrid shell started at 655785@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_3
-2.0.AM: Requesting engine job to terminate
-2.0.B: Exited with Success (@ 0.27 s)
-2.0.AM: Preventing job from starting because proof is shutting down.
-2.0.AM: Requesting engine job to terminate
-2.0.AM: Interrupted. [0.01 s]
-2.0.AM: Exited with Success (@ 0.37 s)
-2.0.Mpcustom4: All properties determined. [0.33 s]
-2.0.Mpcustom4: Exited with Success (@ 0.37 s)
+2.0.Mpcustom4: Requesting engine job to terminate
+INFO (IPF144): 2: Initiating shutdown of proof [68.20 s]
+2.0.B: Trace Attempt 101	[11.66 s]
+2.0.B: A trace with 101 cycles was found. [67.63 s]
+INFO (IPF047): 2.0.B: The cover property "consec_div_fsm_s12_62" was covered in 101 cycles in 67.84 s.
+2.0.B: Stopped processing property "consec_div_fsm_s12_62"	[67.87 s].
+2.0.Ht: Interrupted (multi)
+2.0.Ht: Trace Attempt 101	[48.23 s]
+2.0.Ht: All properties determined. [68.17 s]
+2.0.B: All properties determined. [67.66 s]
+2.0.B: Exited with Success (@ 68.22 s)
+2: ProofGrid usable level: 0
+2.0.Hp: Interrupted (multi)
+2.0.Hp: All properties determined. [68.22 s]
+2.0.N: Stopped processing property "consec_div_fsm_s12_62"	[68.40 s].
+2.0.N: All properties determined. [68.35 s]
+2.0.N: Exited with Success (@ 68.40 s)
+2.0.Hp: Exited with Success (@ 68.70 s)
+2.0.AM: Trace Attempt 99	[65.29 s]
+2.0.AM: Stopped processing property "consec_div_fsm_s12_62"	[68.25 s].
+2.0.Ht: Exited with Success (@ 68.84 s)
+2.0.AM: All properties determined. [68.27 s]
+2.0.AM: Exited with Success (@ 69.11 s)
+2.0.Mpcustom4: Trace Attempt 95	[63.42 s]
+2.0.Mpcustom4: All properties determined. [69.05 s]
+2.0.Mpcustom4: Exited with Success (@ 69.20 s)
 2: --------------------------------------------------------------
-ProofGrid Summary (utilization 31.67 %)
+ProofGrid Summary (utilization 99.54 %)
 --------------------------------------------------------------
      engines started                               :     7
      engine jobs started                           :     7
+     jobs where 15 minute load exceeded core count :     7
 
     Average time in state (seconds)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      N        0.11        0.16        0.00       58.81 %
-     Hp        0.08        0.16        0.00       66.04 %
-     Ht        0.25        0.00        0.00        0.00 %
-    Mpcustom4        0.09        0.14        0.00       60.94 %
-     Oh        0.12        0.08        0.00       40.95 %
-      B        0.26        0.00        0.00        0.00 %
-     AM        0.26        0.00        0.00        0.00 %
-    all        0.17        0.08        0.00       31.67 %
+      N        0.12       68.19        0.00       99.82 %
+     Hp        0.08       68.19        0.00       99.88 %
+     Ht        0.09       68.17        0.00       99.86 %
+    Mpcustom4        0.10       68.14        0.00       99.85 %
+     Oh        0.49        0.28        0.00       36.65 %
+      B        0.49       67.68        0.00       99.28 %
+     AM        0.52       67.66        0.00       99.24 %
+    all        0.27       58.33        0.00       99.54 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               1.17        0.54        0.00
+               1.90      408.30        0.00
 
-    Data read    : 5.03 kiB
-    Data written : 3.89 kiB
+    Data read    : 311.44 kiB
+    Data written : 14.37 kiB
 
 2: All pending notifications were processed.
 INFO (IPF059): 2: Completed proof on task: "mytask"
-min 0 max 7 3
-cover -name consec_div_fsm_s12_3  {@(posedge clk_i) div_fsm_s12 [*3] ##1 !div_fsm_s12 }
-prove -property {consec_div_fsm_s12_3}
+min 63 max 70 66
+cover -name consec_div_fsm_s12_66  {@(posedge clk_i) div_fsm_s12 [*66] ##1 !div_fsm_s12 }
+prove -property {consec_div_fsm_s12_66}
 INFO (IPF036): Starting proof on task: "mytask", 1 properties to prove with 0 already proven/unreachable
 INFO (IPF031): Settings used for proof thread 3:
     orchestration                 = on (auto)
@@ -1002,7 +1142,7 @@ INFO (IPF031): Settings used for proof thread 3:
     proofgrid_restarts            = 10
 3: Using multistage preprocessing
 3: Starting reduce
-3: Finished reduce in 0.042s
+3: Finished reduce in 0.045s
 3.0.PRE: Performing Proof Simplification...
 3.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 3.0.N: Proof Simplification Iteration 1	[0.00 s]
@@ -1011,11 +1151,11 @@ INFO (IPF031): Settings used for proof thread 3:
 3.0.N: Proof Simplification Iteration 4	[0.08 s]
 3.0.N: Proof Simplification Iteration 5	[0.10 s]
 3.0.N: Proof Simplification Iteration 6	[0.12 s]
-3.0.N: Proof Simplification Iteration 7	[0.13 s]
+3.0.N: Proof Simplification Iteration 7	[0.14 s]
 3.0.N: Proof Simplification Iteration 8	[0.15 s]
 3.0.N: Proof Simplification Iteration 9	[0.17 s]
-3.0.N: Proof Simplification Iteration 10	[0.20 s]
-3.0.PRE: Proof Simplification completed in 0.25 s
+3.0.N: Proof Simplification Iteration 10	[0.19 s]
+3.0.PRE: Proof Simplification completed in 0.24 s
 3: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
 3: =============================== ProofGrid start ===============================
 3: ProofGrid usable level: 1
@@ -1024,115 +1164,176 @@ INFO (IPF031): Settings used for proof thread 3:
 3.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 3.0.N: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 3.0.Ht: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-3.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-3.0.N: Proofgrid shell started at 655837@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_4
-3.0.Hp: Proofgrid shell started at 655838@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_4
-3.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-3.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Hp: Proofgrid shell started at 824933@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_4
+3.0.N: Proofgrid shell started at 824932@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_4
 3.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+3.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 3.0.N: Last scan. Per property time limit: 0s
-3.0.N: Starting proof for property "consec_div_fsm_s12_3"	[0.00 s].
-3.0.Ht: Proofgrid shell started at 655860@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_4
-3.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-3.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-3.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.N: Starting proof for property "consec_div_fsm_s12_66"	[0.00 s].
+3.0.Ht: Proofgrid shell started at 824955@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_4
 3.0.N: Trace Attempt  1	[0.01 s]
-3.0.N: Trace Attempt  2	[0.01 s]
-3.0.N: Trace Attempt  3	[0.01 s]
-3.0.Mpcustom4: Proofgrid shell started at 655879@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_4
-3.0.Oh: Proofgrid shell started at 655894@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_4
-3.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-3.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-3.0.Ht: Trace Attempt  1	[0.04 s]
-3.0.Ht: Trace Attempt  2	[0.04 s]
-3.0.Ht: Trace Attempt  3	[0.05 s]
+3.0.N: Trace Attempt  2	[0.02 s]
+3.0.N: Trace Attempt  3	[0.02 s]
+3.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+3.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Oh: Proofgrid shell started at 824981@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_4
+3.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 3.0.N: Trace Attempt  3	[0.06 s]
-3.0.B: Proofgrid shell started at 655904@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_4
-3.0.Ht: Trace Attempt  4	[0.05 s]
-3.0.AM: Proofgrid shell started at 655910@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_4
-3.0.Mpcustom4: Trace Attempt  1	[0.04 s]
-3.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-3.0.Ht: Trace Attempt  5	[0.06 s]
-3.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-3.0.B: Last scan. Per property time limit: 0s
-3.0.B: Starting proof for property "consec_div_fsm_s12_3"	[0.00 s].
 3.0.N: Trace Attempt  4	[0.08 s]
 3.0.N: Trace Attempt  5	[0.08 s]
+3.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.B: Proofgrid shell started at 824982@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_4
+3.0.Ht: Trace Attempt  1	[0.08 s]
+3.0.Ht: Trace Attempt  2	[0.10 s]
+3.0.Ht: Trace Attempt  3	[0.11 s]
+3.0.Ht: Trace Attempt  4	[0.12 s]
+3.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Mpcustom4: Proofgrid shell started at 824974@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_4
+3.0.N: Trace Attempt  5	[0.17 s]
+3.0.B: Last scan. Per property time limit: 0s
+3.0.B: Starting proof for property "consec_div_fsm_s12_66"	[0.00 s].
+3.0.Ht: Trace Attempt  5	[0.16 s]
+3.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Oh: bwd trail(1): 1 0.107324s
+3.0.Oh: All properties either determined or skipped. [0.12 s]
+3.0.B: Trace Attempt  1	[0.03 s]
+3.0.B: Trace Attempt  2	[0.04 s]
+3.0.AM: Proofgrid shell started at 824989@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_4
+3.0.Oh: Exited with Success (@ 0.25 s)
+3.0.Oh: Completed, Restart ignored.
+3.0.Mpcustom4: Trace Attempt  1	[0.06 s]
+3.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Mpcustom4: Trace Attempt  2	[0.08 s]
+3.0.B: Trace Attempt  3	[0.07 s]
 3.0.AM: Last scan. Per property time limit: 0s
-3.0.AM: Starting proof for property "consec_div_fsm_s12_3"	[0.00 s].
-3.0.Mpcustom4: Trace Attempt  2	[0.05 s]
-3.0.B: Trace Attempt  1	[0.01 s]
-3.0.B: Trace Attempt  2	[0.01 s]
+3.0.AM: Starting proof for property "consec_div_fsm_s12_66"	[0.00 s].
 3.0.AM: Trace Attempt  1	[0.01 s]
-3.0.B: Trace Attempt  3	[0.02 s]
+3.0.B: Trace Attempt  4	[0.10 s]
+3.0.AM: Trace Attempt  2	[0.03 s]
+3.0.AM: Trace Attempt  3	[0.05 s]
+3.0.AM: Trace Attempt  4	[0.09 s]
+3.0.B: Trace Attempt  5	[0.17 s]
+3.0.AM: Trace Attempt  5	[0.12 s]
+3.0.Mpcustom4: Trace Attempt  3	[0.82 s]
+3.0.Mpcustom4: Trace Attempt  3	[0.84 s]
+3.0.Mpcustom4: Trace Attempt  4	[0.88 s]
+3.0.Mpcustom4: Trace Attempt  5	[0.92 s]
+3.0.Mpcustom4: Trace Attempt  5	[0.98 s]
+3.0.B: Trace Attempt 46	[4.24 s]
+3.0.N: Trace Attempt 29	[4.73 s]
+3.0.Ht: Trace Attempt 72	[4.72 s]
+3.0.AM: Trace Attempt 48	[4.66 s]
+3.0.Mpcustom4: Trace Attempt 38	[5.52 s]
+3.0.B: Trace Attempt 82	[8.32 s]
+3.0.N: Trace Attempt 38	[8.77 s]
+3.0.Ht: Trace Attempt 84	[8.84 s]
+3.0.AM: Trace Attempt 67	[8.78 s]
+3.0.Mpcustom4: Trace Attempt 52	[10.05 s]
+3.0.Ht: Trace Attempt 100	[12.84 s]
+3.0.AM: Trace Attempt  1	[13.08 s]
+3.0.AM: Trace Attempt  2	[13.14 s]
+3.0.AM: Trace Attempt  3	[13.15 s]
+3.0.AM: Trace Attempt  5	[13.18 s]
+3.0.N: Trace Attempt 47	[13.48 s]
+3.0.Mpcustom4: Trace Attempt 65	[15.24 s]
+3.0.N: Trace Attempt 54	[17.51 s]
+3.0.AM: Trace Attempt 85	[18.28 s]
+3.0.Mpcustom4: Trace Attempt 70	[19.71 s]
+3.0.N: Trace Attempt 60	[21.86 s]
+3.0.AM: Trace Attempt 89	[24.79 s]
+3.0.Mpcustom4: Trace Attempt 77	[25.09 s]
+3.0.N: Trace Attempt 65	[26.66 s]
+3.0.Mpcustom4: Trace Attempt 84	[29.13 s]
+3.0.N: Trace Attempt 71	[31.56 s]
+3.0.Mpcustom4: Trace Attempt 92	[33.78 s]
+3.0.N: Trace Attempt 75	[35.64 s]
+3.0.N: Trace Attempt  1	[36.47 s]
+3.0.N: Trace Attempt  2	[36.47 s]
+3.0.N: Trace Attempt  3	[36.48 s]
+3.0.N: Trace Attempt  5	[36.48 s]
+3.0.Mpcustom4: Trace Attempt 96	[39.71 s]
+3.0.N: Trace Attempt 93	[43.58 s]
+3.0.AM: Trace Attempt 91	[43.37 s]
+3.0.AM: Trace Attempt  1	[45.52 s]
+3.0.AM: Trace Attempt  2	[45.59 s]
+3.0.AM: Trace Attempt  3	[45.60 s]
+3.0.AM: Trace Attempt  5	[45.63 s]
+3.0.N: Trace Attempt  1	[46.23 s]
+3.0.N: Trace Attempt  2	[46.29 s]
+3.0.N: Trace Attempt  3	[46.30 s]
+3.0.N: Trace Attempt  5	[46.33 s]
+3.0.Mpcustom4: Trace Attempt 98	[47.00 s]
+3.0.AM: Trace Attempt 88	[50.21 s]
+3.0.Mpcustom4: Trace Attempt 101	[54.39 s]
+3.0.AM: Trace Attempt 92	[55.44 s]
 3.0.N: Requesting engine job to stop
 3.0.B: Requesting engine job to stop
 3.0.AM: Requesting engine job to stop
 3.0.Hp: Requesting engine job to terminate
 3.0.Ht: Requesting engine job to terminate
 3.0.Mpcustom4: Requesting engine job to terminate
-3.0.Oh: Requesting engine job to terminate
-INFO (IPF144): 3: Initiating shutdown of proof [0.13 s]
-3.0.Oh: A proof was found: No trace exists. [0.07 s]
-INFO (IPF051): 3.0.Oh: The cover property "consec_div_fsm_s12_3" was proven unreachable in 0.06 s.
-3.0.Ht: Interrupted (multi)
-3.0.Ht: Trace Attempt  8	[0.09 s]
-3.0.Ht: All properties determined. [0.10 s]
-3.0.B: Trace Attempt  4	[0.04 s]
-3.0.AM: Trace Attempt  2	[0.03 s]
-3.0.Oh: bwd trail(1): 1 0.0626687s
-3.0.Ht: Exited with Success (@ 0.13 s)
+INFO (IPF144): 3: Initiating shutdown of proof [57.02 s]
+3.0.B: Trace Attempt 105	[11.02 s]
+3.0.B: A trace with 105 cycles was found. [56.74 s]
+INFO (IPF047): 3.0.B: The cover property "consec_div_fsm_s12_66" was covered in 105 cycles in 56.96 s.
+3.0.B: Stopped processing property "consec_div_fsm_s12_66"	[57.08 s].
+3.0.B: All properties determined. [56.81 s]
+3.0.B: Exited with Success (@ 57.05 s)
 3: ProofGrid usable level: 0
-3.0.Oh: All properties determined. [0.08 s]
-3.0.N: Trace Attempt  6	[0.08 s]
-3.0.N: Stopped processing property "consec_div_fsm_s12_3"	[0.12 s].
+3.0.N: Trace Attempt 53	[48.23 s]
+3.0.N: Stopped processing property "consec_div_fsm_s12_66"	[57.24 s].
+3.0.N: All properties determined. [57.07 s]
+3.0.N: Exited with Success (@ 57.12 s)
+3.0.Mpcustom4: Trace Attempt 102	[54.43 s]
+3.0.Mpcustom4: All properties determined. [57.60 s]
+3.0.Mpcustom4: Exited with Success (@ 57.89 s)
 3.0.Hp: Interrupted (multi)
-3.0.Hp: All properties determined. [0.13 s]
-3.0.AM: Stopped processing property "consec_div_fsm_s12_3"	[0.04 s].
-3.0.N: All properties determined. [0.12 s]
-3.0.Oh: Exited with Success (@ 0.14 s)
-3.0.AM: All properties determined. [0.04 s]
-3.0.N: Exited with Success (@ 0.15 s)
-3.0.B: Stopped processing property "consec_div_fsm_s12_3"	[0.05 s].
-3.0.AM: Exited with Success (@ 0.15 s)
-3.0.B: All properties determined. [0.05 s]
-3.0.Hp: Exited with Success (@ 0.29 s)
-3.0.B: Exited with Success (@ 0.29 s)
-3.0.Mpcustom4: All properties determined. [0.25 s]
-3.0.Mpcustom4: Exited with Success (@ 0.30 s)
+3.0.Hp: All properties determined. [58.00 s]
+3.0.AM: Stopped processing property "consec_div_fsm_s12_66"	[58.01 s].
+3.0.AM: All properties determined. [58.02 s]
+3.0.AM: Exited with Success (@ 58.34 s)
+3.0.Hp: Exited with Success (@ 58.59 s)
+3.0.Ht: Sending SIGKILL
+3.0.Ht: Interrupted (multi)
+3.0.Ht: Trace Attempt 105	[13.78 s]
+3.0.Ht: All properties determined. [59.01 s]
+3.0.Ht: Terminated by signal SIGKILL (@ 59.11 s)
 3: --------------------------------------------------------------
-ProofGrid Summary (utilization 51.30 %)
+ProofGrid Summary (utilization 99.71 %)
 --------------------------------------------------------------
      engines started                               :     7
      engine jobs started                           :     7
+     jobs where 15 minute load exceeded core count :     7
 
     Average time in state (seconds)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      N        0.09        0.12        0.00       56.47 %
-     Hp        0.08        0.12        0.00       60.09 %
-     Ht        0.08        0.10        0.00       56.75 %
-    Mpcustom4        0.08        0.08        0.00       49.77 %
-     Oh        0.06        0.07        0.00       52.80 %
-      B        0.08        0.04        0.00       36.51 %
-     AM        0.08        0.04        0.00       33.93 %
-    all        0.08        0.08        0.00       51.30 %
+      N        0.12       57.00        0.00       99.80 %
+     Hp        0.09       57.00        0.00       99.85 %
+     Ht        0.12       56.96        0.00       99.80 %
+    Mpcustom4        0.22       56.81        0.00       99.62 %
+     Oh        0.10        0.13        0.00       56.27 %
+      B        0.14       56.85        0.00       99.75 %
+     AM        0.24       56.75        0.00       99.59 %
+    all        0.14       48.79        0.00       99.71 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               0.55        0.58        0.00
+               1.01      341.50        0.00
 
-    Data read    : 5.91 kiB
-    Data written : 6.87 kiB
+    Data read    : 320.03 kiB
+    Data written : 10.63 kiB
 
 3: All pending notifications were processed.
 INFO (IPF059): 3: Completed proof on task: "mytask"
-min 0 max 2 1
-cover -name consec_div_fsm_s12_1  {@(posedge clk_i) div_fsm_s12 [*1] ##1 !div_fsm_s12 }
-prove -property {consec_div_fsm_s12_1}
+min 67 max 70 68
+cover -name consec_div_fsm_s12_68  {@(posedge clk_i) div_fsm_s12 [*68] ##1 !div_fsm_s12 }
+prove -property {consec_div_fsm_s12_68}
 INFO (IPF036): Starting proof on task: "mytask", 1 properties to prove with 0 already proven/unreachable
 INFO (IPF031): Settings used for proof thread 4:
     orchestration                 = on (auto)
@@ -1145,7 +1346,7 @@ INFO (IPF031): Settings used for proof thread 4:
     proofgrid_restarts            = 10
 4: Using multistage preprocessing
 4: Starting reduce
-4: Finished reduce in 0.042s
+4: Finished reduce in 0.045s
 4.0.PRE: Performing Proof Simplification...
 4.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 4.0.N: Proof Simplification Iteration 1	[0.00 s]
@@ -1153,12 +1354,12 @@ INFO (IPF031): Settings used for proof thread 4:
 4.0.N: Proof Simplification Iteration 3	[0.06 s]
 4.0.N: Proof Simplification Iteration 4	[0.08 s]
 4.0.N: Proof Simplification Iteration 5	[0.10 s]
-4.0.N: Proof Simplification Iteration 6	[0.11 s]
-4.0.N: Proof Simplification Iteration 7	[0.13 s]
+4.0.N: Proof Simplification Iteration 6	[0.12 s]
+4.0.N: Proof Simplification Iteration 7	[0.14 s]
 4.0.N: Proof Simplification Iteration 8	[0.15 s]
 4.0.N: Proof Simplification Iteration 9	[0.17 s]
 4.0.N: Proof Simplification Iteration 10	[0.19 s]
-4.0.PRE: Proof Simplification completed in 0.23 s
+4.0.PRE: Proof Simplification completed in 0.24 s
 4: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
 4: =============================== ProofGrid start ===============================
 4: ProofGrid usable level: 1
@@ -1166,142 +1367,177 @@ INFO (IPF031): Settings used for proof thread 4:
 4: ProofGrid is starting event handling
 4.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 4.0.N: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-4.0.Ht: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 4.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-4.0.Hp: Proofgrid shell started at 655993@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_5
-4.0.N: Proofgrid shell started at 655992@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_5
+4.0.Ht: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+4.0.Hp: Proofgrid shell started at 825166@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_5
 4.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-4.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+4.0.N: Proofgrid shell started at 825165@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_5
 4.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-4.0.Ht: Proofgrid shell started at 656046@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_5
+4.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+4.0.Ht: Proofgrid shell started at 825188@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_5
+4.0.Mpcustom4: Proofgrid shell started at 825191@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_5
 4.0.N: Last scan. Per property time limit: 0s
-4.0.N: Starting proof for property "consec_div_fsm_s12_1"	[0.00 s].
+4.0.N: Starting proof for property "consec_div_fsm_s12_68"	[0.00 s].
 4.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-4.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-4.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 4.0.N: Trace Attempt  1	[0.01 s]
 4.0.N: Trace Attempt  2	[0.02 s]
-4.0.N: Trace Attempt  3	[0.02 s]
-4.0.Mpcustom4: Proofgrid shell started at 656081@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_5
+4.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 4.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-4.0.Oh: Proofgrid shell started at 656124@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_5
-4.0.Ht: Trace Attempt  1	[0.04 s]
-4.0.Ht: Trace Attempt  2	[0.04 s]
-4.0.Ht: Trace Attempt  3	[0.05 s]
-4.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-4.0.AM: Proofgrid shell started at 656136@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_5
+4.0.N: Trace Attempt  3	[0.02 s]
 4.0.N: Trace Attempt  3	[0.06 s]
-4.0.Ht: Trace Attempt  4	[0.06 s]
-4.0.Mpcustom4: Trace Attempt  1	[0.04 s]
-4.0.B: Proofgrid shell started at 656134@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_5
-4.0.Ht: Trace Attempt  5	[0.06 s]
-4.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-4.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-4.0.AM: Last scan. Per property time limit: 0s
-4.0.AM: Starting proof for property "consec_div_fsm_s12_1"	[0.00 s].
-4.0.Mpcustom4: Trace Attempt  2	[0.06 s]
+4.0.Mpcustom4: Trace Attempt  1	[0.08 s]
 4.0.N: Trace Attempt  4	[0.08 s]
-4.0.N: Trace Attempt  5	[0.08 s]
+4.0.N: Trace Attempt  5	[0.09 s]
+4.0.Oh: Proofgrid shell started at 825215@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_5
+4.0.Ht: Trace Attempt  1	[0.09 s]
+4.0.Ht: Trace Attempt  2	[0.09 s]
+4.0.Ht: Trace Attempt  3	[0.10 s]
+4.0.Ht: Trace Attempt  4	[0.11 s]
+4.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+4.0.B: Proofgrid shell started at 825228@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_5
+4.0.Mpcustom4: Trace Attempt  2	[0.13 s]
+4.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 4.0.B: Last scan. Per property time limit: 0s
-4.0.B: Starting proof for property "consec_div_fsm_s12_1"	[0.00 s].
-4.0.B: Trace Attempt  1	[0.01 s]
-4.0.AM: Trace Attempt  1	[0.01 s]
-4.0.B: Trace Attempt  2	[0.01 s]
-4.0.B: Trace Attempt  3	[0.02 s]
-4.0.AM: Trace Attempt  2	[0.03 s]
-4.0.B: Trace Attempt  4	[0.03 s]
-4.0.AM: Trace Attempt  3	[0.05 s]
-4.0.B: Trace Attempt  5	[0.07 s]
-4.0.AM: Trace Attempt  4	[0.07 s]
+4.0.B: Starting proof for property "consec_div_fsm_s12_68"	[0.00 s].
+4.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 4.0.N: Trace Attempt  5	[0.16 s]
-4.0.AM: Trace Attempt  5	[0.09 s]
-4.0.Oh: bwd trail(1): 1 0.10097s
-4.0.Oh: All properties either determined or skipped. [0.12 s]
-4.0.Oh: Exited with Success (@ 0.20 s)
-4.0.AM: Trace Attempt  1	[0.57 s]
-4.0.AM: Trace Attempt  2	[0.62 s]
-4.0.AM: Trace Attempt  3	[0.64 s]
-4.0.AM: Trace Attempt  5	[0.66 s]
-4.0.Mpcustom4: Trace Attempt  3	[0.81 s]
-4.0.Mpcustom4: Trace Attempt  3	[0.84 s]
-4.0.Mpcustom4: Trace Attempt  4	[0.87 s]
-4.0.Mpcustom4: Trace Attempt  4	[0.91 s]
-4.0.Mpcustom4: Trace Attempt  5	[0.94 s]
-4.0.Mpcustom4: Trace Attempt  5	[1.00 s]
-4.0.N: Trace Attempt  1	[1.39 s]
-4.0.N: Trace Attempt  2	[1.40 s]
-4.0.N: Trace Attempt  3	[1.40 s]
-4.0.N: Trace Attempt  5	[1.40 s]
-4.0.AM: Trace Attempt  1	[1.60 s]
-4.0.AM: Trace Attempt  2	[1.65 s]
-4.0.AM: Trace Attempt  3	[1.66 s]
-4.0.AM: Trace Attempt  5	[1.69 s]
-4.0.Ht: Trace Attempt 40	[4.22 s]
-4.0.N: Trace Attempt 40	[5.66 s]
-4.0.Mpcustom4: Trace Attempt 19	[5.78 s]
+4.0.Ht: Trace Attempt  5	[0.15 s]
+4.0.B: Trace Attempt  1	[0.02 s]
+4.0.B: Trace Attempt  2	[0.03 s]
+4.0.B: Trace Attempt  3	[0.07 s]
+4.0.B: Trace Attempt  4	[0.09 s]
+4.0.B: Trace Attempt  5	[0.20 s]
+4.0.AM: Proofgrid shell started at 825234@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_5
+4.0.Oh: bwd trail(1): 1 0.11103s
+4.0.Oh: All properties either determined or skipped. [0.32 s]
+4.0.Oh: Exited with Success (@ 0.46 s)
+4.0.Oh: Completed, Restart ignored.
+4.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+4.0.AM: Last scan. Per property time limit: 0s
+4.0.AM: Starting proof for property "consec_div_fsm_s12_68"	[0.00 s].
+4.0.AM: Trace Attempt  1	[0.02 s]
+4.0.AM: Trace Attempt  2	[0.05 s]
+4.0.AM: Trace Attempt  3	[0.10 s]
+4.0.AM: Trace Attempt  4	[0.14 s]
+4.0.AM: Trace Attempt  5	[0.18 s]
+4.0.Mpcustom4: Trace Attempt  3	[0.87 s]
+4.0.Mpcustom4: Trace Attempt  3	[0.89 s]
+4.0.Mpcustom4: Trace Attempt  4	[0.95 s]
+4.0.Mpcustom4: Trace Attempt  5	[1.03 s]
+4.0.Mpcustom4: Trace Attempt  5	[1.16 s]
+4.0.Ht: Trace Attempt 78	[4.17 s]
+4.0.B: Trace Attempt 55	[4.28 s]
+4.0.N: Trace Attempt 29	[4.61 s]
+4.0.AM: Trace Attempt 44	[4.23 s]
+4.0.Mpcustom4: Trace Attempt 34	[5.68 s]
+4.0.Ht: Trace Attempt 88	[8.20 s]
+4.0.B: Trace Attempt 94	[8.29 s]
+4.0.AM: Trace Attempt 60	[8.25 s]
+4.0.N: Trace Attempt 41	[9.04 s]
+4.0.Mpcustom4: Trace Attempt 51	[9.71 s]
+4.0.Ht: Trace Attempt 107	[12.42 s]
+4.0.AM: Trace Attempt 72	[12.58 s]
+4.0.N: Trace Attempt 50	[13.30 s]
+4.0.Mpcustom4: Trace Attempt 61	[14.42 s]
+4.0.AM: Trace Attempt  1	[15.58 s]
+4.0.AM: Trace Attempt  2	[15.70 s]
+4.0.AM: Trace Attempt  3	[15.72 s]
+4.0.AM: Trace Attempt  5	[15.78 s]
+4.0.N: Trace Attempt 57	[17.63 s]
+4.0.Mpcustom4: Trace Attempt 69	[18.74 s]
+4.0.N: Trace Attempt 64	[21.96 s]
+4.0.AM: Trace Attempt 88	[22.20 s]
+4.0.Mpcustom4: Trace Attempt 73	[23.91 s]
+4.0.N: Trace Attempt 69	[26.19 s]
+4.0.AM: Trace Attempt 90	[26.55 s]
+4.0.Mpcustom4: Trace Attempt 73	[29.85 s]
+4.0.N: Trace Attempt 74	[31.48 s]
+4.0.Mpcustom4: Trace Attempt 73	[34.50 s]
+4.0.N: Trace Attempt 78	[35.94 s]
+4.0.N: Trace Attempt  1	[36.04 s]
+4.0.N: Trace Attempt  2	[36.05 s]
+4.0.N: Trace Attempt  3	[36.05 s]
+4.0.N: Trace Attempt  5	[36.06 s]
+4.0.Mpcustom4: Trace Attempt 73	[39.02 s]
+4.0.N: Trace Attempt 95	[41.74 s]
+4.0.N: Trace Attempt  1	[43.43 s]
+4.0.N: Trace Attempt  2	[43.48 s]
+4.0.N: Trace Attempt  3	[43.49 s]
+4.0.N: Trace Attempt  5	[43.51 s]
+4.0.Mpcustom4: Trace Attempt 79	[44.22 s]
+4.0.AM: Trace Attempt 92	[44.82 s]
+4.0.AM: Trace Attempt  1	[45.14 s]
+4.0.AM: Trace Attempt  2	[45.19 s]
+4.0.AM: Trace Attempt  3	[45.20 s]
+4.0.AM: Trace Attempt  5	[45.23 s]
+4.0.AM: Trace Attempt 96	[49.89 s]
+4.0.Mpcustom4: Trace Attempt 85	[50.82 s]
+4.0.AM: Trace Attempt 94	[54.57 s]
+4.0.Mpcustom4: Trace Attempt 92	[58.77 s]
 4.0.N: Requesting engine job to stop
 4.0.B: Requesting engine job to stop
 4.0.AM: Requesting engine job to stop
 4.0.Hp: Requesting engine job to terminate
 4.0.Ht: Requesting engine job to terminate
 4.0.Mpcustom4: Requesting engine job to terminate
-INFO (IPF144): 4: Initiating shutdown of proof [5.90 s]
-4.0.B: Trace Attempt 40	[3.01 s]
-4.0.B: A trace with 40 cycles was found. [5.78 s]
-INFO (IPF047): 4.0.B: The cover property "consec_div_fsm_s12_1" was covered in 40 cycles in 5.86 s.
-4.0.B: Stopped processing property "consec_div_fsm_s12_1"	[5.87 s].
-4.0.B: All properties determined. [5.80 s]
-4.0.Ht: Interrupted (multi)
-4.0.Ht: All properties determined. [5.88 s]
-4.0.B: Exited with Success (@ 5.91 s)
-4: ProofGrid usable level: 0
+INFO (IPF144): 4: Initiating shutdown of proof [64.25 s]
+4.0.B: Trace Attempt 107	[10.38 s]
+4.0.B: A trace with 107 cycles was found. [64.00 s]
+INFO (IPF047): 4.0.B: The cover property "consec_div_fsm_s12_68" was covered in 107 cycles in 64.23 s.
+4.0.B: Stopped processing property "consec_div_fsm_s12_68"	[64.27 s].
+4.0.B: All properties determined. [64.08 s]
 4.0.Hp: Interrupted (multi)
-4.0.Hp: All properties determined. [5.94 s]
-4.0.N: Stopped processing property "consec_div_fsm_s12_1"	[5.99 s].
-4.0.N: All properties determined. [6.00 s]
-4.0.AM: Trace Attempt 39	[4.30 s]
-4.0.AM: Stopped processing property "consec_div_fsm_s12_1"	[5.92 s].
-4.0.AM: All properties determined. [5.92 s]
-4.0.N: Exited with Success (@ 6.03 s)
-4.0.Mpcustom4: Trace Attempt 21	[5.85 s]
-4.0.Mpcustom4: All properties determined. [5.99 s]
-4.0.AM: Exited with Success (@ 6.30 s)
-4.0.Ht: Exited with Success (@ 6.30 s)
-4.0.Mpcustom4: Exited with Success (@ 6.30 s)
-4.0.Hp: Exited with Success (@ 6.38 s)
+4.0.Hp: All properties determined. [64.25 s]
+4.0.B: Exited with Success (@ 64.28 s)
+4: ProofGrid usable level: 0
+4.0.N: Trace Attempt 53	[44.86 s]
+4.0.N: Stopped processing property "consec_div_fsm_s12_68"	[64.41 s].
+4.0.N: All properties determined. [64.31 s]
+4.0.N: Exited with Success (@ 64.35 s)
+4.0.Ht: Interrupted (multi)
+4.0.Ht: All properties determined. [64.31 s]
+4.0.Ht: Exited with Success (@ 64.86 s)
+4.0.Hp: Exited with Success (@ 64.91 s)
+4.0.Mpcustom4: Trace Attempt 96	[62.35 s]
+4.0.Mpcustom4: All properties determined. [64.89 s]
+4.0.AM: Stopped processing property "consec_div_fsm_s12_68"	[64.49 s].
+4.0.AM: All properties determined. [64.50 s]
+4.0.Mpcustom4: Exited with Success (@ 65.01 s)
+4.0.AM: Exited with Success (@ 65.05 s)
 4: --------------------------------------------------------------
-ProofGrid Summary (utilization 98.39 %)
+ProofGrid Summary (utilization 99.69 %)
 --------------------------------------------------------------
      engines started                               :     7
      engine jobs started                           :     7
+     jobs where 15 minute load exceeded core count :     7
 
     Average time in state (seconds)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      N        0.10        5.89        0.00       98.40 %
-     Hp        0.08        5.89        0.00       98.72 %
-     Ht        0.08        5.87        0.00       98.72 %
-    Mpcustom4        0.08        5.85        0.00       98.71 %
-     Oh        0.08        0.12        0.00       58.30 %
-      B        0.09        5.81        0.00       98.56 %
-     AM        0.08        5.81        0.00       98.64 %
-    all        0.08        5.03        0.00       98.39 %
+      N        0.12       64.23        0.00       99.81 %
+     Hp        0.08       64.23        0.00       99.87 %
+     Ht        0.09       64.21        0.00       99.85 %
+    Mpcustom4        0.10       64.21        0.00       99.84 %
+     Oh        0.17        0.33        0.00       66.36 %
+      B        0.18       64.09        0.00       99.72 %
+     AM        0.45       63.76        0.00       99.29 %
+    all        0.17       55.01        0.00       99.69 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               0.57       35.24        0.00
+               1.20      385.06        0.00
 
-    Data read    : 113.83 kiB
-    Data written : 8.66 kiB
+    Data read    : 331.64 kiB
+    Data written : 11.78 kiB
 
 4: All pending notifications were processed.
 INFO (IPF059): 4: Completed proof on task: "mytask"
-min 2 max 2 2
-cover -name consec_div_fsm_s12_2  {@(posedge clk_i) div_fsm_s12 [*2] ##1 !div_fsm_s12 }
-prove -property {consec_div_fsm_s12_2}
+min 69 max 70 69
+cover -name consec_div_fsm_s12_69  {@(posedge clk_i) div_fsm_s12 [*69] ##1 !div_fsm_s12 }
+prove -property {consec_div_fsm_s12_69}
 INFO (IPF036): Starting proof on task: "mytask", 1 properties to prove with 0 already proven/unreachable
 INFO (IPF031): Settings used for proof thread 5:
     orchestration                 = on (auto)
@@ -1314,7 +1550,7 @@ INFO (IPF031): Settings used for proof thread 5:
     proofgrid_restarts            = 10
 5: Using multistage preprocessing
 5: Starting reduce
-5: Finished reduce in 0.043s
+5: Finished reduce in 0.045s
 5.0.PRE: Performing Proof Simplification...
 5.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 5.0.N: Proof Simplification Iteration 1	[0.00 s]
@@ -1322,8 +1558,8 @@ INFO (IPF031): Settings used for proof thread 5:
 5.0.N: Proof Simplification Iteration 3	[0.06 s]
 5.0.N: Proof Simplification Iteration 4	[0.08 s]
 5.0.N: Proof Simplification Iteration 5	[0.10 s]
-5.0.N: Proof Simplification Iteration 6	[0.11 s]
-5.0.N: Proof Simplification Iteration 7	[0.13 s]
+5.0.N: Proof Simplification Iteration 6	[0.12 s]
+5.0.N: Proof Simplification Iteration 7	[0.14 s]
 5.0.N: Proof Simplification Iteration 8	[0.15 s]
 5.0.N: Proof Simplification Iteration 9	[0.17 s]
 5.0.N: Proof Simplification Iteration 10	[0.19 s]
@@ -1333,124 +1569,387 @@ INFO (IPF031): Settings used for proof thread 5:
 5: ProofGrid usable level: 1
 5: Initial ProofGrid level: 1
 5: ProofGrid is starting event handling
-5.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 5.0.N: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+5.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 5.0.Ht: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-5.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-5.0.Hp: Proofgrid shell started at 656743@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_6
-5.0.N: Proofgrid shell started at 656742@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_6
-5.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-5.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+5.0.N: Proofgrid shell started at 826671@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_6
+5.0.Hp: Proofgrid shell started at 826672@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_6
 5.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 5.0.N: Last scan. Per property time limit: 0s
-5.0.N: Starting proof for property "consec_div_fsm_s12_2"	[0.00 s].
-5.0.Ht: Proofgrid shell started at 656766@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_6
-5.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-5.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+5.0.N: Starting proof for property "consec_div_fsm_s12_69"	[0.00 s].
+5.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+5.0.Ht: Proofgrid shell started at 826694@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_6
+5.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 5.0.N: Trace Attempt  1	[0.01 s]
-5.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 5.0.N: Trace Attempt  2	[0.02 s]
+5.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 5.0.N: Trace Attempt  3	[0.02 s]
-5.0.Mpcustom4: Proofgrid shell started at 656784@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_6
-5.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-5.0.Oh: Proofgrid shell started at 656799@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_6
+5.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 5.0.Ht: Trace Attempt  1	[0.04 s]
 5.0.Ht: Trace Attempt  2	[0.04 s]
-5.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+5.0.N: Trace Attempt  3	[0.07 s]
 5.0.Ht: Trace Attempt  3	[0.05 s]
-5.0.N: Trace Attempt  3	[0.06 s]
-5.0.B: Proofgrid shell started at 656809@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_6
-5.0.Mpcustom4: Trace Attempt  1	[0.04 s]
 5.0.Ht: Trace Attempt  4	[0.06 s]
-5.0.AM: Proofgrid shell started at 656815@caddy10.stanford.edu(local) jg_655122_caddy10.stanford.edu_6
-5.0.Ht: Trace Attempt  5	[0.06 s]
-5.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-5.0.N: Trace Attempt  4	[0.07 s]
+5.0.Ht: Trace Attempt  5	[0.07 s]
+5.0.N: Trace Attempt  4	[0.09 s]
+5.0.N: Trace Attempt  5	[0.09 s]
+5.0.Oh: Proofgrid shell started at 826719@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_6
+5.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+5.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+5.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+5.0.N: Trace Attempt  5	[0.17 s]
+5.0.Mpcustom4: Proofgrid shell started at 826713@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_6
+5.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+5.0.Oh: bwd trail(1): 1 0.10932s
+5.0.Oh: All properties either determined or skipped. [0.13 s]
+5.0.Oh: Exited with Success (@ 0.26 s)
+5.0.Oh: Completed, Restart ignored.
+5.0.Mpcustom4: Trace Attempt  1	[0.06 s]
+5.0.Mpcustom4: Trace Attempt  2	[0.07 s]
+5.0.AM: Proofgrid shell started at 826730@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_6
 5.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-5.0.N: Trace Attempt  5	[0.08 s]
-5.0.Mpcustom4: Trace Attempt  2	[0.05 s]
-5.0.B: Last scan. Per property time limit: 0s
-5.0.B: Starting proof for property "consec_div_fsm_s12_2"	[0.00 s].
 5.0.AM: Last scan. Per property time limit: 0s
-5.0.AM: Starting proof for property "consec_div_fsm_s12_2"	[0.00 s].
-5.0.B: Trace Attempt  1	[0.01 s]
-5.0.B: Trace Attempt  2	[0.01 s]
-5.0.AM: Trace Attempt  1	[0.01 s]
-5.0.B: Trace Attempt  3	[0.02 s]
-5.0.B: Trace Attempt  4	[0.03 s]
-5.0.AM: Trace Attempt  2	[0.03 s]
+5.0.AM: Starting proof for property "consec_div_fsm_s12_69"	[0.00 s].
+5.0.B: Proofgrid shell started at 826721@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_6
+5.0.AM: Trace Attempt  1	[0.03 s]
+5.0.AM: Trace Attempt  2	[0.06 s]
+5.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+5.0.B: Last scan. Per property time limit: 0s
+5.0.B: Starting proof for property "consec_div_fsm_s12_69"	[0.00 s].
+5.0.AM: Trace Attempt  3	[0.08 s]
+5.0.B: Trace Attempt  1	[0.02 s]
+5.0.B: Trace Attempt  2	[0.03 s]
+5.0.AM: Trace Attempt  4	[0.11 s]
+5.0.B: Trace Attempt  3	[0.05 s]
+5.0.AM: Trace Attempt  5	[0.14 s]
+5.0.B: Trace Attempt  4	[0.08 s]
+5.0.B: Trace Attempt  5	[0.16 s]
+5.0.Mpcustom4: Trace Attempt  3	[0.84 s]
+5.0.Mpcustom4: Trace Attempt  3	[0.85 s]
+5.0.Mpcustom4: Trace Attempt  4	[0.90 s]
+5.0.Mpcustom4: Trace Attempt  5	[0.93 s]
+5.0.Mpcustom4: Trace Attempt  5	[0.99 s]
+5.0.N: Trace Attempt 27	[4.19 s]
+5.0.AM: Trace Attempt 43	[4.15 s]
+5.0.B: Trace Attempt 45	[4.18 s]
+5.0.Ht: Trace Attempt 78	[4.96 s]
+5.0.Mpcustom4: Trace Attempt 35	[5.03 s]
+5.0.N: Trace Attempt 38	[8.38 s]
+5.0.AM: Trace Attempt 63	[8.17 s]
+5.0.B: Trace Attempt 76	[8.20 s]
+5.0.Ht: Trace Attempt 88	[9.31 s]
+5.0.Mpcustom4: Trace Attempt 52	[9.89 s]
+5.0.AM: Trace Attempt 77	[12.24 s]
+5.0.B: Trace Attempt 97	[12.32 s]
+5.0.N: Trace Attempt 45	[13.07 s]
+5.0.Mpcustom4: Trace Attempt 63	[13.90 s]
+5.0.AM: Trace Attempt  1	[15.00 s]
+5.0.AM: Trace Attempt  2	[15.06 s]
+5.0.AM: Trace Attempt  3	[15.07 s]
+5.0.AM: Trace Attempt  5	[15.10 s]
+5.0.N: Trace Attempt 52	[17.16 s]
+5.0.Mpcustom4: Trace Attempt 69	[18.15 s]
+5.0.AM: Trace Attempt 85	[19.41 s]
+5.0.N: Trace Attempt 58	[21.54 s]
+5.0.Mpcustom4: Trace Attempt 73	[23.14 s]
+5.0.AM: Trace Attempt 91	[23.59 s]
+5.0.N: Trace Attempt 61	[25.64 s]
+5.0.Mpcustom4: Trace Attempt 77	[27.25 s]
+5.0.N: Trace Attempt 66	[29.72 s]
+5.0.Mpcustom4: Trace Attempt 84	[32.13 s]
+5.0.N: Trace Attempt 71	[34.63 s]
+5.0.Mpcustom4: Trace Attempt 91	[37.43 s]
+5.0.AM: Trace Attempt 93	[37.93 s]
+5.0.AM: Trace Attempt  1	[38.18 s]
+5.0.AM: Trace Attempt  2	[38.25 s]
+5.0.AM: Trace Attempt  3	[38.27 s]
+5.0.AM: Trace Attempt  5	[38.32 s]
+5.0.N: Trace Attempt 75	[39.31 s]
+5.0.Ht: Trace Attempt 96	[43.02 s]
+5.0.AM: Trace Attempt 94	[43.86 s]
+5.0.N: Trace Attempt 79	[44.37 s]
+5.0.Mpcustom4: Trace Attempt 98	[44.28 s]
+5.0.N: Trace Attempt  1	[46.09 s]
+5.0.N: Trace Attempt  2	[46.15 s]
+5.0.N: Trace Attempt  3	[46.16 s]
+5.0.N: Trace Attempt  5	[46.19 s]
+5.0.Mpcustom4: Trace Attempt 101	[48.88 s]
+5.0.Mpcustom4: Trace Attempt 104	[55.12 s]
+5.0.N: Trace Attempt 91	[55.53 s]
+5.0.AM: Trace Attempt 96	[58.28 s]
+5.0.Mpcustom4: Trace Attempt 106	[63.51 s]
+5.0.Mpcustom4: Trace Attempt 106	[69.13 s]
 5.0.N: Requesting engine job to stop
 5.0.B: Requesting engine job to stop
 5.0.AM: Requesting engine job to stop
 5.0.Hp: Requesting engine job to terminate
 5.0.Ht: Requesting engine job to terminate
 5.0.Mpcustom4: Requesting engine job to terminate
-5.0.Oh: Requesting engine job to terminate
-INFO (IPF144): 5: Initiating shutdown of proof [0.14 s]
-5.0.Oh: A proof was found: No trace exists. [0.07 s]
-INFO (IPF051): 5.0.Oh: The cover property "consec_div_fsm_s12_2" was proven unreachable in 0.06 s.
-5.0.Oh: bwd trail(1): 1 0.0618232s
-5.0.Oh: All properties determined. [0.08 s]
-5.0.AM: Stopped processing property "consec_div_fsm_s12_2"	[0.04 s].
+INFO (IPF144): 5: Initiating shutdown of proof [71.69 s]
+5.0.B: Trace Attempt 108	[14.60 s]
+5.0.B: A trace with 108 cycles was found. [71.12 s]
+INFO (IPF047): 5.0.B: The cover property "consec_div_fsm_s12_69" was covered in 108 cycles in 71.35 s.
+5.0.B: Stopped processing property "consec_div_fsm_s12_69"	[71.36 s].
 5.0.Hp: Interrupted (multi)
-5.0.Hp: All properties determined. [0.14 s]
-5.0.Oh: Exited with Success (@ 0.15 s)
+5.0.Hp: All properties determined. [71.67 s]
+5.0.B: All properties determined. [71.16 s]
+5.0.B: Exited with Success (@ 71.71 s)
 5: ProofGrid usable level: 0
-5.0.AM: All properties determined. [0.04 s]
-5.0.B: Stopped processing property "consec_div_fsm_s12_2"	[0.05 s].
-5.0.N: Trace Attempt  6	[0.08 s]
-5.0.N: Stopped processing property "consec_div_fsm_s12_2"	[0.13 s].
-5.0.AM: Exited with Success (@ 0.15 s)
-5.0.B: All properties determined. [0.05 s]
-5.0.N: All properties determined. [0.13 s]
-5.0.B: Exited with Success (@ 0.16 s)
-5.0.N: Exited with Success (@ 0.16 s)
-5.0.Hp: Exited with Success (@ 0.23 s)
 5.0.Ht: Interrupted (multi)
-5.0.Ht: Trace Attempt  8	[0.20 s]
-5.0.Ht: All properties determined. [0.20 s]
-5.0.Ht: Exited with Success (@ 0.26 s)
-5.0.Mpcustom4: All properties determined. [0.29 s]
-5.0.Mpcustom4: Exited with Success (@ 0.35 s)
+5.0.Ht: Trace Attempt 108	[43.67 s]
+5.0.Ht: All properties determined. [71.72 s]
+5.0.N: Stopped processing property "consec_div_fsm_s12_69"	[71.87 s].
+5.0.N: All properties determined. [71.82 s]
+5.0.N: Exited with Success (@ 71.87 s)
+5.0.Hp: Exited with Success (@ 72.30 s)
+5.0.Ht: Exited with Success (@ 72.60 s)
+5.0.AM: Trace Attempt 107	[62.01 s]
+5.0.AM: Stopped processing property "consec_div_fsm_s12_69"	[72.14 s].
+5.0.Mpcustom4: All properties determined. [72.37 s]
+5.0.AM: All properties determined. [72.15 s]
+5.0.AM: Exited with Success (@ 72.70 s)
+5.0.Mpcustom4: Exited with Success (@ 72.70 s)
 5: --------------------------------------------------------------
-ProofGrid Summary (utilization 52.74 %)
+ProofGrid Summary (utilization 99.65 %)
 --------------------------------------------------------------
      engines started                               :     7
      engine jobs started                           :     7
+     jobs where 15 minute load exceeded core count :     7
 
     Average time in state (seconds)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      N        0.09        0.13        0.00       58.29 %
-     Hp        0.08        0.13        0.00       62.84 %
-     Ht        0.08        0.11        0.00       58.73 %
-    Mpcustom4        0.08        0.09        0.00       54.74 %
-     Oh        0.08        0.07        0.00       48.19 %
-      B        0.08        0.05        0.00       38.21 %
-     AM        0.08        0.05        0.00       35.29 %
-    all        0.08        0.09        0.00       52.74 %
+      N        0.10       71.68        0.00       99.86 %
+     Hp        0.09       71.67        0.00       99.87 %
+     Ht        0.09       71.65        0.00       99.88 %
+    Mpcustom4        0.25       71.45        0.00       99.65 %
+     Oh        0.13        0.13        0.00       49.40 %
+      B        0.48       71.17        0.00       99.33 %
+     AM        0.38       71.26        0.00       99.47 %
+    all        0.22       61.29        0.00       99.65 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               0.57        0.64        0.00
+               1.51      429.00        0.00
 
-    Data read    : 5.92 kiB
-    Data written : 6.82 kiB
+    Data read    : 331.31 kiB
+    Data written : 11.96 kiB
 
 5: All pending notifications were processed.
 INFO (IPF059): 5: Completed proof on task: "mytask"
-min 2 max 1 1
-cover -name consec_div_fsm_s12_1  {@(posedge clk_i) div_fsm_s12 [*1] ##1 !div_fsm_s12 }
-END OF WHILE LOOP: 1
+min 70 max 70 70
+cover -name consec_div_fsm_s12_70  {@(posedge clk_i) div_fsm_s12 [*70] ##1 !div_fsm_s12 }
+prove -property {consec_div_fsm_s12_70}
+INFO (IPF036): Starting proof on task: "mytask", 1 properties to prove with 0 already proven/unreachable
+INFO (IPF031): Settings used for proof thread 6:
+    orchestration                 = on (auto)
+    time_limit                    = 300s
+    per_property_time_limit       = 1s * 10 ^ scan
+    engine_mode                   = auto
+    proofgrid_per_engine_max_jobs = 1
+    max engine jobs               = auto
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+6: Using multistage preprocessing
+6: Starting reduce
+6: Finished reduce in 0.045s
+6.0.PRE: Performing Proof Simplification...
+6.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+6.0.N: Proof Simplification Iteration 1	[0.00 s]
+6.0.N: Proof Simplification Iteration 2	[0.04 s]
+6.0.N: Proof Simplification Iteration 3	[0.06 s]
+6.0.N: Proof Simplification Iteration 4	[0.08 s]
+6.0.N: Proof Simplification Iteration 5	[0.10 s]
+6.0.N: Proof Simplification Iteration 6	[0.12 s]
+6.0.N: Proof Simplification Iteration 7	[0.13 s]
+6.0.N: Proof Simplification Iteration 8	[0.15 s]
+6.0.N: Proof Simplification Iteration 9	[0.17 s]
+6.0.N: Proof Simplification Iteration 10	[0.19 s]
+6.0.PRE: Proof Simplification completed in 0.24 s
+6: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+6: =============================== ProofGrid start ===============================
+6: ProofGrid usable level: 1
+6: Initial ProofGrid level: 1
+6: ProofGrid is starting event handling
+6.0.N: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+6.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+6.0.Ht: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+6.0.Mpcustom4: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+6.0.N: Proofgrid shell started at 827470@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_7
+6.0.Hp: Proofgrid shell started at 827471@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_7
+6.0.Oh: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+6.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+6.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+6.0.Ht: Proofgrid shell started at 827493@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_7
+6.0.N: Last scan. Per property time limit: 0s
+6.0.N: Starting proof for property "consec_div_fsm_s12_70"	[0.00 s].
+6.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+6.0.Ht: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+6.0.N: Trace Attempt  1	[0.01 s]
+6.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+6.0.N: Trace Attempt  2	[0.01 s]
+6.0.N: Trace Attempt  3	[0.01 s]
+6.0.Mpcustom4: Proofgrid shell started at 827512@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_7
+6.0.Mpcustom4: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+6.0.Ht: Trace Attempt  1	[0.04 s]
+6.0.Oh: Proofgrid shell started at 827527@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_7
+6.0.Ht: Trace Attempt  2	[0.04 s]
+6.0.Ht: Trace Attempt  3	[0.05 s]
+6.0.Oh: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+6.0.N: Trace Attempt  3	[0.06 s]
+6.0.Ht: Trace Attempt  4	[0.06 s]
+6.0.AM: Proofgrid shell started at 827542@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_7
+6.0.Ht: Trace Attempt  5	[0.06 s]
+6.0.Mpcustom4: Trace Attempt  1	[0.04 s]
+6.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+6.0.N: Trace Attempt  4	[0.08 s]
+6.0.N: Trace Attempt  5	[0.08 s]
+6.0.B: Proofgrid shell started at 827535@caddy10.stanford.edu(local) jg_822196_caddy10.stanford.edu_7
+6.0.AM: Last scan. Per property time limit: 0s
+6.0.AM: Starting proof for property "consec_div_fsm_s12_70"	[0.00 s].
+6.0.Mpcustom4: Trace Attempt  2	[0.06 s]
+6.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+6.0.AM: Trace Attempt  1	[0.01 s]
+6.0.B: Last scan. Per property time limit: 0s
+6.0.B: Starting proof for property "consec_div_fsm_s12_70"	[0.00 s].
+6.0.B: Trace Attempt  1	[0.01 s]
+6.0.B: Trace Attempt  2	[0.01 s]
+6.0.AM: Trace Attempt  2	[0.03 s]
+6.0.B: Trace Attempt  3	[0.02 s]
+6.0.B: Trace Attempt  4	[0.04 s]
+6.0.AM: Trace Attempt  3	[0.05 s]
+6.0.N: Trace Attempt  5	[0.15 s]
+6.0.Oh: bwd trail(1): 1 0.105716s
+6.0.AM: Trace Attempt  4	[0.09 s]
+6.0.Oh: All properties either determined or skipped. [0.12 s]
+6.0.B: Trace Attempt  5	[0.07 s]
+6.0.Oh: Exited with Success (@ 0.20 s)
+6.0.AM: Trace Attempt  5	[0.12 s]
+6.0.Mpcustom4: Trace Attempt  3	[0.72 s]
+6.0.Mpcustom4: Trace Attempt  3	[0.74 s]
+6.0.Mpcustom4: Trace Attempt  4	[0.78 s]
+6.0.Mpcustom4: Trace Attempt  5	[0.81 s]
+6.0.Mpcustom4: Trace Attempt  5	[0.86 s]
+6.0.B: Trace Attempt 57	[4.13 s]
+6.0.N: Trace Attempt 29	[4.33 s]
+6.0.AM: Trace Attempt 48	[4.41 s]
+6.0.Mpcustom4: Trace Attempt 41	[4.88 s]
+6.0.Ht: Trace Attempt 80	[4.95 s]
+6.0.B: Trace Attempt 97	[8.14 s]
+6.0.N: Trace Attempt 41	[8.55 s]
+6.0.AM: Trace Attempt 67	[8.47 s]
+6.0.Mpcustom4: Trace Attempt 53	[9.26 s]
+6.0.Ht: Trace Attempt 89	[10.08 s]
+6.0.N: Trace Attempt 50	[12.65 s]
+6.0.AM: Trace Attempt 82	[12.63 s]
+6.0.AM: Trace Attempt  1	[13.09 s]
+6.0.AM: Trace Attempt  2	[13.15 s]
+6.0.AM: Trace Attempt  3	[13.16 s]
+6.0.AM: Trace Attempt  5	[13.19 s]
+6.0.Mpcustom4: Trace Attempt 65	[14.04 s]
+6.0.N: Trace Attempt 57	[16.96 s]
+6.0.AM: Trace Attempt 85	[17.48 s]
+6.0.Mpcustom4: Trace Attempt 74	[18.38 s]
+6.0.N: Trace Attempt 64	[21.27 s]
+6.0.AM: Trace Attempt 92	[21.61 s]
+6.0.Mpcustom4: Trace Attempt 75	[24.27 s]
+6.0.N: Trace Attempt 70	[25.42 s]
+6.0.Mpcustom4: Trace Attempt 75	[28.49 s]
+6.0.N: Trace Attempt 75	[29.86 s]
+6.0.Mpcustom4: Trace Attempt 75	[32.95 s]
+6.0.N: Trace Attempt 80	[34.68 s]
+6.0.AM: Trace Attempt 94	[35.83 s]
+6.0.Mpcustom4: Trace Attempt 81	[38.22 s]
+6.0.AM: Trace Attempt  1	[38.33 s]
+6.0.AM: Trace Attempt  2	[38.39 s]
+6.0.AM: Trace Attempt  3	[38.40 s]
+6.0.AM: Trace Attempt  5	[38.43 s]
+6.0.N: Trace Attempt 86	[41.40 s]
+6.0.N: Trace Attempt  1	[42.22 s]
+6.0.N: Trace Attempt  2	[42.27 s]
+6.0.N: Trace Attempt  3	[42.27 s]
+6.0.N: Trace Attempt  5	[42.30 s]
+6.0.Mpcustom4: Trace Attempt 91	[44.39 s]
+6.0.AM: Trace Attempt 95	[45.03 s]
+6.0.Mpcustom4: Trace Attempt 97	[50.83 s]
+6.0.Mpcustom4: Trace Attempt 97	[58.00 s]
+6.0.AM: Trace Attempt 98	[58.54 s]
+6.0.N: Trace Attempt 108	[62.69 s]
+6.0.Mpcustom4: Trace Attempt 97	[65.00 s]
+6.0.N: Requesting engine job to stop
+6.0.B: Requesting engine job to stop
+6.0.AM: Requesting engine job to stop
+6.0.Hp: Requesting engine job to terminate
+6.0.Ht: Requesting engine job to terminate
+6.0.Mpcustom4: Requesting engine job to terminate
+INFO (IPF144): 6: Initiating shutdown of proof [65.25 s]
+6.0.B: Trace Attempt 109	[10.01 s]
+6.0.B: A trace with 109 cycles was found. [65.09 s]
+INFO (IPF047): 6.0.B: The cover property "consec_div_fsm_s12_70" was covered in 109 cycles in 65.23 s.
+6.0.B: Stopped processing property "consec_div_fsm_s12_70"	[65.24 s].
+6.0.B: All properties determined. [65.13 s]
+6.0.Ht: Interrupted (multi)
+6.0.Ht: Trace Attempt 109	[11.39 s]
+6.0.Ht: All properties determined. [65.34 s]
+6.0.B: Exited with Success (@ 65.36 s)
+6: ProofGrid usable level: 0
+6.0.N: Stopped processing property "consec_div_fsm_s12_70"	[65.38 s].
+6.0.N: All properties determined. [65.38 s]
+6.0.N: Exited with Success (@ 65.42 s)
+6.0.Ht: Exited with Success (@ 65.83 s)
+6.0.AM: Trace Attempt 108	[61.49 s]
+6.0.AM: Stopped processing property "consec_div_fsm_s12_70"	[65.72 s].
+6.0.AM: All properties determined. [65.72 s]
+6.0.AM: Exited with Success (@ 65.86 s)
+6.0.Mpcustom4: All properties determined. [65.98 s]
+6.0.Mpcustom4: Exited with Success (@ 66.13 s)
+6.0.Hp: Interrupted (multi)
+6.0.Hp: All properties determined. [66.75 s]
+6.0.Hp: Sending SIGKILL
+6.0.Hp: Terminated by signal SIGKILL (@ 67.29 s)
+6: --------------------------------------------------------------
+ProofGrid Summary (utilization 99.85 %)
+--------------------------------------------------------------
+     engines started                               :     7
+     engine jobs started                           :     7
+     jobs where 15 minute load exceeded core count :     7
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+      N        0.10       65.24        0.00       99.85 %
+     Hp        0.08       65.24        0.00       99.88 %
+     Ht        0.08       65.22        0.00       99.88 %
+    Mpcustom4        0.08       65.19        0.00       99.87 %
+     Oh        0.08        0.12        0.00       60.00 %
+      B        0.10       65.14        0.00       99.84 %
+     AM        0.08       65.15        0.00       99.87 %
+    all        0.09       55.90        0.00       99.85 %
+
+    Total time in state (seconds)
+    -----------------------------------------
+            Pending     Running        Dead  
+    -----------------------------------------
+               0.60      391.30        0.00
+
+    Data read    : 336.75 kiB
+    Data written : 13.40 kiB
+
+6: All pending notifications were processed.
+INFO (IPF059): 6: Completed proof on task: "mytask"
+min 71 max 70 70
+cover -name consec_div_fsm_s12_70  {@(posedge clk_i) div_fsm_s12 [*70] ##1 !div_fsm_s12 }
+END OF WHILE LOOP: 70
 =========EXIT CUSTOMTCL=========
 [mytask] % INFO (IPL005): Received request to exit from the console.
 INFO (IPL014): Waiting for the Tcl-thread to exit.
 INFO: Waiting for proof threads to stop...
 INFO: Proof threads stopped.
-INFO (IPL018): The peak resident set memory use for this session was 1.201 GB.
+INFO (IPL018): The peak resident set memory use for this session was 4.190 GB.
 INFO (IPL015): The Tcl-thread exited with status 0.
 INFO (IPL016): Exiting the analysis session with status 0.
 ./RUN_JG.sh -j ./synthlc/i_MUL_out/xPerfLocCycleCount -s ./synthlc/i_MUL_out/xPerfLocCycleCount/out/cycle_count_div_fsm_s12.sv -t ./synthlc/i_MUL_out/xPerfLocCycleCount/out/cycle_count_div_fsm_s12.tcl -g 0

@@ -9,7 +9,7 @@ SYMBOLIC? 0
 
 [RUN_JG] CMDTASK: task -create mytask -copy_assumes  -copy {.*C_14.*}  -regexp
 [RUN_JG] no gui
-[RUN_JG] jg -no_gui -fpv ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_.tcl -proj ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_jgsession_26-02-28-01_53_16
+[RUN_JG] jg -no_gui -fpv ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_.tcl -proj ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_jgsession_26-03-01-22_59_04
 Jasper Apps 2023.12p001 64 bits 2024.01.23 16:09:24 UTC
 
 Any disclosure about the Cadence Design Systems software or its use
@@ -45,7 +45,7 @@ Rights at 48 CFR 52.227-19, as applicable.
 
 For technical assistance visit http://support.cadence.com.
 
-Jasper Apps Analysis Session - /home/users/ngpark/SynthLC/fv/synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_jgsession_26-02-28-01_53_16/sessionLogs/session_0
+Jasper Apps Analysis Session - /home/users/ngpark/SynthLC/fv/synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_jgsession_26-03-01-22_59_04/sessionLogs/session_0
 
 INFO: successfully checked out licenses "jasper_interactive" and "jasper_fao".
 INFO: reading configuration file "/home/users/ngpark/.config/cadence/jasper.conf".
@@ -365,12 +365,10 @@ INFO (INL011): Processing "-f" file "/home/users/ngpark/SynthLC/fv/synthlc/i_MUL
 [INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_multdiv_slow.sv(12): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
 [-- (VERI-1482)] Analyzing Verilog file './synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv'
 [INFO (VERI-1328)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(10): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
-[WARN (VERI-1875)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(499): identifier 'mult_state' is used before its declaration
-[WARN (VERI-1875)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(503): identifier 'ls_fsm' is used before its declaration
-[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(714): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(715): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(716): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
-[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(717): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(723): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(724): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(725): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
+[WARN (VERI-1763)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(726): SVA directive is not sensitive to any clock. The directive will be sampled on the posedge of the fastest clock.
 [-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_prefetch_buffer.sv'
 [-- (VERI-1482)] Analyzing Verilog file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv'
 [INFO (VERI-1328)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_fetch_fifo.sv(13): analyzing included file '/home/users/cheriek/Documents/Formal_Method/final_project/ibex/vendor/lowrisc_ip/ip/prim/rtl/prim_assert.sv'
@@ -519,7 +517,7 @@ INFO (ISW003): Top module name is "ibex_fv".
 [WARN (VERI-1060)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(1945): 'initial' construct is ignored
 [WARN (VERI-1796)] /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl/ibex_core.sv(1172): system function call isunknown with non-constant argument is not supported for synthesis
 [INFO (VERI-1018)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(12): compiling module 'ibex_fv'
-[WARN (VERI-1060)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(510): 'initial' construct is ignored
+[WARN (VERI-1060)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(494): 'initial' construct is ignored
 [WARN (VDB-1002)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(81): net 'data_rdata_i[31]' does not have a driver
 [WARN (VDB-1002)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(444): net 'pc0[31]' does not have a driver
 [WARN (VDB-1002)] ./synthlc/i_MUL_out/xPairwiseDepDiv/exclusive_14_top.sv(448): net 'i0[31]' does not have a driver
@@ -537,15 +535,10 @@ WARNING (WNL018): /home/users/cheriek/Documents/Formal_Method/final_project/ibex
 INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
 INFO (IPM031): Clearing proof results of all properties.
 INFO (IRS006): Current reset condition is "rst_ni".
-WARNING (WPM025): Property "ibex_fv.DIV_EN_ACTIVE:precondition1", a related cover of "ibex_fv.DIV_EN_ACTIVE", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.EVENTUAL_ISSUE:precondition1", a related cover of "ibex_fv.EVENTUAL_ISSUE", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.EXE_IUV:precondition1", a related cover of "ibex_fv.EXE_IUV", was not copied to the new task.
-WARNING (WPM025): Property "ibex_fv.IDLE_LSU_PRE_IUV:precondition1", a related cover of "ibex_fv.IDLE_LSU_PRE_IUV", was not copied to the new task.
-WARNING (WPM025): Property "ibex_fv.IDLE_MULTDIV_PRE_IUV:precondition1", a related cover of "ibex_fv.IDLE_MULTDIV_PRE_IUV", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.IF_ID_CONTRACT:precondition1", a related cover of "ibex_fv.IF_ID_CONTRACT", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.ISSUE_ONCE:precondition1", a related cover of "ibex_fv.ISSUE_ONCE", was not copied to the new task.
-WARNING (WPM025): Property "ibex_fv.MULTDIV_READY:precondition1", a related cover of "ibex_fv.MULTDIV_READY", was not copied to the new task.
-WARNING (WPM025): Property "ibex_fv.MULT_EN_ACTIVE:precondition1", a related cover of "ibex_fv.MULT_EN_ACTIVE", was not copied to the new task.
 WARNING (WPM025): Property "ibex_fv.VALID_INSTN:precondition1", a related cover of "ibex_fv.VALID_INSTN", was not copied to the new task.
 ==============================================================
 CHECK ASSUMPTION....
@@ -561,7 +554,7 @@ INFO (IRS030): Running reset analysis: phase 2 of 4.
 INFO (IRS031): Running reset analysis: phase 3 of 4.
 INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
 INFO (IRS024): Reset iterations 0 to 4 analyzed.
-INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1834 of 1908 design flops, 0 of 0 design latches, 173 of 304 internal elements.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 1834 of 1908 design flops, 0 of 0 design latches, 163 of 294 internal elements.
 INFO (IRS039): Reset analysis complete.
 INFO (IPF031): Settings used for proof thread 0:
     orchestration                 = off (auto)
@@ -574,7 +567,7 @@ INFO (IPF031): Settings used for proof thread 0:
     proofgrid_restarts            = 10
 0: Using multistage preprocessing
 0: Starting reduce
-0: Finished reduce in 0.044s
+0: Finished reduce in 0.1s
 0.0.PRE: Performing Proof Simplification...
 0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.K: Proof Simplification Iteration 1	[0.00 s]
@@ -582,328 +575,487 @@ INFO (IPF031): Settings used for proof thread 0:
 0.0.K: Proof Simplification Iteration 3	[0.06 s]
 0.0.K: Proof Simplification Iteration 4	[0.08 s]
 0.0.K: Proof Simplification Iteration 5	[0.10 s]
-0.0.K: Proof Simplification Iteration 6	[0.11 s]
-0.0.K: Proof Simplification Iteration 7	[0.13 s]
-0.0.K: Proof Simplification Iteration 8	[0.15 s]
-0.0.K: Proof Simplification Iteration 9	[0.17 s]
-0.0.K: Proof Simplification Iteration 10	[0.19 s]
-0.0.PRE: Proof Simplification completed in 0.24 s
+0.0.K: Proof Simplification Iteration 6	[0.12 s]
+0.0.K: Proof Simplification Iteration 7	[0.14 s]
+0.0.K: Proof Simplification Iteration 8	[0.16 s]
+0.0.K: Proof Simplification Iteration 9	[0.18 s]
+0.0.K: Proof Simplification Iteration 10	[0.20 s]
+0.0.PRE: Proof Simplification completed in 0.25 s
 0: About to start ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
 0: =============================== ProofGrid start ===============================
 0: ProofGrid usable level: 1
 0: Initial ProofGrid level: 1
 0: ProofGrid is starting event handling
-0.0.C: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.AD: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.K: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.I: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.Tri: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
 0.0.N: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
-0.0.Tri: Proofgrid shell started at 590547@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.C: Proofgrid shell started at 590546@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.AD: Proofgrid shell started at 590550@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.Hp: Proofgrid shell started at 590552@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.K: Proofgrid shell started at 590545@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.I: Proofgrid shell started at 590548@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.AM: Proofgrid shell started at 590551@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.B: Proofgrid shell started at 590553@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.N: Proofgrid shell started at 590549@caddy10.stanford.edu(local) jg_590168_caddy10.stanford.edu_1
-0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.I: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.C: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.K: Proofgrid shell started at 744515@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
 0.0.K: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.C: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.Tri: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.I: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.AD: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.0.I: Last scan. Per property time limit: 0s
-0.0.I: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.AM: Last scan. Per property time limit: 0s
-0.0.AM: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.B: Last scan. Per property time limit: 0s
-0.0.B: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.C: Last scan. Per property time limit: 0s
-0.0.C: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.AD: Last scan. Per property time limit: 0s
-0.0.AD: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.N: Last scan. Per property time limit: 0s
-0.0.N: Starting proof for property "ibex_fv.C_14"	[0.00 s].
 0.0.K: Last scan. Per property time limit: 0s
 0.0.K: Starting proof for property "ibex_fv.C_14"	[0.00 s].
-0.0.B: Trace Attempt  1	[0.01 s]
-0.0.I: Trace Attempt  1	[0.01 s]
-0.0.C: Trace Attempt  1	[0.01 s]
-0.0.N: Trace Attempt  1	[0.01 s]
-0.0.B: Trace Attempt  2	[0.01 s]
-0.0.AM: Trace Attempt  1	[0.01 s]
-0.0.K: Trace Attempt  1	[0.01 s]
+0.0.Hp: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.AM: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.AD: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.K: Trace Attempt  1	[0.05 s]
+0.0.K: Trace Attempt  1	[0.06 s]
+0.0.K: Trace Attempt  2	[0.06 s]
+0.0.K: Trace Attempt  3	[0.06 s]
+0.0.I: Proofgrid shell started at 744518@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
+0.0.N: Proofgrid shell started at 744522@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
+0.0.I: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: Last scan. Per property time limit: 0s
+0.0.I: Starting proof for property "ibex_fv.C_14"	[0.00 s].
+0.0.Tri: Proofgrid shell started at 744517@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
+0.0.I: Trace Attempt  2	[0.03 s]
+0.0.B: caddy10.stanford.edu: "Rocky Linux 8.10 (Green Obsidian)" is an unsupported operating system.
+0.0.Tri: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: Trace Attempt  3	[0.04 s]
+0.0.I: Trace Attempt  4	[0.04 s]
+0.0.N: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.K: Trace Attempt  3	[0.16 s]
+0.0.N: Last scan. Per property time limit: 0s
+0.0.N: Starting proof for property "ibex_fv.C_14"	[0.00 s].
+0.0.C: Proofgrid shell started at 744516@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
+0.0.I: Trace Attempt  3	[0.09 s]
+0.0.AD: Proofgrid shell started at 744528@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
+0.0.K: Trace Attempt  1	[0.21 s]
+0.0.K: Trace Attempt  2	[0.21 s]
+0.0.K: Trace Attempt  3	[0.21 s]
+0.0.I: Trace Attempt  4	[0.11 s]
+0.0.I: Trace Attempt  5	[0.11 s]
+0.0.AD: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AD: Last scan. Per property time limit: 0s
+0.0.AD: Starting proof for property "ibex_fv.C_14"	[0.00 s].
+0.0.AM: Proofgrid shell started at 744535@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
 0.0.AD: Trace Attempt  1	[0.01 s]
-0.0.I: Trace Attempt  2	[0.01 s]
-0.0.I: Trace Attempt  3	[0.01 s]
-0.0.C: Trace Attempt  2	[0.02 s]
-0.0.N: Trace Attempt  2	[0.01 s]
-0.0.K: Trace Attempt  1	[0.02 s]
-0.0.B: Trace Attempt  3	[0.02 s]
-0.0.AM: Trace Attempt  2	[0.03 s]
-0.0.AD: Trace Attempt  2	[0.03 s]
-0.0.B: Trace Attempt  4	[0.03 s]
-0.0.I: Trace Attempt  2	[0.04 s]
-0.0.AM: Trace Attempt  3	[0.05 s]
-0.0.AD: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  3	[0.05 s]
-0.0.I: Trace Attempt  4	[0.05 s]
-0.0.I: Trace Attempt  5	[0.05 s]
+0.0.Hp: Proofgrid shell started at 744556@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
+0.0.AM: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.C: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.AD: Trace Attempt  2	[0.05 s]
+0.0.C: Last scan. Per property time limit: 0s
+0.0.C: Starting proof for property "ibex_fv.C_14"	[0.00 s].
+0.0.I: Trace Attempt  4	[0.21 s]
+0.0.AM: Last scan. Per property time limit: 0s
+0.0.AM: Starting proof for property "ibex_fv.C_14"	[0.00 s].
+0.0.Hp: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.0.Tri: Last scan. Per property time limit: 0s
 0.0.Tri: Starting proof for property "ibex_fv.C_14"	[0.00 s].
 0.0.Tri: Trace Attempt  1	[0.00 s]
-0.0.C: Trace Attempt  3	[0.06 s]
-0.0.N: Trace Attempt  3	[0.06 s]
-0.0.K: Trace Attempt  3	[0.06 s]
-0.0.B: Trace Attempt  5	[0.07 s]
-0.0.AM: Trace Attempt  4	[0.07 s]
-0.0.AD: Trace Attempt  4	[0.07 s]
-0.0.C: Trace Attempt  4	[0.07 s]
-0.0.N: Trace Attempt  4	[0.07 s]
-0.0.C: Trace Attempt  5	[0.08 s]
-0.0.N: Trace Attempt  5	[0.07 s]
-0.0.K: Trace Attempt  1	[0.08 s]
-0.0.AM: Trace Attempt  5	[0.08 s]
-0.0.AD: Trace Attempt  5	[0.08 s]
+0.0.I: Trace Attempt  5	[0.23 s]
+0.0.AM: Trace Attempt  1	[0.04 s]
+0.0.K: Trace Attempt  5	[0.37 s]
+0.0.AM: Trace Attempt  2	[0.07 s]
+0.0.AD: Trace Attempt  3	[0.14 s]
+0.0.K: Trace Attempt  1	[0.41 s]
+0.0.I: Trace Attempt  5	[0.31 s]
+0.0.K: Trace Attempt  2	[0.42 s]
+0.0.K: Trace Attempt  3	[0.42 s]
+0.0.K: Trace Attempt  4	[0.43 s]
+0.0.K: Trace Attempt  5	[0.43 s]
+0.0.AM: Trace Attempt  3	[0.15 s]
+0.0.B: Proofgrid shell started at 744560@caddy10.stanford.edu(local) jg_744238_caddy10.stanford.edu_1
+0.0.AD: Trace Attempt  4	[0.25 s]
+0.0.B: clocks: 1, declared: 1, looping: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.B: Last scan. Per property time limit: 0s
+0.0.B: Starting proof for property "ibex_fv.C_14"	[0.00 s].
+0.0.B: Trace Attempt  1	[0.01 s]
+0.0.AM: Trace Attempt  4	[0.28 s]
+0.0.B: Trace Attempt  2	[0.04 s]
+0.0.AD: Trace Attempt  5	[0.36 s]
+0.0.B: Trace Attempt  3	[0.09 s]
+0.0.K: Trace Attempt  1	[0.65 s]
+0.0.B: Trace Attempt  4	[0.14 s]
+0.0.AM: Trace Attempt  5	[0.39 s]
+0.0.C: Trace Attempt  6	[0.41 s]
 0.0.Tri:    0.01" ---- Launching main thread ----
-0.0.I: Trace Attempt  3	[0.10 s]
-0.0.I: Trace Attempt  4	[0.12 s]
-0.0.Tri:    0.04" ---- Launching abstraction thread ----
-0.0.Tri:    0.05" ---- Launching multi-phase simplification thread ----
-0.0.N: Trace Attempt  5	[0.15 s]
-0.0.C: Trace Attempt  5	[0.15 s]
-0.0.K: Trace Attempt  5	[0.16 s]
-0.0.I: Trace Attempt  4	[0.17 s]
-0.0.I: Trace Attempt  5	[0.20 s]
-0.0.K: Trace Attempt  1	[0.20 s]
-0.0.Tri: Trace Attempt  2	[0.21 s]
-0.0.Tri: Trace Attempt  3	[0.27 s]
-0.0.K: Trace Attempt  1	[0.33 s]
-0.0.AM: Trace Attempt  1	[0.38 s]
-0.0.Tri: Trace Attempt  4	[0.34 s]
-0.0.Tri: Trace Attempt  5	[0.34 s]
-0.0.AM: Trace Attempt  2	[0.43 s]
-0.0.AM: Trace Attempt  3	[0.44 s]
-0.0.AM: Trace Attempt  5	[0.47 s]
-0.0.AD: Trace Attempt  1	[0.52 s]
-0.0.AD: Trace Attempt  2	[0.53 s]
-0.0.K: Trace Attempt  1	[0.56 s]
-0.0.K: Trace Attempt  2	[0.56 s]
-0.0.K: Trace Attempt  3	[0.57 s]
-0.0.K: Trace Attempt  4	[0.57 s]
-0.0.K: Trace Attempt  5	[0.58 s]
-0.0.AD: Trace Attempt  3	[0.58 s]
-0.0.AD: Trace Attempt  4	[0.65 s]
-0.0.N: Trace Attempt  1	[0.93 s]
-0.0.K: Trace Attempt  1	[0.92 s]
-0.0.K: Trace Attempt  2	[0.92 s]
-0.0.K: Trace Attempt  3	[0.92 s]
-0.0.K: Trace Attempt  4	[0.92 s]
-0.0.K: Trace Attempt  5	[0.93 s]
-0.0.N: Trace Attempt  2	[0.94 s]
-0.0.N: Trace Attempt  3	[0.94 s]
-0.0.N: Trace Attempt  5	[0.94 s]
-0.0.I: Trace Attempt  1	[1.43 s]
-0.0.I: Trace Attempt  2	[1.44 s]
-0.0.I: Trace Attempt  3	[1.49 s]
-0.0.I: Trace Attempt  4	[1.55 s]
-0.0.AM: Trace Attempt  1	[1.85 s]
-0.0.AM: Trace Attempt  2	[1.90 s]
-0.0.AM: Trace Attempt  3	[1.91 s]
-0.0.AM: Trace Attempt  5	[1.94 s]
-0.0.Tri:    2.21" Simplification phase 1 complete
-0.0.K: Trace Attempt  1	[2.41 s]
-0.0.K: Trace Attempt  2	[2.41 s]
-0.0.K: Trace Attempt  3	[2.42 s]
-0.0.K: Trace Attempt  4	[2.43 s]
-0.0.K: Trace Attempt  5	[2.43 s]
-0.0.N: Trace Attempt  1	[2.55 s]
-0.0.N: Trace Attempt  2	[2.60 s]
-0.0.N: Trace Attempt  3	[2.61 s]
-0.0.N: Trace Attempt  5	[2.64 s]
-0.0.B: Trace Attempt 41	[4.56 s]
-0.0.Tri: Trace Attempt 47	[4.61 s]
-0.0.AD: Trace Attempt 24	[4.77 s]
-0.0.AD: Trace Attempt  1	[4.95 s]
-0.0.AD: Trace Attempt  2	[4.96 s]
-0.0.AD: Trace Attempt  3	[5.01 s]
-0.0.AD: Trace Attempt  4	[5.08 s]
-0.0.I: Trace Attempt  1	[5.19 s]
-0.0.I: Trace Attempt  2	[5.20 s]
-0.0.I: Trace Attempt  3	[5.25 s]
-0.0.I: Trace Attempt  5	[5.35 s]
-0.0.Tri:    5.71" Simplification phase 2 complete
-0.0.AM: Trace Attempt 43	[7.14 s]
-0.0.C: Trace Attempt 41	[7.81 s]
-0.0.K: Trace Attempt  1	[7.95 s]
-0.0.K: Trace Attempt  2	[7.96 s]
-0.0.K: Trace Attempt  3	[7.96 s]
-0.0.K: Trace Attempt  4	[7.97 s]
-0.0.K: Trace Attempt  5	[7.98 s]
-0.0.N: Trace Attempt 41	[8.36 s]
-0.0.Tri: Trace Attempt 56	[8.81 s]
-0.0.B: Trace Attempt 52	[9.54 s]
-0.0.I: Trace Attempt 41	[9.96 s]
-0.0.AD: Trace Attempt 26	[10.21 s]
-0.0.Tri:   12.79" Simplification phase 3 complete
-  12.79" ---- Completed simplification thread ----
-  12.79" ---- Restarting main thread on simplified netlist ----
-0.0.Tri:   12.84" ---- Restarting abstraction thread on simplified netlist ----
-0.0.AD: Trace Attempt 34	[15.46 s]
-0.0.I: Trace Attempt 42	[15.54 s]
-0.0.K: Trace Attempt  1	[16.96 s]
-0.0.K: Trace Attempt  2	[16.97 s]
-0.0.K: Trace Attempt  3	[16.98 s]
-0.0.K: Trace Attempt  4	[16.99 s]
-0.0.K: Trace Attempt  5	[17.00 s]
-0.0.N: Trace Attempt 43	[17.08 s]
-0.0.I: Trace Attempt  1	[17.68 s]
-0.0.I: Trace Attempt  2	[17.69 s]
-0.0.I: Trace Attempt  3	[17.83 s]
-0.0.C: Trace Attempt 43	[17.84 s]
-0.0.I: Trace Attempt  5	[18.32 s]
-0.0.AM: Trace Attempt 44	[18.48 s]
-0.0.N: Trace Attempt 44	[22.06 s]
-0.0.Tri: Trace Attempt 63	[22.34 s]
-0.0.AM: Trace Attempt  1	[24.28 s]
-0.0.AM: Trace Attempt  2	[24.43 s]
-0.0.AM: Trace Attempt  3	[24.44 s]
-0.0.AM: Trace Attempt  5	[24.47 s]
-0.0.AD: Trace Attempt 39	[26.13 s]
-0.0.Tri: Trace Attempt 68	[26.88 s]
-0.0.Tri: Trace Attempt 73	[31.06 s]
-0.0.AM: Trace Attempt 31	[31.51 s]
-0.0.AD: Trace Attempt 26	[31.52 s]
-0.0.Tri: Trace Attempt 79	[35.34 s]
-0.0.I: Trace Attempt 44	[35.51 s]
-0.0.AM: Trace Attempt 35	[39.31 s]
-0.0.Tri: Trace Attempt 87	[39.50 s]
-0.0.I: Trace Attempt 44	[41.10 s]
-0.0.N: Trace Attempt 45	[41.49 s]
-0.0.C: Trace Attempt 45	[42.15 s]
-0.0.N: Trace Attempt  1	[43.51 s]
-0.0.N: Trace Attempt  2	[43.58 s]
-0.0.N: Trace Attempt  3	[43.60 s]
-0.0.N: Trace Attempt  5	[43.68 s]
-0.0.K: Trace Attempt  1	[44.20 s]
-0.0.K: Trace Attempt  2	[44.22 s]
-0.0.K: Trace Attempt  3	[44.24 s]
-0.0.K: Trace Attempt  4	[44.27 s]
-0.0.K: Trace Attempt  5	[44.29 s]
-0.0.Tri: Trace Attempt 91	[44.32 s]
-0.0.N: Trace Attempt 29	[47.94 s]
-0.0.K: Trace Attempt 44	[48.55 s]
-0.0.Tri: Trace Attempt 99	[48.71 s]
-0.0.N: Trace Attempt 38	[52.56 s]
-0.0.K: Trace Attempt 66	[52.63 s]
-0.0.AD: Trace Attempt 44	[52.72 s]
-0.0.Tri: Trace Attempt 107	[53.27 s]
-0.0.AD: Trace Attempt  1	[57.03 s]
-0.0.AD: Trace Attempt  2	[57.11 s]
-0.0.AD: Trace Attempt  3	[57.37 s]
-0.0.AD: Trace Attempt  5	[57.82 s]
-0.0.N: Trace Attempt 39	[57.90 s]
-0.0.Tri: Trace Attempt 111	[57.87 s]
-0.0.I: Trace Attempt 45	[57.95 s]
-0.0.I: Trace Attempt  1	[60.78 s]
-0.0.I: Trace Attempt  2	[60.79 s]
-0.0.I: Trace Attempt  3	[60.85 s]
-0.0.I: Trace Attempt  5	[60.99 s]
-0.0.Tri: Trace Attempt 117	[62.19 s]
-0.0.I: Trace Attempt 23	[65.54 s]
-0.0.Tri: Trace Attempt 123	[66.74 s]
-0.0.AD: Trace Attempt 30	[70.34 s]
-0.0.Tri: Trace Attempt 129	[70.79 s]
-0.0.Tri: Trace Attempt 137	[75.30 s]
-0.0.Tri: Trace Attempt 142	[80.15 s]
-0.0.I: Trace Attempt 33	[80.47 s]
-0.0.AD: Trace Attempt 38	[82.47 s]
-0.0.K: Requesting engine job to stop
-0.0.C: Requesting engine job to stop
-0.0.Tri: Requesting engine job to stop
-0.0.I: Requesting engine job to stop
-0.0.N: Requesting engine job to stop
-0.0.AD: Requesting engine job to stop
-0.0.AM: Requesting engine job to stop
-0.0.B: Requesting engine job to stop
-0.0.Hp: Requesting engine job to terminate
-INFO (IPF144): 0: Initiating shutdown of proof [85.28 s]
-0.0.Tri: Trace Attempt 149	[83.86 s]
-0.0.Tri: A proof was found: No trace exists. [85.19 s]
-INFO (IPF051): 0.0.Tri: The cover property "ibex_fv.C_14" was proven unreachable in 85.21 s.
+0.0.B: Trace Attempt  5	[0.30 s]
+0.0.K: Trace Attempt  1	[0.88 s]
+0.0.K: Trace Attempt  2	[0.88 s]
+0.0.K: Trace Attempt  3	[0.89 s]
+0.0.K: Trace Attempt  4	[0.90 s]
+0.0.K: Trace Attempt  5	[0.91 s]
+0.0.Tri:    0.27" ---- Launching abstraction thread ----
+0.0.N: Trace Attempt  7	[0.90 s]
+0.0.Tri:    0.32" ---- Launching multi-phase simplification thread ----
+0.0.Tri: Trace Attempt  2	[1.06 s]
+0.0.K: Trace Attempt  1	[1.58 s]
+0.0.K: Trace Attempt  2	[1.58 s]
+0.0.K: Trace Attempt  3	[1.58 s]
+0.0.K: Trace Attempt  4	[1.58 s]
+0.0.K: Trace Attempt  5	[1.58 s]
+0.0.Tri: Trace Attempt  3	[1.34 s]
+0.0.Tri: Trace Attempt  4	[1.40 s]
+0.0.AD: Trace Attempt  1	[1.48 s]
+0.0.AD: Trace Attempt  2	[1.50 s]
+0.0.Tri: Trace Attempt  5	[1.45 s]
+0.0.AD: Trace Attempt  3	[1.66 s]
+0.0.AD: Trace Attempt  4	[1.86 s]
+0.0.AM: Trace Attempt  1	[1.93 s]
+0.0.AM: Trace Attempt  2	[2.02 s]
+0.0.AM: Trace Attempt  3	[2.03 s]
+0.0.I: Trace Attempt  1	[3.23 s]
+0.0.I: Trace Attempt  2	[3.24 s]
+0.0.I: Trace Attempt  3	[3.29 s]
+0.0.I: Trace Attempt  4	[3.36 s]
+0.0.Tri:    3.70" Simplification phase 1 complete
+0.0.B: Trace Attempt 27	[4.32 s]
+0.0.Tri: Trace Attempt 41	[5.76 s]
+0.0.C: Trace Attempt 40	[6.23 s]
+0.0.AM: Trace Attempt 17	[6.32 s]
+0.0.K: Trace Attempt  1	[7.43 s]
+0.0.K: Trace Attempt  2	[7.44 s]
+0.0.K: Trace Attempt  3	[7.45 s]
+0.0.K: Trace Attempt  4	[7.46 s]
+0.0.K: Trace Attempt  5	[7.46 s]
+0.0.AD: Trace Attempt 20	[8.17 s]
+0.0.Tri:    8.26" Simplification phase 2 complete
+0.0.I: Trace Attempt 40	[9.49 s]
+0.0.N: Trace Attempt 40	[9.61 s]
+0.0.B: Trace Attempt 41	[10.68 s]
+0.0.AD: Trace Attempt 33	[18.14 s]
+0.0.AM: Trace Attempt 31	[19.01 s]
+0.0.Tri: Trace Attempt 42	[20.54 s]
+0.0.Tri:   20.96" Simplification phase 3 complete
+  20.96" ---- Completed simplification thread ----
+  20.96" ---- Restarting main thread on simplified netlist ----
+0.0.Tri:   21.18" ---- Restarting abstraction thread on simplified netlist ----
+0.0.K: Trace Attempt  1	[23.17 s]
+0.0.K: Trace Attempt  2	[23.19 s]
+0.0.K: Trace Attempt  3	[23.24 s]
+0.0.K: Trace Attempt  4	[23.26 s]
+0.0.K: Trace Attempt  5	[23.29 s]
+0.0.C: Trace Attempt 41	[27.56 s]
+0.0.I: Trace Attempt 41	[28.45 s]
+0.0.K: Trace Attempt 41	[28.62 s]
+0.0.N: Trace Attempt 41	[30.49 s]
+0.0.I: Trace Attempt  1	[31.75 s]
+0.0.I: Trace Attempt  2	[31.78 s]
+0.0.I: Trace Attempt  3	[32.00 s]
+0.0.I: Trace Attempt  4	[32.14 s]
+0.0.N: Trace Attempt  1	[33.26 s]
+0.0.K: Trace Attempt 46	[33.49 s]
+0.0.N: Trace Attempt  2	[33.40 s]
+0.0.N: Trace Attempt  3	[33.42 s]
+0.0.AM: Trace Attempt 40	[35.06 s]
+0.0.K: Trace Attempt 57	[38.20 s]
+0.0.N: Trace Attempt 32	[38.11 s]
+0.0.AD: Trace Attempt 39	[38.90 s]
+0.0.I: Trace Attempt 23	[41.75 s]
+0.0.K: Trace Attempt 61	[42.27 s]
+0.0.N: Trace Attempt 39	[43.11 s]
+0.0.Tri: Trace Attempt 43	[43.05 s]
+0.0.AD: Trace Attempt 15	[43.94 s]
+0.0.K: Trace Attempt 69	[46.87 s]
+0.0.Tri: Trace Attempt 45	[50.90 s]
+0.0.K: Trace Attempt 73	[51.45 s]
+0.0.K: Trace Attempt 79	[55.49 s]
+0.0.B: Trace Attempt 43	[55.64 s]
+0.0.Tri: Trace Attempt 46	[56.82 s]
+0.0.AD: Trace Attempt 31	[58.65 s]
+0.0.K: Trace Attempt 86	[59.65 s]
+0.0.I: Trace Attempt 34	[62.64 s]
+0.0.AM: Trace Attempt 41	[63.37 s]
+0.0.K: Trace Attempt 92	[64.17 s]
+0.0.Tri: Trace Attempt 47	[65.52 s]
+0.0.AM: Trace Attempt 43	[68.42 s]
+0.0.K: Trace Attempt 95	[68.79 s]
+0.0.B: Trace Attempt 44	[72.85 s]
+0.0.K: Trace Attempt 102	[74.09 s]
+0.0.AD: Trace Attempt 40	[74.02 s]
+0.0.Tri: Trace Attempt 48	[74.35 s]
+0.0.K: Trace Attempt 107	[78.43 s]
+0.0.B: Trace Attempt 45	[79.53 s]
+0.0.Tri: Trace Attempt 49	[81.87 s]
+0.0.K: Trace Attempt 113	[83.12 s]
+0.0.B: Trace Attempt 48	[83.71 s]
+0.0.AM: Trace Attempt  1	[86.18 s]
+0.0.AM: Trace Attempt  2	[86.41 s]
+0.0.AM: Trace Attempt  3	[86.44 s]
+0.0.K: Trace Attempt 116	[87.70 s]
+0.0.B: Trace Attempt 50	[88.43 s]
+0.0.Tri: Trace Attempt 50	[89.16 s]
+0.0.K: Trace Attempt 119	[91.86 s]
+0.0.Tri: Trace Attempt 51	[93.86 s]
+0.0.I: Trace Attempt 40	[94.15 s]
+0.0.B: Trace Attempt 51	[95.74 s]
+0.0.K: Trace Attempt 121	[96.89 s]
+0.0.AM: Trace Attempt 36	[97.20 s]
+0.0.Tri: Trace Attempt 52	[99.19 s]
+0.0.K: Trace Attempt 124	[101.04 s]
+0.0.B: Trace Attempt 54	[102.35 s]
+0.0.AM: Trace Attempt 39	[104.33 s]
+0.0.Tri: Trace Attempt 53	[104.40 s]
+0.0.K: Trace Attempt 127	[106.80 s]
+0.0.B: Trace Attempt 55	[107.33 s]
+0.0.Tri: Trace Attempt 54	[108.46 s]
+0.0.B: Trace Attempt 56	[112.78 s]
+0.0.K: Trace Attempt 131	[113.48 s]
+0.0.Tri: Trace Attempt 55	[114.31 s]
+0.0.K: Trace Attempt 133	[117.88 s]
+0.0.B: Trace Attempt 58	[118.05 s]
+0.0.Tri: Trace Attempt 56	[119.25 s]
+0.0.B: Trace Attempt 61	[123.22 s]
+0.0.K: Trace Attempt 136	[123.90 s]
+0.0.Tri: Trace Attempt 57	[124.21 s]
+0.0.AD: Trace Attempt 41	[125.86 s]
+0.0.B: Trace Attempt 64	[127.60 s]
+0.0.K: Trace Attempt 142	[129.68 s]
+0.0.Tri: Trace Attempt 58	[130.74 s]
+0.0.B: Trace Attempt 66	[131.82 s]
+0.0.K: Trace Attempt 150	[134.01 s]
+0.0.Tri: Trace Attempt 59	[136.48 s]
+0.0.AD: Trace Attempt  1	[137.87 s]
+0.0.AD: Trace Attempt  2	[137.89 s]
+0.0.AD: Trace Attempt  3	[138.01 s]
+0.0.K: Trace Attempt 153	[138.38 s]
+0.0.AD: Trace Attempt  4	[138.20 s]
+0.0.B: Trace Attempt 68	[138.25 s]
+0.0.Tri: Trace Attempt 60	[141.28 s]
+0.0.K: Trace Attempt 162	[142.57 s]
+0.0.B: Trace Attempt 72	[142.72 s]
+0.0.AD: Trace Attempt 26	[144.58 s]
+0.0.Tri: Trace Attempt 61	[146.08 s]
+0.0.K: Trace Attempt 171	[146.92 s]
+0.0.B: Trace Attempt 76	[147.15 s]
+0.0.K: Trace Attempt 178	[151.15 s]
+0.0.B: Trace Attempt 82	[151.86 s]
+0.0.Tri: Trace Attempt 63	[152.96 s]
+0.0.K: Trace Attempt 187	[155.27 s]
+0.0.Tri: Trace Attempt 65	[157.28 s]
+0.0.K: Trace Attempt 192	[159.29 s]
+0.0.B: Trace Attempt 85	[159.79 s]
+0.0.AD: Trace Attempt 39	[161.41 s]
+0.0.Tri: Trace Attempt 66	[161.39 s]
+0.0.K: Trace Attempt 200	[163.44 s]
+0.0.B: Trace Attempt 88	[164.56 s]
+0.0.K: Trace Attempt 209	[167.54 s]
+0.0.Tri: Trace Attempt 68	[168.74 s]
+0.0.K: Trace Attempt 216	[171.60 s]
+0.0.Tri: Trace Attempt 69	[176.54 s]
+0.0.Tri: Trace Attempt 70	[181.87 s]
+0.0.Tri: Trace Attempt 72	[189.59 s]
+0.0.Tri: Trace Attempt 74	[195.73 s]
+0.0.Tri: Trace Attempt 77	[201.20 s]
+0.0.Tri: Trace Attempt 79	[206.40 s]
+0.0.Tri: Trace Attempt 81	[210.45 s]
+0.0.Tri: Trace Attempt 84	[216.12 s]
+0.0.B: Trace Attempt 92	[216.40 s]
+0.0.Tri: Trace Attempt 85	[222.54 s]
+0.0.B: Trace Attempt 93	[224.31 s]
+0.0.Tri: Trace Attempt 86	[227.25 s]
+0.0.B: Trace Attempt 95	[231.29 s]
+0.0.Tri: Trace Attempt 87	[232.44 s]
+0.0.Tri: Trace Attempt 89	[238.03 s]
+0.0.B: Trace Attempt 96	[237.94 s]
+0.0.Tri: Trace Attempt 92	[243.16 s]
+0.0.B: Trace Attempt 98	[243.85 s]
+0.0.Tri: Trace Attempt 95	[247.68 s]
+0.0.B: Trace Attempt 100	[248.19 s]
+0.0.Tri: Trace Attempt 98	[251.85 s]
+0.0.B: Trace Attempt 103	[252.45 s]
+0.0.Tri: Trace Attempt 101	[257.39 s]
+0.0.B: Trace Attempt 105	[259.87 s]
+0.0.Tri: Trace Attempt 102	[261.49 s]
+0.0.B: Trace Attempt 107	[264.35 s]
+0.0.Tri: Trace Attempt 104	[267.92 s]
+0.0.B: Trace Attempt 108	[269.36 s]
+0.0.Tri: Trace Attempt 106	[273.33 s]
+0.0.B: Trace Attempt 111	[273.72 s]
+0.0.N: Trace Attempt 40	[274.75 s]
+0.0.Tri: Trace Attempt 110	[278.08 s]
+0.0.B: Trace Attempt 113	[278.62 s]
+0.0.Tri: Trace Attempt 113	[283.63 s]
+0.0.B: Trace Attempt 115	[283.69 s]
+0.0.Tri: Trace Attempt 116	[289.43 s]
+0.0.B: Trace Attempt 116	[291.01 s]
+0.0.Tri: Trace Attempt 118	[293.57 s]
+0.0.Tri: Trace Attempt 122	[298.32 s]
+0.0.Tri: Trace Attempt 126	[304.41 s]
+0.0.Tri: Trace Attempt 128	[309.94 s]
+0.0.Tri: Trace Attempt 131	[316.32 s]
+0.0.Tri: Trace Attempt 132	[320.53 s]
+0.0.Tri: Trace Attempt 134	[324.55 s]
+0.0.Tri: Trace Attempt 138	[331.76 s]
+0.0.Tri: Trace Attempt 140	[338.49 s]
+0.0.Tri: Trace Attempt 142	[346.65 s]
+0.0.B: Trace Attempt 117	[346.86 s]
+0.0.Tri: Trace Attempt 146	[351.72 s]
+0.0.AM: Trace Attempt 40	[352.64 s]
+0.0.Tri: Trace Attempt 148	[358.03 s]
+0.0.B: Trace Attempt 119	[358.29 s]
+0.0.Tri: Trace Attempt 150	[364.31 s]
+0.0.Tri: Trace Attempt 152	[371.71 s]
+0.0.Tri: Trace Attempt 154	[378.44 s]
+0.0.Tri: Trace Attempt 155	[384.57 s]
+0.0.Tri: Trace Attempt 157	[389.05 s]
+0.0.Tri: Trace Attempt 159	[393.85 s]
+0.0.Tri: Trace Attempt 162	[398.53 s]
+0.0.Tri: Trace Attempt 164	[405.91 s]
+0.0.Tri: Trace Attempt 167	[411.39 s]
+0.0.Tri: Trace Attempt 169	[415.98 s]
+0.0.Tri: Trace Attempt 172	[421.86 s]
+0.0.Tri: Trace Attempt 174	[427.79 s]
+0.0.Tri: Trace Attempt 176	[434.60 s]
+0.0.Tri: Trace Attempt 178	[439.63 s]
+0.0.Tri: Trace Attempt 180	[444.15 s]
+0.0.Tri: Trace Attempt 183	[449.34 s]
+0.0.Tri: Trace Attempt 186	[454.63 s]
+0.0.Tri: Trace Attempt 188	[458.99 s]
+0.0.Tri: Trace Attempt 190	[464.77 s]
+0.0.Tri: Trace Attempt 192	[470.55 s]
+0.0.Tri: Trace Attempt 194	[481.21 s]
+0.0.Tri: Trace Attempt 195	[485.45 s]
+0.0.Tri: Trace Attempt 196	[490.43 s]
+0.0.Tri: Trace Attempt 198	[495.22 s]
+0.0.Tri: Trace Attempt 200	[500.66 s]
+0.0.B: Trace Attempt 120	[500.55 s]
+0.0.Tri: Trace Attempt 202	[507.34 s]
+0.0.B: Trace Attempt 121	[509.44 s]
+0.0.Tri: Trace Attempt 205	[513.18 s]
+0.0.B: Trace Attempt 122	[520.46 s]
+0.0.Tri: Trace Attempt 206	[521.41 s]
+0.0.Tri: Trace Attempt 208	[528.86 s]
+0.0.Tri: Trace Attempt 210	[535.43 s]
+0.0.B: Trace Attempt 123	[539.34 s]
+0.0.Tri: Trace Attempt 211	[540.67 s]
+0.0.Tri: Trace Attempt 213	[550.15 s]
+0.0.B: Trace Attempt 124	[555.28 s]
+0.0.Tri: Trace Attempt 214	[555.97 s]
+0.0.Tri: Trace Attempt 216	[560.48 s]
+0.0.B: Trace Attempt 125	[562.18 s]
+0.0.Tri: Trace Attempt 219	[565.13 s]
+0.0.B: Trace Attempt 126	[567.55 s]
+0.0.Tri: Trace Attempt 221	[570.79 s]
+0.0.Tri: Trace Attempt 223	[575.34 s]
+0.0.B: Trace Attempt 127	[575.24 s]
+0.0.Tri: Trace Attempt 227	[579.63 s]
+0.0.Tri: Trace Attempt 229	[587.14 s]
+0.0.Tri: Trace Attempt 230	[596.08 s]
+0.0.Tri: Trace Attempt 233	[600.83 s]
+0.0.Tri: Trace Attempt 235	[607.35 s]
+0.0.Tri: Trace Attempt 237	[612.18 s]
+0.0.Tri: Trace Attempt 240	[618.38 s]
+0.0.Tri: Trace Attempt 243	[622.60 s]
+0.0.Tri: Trace Attempt 244	[627.51 s]
+0.0.Tri: Trace Attempt 245	[633.41 s]
+0.0.Tri: Trace Attempt 247	[643.58 s]
+0.0.Tri: Trace Attempt 248	[648.01 s]
+0.0.Tri: Trace Attempt 250	[657.05 s]
+0.0.Tri: Trace Attempt 251	[661.12 s]
+0.0.B: Trace Attempt 128	[666.33 s]
+0.0.Tri: Trace Attempt 253	[677.13 s]
+0.0.Tri: Trace Attempt 254	[683.84 s]
+0.0.Tri: Trace Attempt 255	[693.06 s]
+0.0.Tri: Trace Attempt 256	[698.90 s]
+0.0.B: Trace Attempt 129	[700.59 s]
+0.0.Tri: Trace Attempt 258	[704.19 s]
+0.0.B: Trace Attempt 130	[706.81 s]
+0.0.Tri: Trace Attempt 260	[709.51 s]
+0.0.Tri: Trace Attempt 262	[715.13 s]
+0.0.Tri: Trace Attempt 264	[719.78 s]
+0.0.Tri: Trace Attempt 267	[727.76 s]
+0.0.B: Trace Attempt 131	[729.47 s]
+0.0.Tri: Trace Attempt 269	[732.01 s]
+0.0.Tri: Trace Attempt 272	[736.07 s]
+0.0.B: Trace Attempt 132	[740.30 s]
+0.0.Tri: Trace Attempt 274	[741.95 s]
+0.0.Tri: Trace Attempt 277	[746.73 s]
+0.0.Tri: Trace Attempt 279	[753.64 s]
+0.0.B: Trace Attempt 133	[754.91 s]
+0.0.Tri: Trace Attempt 280	[757.96 s]
+0.0.Tri: Trace Attempt 282	[766.91 s]
+0.0.Tri: Trace Attempt 283	[771.88 s]
+0.0.Tri: Trace Attempt 284	[777.23 s]
+0.0.B: Trace Attempt 134	[778.01 s]
+0.0.Tri: Trace Attempt 285	[781.28 s]
+0.0.Tri: Trace Attempt 287	[792.66 s]
+0.0.Tri: Trace Attempt 289	[799.20 s]
+0.0.Tri: Trace Attempt 291	[806.94 s]
+0.0.Tri: Trace Attempt 292	[816.80 s]
+0.0.Tri: Trace Attempt 293	[821.02 s]
+0.0.Tri: Trace Attempt 294	[827.25 s]
+0.0.Tri: Trace Attempt 295	[835.63 s]
+0.0.Tri: Trace Attempt 296	[841.01 s]
+0.0.Tri: Trace Attempt 297	[848.78 s]
+0.0.B: Trace Attempt 135	[849.58 s]
+0.0.Tri: Trace Attempt 298	[859.73 s]
+0.0.K: Trace Attempt 227	[862.24 s]
+0.0.Tri: Trace Attempt 299	[865.99 s]
+0.0.Tri: Trace Attempt 300	[874.02 s]
+0.0.Tri: Trace Attempt 301	[879.14 s]
+0.0.B: Trace Attempt 136	[881.94 s]
+0.0.Tri: Trace Attempt 303	[886.51 s]
+INFO (IPF144): 0: Initiating shutdown of proof [900.15 s]
 0.0.Hp: Interrupted (multi)
-0.0.Hp: All properties determined. [85.28 s]
-0.0.C: Trace Attempt 54	[44.95 s]
-0.0.C: Stopped processing property "ibex_fv.C_14"	[85.31 s].
-0.0.C: All properties determined. [85.31 s]
-0.0.AM: Stopped processing property "ibex_fv.C_14"	[85.32 s].
-0.0.AM: All properties determined. [85.32 s]
-0.0.C: Exited with Success (@ 85.35 s)
+0.0.Hp: Time limit expired (900.00 s) [899.79 s]
+0.0.AD: Stopped processing property "ibex_fv.C_14"	[899.95 s].
+0.0.AD: Time limit expired (900.00 s) [899.96 s]
+0.0.AD: Exited with Success (@ 900.27 s)
+0.0.Tri: Trace Attempt 304	[889.86 s]
+0.0.Tri: Stopped processing property "ibex_fv.C_14"	[899.91 s].
+0.0.N: Stopped processing property "ibex_fv.C_14"	[900.06 s].
+0.0.Tri: Time limit expired (900.00 s) [899.93 s]
+0.0.N: Time limit expired (900.00 s) [900.08 s]
+0.0.Tri: Exited with Success (@ 900.32 s)
+0.0.N: Exited with Success (@ 900.32 s)
+0.0.I: Stopped processing property "ibex_fv.C_14"	[900.17 s].
+0.0.I: Time limit expired (900.00 s) [900.18 s]
+0.0.I: Exited with Success (@ 900.38 s)
+0.0.AM: Stopped processing property "ibex_fv.C_14"	[900.23 s].
+0.0.AM: Time limit expired (900.00 s) [900.28 s]
+0.0.AM: Exited with Success (@ 900.72 s)
+0.0.Hp: Exited with Success (@ 901.68 s)
+0.0.K: Stopped processing property "ibex_fv.C_14"	[901.80 s].
+0.0.K: Time limit expired (900.00 s) [901.81 s]
+0.0.K: Exited with Success (@ 901.86 s)
+0.0.C: Stopped processing property "ibex_fv.C_14"	[901.52 s].
+0.0.C: Time limit expired (900.00 s) [901.53 s]
+0.0.C: Exited with Success (@ 902.10 s)
+0.0.B: Stopped processing property "ibex_fv.C_14"	[901.51 s].
+0.0.B: Time limit expired (900.00 s) [901.50 s]
+0.0.B: Exited with Success (@ 902.19 s)
 0: ProofGrid usable level: 0
-0.0.AM: Exited with Success (@ 85.36 s)
-0.0.N: Trace Attempt 41	[60.85 s]
-0.0.N: Stopped processing property "ibex_fv.C_14"	[85.39 s].
-0.0.N: All properties determined. [85.39 s]
-0.0.N: Exited with Success (@ 85.42 s)
-0.0.K: Trace Attempt 84	[54.74 s]
-0.0.K: Stopped processing property "ibex_fv.C_14"	[85.40 s].
-0.0.K: All properties determined. [85.41 s]
-0.0.K: Exited with Success (@ 85.44 s)
-0.0.AD: Stopped processing property "ibex_fv.C_14"	[85.44 s].
-0.0.AD: All properties determined. [85.44 s]
-0.0.Tri: Stopped processing property "ibex_fv.C_14"	[85.39 s].
-0.0.AD: Exited with Success (@ 85.47 s)
-0.0.Tri: All properties determined. [85.40 s]
-0.0.Tri: Exited with Success (@ 85.47 s)
-0.0.I: Stopped processing property "ibex_fv.C_14"	[85.49 s].
-0.0.Hp: Exited with Success (@ 85.52 s)
-0.0.I: All properties determined. [85.49 s]
-0.0.I: Exited with Success (@ 85.52 s)
-0.0.B: Trace Attempt 59	[11.56 s]
-0.0.B: Stopped processing property "ibex_fv.C_14"	[85.61 s].
-0.0.B: All properties determined. [85.61 s]
-0.0.B: Exited with Success (@ 85.65 s)
 0: --------------------------------------------------------------
-ProofGrid Summary (utilization 99.90 %)
+ProofGrid Summary (utilization 99.94 %)
 --------------------------------------------------------------
      engines started                               :     9
      engine jobs started                           :     9
      jobs where 1 minute load exceeded core count  :     9
      jobs where 5 minute load exceeded core count  :     9
+     jobs where 15 minute load exceeded core count :     9
 
     Average time in state (seconds)
     ------------------------------------------------------
     Engine  Pending     Running        Dead    Utilization
     ------------------------------------------------------
-      K        0.10       85.27        0.00       99.88 %
-      C        0.08       85.27        0.00       99.90 %
-    Tri        0.08       85.27        0.00       99.90 %
-      I        0.08       85.27        0.00       99.90 %
-      N        0.08       85.27        0.00       99.90 %
-     AD        0.08       85.27        0.00       99.90 %
-     AM        0.08       85.27        0.00       99.90 %
-     Hp        0.08       85.27        0.00       99.90 %
-      B        0.08       85.27        0.00       99.90 %
-    all        0.09       85.27        0.00       99.90 %
+      K        0.49      901.83        0.00       99.95 %
+      C        0.64      901.56        0.00       99.93 %
+    Tri        0.55      900.14        0.00       99.94 %
+      I        0.48      900.20        0.00       99.95 %
+      N        0.47      900.14        0.00       99.95 %
+     AD        0.54      899.98        0.00       99.94 %
+     AM        0.57      900.32        0.00       99.94 %
+     Hp        0.52      899.80        0.00       99.94 %
+      B        0.71      901.54        0.00       99.92 %
+    all        0.55      900.61        0.00       99.94 %
 
     Total time in state (seconds)
     -----------------------------------------
             Pending     Running        Dead  
     -----------------------------------------
-               0.78      767.46        0.00
+               4.96     8105.50        0.00
 
-    Data read    : 71.97 kiB
-    Data written : 20.89 kiB
+    Data read    : 185.38 kiB
+    Data written : 34.44 kiB
 
 0: All pending notifications were processed.
+----------------------------------------
+| INFO (ICD005): 0: The proof thread was terminated because of a time_limit expiration.
+|     The current limit is 900 seconds.
+|     Modify it with the "-time_limit" switch or "set_prove_time_limit" command.
+----------------------------------------
 INFO (IPF059): 0: Completed proof on task: "mytask"
 
 ==============================================================
@@ -921,18 +1073,18 @@ SUMMARY
                   - unknown                   : 0
                   - error                     : 0
                  covers                       : 1
-                  - unreachable               : 1 (100%)
+                  - unreachable               : 0 (0%)
                   - bounded_unreachable (user): 0 (0%)
                   - covered                   : 0 (0%)
                   - ar_covered                : 0 (0%)
-                  - undetermined              : 0 (0%)
+                  - undetermined              : 1 (100%)
                   - unknown                   : 0 (0%)
                   - error                     : 0 (0%)
 END
 [mytask] % INFO (IPL005): Received request to exit from the console.
 INFO: Waiting for proof threads to stop...
 INFO: Proof threads stopped.
-INFO (IPL018): The peak resident set memory use for this session was 2.418 GB.
+INFO (IPL018): The peak resident set memory use for this session was 4.227 GB.
 INFO (IPL014): Waiting for the Tcl-thread to exit.
 INFO (IPL015): The Tcl-thread exited with status 0.
 INFO (IPL016): Exiting the analysis session with status 0.

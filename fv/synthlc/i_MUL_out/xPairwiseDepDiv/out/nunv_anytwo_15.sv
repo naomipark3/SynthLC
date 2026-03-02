@@ -9,6 +9,21 @@ wire id_stage_s1 =
 	(core_i.id_stage_i.pc_id_i == pc0) && 
 	(core_i.id_stage_i.instr_executing == 1'd1) && 
 	 1'b1; 
+wire mult_fsm_s1 = 
+	(mul_owner_pc == pc0) && 
+	(mul_owner_v == 1'd0) && 
+	(mult_state == 2'd1) && 
+	 1'b1; 
+wire mult_fsm_s2 = 
+	(mul_owner_pc == pc0) && 
+	(mul_owner_v == 1'd0) && 
+	(mult_state == 2'd2) && 
+	 1'b1; 
+wire mult_fsm_s3 = 
+	(mul_owner_pc == pc0) && 
+	(mul_owner_v == 1'd0) && 
+	(mult_state == 2'd3) && 
+	 1'b1; 
 wire mult_fsm_s5 = 
 	(mul_owner_pc == pc0) && 
 	(mul_owner_v == 1'd1) && 
@@ -18,6 +33,11 @@ wire mult_fsm_s6 =
 	(mul_owner_pc == pc0) && 
 	(mul_owner_v == 1'd1) && 
 	(mult_state == 2'd2) && 
+	 1'b1; 
+wire div_fsm_s1 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd1) && 
 	 1'b1; 
 wire div_fsm_s10 = 
 	(div_owner_pc == pc0) && 
@@ -42,6 +62,31 @@ wire div_fsm_s13 =
 wire div_fsm_s14 = 
 	(div_owner_pc == pc0) && 
 	(div_owner_v == 1'd1) && 
+	(div_state == 3'd6) && 
+	 1'b1; 
+wire div_fsm_s2 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd2) && 
+	 1'b1; 
+wire div_fsm_s3 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd3) && 
+	 1'b1; 
+wire div_fsm_s4 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd4) && 
+	 1'b1; 
+wire div_fsm_s5 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd5) && 
+	 1'b1; 
+wire div_fsm_s6 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
 	(div_state == 3'd6) && 
 	 1'b1; 
 wire div_fsm_s9 = 

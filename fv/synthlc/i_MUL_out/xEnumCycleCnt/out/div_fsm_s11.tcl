@@ -1,7 +1,7 @@
 set_prove_time_limit 10m
 set itm {div_fsm_s11}
 set min {1}
-set max {31}
+set max {70}
 set cnt {1}
 while 1 {
   if { $cnt > $max } {

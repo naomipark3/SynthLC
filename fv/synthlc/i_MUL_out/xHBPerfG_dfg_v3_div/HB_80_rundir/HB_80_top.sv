@@ -488,22 +488,6 @@ ISSUE_ONCE: assume property (@(posedge clk_i)
 );
 
 // =============================================================================
-// [8b] Functional units idle before IUV issue
-//
-// Prevents pre-existing activity from being attributed to the IUV.
-// Only active before instn_begun; once IUV is issued, FSMs are unconstrained.
-// =============================================================================
-IDLE_MULTDIV_PRE_IUV: assume property (@(posedge clk_i)
-  !instn_begun |->
-    (core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q == 3'd0) &&
-    (mult_state == 2'd0)
-);
-
-IDLE_LSU_PRE_IUV: assume property (@(posedge clk_i)
-  !instn_begun |-> (ls_fsm == 3'd0)
-);
-
-// =============================================================================
 // [9] Liveness: IUV is eventually issued
 // =============================================================================
 reg first;
@@ -594,12 +578,14 @@ wire [1:0] mult_state =
   core_i.ex_block_i.gen_multdiv_fast.multdiv_i.gen_mult_fast.mult_state_q;
 wire mult_en    = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i;
 wire div_en     = core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i;
+wire multdiv_ready =
+  core_i.ex_block_i.gen_multdiv_fast.multdiv_i.multdiv_ready_id_i;
 
 wire mult_start = mult_en && (mult_state == 2'd0) && !mul_owner_v; // ALBL
 wire div_start  = div_en  && (div_state  == 3'd0) && !div_owner_v; // MD_IDLE
 
-wire mul_done   = mul_owner_v && valid;
-wire div_done   = div_owner_v && valid;
+wire mul_done   = mul_owner_v && valid && multdiv_ready;
+wire div_done   = div_owner_v && valid && multdiv_ready;
 
 always_ff @(posedge clk_i or negedge rst_ni) begin
   if (!rst_ni) begin
@@ -609,8 +595,14 @@ always_ff @(posedge clk_i or negedge rst_ni) begin
     div_owner_v  <= 1'b0;
   end else begin
     // Clear on finish
-    if (mul_done) mul_owner_v <= 1'b0;
-    if (div_done) div_owner_v <= 1'b0;
+    if (mul_done) begin
+      mul_owner_v <= 1'b0;
+      mul_owner_pc <= '0;
+    end
+    if (div_done) begin
+      div_owner_v <= 1'b0;
+      div_owner_pc <= '0;
+    end
 
     // Capture new owner (guard: only one can start per cycle)
     if (mult_start && !div_start) begin
@@ -623,34 +615,6 @@ always_ff @(posedge clk_i or negedge rst_ni) begin
     end
   end
 end
-
-// =============================================================================
-// [14] Cycle count tightening: ensure FSMs advance when active
-//
-// Without these, JasperGold can construct traces where div_en_i / mult_en_i
-// drop low while the FSM is mid-operation, causing the FSM to freeze
-// indefinitely in any state. These constraints model the real ID stage
-// behavior: once a mult/div operation starts, the enable stays asserted
-// until completion.
-// =============================================================================
-
-// Divider: when FSM is not idle, div_en_i must stay high
-DIV_EN_ACTIVE: assume property (@(posedge clk_i)
-  (core_i.ex_block_i.gen_multdiv_fast.multdiv_i.md_state_q != 3'd0)
-  |-> core_i.ex_block_i.gen_multdiv_fast.multdiv_i.div_en_i
-);
-
-// Multiplier: when FSM is not idle (ALBL), mult_en_i must stay high
-MULT_EN_ACTIVE: assume property (@(posedge clk_i)
-  (mult_state != 2'd0)
-  |-> core_i.ex_block_i.gen_multdiv_fast.multdiv_i.mult_en_i
-);
-
-// ID stage accepts mult/div result when valid
-MULTDIV_READY: assume property (@(posedge clk_i)
-  core_i.ex_block_i.gen_multdiv_fast.multdiv_i.valid_o
-  |-> core_i.ex_block_i.gen_multdiv_fast.multdiv_i.multdiv_ready_id_i
-);
 // NIA header — base assumptions provided by FVMACRO in RUN_JG.sh
 
 // =============================================================================
@@ -662,6 +626,21 @@ wire id_stage_s1 =
 	(core_i.id_stage_i.pc_id_i == pc0) && 
 	(core_i.id_stage_i.instr_executing == 1'd1) && 
 	 1'b1; 
+wire mult_fsm_s1 = 
+	(mul_owner_pc == pc0) && 
+	(mul_owner_v == 1'd0) && 
+	(mult_state == 2'd1) && 
+	 1'b1; 
+wire mult_fsm_s2 = 
+	(mul_owner_pc == pc0) && 
+	(mul_owner_v == 1'd0) && 
+	(mult_state == 2'd2) && 
+	 1'b1; 
+wire mult_fsm_s3 = 
+	(mul_owner_pc == pc0) && 
+	(mul_owner_v == 1'd0) && 
+	(mult_state == 2'd3) && 
+	 1'b1; 
 wire mult_fsm_s5 = 
 	(mul_owner_pc == pc0) && 
 	(mul_owner_v == 1'd1) && 
@@ -671,6 +650,11 @@ wire mult_fsm_s6 =
 	(mul_owner_pc == pc0) && 
 	(mul_owner_v == 1'd1) && 
 	(mult_state == 2'd2) && 
+	 1'b1; 
+wire div_fsm_s1 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd1) && 
 	 1'b1; 
 wire div_fsm_s10 = 
 	(div_owner_pc == pc0) && 
@@ -697,6 +681,31 @@ wire div_fsm_s14 =
 	(div_owner_v == 1'd1) && 
 	(div_state == 3'd6) && 
 	 1'b1; 
+wire div_fsm_s2 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd2) && 
+	 1'b1; 
+wire div_fsm_s3 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd3) && 
+	 1'b1; 
+wire div_fsm_s4 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd4) && 
+	 1'b1; 
+wire div_fsm_s5 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd5) && 
+	 1'b1; 
+wire div_fsm_s6 = 
+	(div_owner_pc == pc0) && 
+	(div_owner_v == 1'd0) && 
+	(div_state == 3'd6) && 
+	 1'b1; 
 wire div_fsm_s9 = 
 	(div_owner_pc == pc0) && 
 	(div_owner_v == 1'd1) && 
@@ -716,27 +725,27 @@ i_MUL_1: assume property (i0[14:12] == 3'b000);
 i_MUL_2: assume property (i0[11:7] != 5'd0);
 i_MUL_3: assume property (i0[6:0] == 7'b0110011);
 
-reg div_fsm_s9_hpn;
+reg mult_fsm_s5_hpn;
 always @(posedge clk_i) begin
     if (!rst_ni) 
-        div_fsm_s9_hpn <= 1'b0;
-    else if (div_fsm_s9)
-        div_fsm_s9_hpn <= 1'b1;
+        mult_fsm_s5_hpn <= 1'b0;
+    else if (mult_fsm_s5)
+        mult_fsm_s5_hpn <= 1'b1;
 end
-reg id_stage_s1_hpn;
+reg mult_fsm_s6_hpn;
 always @(posedge clk_i) begin
     if (!rst_ni) 
-        id_stage_s1_hpn <= 1'b0;
-    else if (id_stage_s1)
-        id_stage_s1_hpn <= 1'b1;
+        mult_fsm_s6_hpn <= 1'b0;
+    else if (mult_fsm_s6)
+        mult_fsm_s6_hpn <= 1'b1;
 end
 
 `ifndef WHB
-HB_80: assert property (@(posedge clk_i) (div_fsm_s9 && !div_fsm_s9_hpn) |-> !(id_stage_s1_hpn || id_stage_s1));
+HB_80: assert property (@(posedge clk_i) (mult_fsm_s5 && !mult_fsm_s5_hpn) |-> !(mult_fsm_s6_hpn || mult_fsm_s6));
 `else 
-//C_80: cover property (@(posedge clk_i) (div_fsm_s9 && !div_fsm_s9_hpn) && (id_stage_s1 && !id_stage_s1_hpn));
-WHB_80: assert property (@(posedge clk_i) (div_fsm_s9 && !div_fsm_s9_hpn) |-> !id_stage_s1_hpn);
-WHB_CONCUR_80: assert property (@(posedge clk_i) (div_fsm_s9 && !div_fsm_s9_hpn) |-> (id_stage_s1 && !id_stage_s1_hpn));
+//C_80: cover property (@(posedge clk_i) (mult_fsm_s5 && !mult_fsm_s5_hpn) && (mult_fsm_s6 && !mult_fsm_s6_hpn));
+WHB_80: assert property (@(posedge clk_i) (mult_fsm_s5 && !mult_fsm_s5_hpn) |-> !mult_fsm_s6_hpn);
+WHB_CONCUR_80: assert property (@(posedge clk_i) (mult_fsm_s5 && !mult_fsm_s5_hpn) |-> (mult_fsm_s6 && !mult_fsm_s6_hpn));
 `endif 
 
 endmodule
