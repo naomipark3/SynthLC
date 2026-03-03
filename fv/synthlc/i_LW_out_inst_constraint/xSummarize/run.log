@@ -1,0 +1,19 @@
+HB edge: [['id_stage_s1', 'lsu_fsm_s8'], ['id_stage_s1', 'wb_stage_s1']]
+leaving_hb_proven_res_pairs: []
+JJ
+===== SET idx: 0 ====
+!! setidx 0 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'wb_stage_s1')]
+===== SET idx: 1 ====
+!! setidx 1 0 has fix set of order on final nodes
+followerset gen [('id_stage_s1', 'lsu_fsm_s8'), ('id_stage_s1', 'wb_stage_s1')]
+EXECNT 2
+[([('id_stage_s1', 'wb_stage_s1')], [])]
+[([('id_stage_s1', 'lsu_fsm_s8'), ('id_stage_s1', 'wb_stage_s1')], [('lsu_fsm_s8', 'wb_stage_s1')])]
+TOTAL CNT COVERED 2
+TOTAL CNT COVERED SQUASH 2
+==================== successor ==========
+id_stage_s1 : ( 2 ) [{'wb_stage_s1'}, {'lsu_fsm_s8', 'wb_stage_s1'}]
+lsu_fsm_s8 : ( 1 ) [set()]
+wb_stage_s1 : ( 1 ) [set()]
+=========================================

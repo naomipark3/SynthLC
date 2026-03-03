@@ -1,0 +1,9 @@
+imp,id_stage_s1,lsu_fsm_s8,0
+excl,id_stage_s1,lsu_fsm_s8,0
+imp,id_stage_s1,wb_stage_s1,1
+excl,id_stage_s1,wb_stage_s1,1
+imp,lsu_fsm_s8,id_stage_s1,2
+imp,lsu_fsm_s8,wb_stage_s1,3
+excl,lsu_fsm_s8,wb_stage_s1,3
+imp,wb_stage_s1,id_stage_s1,4
+imp,wb_stage_s1,lsu_fsm_s8,5

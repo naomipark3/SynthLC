@@ -1,0 +1,27 @@
+
+digraph G {
+    edge [penwidth=2];
+    node [ shape=box, fontsize=20, penwidth=2, fontname="roboto"];
+    esep=0.5;
+    layout=neato;
+    overlap=scale;
+    splines=true;
+
+l_id_stage_s1 [label="id_stage_s1"; pos="0,-0!"; shape=none];
+
+l_mult_fsm_s5 [label="mult_fsm_s5"; pos="0,-1!"; shape=none];
+
+l_div_fsm_s14 [label="div_fsm_s14"; pos="0,-2!"; shape=none];
+
+l_div_fsm_s9 [label="div_fsm_s9"; pos="0,-3!"; shape=none];
+
+l_wb_stage_s1 [label="wb_stage_s1"; pos="0,-4!"; shape=none];
+
+n_id_stage_s1 [label=""; pos="2,-0!"; shape=circle ]; 
+
+
+n_wb_stage_s1 [label=""; pos="2,-4!"; shape=circle ]; 
+
+
+n_id_stage_s1 -> n_wb_stage_s1 [color="black"];
+}

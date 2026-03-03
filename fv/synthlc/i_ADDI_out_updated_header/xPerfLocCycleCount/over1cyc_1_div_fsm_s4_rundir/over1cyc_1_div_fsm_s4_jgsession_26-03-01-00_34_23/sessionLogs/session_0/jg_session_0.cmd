@@ -1,0 +1,108 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2023.12
+# platform  : Linux 4.18.0-553.89.1.el8_10.x86_64
+# version   : 2023.12p001 64 bits
+# build date: 2024.01.23 16:09:24 UTC
+# ----------------------------------------
+# started   : 2026-03-01 00:34:25 PST
+# hostname  : caddy12.stanford.edu.(none)
+# pid       : 3837582
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:43003' '-nowindow' '-style' 'windows' '-data' 'AAACNHicxZDLSsNQFEVXFEUciEO/QbCmqYqDDhR1IFR8gdMgsWpKTUoTnxMd+EV+kX8SV1I6yBd4DzmPffc+d5MA6H9WVUVzFj9M6ww444oT8zk3Vthgl4h9Qg5IuOWOMaldONMFv7NKP6B96nmhjVx+tSoszcVzyrLfJlu+MzZyXol5JqMwT4ycKSVDXcQ6vJa9JjsTj3mQk4qsiNzLfbH/psO26nc5JY/uTJxT2YccG6d2ubpS9I0LN0/VDsQSjlQlKoZ2eeOiZuXurVld7+r72C7WTyoeqy14shbsmDsq6g2wqqeJqpyR08+/uhr5pwrZhZGqzMQi9nQY0mtyt8mheK9RRNb6/AECDVS/' '-proj' '/home/users/cheriek/Documents/Formal_Method/final_project/SynthLC/fv/synthlc/i_ADDI_out/xPerfLocCycleCount/over1cyc_1_div_fsm_s4_jgsession_26-03-01-00_34_23/sessionLogs/session_0' '-init' '-hidden' '/home/users/cheriek/Documents/Formal_Method/final_project/SynthLC/fv/synthlc/i_ADDI_out/xPerfLocCycleCount/over1cyc_1_div_fsm_s4_jgsession_26-03-01-00_34_23/.tmp/.initCmds.tcl' './synthlc/i_ADDI_out/xPerfLocCycleCount/over1cyc_1_div_fsm_s4_.tcl'
+# Run JG with a TCl file: jg jg_test.tcl
+set assert_report_incompletes 1
+set RTL_DIR /home/users/cheriek/Documents/Formal_Method/final_project/ibex
+set SRCDIR /home/users/cheriek/Documents/Formal_Method/final_project/ibex/rtl
+
+############
+set FPV 1
+set REACH 0
+set CUSTOMTCL 0
+############
+exec ./synthlc/i_ADDI_out/xPerfLocCycleCount/over1cyc_1_div_fsm_s4_update_file_.sh
+# Analyze RTL files
+analyze -sv09 -f ./synthlc/i_ADDI_out/xPerfLocCycleCount/over1cyc_1_div_fsm_s4_hdls.f -y $SRCDIR +incdir+$SRCDIR
+
+if {$REACH == 1} {
+    puts "test bboxing mfpt" 
+    #elaborate -bbox_m  {miss_prediction_fix_table} -bbox_m {reorderbuf}
+    #elaborate
+    source reach_collect.tcl
+}
+if {$FPV == 1} {
+    puts "fpv" 
+    # Elaborates
+    #elaborate -bbox_m {wt_cache_subsystem} -bbox_m {ibex_if_stage}
+    #puts "multiplier no-bbox"
+    elaborate -top ibex_fv -bbox_m {ibex_if_stage} -bbox_m {prim_lfsr}
+    #elaborate -bbox_m {ibex_if_stage}
+    #stopat -env {issue_stage_i.i_scoreboard.mem_n[0].sbe.is_compressed}  
+    #elaborate
+
+
+    # Initialization
+    # Clock specification
+    clock clk_i
+    # -both_edges: ridecore 
+    reset !rst_ni
+    set_proofgrid_per_engine_max_jobs 10
+    set_proofgrid_max_jobs 30
+
+
+    #SOURCE_TCL
+    # assume -enable {.*ASSUME_W_R} -regexp
+    # assume -disable {.*ASSUME_R_W} -regexp
+
+    task -create mytask -copy_assumes  -copy {.*CS_gt_div_fsm_s4_2.*}  -regexp
+    task -set mytask
+
+    if { $CUSTOMTCL == 1 } {
+        puts "=========CUSTOMTCL========="
+
+        #CUSTOMTCL
+        
+        puts "=========EXIT CUSTOMTCL========="
+        exit
+        
+    } 
+    
+    puts "=============================================================="
+    puts "CHECK ASSUMPTION...."
+    puts "=============================================================="
+    set CA 0
+    #ASSUMPTION
+    #
+    set_prove_time_limit 15m
+    #SETPROVETIME
+    set_prove_per_property_time_limit 5m 
+
+    set ls [get_property_list -task mytask -include {type {assert cover} }]
+    if { [llength $ls] > 10 } { 
+        set_prove_time_limit 25m 
+        puts "PROVEN TIME 25min" }  
+
+    if { $CA == 1 } { 
+        #set_prove_time_limit 10m
+        set CONFLICT [check_assumptions -task mytask -conflict]
+        puts "=============================================================="
+        puts "CHECK ASSUMPTION CONFLICT result? $CONFLICT"
+        puts "=============================================================="
+    }  else {
+        puts "AUTOPROVE:" 
+        #set_prove_time_limit 1h
+        #set_prove_per_property_time_limit 1h
+        puts "=================================================="
+        puts " PROVE TIME LIMIT"
+        puts [get_prove_time_limit]     
+        #puts [get_prove_per_property_time_limit]
+        puts "=================================================="
+        set_engine_mode {K C Tri I N AD AM Hp B}
+
+        prove -task mytask
+        #prove -all
+    }
+    
+    puts "END"
+    report -task mytask -csv -results -file "./synthlc/i_ADDI_out/xPerfLocCycleCount/over1cyc_1_div_fsm_s4.csv" -force
+    exit
+}
