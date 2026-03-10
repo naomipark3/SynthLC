@@ -1,11 +1,9 @@
-// Top-level formal verification wrapper for Ibex RISC-V core
-// Analogous to CVA6's topsim.sv
-//
-// Wraps ibex_core with all ports connected.
-// IF stage is black-boxed by JasperGold: elaborate -bbox_m {ibex_if_stage}
-//
-// Key: Register file is EXTERNAL to ibex_core (instantiated here).
-//      ICache RAMs are tied off (ICache disabled).
+//Top-level formal verification wrapper for Ibex RISC-V core
+//Analogous to CVA6's topsim.sv
+//Wraps ibex_core with all ports connected.
+//IF stage is black-boxed by JasperGold: elaborate -bbox_m {ibex_if_stage}
+//Key: Register file is EXTERNAL to ibex_core (instantiated here).
+//**ICache RAMs are tied off (ICache disabled).
 
 `include "prim_assert.sv"
 
@@ -14,42 +12,34 @@ module ibex_fv import ibex_pkg::*; (
   input logic rst_ni
 );
 
-  
-
-  // =========================================================================
-  // Parameters — basic non-secure config, no ECC, no ICache
-  // =========================================================================
+  //Parameters: basic non-secure config, no ECC, no ICache
   localparam bit          SecureIbex       = 1'b0;
   localparam bit          MemECC           = 1'b0;
   localparam int unsigned MemDataWidth     = 32;
   localparam int unsigned RegFileDataWidth = 32;
 
-  // =========================================================================
-  // Tied-off inputs
-  // =========================================================================
+  //Tied-off inputs:
   wire [31:0] hart_id_i   = 32'h0;
   wire [31:0] boot_addr_i = 32'h80000000;
 
-  // Interrupts — all disabled
+  //Interrupts (all disabled):
   wire        irq_software_i  = 1'b0;
   wire        irq_timer_i     = 1'b0;
   wire        irq_external_i  = 1'b0;
   wire [14:0] irq_fast_i      = 15'b0;
   wire        irq_nm_i        = 1'b0;
 
-  // Debug — disabled
+  //Debug (disabled):
   wire        debug_req_i     = 1'b0;
 
-  // Fetch enable — on
+  //Fetch enable (on):
   wire ibex_mubi_t fetch_enable_i = IbexMuBiOn;
 
-  // ICache scramble key — valid (not used when ICache=0)
+  //ICache scramble key — valid (not used when ICache=0):
   wire ic_scr_key_valid_i = 1'b1;
 
-  // =========================================================================
-  // Instruction memory interface
-  // IF stage is bbox'd, so these are mostly irrelevant
-  // =========================================================================
+  //Instruction memory interface
+  //IF stage is bbox'd (so these are mostly irrelevant)
   wire        instr_req_o;
   wire [31:0] instr_addr_o;
   wire        instr_gnt_i                       = 1'b1;
@@ -57,9 +47,7 @@ module ibex_fv import ibex_pkg::*; (
   wire [MemDataWidth-1:0] instr_rdata_i         = '0;
   wire        instr_err_i                       = 1'b0;
 
-  // =========================================================================
-  // Data memory interface — single-cycle grant, 1-cycle read latency
-  // =========================================================================
+  //Data memory interface (single-cycle grant, 1-cycle read latency):
   wire        data_req_o;
   wire        data_we_o;
   wire [3:0]  data_be_o;
@@ -77,14 +65,12 @@ module ibex_fv import ibex_pkg::*; (
   end
   wire data_rvalid_i = data_rvalid_q;
 
-  // Symbolic read data — JG explores all possible values
+  //Symbolic read data — JG explores all possible values
   wire [MemDataWidth-1:0] data_rdata_i;
   wire data_err_i = 1'b0;
 
-  // =========================================================================
-  // Register file — external to ibex_core, instantiated here
-  // (Mirrors what ibex_top.sv does with gen_regfile_ff)
-  // =========================================================================
+  //Register file — external to ibex_core, instantiated here
+  //(Mirrors what ibex_top.sv does with gen_regfile_ff)
   wire [4:0]                  rf_raddr_a;
   wire [4:0]                  rf_raddr_b;
   wire [4:0]                  rf_waddr_wb;
@@ -118,10 +104,8 @@ module ibex_fv import ibex_pkg::*; (
     .err_o            ()
   );
 
-  // =========================================================================
-  // ICache tag/data RAM ports — tied off (ICache=0)
+  //ICache tag/data RAM ports — tied off (ICache=0)
   // IC_NUM_WAYS, IC_INDEX_W, IC_TAG_SIZE, IC_LINE_SIZE from ibex_pkg
-  // =========================================================================
   wire [IC_NUM_WAYS-1:0]  ic_tag_req_o;
   wire                    ic_tag_write_o;
   wire [IC_INDEX_W-1:0]   ic_tag_addr_o;
@@ -140,9 +124,7 @@ module ibex_fv import ibex_pkg::*; (
 
   wire                    ic_scr_key_req_o;
 
-  // =========================================================================
-  // Misc outputs
-  // =========================================================================
+  //Misc outputs
   wire                    irq_pending_o;
   crash_dump_t            crash_dump_o;
   wire                    double_fault_seen_o;
@@ -151,9 +133,7 @@ module ibex_fv import ibex_pkg::*; (
   wire                    alert_major_bus_o;
   ibex_mubi_t             core_busy_o;
 
-  // =========================================================================
-  // Ibex core instantiation
-  // =========================================================================
+  //Ibex core instantiation
   ibex_core #(
     .PMPEnable         (1'b0),
     .PMPGranularity    (0),
@@ -178,7 +158,7 @@ module ibex_fv import ibex_pkg::*; (
     .hart_id_i          (hart_id_i),
     .boot_addr_i        (boot_addr_i),
 
-    // Instruction memory
+    //Instruction memory
     .instr_req_o        (instr_req_o),
     .instr_gnt_i        (instr_gnt_i),
     .instr_rvalid_i     (instr_rvalid_i),
@@ -186,7 +166,7 @@ module ibex_fv import ibex_pkg::*; (
     .instr_rdata_i      (instr_rdata_i),
     .instr_err_i        (instr_err_i),
 
-    // Data memory
+    //Data memory
     .data_req_o         (data_req_o),
     .data_gnt_i         (data_gnt_i),
     .data_rvalid_i      (data_rvalid_i),
@@ -197,7 +177,7 @@ module ibex_fv import ibex_pkg::*; (
     .data_rdata_i       (data_rdata_i),
     .data_err_i         (data_err_i),
 
-    // Register file (external)
+    //Register file (external)
     .dummy_instr_id_o   (dummy_instr_id),
     .dummy_instr_wb_o   (dummy_instr_wb),
     .rf_raddr_a_o       (rf_raddr_a),
@@ -208,7 +188,7 @@ module ibex_fv import ibex_pkg::*; (
     .rf_rdata_a_ecc_i   (rf_rdata_a_ecc),
     .rf_rdata_b_ecc_i   (rf_rdata_b_ecc),
 
-    // ICache RAMs (tied off)
+    //ICache RAMs (tied off)
     .ic_tag_req_o       (ic_tag_req_o),
     .ic_tag_write_o     (ic_tag_write_o),
     .ic_tag_addr_o      (ic_tag_addr_o),
@@ -222,7 +202,7 @@ module ibex_fv import ibex_pkg::*; (
     .ic_scr_key_valid_i (ic_scr_key_valid_i),
     .ic_scr_key_req_o   (ic_scr_key_req_o),
 
-    // Interrupts
+    //Interrupts
     .irq_software_i     (irq_software_i),
     .irq_timer_i        (irq_timer_i),
     .irq_external_i     (irq_external_i),
@@ -230,11 +210,11 @@ module ibex_fv import ibex_pkg::*; (
     .irq_nm_i           (irq_nm_i),
     .irq_pending_o      (irq_pending_o),
 
-    // Debug
+    //Debug
     .debug_req_i        (debug_req_i),
     .crash_dump_o       (crash_dump_o),
 
-    // Double fault
+    //Double fault
     .double_fault_seen_o(double_fault_seen_o),
 
     
@@ -280,15 +260,15 @@ module ibex_fv import ibex_pkg::*; (
     .rvfi_ext_expanded_insn_last (),
 `endif
 
-    // Fetch enable
+    //Fetch enable
     .fetch_enable_i     (fetch_enable_i),
 
-    // Alerts
+    //Alerts
     .alert_minor_o           (alert_minor_o),
     .alert_major_internal_o  (alert_major_internal_o),
     .alert_major_bus_o       (alert_major_bus_o),
 
-    // Core busy
+    //Core busy
     .core_busy_o        (core_busy_o)
   );
 
