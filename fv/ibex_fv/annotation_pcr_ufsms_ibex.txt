@@ -1,27 +1,27 @@
-# uFSM0 — ID + ALU stage
+#uFSM0: ID + EX stage
 id_stage
 core_i.id_stage_i.pc_id_i
 core_i.id_stage_i.instr_executing
 
-# uFSM1 — Multiplier (RV32MFast, multi-cycle)
+#uFSM1: Multiplier (RV32MFast, multi-cycle)
 mult_fsm
 mul_owner_pc
 mul_owner_v
 mult_state
 
-# uFSM2 — Divider
+#uFSM2: Divider
 div_fsm
 div_owner_pc
 div_owner_v
 div_state
 
-# uFSM3 — LSU
+#uFSM3: LSU
 lsu_fsm
 lsu_owner_pc
 lsu_owner_v
 ls_fsm
 
-# uFSM4 — Writeback
+#uFSM4: Writeback
 wb_stage
 core_i.cs_registers_i.pc_wb_i
 core_i.wb_stage_i.g_writeback_stage.wb_valid_q
