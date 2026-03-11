@@ -71,3 +71,5 @@ cp dfg_e.0 expected_output/dfg_e.txt
 #Step 03: we can finally run RTL2M\muPATH on Ibex:
 #from SynthLC/fv/synthlc:
 ./run_an_instn_demo.sh ADDI.sv
+
+**NOTE: The ibex_fv folder contains our Ibex-specific formal environment, annotation file, and header. The ibex_header_fv.sv is the "Original" header described in our report, and ibex_header_fv_restricted.sv is the "Restricted" header described in the report.
