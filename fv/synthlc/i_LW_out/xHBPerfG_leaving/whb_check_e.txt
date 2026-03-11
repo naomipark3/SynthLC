@@ -1,0 +1,8 @@
+mult_fsm_s5,lsu_fsm_s8,0
+mult_fsm_s5,wb_stage_s1,1
+div_fsm_s9,lsu_fsm_s8,2
+div_fsm_s9,wb_stage_s1,3
+lsu_fsm_s8,mult_fsm_s5,4
+lsu_fsm_s8,div_fsm_s9,5
+wb_stage_s1,mult_fsm_s5,6
+wb_stage_s1,div_fsm_s9,7
